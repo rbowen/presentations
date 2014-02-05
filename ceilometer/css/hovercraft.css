@@ -55,7 +55,8 @@ body {
     font-family: Libre Baskerville;
     color: white;
     background-color:#444;
-    background-image:url('http://www.redhat.com/rh-resources/skin/RedhatStyle/Redhat/images/branding/redhat-logo.png');
+    // background-image:url('http://www.redhat.com/rh-resources/skin/RedhatStyle/Redhat/images/branding/redhat-logo.png');
+    background-image:url('images/openstack.png');
     background-repeat: no-repeat;
     background-image: right-align;
 }
