@@ -183,6 +183,24 @@ Solutions
 If you don't provide solutions to real problems, people will come up
 with their own solutions, which might not be quite the best idea.
 
+.. note:: People want solutions. They don't care if it's elegant. They
+    care if it works. But sometimes "works" doesn't work, long term.
+
+----
+
+Work for it
+===========
+
+We have a tendency to want to make them 
+work for the information, either in a 
+mistaken notion that this will make them 
+remember it, or merely because we had to 
+work for it, so they should too.
+
+----
+
+.. image:: images/uphill.png
+
 ----
 
 Smart Questions
@@ -286,11 +304,11 @@ should not be rude.)
 Stupid questions
 ================
 
+.. image:: images/stupid.jpg
+
 * There is such a thing as a stupid question.
 * Your attitude towards stupid questions says a lot about you.
 * It's your job to guide them to the right question, and its answer.
-
-.. image:: images/stupid.jpg
 
 ----
 
@@ -298,6 +316,8 @@ Scope
 =====
 
 .. image:: images/scope.jpg
+    :height: 207px
+    :width: 310px
 
 * You must decide the scope of your documentation
 * Document your scope
@@ -323,19 +343,322 @@ How?
 
 ----
 
-Left off at slide 49 - http://drbacchus.com/files/Write_A_Better_FM.pdf
+Reference Manual
+================
+
+* Comprehensive and exhaustive
+* Correct
+* Consistent format
+* Best practice
+* Lots of examples
+* All examples must be tested
+
+----
+
+Correct
+=======
+
+* Obvious, right?
+* You'd think
+
+----
+
+Comprehensive
+=============
+
+.. image:: images/sprintf.png
+
+* What the heck are sprintf(3) and printf(3)?
+* Goes back to scope, though, as to how comprehensive you really should be
+
+----
+
+Comprehensive
+=============
+
+* "Comprehensive" needs to be clearly defined
+* Do the PHP docs need to cover the history of computing?
+* Do the Apache docs need to cover HTML?
+
+----
+
+Consistent format
+=================
+
+.. image:: images/formatting1.png
+
+----
+
+Consistent format
+=================
+
+.. image:: images/formatting2.png
+
+----
+
+Best Practice
+=============
+
+* Beginners often just want it to work
+* The *best* answer is often more complicated than the *good enough* answer
+* Doing it right now saves time and tears later
+
+----
+
+See also ...
+============
+
+.. image:: images/fixedit.jpg
+
+----
+
+How not to ...
+==============
+
+* Don't tell them how *not* to do something
+* They *will* cut and paste it
+
+----
+
+Examples
+========
+
+.. image:: images/example1.png
+
+* Simple
+* Copious
+* Tested
+* Consistent use of a fictitious site/project/implementation
+
+.. note:: Create an example company, PetStore.com or whatever
+
+----
+
+Examples - Simple
+=================
+
+* Simplest example that illustrates the concept
+* Explained in exhaustive detail
+* Perhaps followed by more complex examples
+
+----
+
+Examples - Copious
+==================
+
+* Simplest example that illustrates the concept
+* Explained in exhaustive detail
+* Perhaps followed by more complex examples
+* Everyone likes a cookbook
+
+----
+
+Examples - Useful
+=================
+
+.. image:: images/example2.png
+
+Example from the Apache 1.3 mod_rewrite documentation
+
+----
+
+Examples - Tested
+=================
+
+* Few things spread faster than incorrect examples
+* Test every example. Even ones that seem trivial
+* Incorrect examples lead to many, many hours of lost productivity
+
+----
+
+Examples Inc.
+=============
+
+* Construct an imaginary project/company/site/whatever
+* Consistently refer to it in the documentation 
+* example.org or Acme Widgets, Inc, for example
+* Changing the hero of your story in the middle confuses the reader
+
+----
+
+HowTos and Tutorials
+====================
+
+* Complete - cover even the trivial steps.
+* Never say "easy", "trivial", "simple", or "of course", or any other words or phrases that mean that. Your reader is there because it's not.
+* Test it. Repeatedly. On multiple systems.
+* Let your inexperienced co-workers read it.
+
+----
+
+Complete
+========
+
+• Complete - cover even the trivial steps.
+
+This is a delicate balance - between 
+deciding what's in scope, and not 
+leaving them to figure out everything 
+on their own
+
+----
+
+Silly
+=====
+
+.. image:: images/silly.png
+
+----
+
+FAQs
+====
+
+* FAQs are often an admission that the documentation is insufficient
+* Should be a call for improving the docs, or even a scratch-pad for the new docs
+* Most FAQs should be answered with "here's where that's covered in the docs."
+
+----
+
+Format
+======
+
+* The choice of a documentation format can be quite divisive
+* Choosing wrong can lead to many problems
+* Of course, there is no right choice, either
+
+----
+
+Formats
+=======
+
+* Easy to edit
+* Multiple output formats
+* Translation-friendly
+* Text (ie, non-binary format)
+* Revision control
+
+----
+
+Searchable
+==========
+
+.. image:: images/droids.jpg
+
+* Excellent documentation without a decent search isn't worth anything
+* There is no excuse for not having a good search. Google will do it for you for free.
 
 ----
 
 * Make it easier for people to participate in creating those docs
-
+* Make it easy for people to complain
+* Take their complaints seriously
+* Don't get offended when they tell you the docs suck
+* Do something about it
 
 ----
 
-* Quit being a jerk.
+.. image:: images/addnote.png
 
+.. note:: Add a note
+
+----
+
+Most projects
+=============
+
+.. image:: images/peony.png
+
+* Create an account
+* Get a checkout
+* Subscribe to this list
+* Create a ticket in Bugzilla
+* Email a patch
+* Follow up on that list
+
+----
+
+* ... Give up and go away angry
+
+----
+
+Welcome
+=======
+
+.. image:: images/welcome.jpg
+
+* Make it obvious how to submit comments, improvements, errata
+* Don't ignore them once they're submitted
+* Be quick to offer commit bits to repeat customers
+
+----
+
+Go to the source
+================
+
+* The developers (often) don't like writing docs
+* When they realize you do, they'll be willing to answer your questions
+
+----
+
+Also, the source
+================
+
+* Learn to read the source code
+* It will save you many tears in the long run
+* However, don't require programming knowledge to participate in the documentation
+
+----
+
+Error messages
+==============
+
+* Error messages are documentation, too
+
+::
+
+    else if (!(status & LP_PERRORP)) { if (last != 
+    LP_PERRORP) { last = LP_PERRORP; printk
+    (KERN_INFO "lp%d on ﬁre\n", minor); } }
+
+            Linux printer driver, circa 2.2.1
+
+----
+
+Harness the Whiners
+===================
+
+.. image:: images/ass.jpg
+    :height: 388px
+    :width: 512px
+
+* Whiners -> Contributors: HARD
+* Potential contributors -> Whiners: EASY
+
+----
+
+.. image:: images/sucks1.png
+
+Result: Your documentation still sucks, and you've alienated someone who wanted, albeit misguidedly, to help.
+
+----
+
+.. image:: images/sucks2.png
+
+Result: Your documentation might get better, and, even if it doesn't, you've told one person that you care what your customers think.
+
+----
+
+Even if everyone else in the world is a jerk, you don't have to be.
 
 ----
 
 FINIS
+=====
+
+Email: rbowen@apache.org
+
+Twitter: @rbowen
+
+Slides: http://tm3.org/betterfm 
+
 
