@@ -47,13 +47,17 @@ Why?
     :height: 250px
     :width: 500px
 
-* Because billing
-* Also, capacity planning
+* Billing
+* Capacity planning
+* Alarms
 
 .. note:: Elastic is great, but if you don't know how far it's being
     stretched, you'll find out the hard way when it snaps.
 
     Infinite resources is a nice illusion, but an illusion all the same.
+
+    Alarms trigger when a threshold is reached, and can take action
+    based on that event.
 
 
 ----
@@ -87,10 +91,8 @@ Monitoring:
 
 ----
 
-Monitoring Sucks
-================
-
-As Dave mentioned earlier ...
+Monitoring
+==========
 
 * Ceilometer *meters* whether you ask it to or not
 * You can query it (monitor) later when you realize you need it
@@ -105,10 +107,9 @@ Alarms
     :width: 160px
 
 
-* Not what this presentation is about
 * Notify when a given metric crosses a threshold
-* We will come back to this at the end if there's time
-* relevant presentation at http://tm3.org/alarming
+* Another relevant presentation at http://tm3.org/alarming
+* Can send alarm to log, or can POST to a HTTP URL for actions
 
 .. note::
 
@@ -116,7 +117,7 @@ Alarms
 
     You'll need to think ahead about what you want to be notified about,
     of course, since you only get notified about things that you set
-    alarms for. ie, Monitoring sucks, and you don't know you need it
+    alarms for. ie, you don't know you need it
     until you need it that first time.
 
 ----
@@ -165,18 +166,12 @@ RDO
 
 ----
 
-Horizon
-=======
-
-.. image:: images/horizon.png
-
-
-----
-
 Configuration
 =============
 
 * For demo/testing purposes, speed up collecting - default is every ten minutes.
+* Since this is primarily geared to billing, every ten minutes is probably sufficient.
+* Adjust according to your expectations
 * In /etc/ceilometer/pipeline.yaml
 
 ::
@@ -222,6 +217,8 @@ Auth
 
 
 * Returns a token that you can then use for other API calls
+* This is standard across all OpenStack components
+* Auth token expires (by default) after 24 hours
 
 ----
 
@@ -234,37 +231,6 @@ API
 
 ----
 
-Net::OpenStack::Ceilometer
-==========================
-
-* If you like Perl ...
-* https://github.com/rbowen/NetOpenStackCeilometer
-* Will be on CPAN eventually
-
-----
-
-Perl
-====
-
-::
-
-    use Net::OpenStack::Ceilometer;
-    my $a = net::openstack::ceilometer->new(
-        host     => '192.168.0.177',
-        username => 'admin',
-        password => '6507ed71383b4544',
-    );
-    my $meters = $a->resources();
-
-----
-
-Resources
-=========
-
-.. image:: images/resource-list.png
-
-----
-
 Meters
 ======
 
@@ -273,25 +239,34 @@ Meters
     curl -H 'X-Auth-Token: <inserttokenhere>' \
       "http://localhost:8777/v2/meters"
 
-* Returns a list of all of the meters that are currently being tracked
-
-.. note::
-    
-    scripts/meters
-    scripts/meters -m 
+* Returns a list of all of the meters that have ever been tracked on this install
+* Note: Sample expiry is not enabled by default, so you keep everything forever
 
 ----
-
-Meter list
-==========
 
 ::
 
-    ./meters
-
-----
-
-.. image:: images/meters.png
+  {
+    'resource_id' => '06ac2e66591345e1a46f7a2193aeabf9',
+    'user_id' => ${\$VAR1->[0]{'user_id'}},
+    'type' => 'gauge',
+    'meter_id' => 'MDZhYzJlNjY1OTEzNDVlMWE0NmY3YTIxOTNhZWFiZjkrc3RvcmFnZS5vYmplY3Rz',
+    'name' => 'storage.objects',
+    'project_id' => '06ac2e66591345e1a46f7a2193aeabf9',
+    'source' => 'openstack',
+    'unit' => 'object'
+  },
+  {
+    'type' => 'gauge',
+    'user_id' => ${\$VAR1->[0]{'user_id'}},
+    'resource_id' => '06ac2e66591345e1a46f7a2193aeabf9',
+    'name' => 'storage.objects.size',
+    'meter_id' => 'MDZhYzJlNjY1OTEzNDVlMWE0NmY3YTIxOTNhZWFiZjkrc3RvcmFnZS5vYmplY3RzLnNpemU=',
+    'project_id' => '06ac2e66591345e1a46f7a2193aeabf9',
+    'source' => 'openstack',
+    'unit' => 'B'
+  },
+    ...
 
 
 ----
@@ -351,12 +326,8 @@ Ceilometer CLI, cont'd
 Meter by name
 =============
 
-::
-
-    meters -m subnet
-
-
 * Note that names aren't unique.
+* The meter name and the resource ID are a unique pair
 
 ----
 
@@ -422,7 +393,6 @@ What can I measure?
 Statistics
 ==========
 
-* But mostly what you care about is statistics.
 * The statistics API lets you do all sorts of filtering
 
 ----
@@ -441,6 +411,25 @@ Any samples about tiny instances, in June.
        {"field": "project_id",
        "op": "eq",
        "value": "8d6057bc-5b90-4296-afe0-84acaa2ef909"}]
+
+----
+
+Aggregated statistics for those samples
+
+::
+
+    GET /v2/meters/instance:m1.tiny/statistics
+    q: [{"field": "timestamp",
+       "op": "ge",
+       "value": "2013-06-01T00:00:00"},
+       {"field": "timestamp",
+       "op": "lt",
+       "value": "2013-07-01T00:00:00"},
+       {"field": "project_id",
+       "op": "eq",
+       "value": "8d6057bc-5b90-4296-afe0-84acaa2ef909"}]
+
+
 
 ----
 
@@ -517,6 +506,8 @@ So, a URL might look like:
         &q.value=2014-07-01T00:00:00
         &period=600
 
+* This is the WSME (Web Services Made Easy) format, not unique to Ceilometer
+
 ----
 
 Stats output
@@ -526,23 +517,20 @@ Output will vary depending on what you're querying:
 
 ::
 
-    [
-      {
-        'duration_start' => '2013-11-19T20:43:50.013000',
-        'duration_end' => '2013-11-25T17:10:40.135000'
-        'duration' => '505610.122',
-        'period_start' => '2013-11-19T20:43:50.013000',
-        'period_end' => '2013-11-19T20:43:50.013000',
-        'period' => 0,
-        'count' => 8,
-        'groupby' => undef,
-        'unit' => 'MB',
-        'sum' => '4096',
-        'avg' => '512',
-        'min' => '512',
-        'max' => '512',
-      }
-    ];
+    'duration_start' => '2013-11-19T20:43:50.013000',
+    'duration_end' => '2013-11-25T17:10:40.135000'
+    'duration' => '505610.122',
+    'period_start' => '2013-11-19T20:43:50.013000',
+    'period_end' => '2013-11-19T20:43:50.013000',
+    'period' => 0,
+    'groupby' => undef,
+    'unit' => 'MB',
+    'count' => 8,
+    'sum' => '4096',
+    'avg' => '512',
+    'min' => '512',
+    'max' => '512',
+
 
 ----
 
@@ -593,23 +581,23 @@ Or, from the API ...
     ?q.field=resource_id&q.op=eq
     &q.value=a940742a-e5ea-4ca5-8b72-3d69a40bb90f 
 
-    $VAR1 = [
-          {
-            'count' => 8,
-            'unit' => 'ns',
-            'period' => 0,
-            'groupby' => undef,
-            'period_start' => '2014-01-22T15:50:40',
-            'max' => '89030000000',
-            'duration_start' => '2014-01-22T15:50:40',
-            'avg' => '64017500000',
-            'period_end' => '2014-01-22T15:50:40',
-            'duration_end' => '2014-01-22T16:03:05',
-            'sum' => '512140000000',
-            'min' => '13430000000',
-            'duration' => '745'
-          }
-        ];
+(That was just a shell script that made that curl request.)
+
+----
+
+        'unit' => 'ns',
+        'period' => 0,
+        'groupby' => undef,
+        'period_start' => '2014-01-22T15:50:40',
+        'period_end' => '2014-01-22T15:50:40',
+        'duration_start' => '2014-01-22T15:50:40',
+        'duration_end' => '2014-01-22T16:03:05',
+        'duration' => '745',
+        'count' => 8,
+        'sum' => '512140000000',
+        'min' => '13430000000',
+        'max' => '89030000000',
+        'avg' => '64017500000'
 
 ----
 
@@ -641,7 +629,7 @@ Gauge:
     Discrete items (floating IPs, image uploads) 
     and fluctuating values (disk I/O)
 Delta:
-    Changing over time (bandwidth)
+    Changing over time (eg change in number of routers)
 
 ----
 
@@ -649,8 +637,6 @@ Range
 =====
 
 You can specify a range of time using the timestamp arguments in the query:
-
-----
 
 ::
 
@@ -693,14 +679,6 @@ Output is intended to be human-readable rather than machine readable, so the API
 
 ----
 
-Graph
-=====
-
-.. image:: images/cpu_graph.png
-
-
-----
-
 Alarms
 ======
 
@@ -737,7 +715,7 @@ Trigger
 
 * This is when you want to be notified
 * operators are the usual (gt, lt, eq, and so on)
-* --statistic is avg, max, min, or sum
+* --statistic is count, avg, max, min, or sum
 
 ----
 
@@ -803,12 +781,42 @@ Actions
 
 ----
 
+Heat
+====
+
+* For example, an alarm might be sent to Heat, the orchestration engine
+* Heat can create a new instance when load reaches a certain maximum ...
+* and reap instances when it dips below a minimum
+
+----
+
 And so much more
 ================
 
 * https://wiki.openstack.org/wiki/Ceilometer/Alerting
 * http://www.youtube.com/watch?v=-U6cyeWkiSc 
 * http://www.slideshare.net/NicolasBarcet/ceilometer-heatequalsalarming-icehousesummit
+
+----
+
+Would be nice ...
+=================
+
+* Monitoring of things *within* VMs
+* At the moment, this is for monitoring the infrastruture, not the things using the infrastructure
+* More canned actions to integrate with other things
+
+.. note:: Ceilometer, Nagios, whatever
+
+----
+
+More Info
+=========
+
+* #openstack-ceilometer (freenode)
+* #heat (freenode)
+* openstack-dev@lists.openstack.org
+* https://wiki.openstack.org/wiki/Ceilometer/Alerting
 
 ----
 
