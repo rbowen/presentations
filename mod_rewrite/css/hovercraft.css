@@ -69,14 +69,17 @@ p {
 }
 
 em {
-    font-family: Satisfy;
-    font-size: 142%;
+    // font-family: Satisfy;
+    // font-size: 124%;
+    font-weight:bold;
+    font-style:italic;
 }
 
 strong {
-    font-family: Racing Sans One;
-    font-size: 127%;
-    letter-spacing: -2px;
+    // font-family: Racing Sans One;
+    // font-size: 127%;
+    // letter-spacing: -2px;
+    font-weight:bold;
 }
 
 h1, h2, h3, h4 {
