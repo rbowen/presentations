@@ -17,7 +17,7 @@ Rich Bowen - rbowen@apache.org
 
 http://rcbowen.com/
 
-SLIDES ARE AT: http://tm3.org/rewrite_ac2014
+SLIDES ARE AT: http://tm3.org/rewritescale
 
 ----
 
@@ -758,7 +758,7 @@ Email: rbowen@apache.org
 
 Twitter: @rbowen
 
-Slides: http://tm3.org/rewrite_ac2014
+Slides: http://tm3.org/rewritescale
 
 ----
 
