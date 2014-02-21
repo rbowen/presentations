@@ -9,7 +9,7 @@ If it's not metered, it's not cloud
 If it's not metered, it's not cloud
 ===================================
 
-Introduction to OpenStack Ceilometer reporting
+Introduction to OpenStack Ceilometer metering
 
 Rich Bowen - rbowen@redhat.com
 
@@ -584,6 +584,8 @@ Or, from the API ...
 (That was just a shell script that made that curl request.)
 
 ----
+
+::
 
         'unit' => 'ns',
         'period' => 0,
