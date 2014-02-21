@@ -758,7 +758,7 @@ Email: rbowen@apache.org
 
 Twitter: @rbowen
 
-Slides: http://tm3.org/rewritescale
+Slides: http://tm3.org/rewritescale and at https://github.com/rbowen/presentations
 
 ----
 
