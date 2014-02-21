@@ -102,6 +102,9 @@ you need to step back and answer a few questions.
 
 ----
 
+Who?
+====
+
 * [CC alexkess, Flickr]
 
 .. image:: images/audience1.jpg
