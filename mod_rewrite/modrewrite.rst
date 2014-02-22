@@ -45,6 +45,15 @@ algebraic notation, not a magical incantation.
 
 ----
 
+Shameless Plug
+==============
+
+.. image:: images/book.jpg
+
+http://drbacchus.com/books/rewrite
+
+----
+
 Regular Expressions
 ===================
 
@@ -717,7 +726,7 @@ prg
 dbd or fastdbd
     SQL Query
 
-*examples in bonus slides at the end*
+*examples in bonus slides at the end, if we have extra time*
 
 ----
 
@@ -753,6 +762,7 @@ Then ...
 ----
 
 Finis
+=====
 
 Email: rbowen@apache.org
 
