@@ -647,7 +647,8 @@ Expresions
 
 ::
 
-    RewriteCond expr "! %{HTTP_REFERER} -strmatch '*://%{HTTP_HOST}/*'"
+    RewriteCond expr "! %{HTTP_REFERER} \
+        -strmatch '*://%{HTTP_HOST}/*'"
     RewriteRule ^/images - [F]
 
 ----
