@@ -78,5 +78,3 @@ http://openstack.redhat.com/Quickstart
 [Google+]: https://plus.google.com/communities/110409030763231732154
 [planet.openstack.org]: http://planet.openstack.org/
 
----
-
