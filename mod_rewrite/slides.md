@@ -330,8 +330,7 @@ RewriteRule *PATTERN* TARGET
 
 ---
 
-[F]
-====
+# [F]
 
 * Returns a 403 FORBIDDEN response to the client browser.
 
@@ -341,16 +340,14 @@ RewriteRule *PATTERN* TARGET
 
 ---
 
-[G]
-====
+# [G]
 
 * Returns a 410 GONE response to the client browser. 
 * I've never actually used this flag.
 
 ---
 
-[H]
-====
+# [H]
 
 
 * Causes the resulting URI to be sent to the specified Content-handler for processing. 
@@ -363,8 +360,7 @@ RewriteRule *PATTERN* TARGET
 
 ---
 
-[L]
-====
+# [L]
 
 * Stop the rewriting process immediately and don't apply any more rules.
 * Probably doesn't do what you expect in per-directory and .htaccess context
@@ -378,8 +374,7 @@ RewriteRule *PATTERN* TARGET
 
 ---
 
-[END]
-======
+# [END]
 
 * Stop the rewriting process immediately and don't apply any more rules.
 * Also prevents further execution of rewrite rules in per-directory and .htaccess context. 
@@ -388,8 +383,7 @@ RewriteRule *PATTERN* TARGET
 
 ---
 
-[N]
-=====
+# [N]
 
 * Re-run the rewriting process, starting again with the first rule, using the result of the ruleset so far as a starting point. 
 
@@ -403,8 +397,7 @@ RewriteRule *PATTERN* TARGET
 
 ---
 
-[NC]
-=====
+# [NC]
 
 * Makes the pattern comparison case-insensitive.
 
@@ -414,23 +407,20 @@ RewriteRule *PATTERN* TARGET
 
 ---
 
-[NE]
-=======
+# [NE]
 
 * Prevent mod_rewrite from applying hexcode escaping of special characters in the result of the rewrite. * Not to be confused with [B]
 
 ---
 
-[NS]
-=====
+# [NS]
 
 
 * Causes a rule to be skipped if the current request is an internal sub-request. 
 
 ---
 
-[P]
-======
+# [P]
 
 * Force the substitution URL to be internally sent as a proxy request. 
 
@@ -444,8 +434,7 @@ RewriteRule *PATTERN* TARGET
 
 ---
 
-[QSA]
-======
+# [QSA]
 
 * Appends any query string from the original request URL to any query string created in the rewrite target.
 * That is, it preserves the user-submitted query string, in addition to the one you created
@@ -456,15 +445,13 @@ RewriteRule *PATTERN* TARGET
 
 ---
 
-[QSD]
-=======
+# [QSD]
 
 * Discard any query string attached to the incoming URI. 
 
 ---
 
-[S]
-=====
+# [S]
 
 
 * Tells the rewriting engine to skip the next num rules if the current rule matches.
@@ -485,8 +472,7 @@ RewriteRule *PATTERN* TARGET
 
 ---
 
-[T]
-======
+# [T]
 
 * Force the MIME-type of the target file to be the specified type. 
 
@@ -497,8 +483,7 @@ RewriteRule *PATTERN* TARGET
 
 ---
 
-.htaccess files
-===============
+# .htaccess files
 
 * .htaccess files are for local (per-directory) configuration
 * mod_rewrite assumes you only care about the current directory
@@ -521,8 +506,7 @@ RewriteRule *PATTERN* TARGET
 
 ---
 
-RewriteCond
-===========
+# RewriteCond
 
 * Additional condition on a rewrite
 * Can consult any variable, not just REQUEST_URI
@@ -541,8 +525,7 @@ RewriteCond
 
 ---
 
-Backreferences
-==============
+# Backreferences
 
 ::
 
@@ -551,15 +534,13 @@ Backreferences
 
 ---
 
-Flow
-====
+# Flow
 
 .. image:: images/rewrite_backreferences.png
 
 ---
 
--f and -d
-=========
+# -f and -d
 
 * -f - Is it a file?
 * -d - Is it a directory?
@@ -576,8 +557,7 @@ Flow
 
 ---
 
-Others
-======
+# Others
 
 * -s - is a file with non-zero size
 * -U - resolves to a valid URL - This is SLOW
@@ -585,8 +565,7 @@ Others
 
 ---
 
-LA-U
-====
+# LA-U
 
 * Look-ahead for a variable that hasn't been set yet
 * For example, use this for auth user, which is set *after* rewrite phase
@@ -598,8 +577,7 @@ LA-U
 
 ---
 
-Expresions
-==========
+# Expresions
 
 * Evaluate arbitrary logical expressions
 
@@ -611,8 +589,7 @@ Expresions
 
 ---
 
-RewriteMap
-==========
+# RewriteMap
 
 * External map which can be used in a RewriteRule
 * 1-1 mapping
@@ -621,8 +598,7 @@ RewriteMap
 
 ---
 
-RewriteMap
-==========
+# RewriteMap
 
 ::
 
@@ -661,8 +637,7 @@ where productmap.txt looks like
 
 ---
 
-Other map types
-===============
+# Other map types
 
 txt
     Plain text maps
@@ -720,8 +695,7 @@ Then ...
 
 ---
 
-Finis
-=====
+# Finis
 
 Email: rbowen@apache.org
 
@@ -731,8 +705,7 @@ Slides: http://tm3.org/rewritescale and at https://github.com/rbowen/presentatio
 
 ---
 
-Bonus Slides
-============
+# Bonus Slides
 
 * RewriteMap examples
 * Rewrite recipes
@@ -740,8 +713,7 @@ Bonus Slides
 
 ---
 
-rnd
-===
+# rnd
 
 ::
 
@@ -754,8 +726,7 @@ rnd
 
 ---
 
-rnd
-===
+# rnd
 
 ::
 
@@ -766,8 +737,7 @@ rnd
 
 ---
 
-int
-===
+# int
 
 ::
 
@@ -776,8 +746,7 @@ int
 
 ---
 
-prg
-===
+# prg
 
 ::
 
@@ -795,8 +764,7 @@ prg
 
 ---
 
-dbd
-===
+# dbd
 
 
 ::
@@ -807,8 +775,7 @@ dbd
 
 ---
 
-Rewrite Recipes
-===============
+# Rewrite Recipes
 
 ---
 
@@ -871,8 +838,7 @@ or ...
 
 ---
 
-If/Else syntax
-==============
+# If/Else syntax
 
 ::
 
@@ -894,12 +860,11 @@ If/Else syntax
 
 ---
 
-See also:
-=========
+# See also:
 
 * mod_macro
 * mod_substitute
 
 ---
 
-Finis
+# Finis
