@@ -41,7 +41,7 @@ http://drbacchus.com/books/rewrite
 
 # Regular Expressions
 
-.. image:: images/mre.jpg
+![mre](images/mre.jpg)
 
 * Atomic description of text patterns
 * Start with a small vocabulary and work up
@@ -55,10 +55,10 @@ http://drbacchus.com/books/rewrite
 # .
 
 
-* Wildcard character
-* Matches one "atom"
-* In mod_rewrite syntax, it matches a 'character'
-* Use \. if you want to match a literal "."
+- Wildcard character
+- Matches one "atom"
+- In mod_rewrite syntax, it matches a 'character'
+- Use \\. if you want to match a literal "."
 
 ---
 
