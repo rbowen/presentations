@@ -19,21 +19,21 @@ cool voodoo, but still voodoo.
 
 -- Brian Moore
 
-----
+---
 
 .. image:: images/wizard.gif
 
 And numerous websites offer mod_rewrite advice that is much more akin to
 magic than science.
 
-----
+---
 
 .. image:: images/algebra.gif
 
 I'd like to show you that mod_rewrite is a clear, concise,
 algebraic notation, not a magical incantation.
 
-----
+---
 
 Shameless Plug
 ==============
@@ -42,7 +42,7 @@ Shameless Plug
 
 http://drbacchus.com/books/rewrite
 
-----
+---
 
 Regular Expressions
 ===================
@@ -56,7 +56,7 @@ Regular Expressions
 
 .. note:: Mastering Regular Expressions, Jeffrey Friedl
 
-----
+---
 
 .
 ===
@@ -67,7 +67,7 @@ Regular Expressions
 * In mod_rewrite syntax, it matches a 'character'
 * Use \. if you want to match a literal "."
 
-----
+---
 
 Tangent
 =======
@@ -78,11 +78,11 @@ Tangent
    :height: 507px
    :width: 600px
 
-----
+---
 
 .. image:: images/axb.png
 
-----
+---
 
 +/\*/?
 ======
@@ -91,14 +91,14 @@ Tangent
 * Turns an atom into a molecule
 
 
-----
+---
 
 \+ - One or more
 ================
 
 .. image:: images/a+.png
 
-----
+---
 
 \* - Zero or more
 =================
@@ -108,7 +108,7 @@ Tangent
 * aaaaa
 * Also matches "Fish", which contains zero 'a' characters
 
-----
+---
 
 \?
 =====
@@ -116,11 +116,11 @@ Tangent
 * Makes a match optional
 * That is, matches zero or one
 
-----
+---
 
 .. image:: images/colour.png
 
-----
+---
 
 ^ and $
 =======
@@ -129,15 +129,15 @@ Tangent
 * Starts with
 * Ends with
 
-----
+---
 
 .. image:: images/anchora.png
 
-----
+---
 
 .. image:: images/anchora2.png
 
-----
+---
 
 ^$ and ^
 =========
@@ -146,7 +146,7 @@ Tangent
 * starts with ends with (nothing between)
 * ^ (all by itself) matches every string (including empty string)
 
-----
+---
 
 ( )
 ====
@@ -155,7 +155,7 @@ Tangent
 * Can apply repetition characters to this molecule
 * (ab)+ matches "abababab"
 
-----
+---
 
 ( )
 =====
@@ -165,7 +165,7 @@ Tangent
 * The next one $2, and so on
 * Examples in just a moment
 
-----
+---
 
 [ ]
 =====
@@ -173,11 +173,11 @@ Tangent
 * Character class
 * Match one of these things
 
-----
+---
 
 .. image:: images/coat.png
 
-----
+---
 
 Not
 ===
@@ -191,7 +191,7 @@ Not
 
 Matches anything EXCEPT a, b, c
 
-----
+---
 
 mod_rewrite
 ===========
@@ -199,14 +199,14 @@ mod_rewrite
 * mod_rewrite uses regular expressions to match requests, and modify them in some way
 * (And a lot of other things)
 
-----
+---
 
 RewriteRule
 ===========
 
 RewriteRule PATTERN TARGET
 
-----
+---
 
 RewriteRule
 ===========
@@ -215,7 +215,7 @@ RewriteRule *PATTERN* TARGET
 
 If it matches *this*
 
-----
+---
 
 RewriteRule
 ===========
@@ -224,7 +224,7 @@ RewriteRule PATTERN *TARGET*
 
 Do *this* instead
 
-----
+---
 
 RewriteRule
 ===========
@@ -234,11 +234,11 @@ RewriteRule PATTERN TARGET \\
 
 With some optional *tweaks*
 
-----
+---
 
 .. image:: images/syntax_rewriterule.png
 
-----
+---
 
 Syntax
 ======
@@ -250,7 +250,7 @@ RewriteRule *PATTERN* TARGET
 * That's everything after http://hostname
 * May be modified by context (eg, .htaccess files) or by earlier rewrite rules
 
-----
+---
 
 Syntax
 ======
@@ -260,7 +260,7 @@ RewriteRule *PATTERN* TARGET
 * *TARGET* is where you want it to go instead
 * File path, or URI, or something else, depending on context and flags
 
-----
+---
 
 Examples
 ========
@@ -270,7 +270,7 @@ Examples
     RewriteRule ^/images/(.*)\.jpg /pics/$1.gif [R=301]
 
 
-----
+---
 
 Flags
 =====
@@ -278,7 +278,7 @@ Flags
 * Modify behavior of a RewriteRule
 * Default is to treat it as a file path relative to current location
 
-----
+---
 
 [R]
 ====
@@ -294,7 +294,7 @@ Flags
 
 .. note:: 302=temp, 301=permanent
 
-----
+---
 
 [PT]
 =====
@@ -307,7 +307,7 @@ Flags
     RewriteRule ^/products/(.+?)/ /prod.php?$1 [PT,L]
 
 
-----
+---
 
 [B]
 =====
@@ -315,7 +315,7 @@ Flags
 * Escape non-alphanumeric characters *before* applying the transformation.
 * Preserves special characters in the URI through the rewriting process
 
-----
+---
 
 [C]
 ====
@@ -323,7 +323,7 @@ Flags
 * Rule is chained to the following rule. If the rule fails, the rule(s) chained to it will be skipped. 
 * Use this when you need to do several transformations in a row as part of a single logical operation.
 
-----
+---
 
 [CO]
 =====
@@ -337,14 +337,14 @@ Flags
 * Full syntax is: CO=NAME:VAL:domain[:lifetime[:path[:secure[:httponly]]]] 
 * *-* as the target means "don't rewrite"
 
-----
+---
 
 [DPI]
 =====
 
 * Causes the PATH_INFO portion of the rewritten URI to be discarded. 
 
-----
+---
 
 [ENV]
 ======
@@ -360,7 +360,7 @@ Flags
 
 * Example: Don't log images
 
-----
+---
 
 [F]
 ====
@@ -371,7 +371,7 @@ Flags
 
     RewriteRule \.exe - [F]
 
-----
+---
 
 [G]
 ====
@@ -379,7 +379,7 @@ Flags
 * Returns a 410 GONE response to the client browser. 
 * I've never actually used this flag.
 
-----
+---
 
 [H]
 ====
@@ -393,7 +393,7 @@ Flags
 
 * Example causes .phps requests to be processed by PHP's syntax-highlighter
 
-----
+---
 
 [L]
 ====
@@ -408,7 +408,7 @@ Flags
     RewriteCond %{REQUEST_URI} !=/index.php
     RewriteRule ^(.*) /index.php?req=$1 [L,PT]
 
-----
+---
 
 [END]
 ======
@@ -418,7 +418,7 @@ Flags
 * (Available in 2.3.9 and later)
 * Note that a rule issuing a REDIRECT to itself will still result in rules being re-run
 
-----
+---
 
 [N]
 =====
@@ -433,7 +433,7 @@ Flags
 * Example - global search and replace of A with B, looping until there's no more As
 * Use [N=100] to limit to 100 iterations (2.4.8 and later)
 
-----
+---
 
 [NC]
 =====
@@ -444,14 +444,14 @@ Flags
 
     RewriteRule (.*\.(jpg|gif|png))$ http://images.example.com$1 [P,NC]
 
-----
+---
 
 [NE]
 =======
 
 * Prevent mod_rewrite from applying hexcode escaping of special characters in the result of the rewrite. * Not to be confused with [B]
 
-----
+---
 
 [NS]
 =====
@@ -459,7 +459,7 @@ Flags
 
 * Causes a rule to be skipped if the current request is an internal sub-request. 
 
-----
+---
 
 [P]
 ======
@@ -474,7 +474,7 @@ Flags
 * Proxy to back-end image server
 
 
-----
+---
 
 [QSA]
 ======
@@ -486,14 +486,14 @@ Flags
 
     RewriteRule /pages/(.+) /page.php?page=$1 [QSA]
 
-----
+---
 
 [QSD]
 =======
 
 * Discard any query string attached to the incoming URI. 
 
-----
+---
 
 [S]
 =====
@@ -515,7 +515,7 @@ Flags
     RewriteRule (.*\.html) docs.php?$1
 
 
-----
+---
 
 [T]
 ======
@@ -527,7 +527,7 @@ Flags
     # Serve .pl files as plain text
     RewriteRule \.pl$ - [T=text/plain]
 
-----
+---
 
 .htaccess files
 ===============
@@ -536,7 +536,7 @@ Flags
 * mod_rewrite assumes you only care about the current directory
 * Leading directory path is stripped off of everything
 
-----
+---
 
 ::
 
@@ -551,7 +551,7 @@ Flags
     RewriteBase /images/
     RewriteRule ^(.+)\.jpg $1.png
 
-----
+---
 
 RewriteCond
 ===========
@@ -560,18 +560,18 @@ RewriteCond
 * Can consult any variable, not just REQUEST_URI
 * Can evaluate arbitrary expressions
 
-----
+---
 
 .. image:: images/syntax_rewritecond.png
 
-----
+---
 
 ::
 
     RewriteCond %{REMOTE_ADDR} ^10\.2\.
     RewriteRule (.*) http://intranet.example.com$1
 
-----
+---
 
 Backreferences
 ==============
@@ -581,14 +581,14 @@ Backreferences
     RewriteCond %{HTTP_HOST} (.*)
     RewriteRule ^/(.*) /sites/%1/$1
 
-----
+---
 
 Flow
 ====
 
 .. image:: images/rewrite_backreferences.png
 
-----
+---
 
 -f and -d
 =========
@@ -606,7 +606,7 @@ Flow
     # index.php can examine $_SERVER['REQUEST_URI']
     # for the original request
 
-----
+---
 
 Others
 ======
@@ -615,7 +615,7 @@ Others
 * -U - resolves to a valid URL - This is SLOW
 * -x - is an executable file
 
-----
+---
 
 LA-U
 ====
@@ -628,7 +628,7 @@ LA-U
     RewriteCond %{LA-U:REMOTE_USER} (.+)
     RewriteRule (.*) http://people.example.org/%1/$1   [R,L]
 
-----
+---
 
 Expresions
 ==========
@@ -641,7 +641,7 @@ Expresions
         -strmatch '*://%{HTTP_HOST}/*'"
     RewriteRule ^/images - [F]
 
-----
+---
 
 RewriteMap
 ==========
@@ -651,7 +651,7 @@ RewriteMap
 * DB lookup
 * Some kind of programmatic thingy
 
-----
+---
 
 RewriteMap
 ==========
@@ -668,7 +668,7 @@ eg.
     RewriteRule ^/ex/(.*) ${examplemap:$1}
 
 
-----
+---
 
 ::
 
@@ -691,7 +691,7 @@ where productmap.txt looks like
     basketball 418
     telephone 328
 
-----
+---
 
 Other map types
 ===============
@@ -707,7 +707,7 @@ dbm
 
     httxt2dbm -i rewritemap.txt -o rewritemap.dbm
 
-----
+---
 
 
 int
@@ -719,7 +719,7 @@ dbd or fastdbd
 
 *examples in bonus slides at the end, if we have extra time*
 
-----
+---
 
 Logging - 2.2 and earlier
 
@@ -735,7 +735,7 @@ Then ...
     tail -f /var/log/httpd/rewrite.log
 
 
-----
+---
 
 Logging - 2.4 and later
 
@@ -750,7 +750,7 @@ Then ...
 
     tail -f /var/log/httpd/error.log | grep rewrite
 
-----
+---
 
 Finis
 =====
@@ -761,7 +761,7 @@ Twitter: @rbowen
 
 Slides: http://tm3.org/rewritescale and at https://github.com/rbowen/presentations
 
-----
+---
 
 Bonus Slides
 ============
@@ -770,7 +770,7 @@ Bonus Slides
 * Rewrite recipes
 * If, ElseIf, Else syntax
 
-----
+---
 
 rnd
 ===
@@ -784,7 +784,7 @@ rnd
     static www1|www2|www3|www4
     dynamic www5|www6
 
-----
+---
 
 rnd
 ===
@@ -796,7 +796,7 @@ rnd
     RewriteRule ^/(.*\.(png|gif|jpg)) http://${servers:static}/$1 [NC,P,L]
     RewriteRule ^/(.*) http://${servers:dynamic}/$1 [P,L]
 
-----
+---
 
 int
 ===
@@ -806,7 +806,7 @@ int
     RewriteMap lc int:tolower
     RewriteRule (.*?[A-Z]+.*) ${lc:$1} [R]
 
-----
+---
 
 prg
 ===
@@ -825,7 +825,7 @@ prg
         print $_;
     }
 
-----
+---
 
 dbd
 ===
@@ -837,12 +837,12 @@ dbd
         "fastdbd:SELECT destination FROM rewrite WHERE source = %s"
 
 
-----
+---
 
 Rewrite Recipes
 ===============
 
-----
+---
 
 ::
 
@@ -862,7 +862,7 @@ Rewrite Recipes
     #   etc.
     RewriteRule   ^  -  [PT]
 
-----
+---
 
 ::
 
@@ -883,7 +883,7 @@ Or ...
       FallbackResource index.php
     </Directory>
 
-----
+---
 
 ::
 
@@ -901,7 +901,7 @@ or ...
     RewriteCond %{HTTP_REFERER} !example.com [NC]
     RewriteRule \.(gif|jpg|png)$ /images/goaway.gif [R,L]
 
-----
+---
 
 If/Else syntax
 ==============
@@ -912,7 +912,7 @@ If/Else syntax
         RedirectMatch (.*) http://www.wooga.com$1
     </If>
 
-----
+---
 
 ::
 
@@ -924,7 +924,7 @@ If/Else syntax
         </If>
     </FilesMatch>
 
-----
+---
 
 See also:
 =========
@@ -932,6 +932,6 @@ See also:
 * mod_macro
 * mod_substitute
 
-----
+---
 
 Finis
