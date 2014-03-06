@@ -1,14 +1,10 @@
 # Demystifying mod_rewrite
 
-Less magic, more science
-
-Rich Bowen - rbowen@apache.org
-
-@rbowen
-
-http://rcbowen.com/
-
-SLIDES ARE AT: http://tm3.org/rewritescale
+- Less magic, more science
+- Rich Bowen - rbowen@apache.org
+- @rbowen
+- http://rcbowen.com/
+- SLIDES ARE AT: http://boxofclue.com/presentations/
 
 ---
 
@@ -17,35 +13,33 @@ SLIDES ARE AT: http://tm3.org/rewritescale
 Despite the tons of examples and docs, mod_rewrite is voodoo. Damned
 cool voodoo, but still voodoo.
 
--- Brian Moore
+  Brian Moore
 
 ---
 
-.. image:: images/wizard.gif
+![Wizard](images/wizard.gif)
 
 And numerous websites offer mod_rewrite advice that is much more akin to
 magic than science.
 
 ---
 
-.. image:: images/algebra.gif
+![algebra](images/algebra.gif)
 
 I'd like to show you that mod_rewrite is a clear, concise,
 algebraic notation, not a magical incantation.
 
 ---
 
-Shameless Plug
-==============
+# Shameless Plug
 
-.. image:: images/book.jpg
+![book](images/book.jpg)
 
 http://drbacchus.com/books/rewrite
 
 ---
 
-Regular Expressions
-===================
+# Regular Expressions
 
 .. image:: images/mre.jpg
 
@@ -58,8 +52,7 @@ Regular Expressions
 
 ---
 
-.
-===
+# .
 
 
 * Wildcard character
@@ -69,8 +62,7 @@ Regular Expressions
 
 ---
 
-Tangent
-=======
+# Tangent
 
 * 'Character' vs 'Byte'
 
@@ -84,8 +76,7 @@ Tangent
 
 ---
 
-+/\*/?
-======
+# +/\*/?
 
 * Repetition characters
 * Turns an atom into a molecule
@@ -93,15 +84,13 @@ Tangent
 
 ---
 
-\+ - One or more
-================
+# \+ - One or more
 
 .. image:: images/a+.png
 
 ---
 
-\* - Zero or more
-=================
+# \* - Zero or more
 
 * a* matches zero or more 'a' characters
 * a
@@ -110,8 +99,7 @@ Tangent
 
 ---
 
-\?
-=====
+# \?
 
 * Makes a match optional
 * That is, matches zero or one
@@ -122,8 +110,7 @@ Tangent
 
 ---
 
-^ and $
-=======
+# ^ and $
 
 * Anchors
 * Starts with
@@ -139,8 +126,7 @@ Tangent
 
 ---
 
-^$ and ^
-=========
+# ^$ and ^
 
 * ^$ is a special case - matches empty string
 * starts with ends with (nothing between)
@@ -148,8 +134,8 @@ Tangent
 
 ---
 
-( )
-====
+# ( )
+
 
 * Turns several atoms into a molecule (grouping)
 * Can apply repetition characters to this molecule
@@ -157,8 +143,7 @@ Tangent
 
 ---
 
-( )
-=====
+# ( )
 
 * Also "captures"
 * The matched set of parentheses becomes $1
@@ -167,8 +152,7 @@ Tangent
 
 ---
 
-[ ]
-=====
+# [ ]
 
 * Character class
 * Match one of these things
@@ -179,8 +163,7 @@ Tangent
 
 ---
 
-Not
-===
+# Not
 
 * Any regex can be negated in a RewriteRule or RewriteCond by putting a ! in front of it
 * A character class is negated with a ^
@@ -193,23 +176,20 @@ Matches anything EXCEPT a, b, c
 
 ---
 
-mod_rewrite
-===========
+# mod_rewrite
 
 * mod_rewrite uses regular expressions to match requests, and modify them in some way
 * (And a lot of other things)
 
 ---
 
-RewriteRule
-===========
+# RewriteRule
 
 RewriteRule PATTERN TARGET
 
 ---
 
-RewriteRule
-===========
+# RewriteRule
 
 RewriteRule *PATTERN* TARGET
 
@@ -217,8 +197,7 @@ If it matches *this*
 
 ---
 
-RewriteRule
-===========
+# RewriteRule
 
 RewriteRule PATTERN *TARGET*
 
@@ -226,8 +205,8 @@ Do *this* instead
 
 ---
 
-RewriteRule
-===========
+# RewriteRule
+
 
 RewriteRule PATTERN TARGET \\
 *[flags]*
@@ -240,8 +219,7 @@ With some optional *tweaks*
 
 ---
 
-Syntax
-======
+# Syntax
 
 RewriteRule *PATTERN* TARGET
 
@@ -252,8 +230,7 @@ RewriteRule *PATTERN* TARGET
 
 ---
 
-Syntax
-======
+# Syntax
 
 RewriteRule *PATTERN* TARGET
 
@@ -262,8 +239,7 @@ RewriteRule *PATTERN* TARGET
 
 ---
 
-Examples
-========
+# Examples
 
 ::
 
@@ -272,16 +248,14 @@ Examples
 
 ---
 
-Flags
-=====
+# Flags
 
 * Modify behavior of a RewriteRule
 * Default is to treat it as a file path relative to current location
 
 ---
 
-[R]
-====
+# [R]
 
 * Forces an external redirect, optionally with the specified HTTP status code. 
 * Issues a redirect header to the client - URL in browser changes
@@ -296,8 +270,7 @@ Flags
 
 ---
 
-[PT]
-=====
+# [PT]
 
 * Forces the resulting URI to be passed back to the URL mapping engine for processing of other URI-to-filename translators, such as Alias or Redirect.
 * Treat the target as a URI, processing it for URI-type things
@@ -309,24 +282,21 @@ Flags
 
 ---
 
-[B]
-=====
+# [B]
 
 * Escape non-alphanumeric characters *before* applying the transformation.
 * Preserves special characters in the URI through the rewriting process
 
 ---
 
-[C]
-====
+# [C]
 
 * Rule is chained to the following rule. If the rule fails, the rule(s) chained to it will be skipped. 
 * Use this when you need to do several transformations in a row as part of a single logical operation.
 
 ---
 
-[CO]
-=====
+# [CO]
 
 * Sets a cookie in the client browser. 
 
@@ -339,15 +309,13 @@ Flags
 
 ---
 
-[DPI]
-=====
+# [DPI]
 
 * Causes the PATH_INFO portion of the rewritten URI to be discarded. 
 
 ---
 
-[ENV]
-======
+# [ENV]
 
 
 * Causes an environment variable VAR to be set (to the value VAL if provided). 
