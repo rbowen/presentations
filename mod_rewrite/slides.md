@@ -168,7 +168,6 @@ http://drbacchus.com/books/rewrite
 * Any regex can be negated in a RewriteRule or RewriteCond by putting a ! in front of it
 * A character class is negated with a ^
 
-::
 
     [^abc]
 
@@ -241,7 +240,6 @@ RewriteRule *PATTERN* TARGET
 
 # Examples
 
-::
 
     RewriteRule ^/images/(.*)\.jpg /pics/$1.gif [R=301]
 
@@ -260,7 +258,6 @@ RewriteRule *PATTERN* TARGET
 * Forces an external redirect, optionally with the specified HTTP status code. 
 * Issues a redirect header to the client - URL in browser changes
 
-::
 
     RewriteRule ^/images/(.*)\.jpg /pics/$1.gif [R=302]
 
@@ -275,7 +272,6 @@ RewriteRule *PATTERN* TARGET
 * Forces the resulting URI to be passed back to the URL mapping engine for processing of other URI-to-filename translators, such as Alias or Redirect.
 * Treat the target as a URI, processing it for URI-type things
 
-::
 
     RewriteRule ^/products/(.+?)/ /prod.php?$1 [PT,L]
 
@@ -300,7 +296,6 @@ RewriteRule *PATTERN* TARGET
 
 * Sets a cookie in the client browser. 
 
-::
 
     RewriteRule ^/index.html - CO=fontdoor:1:example.com
 
@@ -321,7 +316,6 @@ RewriteRule *PATTERN* TARGET
 * Causes an environment variable VAR to be set (to the value VAL if provided). 
 * The form !VAR causes the environment variable VAR to be unset.
 
-::
 
     RewriteRule \.(png|gif|jpg)$ - [E=image:1]
     CustomLog logs/access_log combined env=!image
@@ -334,7 +328,6 @@ RewriteRule *PATTERN* TARGET
 
 * Returns a 403 FORBIDDEN response to the client browser.
 
-::
 
     RewriteRule \.exe - [F]
 
@@ -352,7 +345,6 @@ RewriteRule *PATTERN* TARGET
 
 * Causes the resulting URI to be sent to the specified Content-handler for processing. 
 
-::
 
     RewriteRule ^(/source/.+\.php)s$ $1 [H=application/x-httpd-php-source]
 
@@ -366,7 +358,6 @@ RewriteRule *PATTERN* TARGET
 * Probably doesn't do what you expect in per-directory and .htaccess context
 * (see also the END flag).
 
-::
 
     RewriteBase /
     RewriteCond %{REQUEST_URI} !=/index.php
@@ -388,7 +379,6 @@ RewriteRule *PATTERN* TARGET
 * Re-run the rewriting process, starting again with the first rule, using the result of the ruleset so far as a starting point. 
 
 
-::
 
     RewriteRule (.*)A(.*) $1B$2 [N]
 
@@ -401,7 +391,6 @@ RewriteRule *PATTERN* TARGET
 
 * Makes the pattern comparison case-insensitive.
 
-::
 
     RewriteRule (.*\.(jpg|gif|png))$ http://images.example.com$1 [P,NC]
 
@@ -424,7 +413,6 @@ RewriteRule *PATTERN* TARGET
 
 * Force the substitution URL to be internally sent as a proxy request. 
 
-::
 
 
     RewriteRule (.*\.(jpg|gif|png))$ http://images.example.com$1 [P,NC]
@@ -439,7 +427,6 @@ RewriteRule *PATTERN* TARGET
 * Appends any query string from the original request URL to any query string created in the rewrite target.
 * That is, it preserves the user-submitted query string, in addition to the one you created
 
-::
 
     RewriteRule /pages/(.+) /page.php?page=$1 [QSA]
 
@@ -458,7 +445,6 @@ RewriteRule *PATTERN* TARGET
 * Like a GoTo statement for rewrite rules
 * Consider using <If> and <Else> instead
 
-::
 
     # Is the request for a non-existent file?
     RewriteCond %{REQUEST_FILENAME} !-f
@@ -476,7 +462,6 @@ RewriteRule *PATTERN* TARGET
 
 * Force the MIME-type of the target file to be the specified type. 
 
-::
 
     # Serve .pl files as plain text
     RewriteRule \.pl$ - [T=text/plain]
@@ -491,7 +476,6 @@ RewriteRule *PATTERN* TARGET
 
 ---
 
-::
 
     # In httpd.conf
     RewriteRule ^/images/(.+)\.jpg /images/$1.png
@@ -518,7 +502,6 @@ RewriteRule *PATTERN* TARGET
 
 ---
 
-::
 
     RewriteCond %{REMOTE_ADDR} ^10\.2\.
     RewriteRule (.*) http://intranet.example.com$1
@@ -527,7 +510,6 @@ RewriteRule *PATTERN* TARGET
 
 # Backreferences
 
-::
 
     RewriteCond %{HTTP_HOST} (.*)
     RewriteRule ^/(.*) /sites/%1/$1
@@ -545,7 +527,6 @@ RewriteRule *PATTERN* TARGET
 * -f - Is it a file?
 * -d - Is it a directory?
 
-::
 
     # If it doesn't map to a on-disk resource ...
     RewriteRule /var/www%{REQUEST_URI} !-f
@@ -570,7 +551,6 @@ RewriteRule *PATTERN* TARGET
 * Look-ahead for a variable that hasn't been set yet
 * For example, use this for auth user, which is set *after* rewrite phase
 
-::
 
     RewriteCond %{LA-U:REMOTE_USER} (.+)
     RewriteRule (.*) http://people.example.org/%1/$1   [R,L]
@@ -581,7 +561,6 @@ RewriteRule *PATTERN* TARGET
 
 * Evaluate arbitrary logical expressions
 
-::
 
     RewriteCond expr "! %{HTTP_REFERER} \
         -strmatch '*://%{HTTP_HOST}/*'"
@@ -600,13 +579,11 @@ RewriteRule *PATTERN* TARGET
 
 # RewriteMap
 
-::
 
     RewriteMap MapName MapType:MapSource
 
 eg.
 
-::
 
     RewriteMap examplemap txt:/path/to/file/map.txt
     RewriteRule ^/ex/(.*) ${examplemap:$1}
@@ -614,7 +591,6 @@ eg.
 
 ---
 
-::
 
     RewriteMap product2id \
         txt:/etc/apache2/productmap.txt
@@ -623,7 +599,6 @@ eg.
 
 where productmap.txt looks like
 
-::
 
     ##
     ## productmap.txt - Product to ID map file
@@ -646,7 +621,6 @@ rnd
 dbm
     DBM Hash File
 
-::
 
     httxt2dbm -i rewritemap.txt -o rewritemap.dbm
 
@@ -666,14 +640,12 @@ dbd or fastdbd
 
 Logging - 2.2 and earlier
 
-::
 
     RewriteLog /var/log/httpd/rewrite.log
     RewriteLogLevel 9
 
 Then ...
 
-::
 
     tail -f /var/log/httpd/rewrite.log
 
@@ -682,14 +654,12 @@ Then ...
 
 Logging - 2.4 and later
 
-::
 
     ErrorLog /var/log/httpd/error.log
     LogLevel warn rewrite:trace6
 
 Then ...
 
-::
 
     tail -f /var/log/httpd/error.log | grep rewrite
 
@@ -715,7 +685,6 @@ Slides: http://tm3.org/rewritescale and at https://github.com/rbowen/presentatio
 
 # rnd
 
-::
 
     ##
     ## map.txt -- rewriting map
@@ -728,7 +697,6 @@ Slides: http://tm3.org/rewritescale and at https://github.com/rbowen/presentatio
 
 # rnd
 
-::
 
     RewriteMap servers rnd:/path/to/file/map.txt
 
@@ -739,7 +707,6 @@ Slides: http://tm3.org/rewritescale and at https://github.com/rbowen/presentatio
 
 # int
 
-::
 
     RewriteMap lc int:tolower
     RewriteRule (.*?[A-Z]+.*) ${lc:$1} [R]
@@ -748,12 +715,10 @@ Slides: http://tm3.org/rewritescale and at https://github.com/rbowen/presentatio
 
 # prg
 
-::
 
     RewriteMap d2u prg:/www/bin/dash2under.pl
     RewriteRule - ${d2u:%{REQUEST_URI}}
 
-::
 
     #!/usr/bin/perl
     $| = 1; # Turn off I/O buffering
@@ -767,7 +732,6 @@ Slides: http://tm3.org/rewritescale and at https://github.com/rbowen/presentatio
 # dbd
 
 
-::
 
     RewriteMap myquery \
         "fastdbd:SELECT destination FROM rewrite WHERE source = %s"
@@ -779,7 +743,6 @@ Slides: http://tm3.org/rewritescale and at https://github.com/rbowen/presentatio
 
 ---
 
-::
 
     RewriteEngine on
     
@@ -799,7 +762,6 @@ Slides: http://tm3.org/rewritescale and at https://github.com/rbowen/presentatio
 
 ---
 
-::
 
     <Directory /var/www/my_blog>
       RewriteBase /my_blog
@@ -812,7 +774,6 @@ Slides: http://tm3.org/rewritescale and at https://github.com/rbowen/presentatio
 Or ...
 
 
-::
 
     <Directory /var/www/my_blog>
       FallbackResource index.php
@@ -820,7 +781,6 @@ Or ...
 
 ---
 
-::
 
     RewriteEngine on
     RewriteCond %{HTTP_REFERER} !^$
@@ -829,7 +789,6 @@ Or ...
 
 or ...
 
-::
 
     RewriteEngine on
     RewriteCond %{HTTP_REFERER} !^$
@@ -840,15 +799,11 @@ or ...
 
 # If/Else syntax
 
-::
-
     <If "$req{Host} != 'www.wooga.com'">
         RedirectMatch (.*) http://www.wooga.com$1
     </If>
 
 ---
-
-::
 
     # Images should be from local pages
     # (Prevent image "hotlinking")
