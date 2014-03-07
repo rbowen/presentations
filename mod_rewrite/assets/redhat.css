@@ -1,0 +1,27 @@
+body {
+	background-image: url(feather.png);
+	background-repeat: no-repeat;
+	background-position: 20px 20px;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+	color: #cc0000;
+}
+
+/* Ensure certain elements are never larger than the slide itself */
+.reveal img,
+.reveal video,
+.reveal iframe {
+	max-width: 95%;
+	max-height: 95%;
+    float: left;
+}
+
+.reveal pre code {
+	padding: 5px;
+	overflow: auto;
+	max-height: 900px;
+    width: 125%;
+	word-wrap: normal;
+}
+
