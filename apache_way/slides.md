@@ -1,5 +1,7 @@
 # The Apache Way
 
+![Feather](images/large_feather.png)
+
 LinuxCon Tokyo 2014
 
 Rich Bowen - rbowen@apache.org
@@ -36,11 +38,15 @@ Rich Bowen - rbowen@apache.org
 
 # Roots
 
+![Roots](images/roots.jpg)
+
 - Set up from the beginning to be a flat management structure
 - Brian Behlendorf started things going, but was not the leader
 - Today, projects have a chairman, but that's not a secretary, not a leader
 
 ---
+
+![Group](images/group.jpg)
 
 # Apache Group
 
@@ -51,6 +57,8 @@ Rich Bowen - rbowen@apache.org
     - 1.0 released 1st December 1995
 
 ---
+
+![Numbers](images/numbers.jpg)
 
 # The Numbers
 
@@ -120,7 +128,7 @@ Graphics, ZooKeeper
 
 ---
 
-# Difficulties with structure
+## Difficulties with structure
 
 - 'Hats' - What role are you in right now?
 - Who speaks for the project?
@@ -138,15 +146,15 @@ note:: Impossible to make a decision quickly. Seen as wielding too much power wh
 
 # Mission
 
-- Provide a means for individual volunteers to be sheltered from legal suits directed at the Foundation’s projects
+- *Provide a means for individual volunteers to be sheltered from legal suits directed at the Foundation’s projects*
 - **Protect the ‘Apache’ brand, as applied to its software products, from being abused by other organizations**
 
 ---
 
 # Mission
 
-- Provide a means for individual volunteers to be sheltered from legal suits directed at the Foundation’s projects
-- Protect the ‘Apache’ brand, as applied to its software products, from being abused by other organizations
+- *Provide a means for individual volunteers to be sheltered from legal suits directed at the Foundation’s projects*
+- *Protect the ‘Apache’ brand, as applied to its software products, from being abused by other organizations*
 - **Provide legal and technical infrastructure for open source software development and to perform appropriate oversight of such software**
 
 ---
@@ -416,6 +424,8 @@ Albert Einstein
 
 ---
 
+![Email](images/email.jpg)
+
 # What lists?
 
 - Listed on project website
@@ -448,14 +458,6 @@ Albert Einstein
     - We want relay teams
     - Community is critical to the Apache Way
 - Apache is about support communities
-
----
-
-# Frequent Releases
-
-- In Open Source, frequent releases indicate healthy activity
-- What is collaborative s/w development other than peer review?
-- Think how restrictive research would be w/o open communication
 
 ---
 
