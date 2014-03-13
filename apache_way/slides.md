@@ -506,6 +506,8 @@ Albert Einstein
 
 ---
 
+![Incubator](images/incu_logo.png)
+
 - Legal: Can we release the code under our license?
 - Community: Is the project diverse and sustainable?
 - Educational: Do they know how we do things?
@@ -513,6 +515,14 @@ Albert Einstein
 ---
 
 ![Attic](images/attic.png)
+
+---
+
+# Attic
+
+- Projects that are done
+- Community is no longer active
+- Product works, but is unsupported
 
 ---
 
