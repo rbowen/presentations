@@ -162,6 +162,78 @@ So ... what does an expression look like?
 
 ---
 
+# Back to `<If>`
+
+`<If>` allows you to do conditional request-time evaluation in your
+configuration, making impossible things possible, and hard things easy.
+
+---
+
+![www](images/www.svg)
+
+        <If "req('Host') = 'example.com' ">
+            Redirect Permanent / http://www.example.com/
+        </If>
+
+---
+
+![dino](images/dino2.gif)
+
+        RewriteEngine On
+        RewriteCond %{HTTP_REFERER} !www.example.com [NC]
+        # Bah. Had to hard code the server name!
+        RewriteRule \.(gif|jpg|png)$ http://other.example.com/images/diaf.jpg   [R]
+
+---
+
+![diaf](images/diaf.jpg)
+
+        <If "%{HTTP_REFERER} != %{SERVER_NAME}">
+            RedirectMatch \.(gif|jpg|png)$ /images/diaf.jpg
+        </If>
+
+---
+
+![dino](images/dino3.gif)
+
+        RewriteEngine on
+        RewriteCond   %{TIME_HOUR}%{TIME_MIN} >0700
+        RewriteCond   %{TIME_HOUR}%{TIME_MIN} <1900
+        RewriteRule   ^/foo\.html$             /foo.day.html [PT]
+        RewriteRule   ^/foo\.html$             /foo.night.html [PT]
+
+---
+
+![daynight](images/daynight.jpg)
+
+        <If "%{TIME_HOUR} -gt 9 && %{TIME_HOUR} -lt 17">
+            Redirect /hours.html /open.html
+        </If>
+        <Else>
+            Redirect /hours.html /closed.html
+        </Else>
+
+More lines, but clearer to read.
+
+---
+
+# `<If>`
+
+- Evaluated at request time, so there might be a performance penalty.
+- Probably on par with mod_rewrite
+- Consider maintainability as well as performance
+
+note:: Most websites are *not* CPU-bound. Be careful what you optimize
+
+---
+
+## Optimize
+
+- If you're calling a handler, you might want to do logic there
+- Put more likely options ealier (if, elseif, else)
+
+---
+
 - expressions in auth
 - expressions in mod_include
 - expressions in mod_rewrite
@@ -173,4 +245,10 @@ So ... what does an expression look like?
 ---
 
 ## Finis
+
+rbowen@apache.org
+
+@rbowen
+
+Slides at http://boxofclue.com/presentations and at https://github.com/rbowen/presentations/
 
