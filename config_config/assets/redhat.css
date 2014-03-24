@@ -25,3 +25,8 @@ body {
 	word-wrap: normal;
 }
 
+
+table, th, td
+{
+    border: 1px solid black;
+}
