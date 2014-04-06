@@ -220,6 +220,18 @@ Come hack on your favorite ASF project, or meet the developers
 
 ---
 
+## CloudStack Collaboration Conference
+
+April 9-11th
+
+Free to ApacheCon attendees
+
+![cloudstack](images/cloudstack.jpg)
+
+<small>Photo by Mark Hinkle on Flickr</small>
+
+---
+
 ## Share the experience!
 
 Tag with **#apachecon** and **#apacheconNA2014** 
@@ -231,3 +243,14 @@ We are *@apachecon* on Twitter
 ![cliff](images/cliff.jpg)
 
 <small>Photo by Noirin Shirly on Flickr</small>
+
+---
+
+## What's next?
+
+![brian](images/brian.jpg)
+
+Follow us on Twitter (@apachecon) to be first to find out about
+ApacheCon Europe, and other upcoming events.
+
+<small>Photo by Mark Cox on Flickr</small>
