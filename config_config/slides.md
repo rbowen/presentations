@@ -14,6 +14,20 @@ SLIDES ARE AT: http://boxofclue.com/presentations/
 
 ---
 
+![me](images/rbowen.jpg)
+
+## Me
+
+Rich Bowen - rbowen@apache.org
+
+ASF member since 2001
+
+Exec. VP, The Apache Software Foundation
+
+Docs guy, httpd project, since 1998 or thereabouts
+
+---
+
 ![agenda](images/agenda.jpg)
 Agenda:
 
@@ -411,8 +425,8 @@ If you're not familiar with mod_include ...
 - Directives go into the HTML
 - Are parsed on the server side at request time
 
-    Options +Includes
-    AddOutputFilter INCLUDES .shtml
+        Options +Includes
+        AddOutputFilter INCLUDES .shtml
 
 http://httpd.apache.org/docs/mod/mod_include.html
 
@@ -604,6 +618,10 @@ But if you have hundreds of those ...
         ProxyExpressDBMFile /path/to/emap
 
 ---
+
+## balancer-manager
+
+Go to Daniel's talk at 3:00pm
 
 ![pony](images/pony8.jpg)
 ## What else?

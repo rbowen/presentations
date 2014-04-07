@@ -1,9 +1,11 @@
 # Demystifying mod_rewrite
-     Less magic, more science
-     Rich Bowen - rbowen@apache.org
-     @rbowen
-     http://rcbowen.com/
-     SLIDES ARE AT: http://boxofclue.com/presentations/
+
+        Less magic, more science
+
+Rich Bowen - rbowen@apache.org
+@rbowen
+http://rcbowen.com/
+SLIDES ARE AT: http://boxofclue.com/presentations/
 
 ---
 
@@ -472,8 +474,8 @@ Redirect based on client address
 - `-f` - Is it a file?
 - `-d` - Is it a directory?
 
-        RewriteRule /var/www%{REQUEST_URI} !-f
-        RewriteRule /var/www%{REQUEST_URI} !-d
+        RewriteCond /var/www%{REQUEST_URI} !-f
+        RewriteCond /var/www%{REQUEST_URI} !-d
 
         RewriteRule ^ /index.php [PT,L]
 
