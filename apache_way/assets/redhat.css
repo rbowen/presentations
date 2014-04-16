@@ -25,3 +25,6 @@ body {
 	word-wrap: normal;
 }
 
+.reveal b {
+    font-size:200%;
+}
