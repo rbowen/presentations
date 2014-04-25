@@ -394,6 +394,8 @@ not
 
         Require expr "%{TIME_HOUR} -gt 9 && %{TIME_HOUR} -lt 17"
 
+**Fixed in r1585609, in 2.4 trunk**
+
 ---
 
 ![pony](images/pony6.jpg)
