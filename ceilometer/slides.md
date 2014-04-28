@@ -125,7 +125,6 @@ the wiki.
         sudo yum install -y openstack-packstack
         packstack --allinone
 
-
 Note:
 
 This is not a product pitch. RDO is a community project
@@ -171,7 +170,6 @@ sponsored by Red Hat, but isn't a product.
         -d '{"auth": {"tenantName": "admin", 
              "passwordCredentials": {"username":
              "admin", "password": "885d4b669cc04a1b"}}}'
-
 
 * Returns a token that you can then use for other API calls
 * This is standard across all OpenStack components
@@ -221,7 +219,6 @@ sponsored by Red Hat, but isn't a product.
           },
             ...
 
-
 ---
 
 ## Or, from the cli
@@ -247,7 +244,6 @@ sponsored by Red Hat, but isn't a product.
             alarm-state-set     Set the state of an alarm.
             alarm-threshold-create
                                 Create a new alarm based on computed statistics.
-
 
 ---
 
