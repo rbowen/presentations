@@ -185,7 +185,7 @@ Note:
 
 ## The Apache Way
 
-- Meritocracy 
+- Best ideas win
 - Peer-based
 - Consensus decision making 
 - Collaborative development 
@@ -198,13 +198,13 @@ In addition to the license ...
 
 ---
 
-## Meritocracy
+## Best ideas win
 
-- “Govern by Merit”
-- Merit is based on what you do
-- Merit never expires
+- Merit is based on what you do, not who you are
+- Merit never expires, but you have to stay active
 - Those with merit, get more responsibility
 - Provides incentive to Do More
+- The best ideas win
 
 Note:
 
