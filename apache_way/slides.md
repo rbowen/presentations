@@ -2,7 +2,7 @@
 
 ![Feather](images/large_feather.png)
 
-LinuxCon Tokyo 2014
+LinuxCon Japan 2014
 
 Rich Bowen, Executive Vice President
 
