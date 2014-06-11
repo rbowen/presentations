@@ -1,10 +1,12 @@
 # RTFM? Write A Better FM
 
-Rich Bowen, Executive Vice President
+Rich Bowen
 
-The Apache Software Foundation
+EVP, Apache Software Foundation
 
-rbowen@apache.org
+OpenStack Community Liaison, Red Hat
+
+rbowen@rcbowen.com
 
 ---
 
