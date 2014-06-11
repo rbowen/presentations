@@ -1,5 +1,6 @@
 body {
-	background-image: url(feather-small.gif);
+	/* background-image: url(feather-small.gif); */
+	background-image: url(redhat.png);
 	background-repeat: no-repeat;
 	background-position: 20px 20px;
 }
