@@ -32,6 +32,12 @@ SLIDES ARE AT: http://tm3.org/betterfm
 
 ---
 
+Also ...
+
+![Anne](images/gentle.jpg)
+
+---
+
 ## But ...
 
 * You came to my talk, so I'll try not to waste your time.
@@ -175,6 +181,15 @@ Find out what they're actually asking. Realize that your "frequently asked quest
 
 ---
 
+<blockquote>
+We may know what they need to know, but only they can tell us what they
+need to know.
+</blockquote>
+
+-- Anne Gentle
+
+---
+
 ## Solutions
 
 ![FixedIt](images/fixedit.jpg)
@@ -185,6 +200,16 @@ with their own solutions, which might not be quite the best idea.
 Note:
 
 People want solutions. They don't care if it's elegant. They care if it works. But sometimes "works" doesn't work, long term.
+
+---
+
+<blockquote>
+End-users do not necessarily care about the source of the information,
+or whether it was written by a professional; they judge the information
+solely on its ability to solve their problem.
+</blockquote>
+
+-- Anne Gentle
 
 ---
 
@@ -333,6 +358,23 @@ That's what hyperlinks are for, after all.
 * FAQs
 
 * Examples
+
+---
+
+## Or ...
+
+* Reference Guide
+* Tutorials
+* Learning/Understanding
+* Cookbook/Recipe
+* Start Here
+
+Note:
+
+Kathy Sierra
+
+Learning/Understanding is about the learner experimenting, hacking,
+extending what's there to make something new.
 
 ---
 
