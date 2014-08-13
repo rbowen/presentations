@@ -2,8 +2,6 @@
 
 ![Feather](images/large_feather.png)
 
-LinuxCon Japan 2014
-
 Rich Bowen, Executive Vice President
 
 The Apache Software Foundation
@@ -52,7 +50,9 @@ Bottom-up leadership - lead by example rather than by edict. Contrast with OpenS
 
 - Foundation Members = ~530
 - PMC Committee Members = ~1500
-- Committers = ~3500
+- Committers = ~5000
+
+- Sponsors = 25, plus various in-kind sponsorships
 
 Note:
 
@@ -161,9 +161,9 @@ Note:
 - Frequent releases
 - Direct user input
 
----
+Note:
 
-## Why Open Source? (Me)
+Why Open Source? (Me)
 
 - Having a real impact in the development and direction of IT
 - Personal satisfaction: I wrote that!
@@ -180,6 +180,11 @@ Note:
 - Requires attribution 
 - Includes Patent Grant 
 - Easily reused by other projects & organizations
+
+Note:
+
+Business friendly - can reuse our project code (with appropriate
+attribution) to build your product, your service, your company.
 
 ---
 
@@ -208,9 +213,9 @@ In addition to the license ...
 
 Note:
 
-- Not authority to act autonomously - community must still agree
+- Not authority to act autonomously - community must still agree to decisions
 - Privileges: commit, and a vote in direction
-- All votes hold same weight - no technical lead
+- All votes hold same weight - no technical lead (This can be frustrating sometimes, but overall ensures that a project is independent from external influence.)
 - Commuity must agree on direction, individuals make it happen
 
 ---
@@ -308,8 +313,7 @@ Note:
     - Press
     - Infrastructure
     - Administration
-- NO PAID COMMITTERS, EVER - although many developers are paid by
-  companies to work on Apache code.
+- Although many developers are paid by companies to work on Apache code, the ASF will never pay for code development
 
 ---
 
@@ -336,6 +340,7 @@ Note:
 - Bug Fixes and New Features
 - Writing add-ons and extensions
 - Mentoring, volunteering for the Foundation
+- Sponsorship
 
 ---
 
@@ -362,6 +367,69 @@ Note:
 Note:
 
 - No corporate memberships
+
+---
+
+## Platinum Sponsors
+
+$100k annually
+
+![Citrix](images/sponsor_citrix.png)
+![Facebook](images/sponsor_fb-logo.png)
+![Google](images/sponsor_google.jpg)
+![Matt](images/sponsor_matt-mullenweg.jpg)
+![Microsoft](images/sponsor_microsoft.jpg)
+![Yahoo](images/sponsor_yahoo.jpg)
+
+---
+
+## Gold Sponsors
+
+$40k annually
+
+![Cloudera](images/sponsor_cloudera.png)
+
+![Comcast](images/sponsor_comcast.jpg)
+
+![HP](images/sponsor_hp.png)
+
+![Hortonworks](images/sponsor_hortonworks.png)
+
+![IBM](images/sponsor_ibm.png)
+
+---
+
+## Silver Sponsors
+
+$20k annually
+
+![Budget Direct](images/sponsor_budget-direct-120.png)
+![Huawei](images/sponsor_huawei.png)
+![InMotion Hosting](images/sponsors_inmotion-hosting.png)
+![Pivotal](images/sponsor_pivotal.png)
+![Produban](images/sponsor_produban.png)
+
+---
+
+## Bronze Sponsors
+
+$5k annually
+
+**Accor**
+
+**Basis Technology**
+
+**Cerner**
+
+**Cloudsoft Corporation**
+
+**Liip AG SA Ltd**
+
+**LucidWorks**
+
+**Talend**
+
+**Twitter**
 
 ---
 
