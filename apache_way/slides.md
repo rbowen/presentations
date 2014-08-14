@@ -60,29 +60,15 @@ From those humble beginnings, we have grown very quickly ...
 
 ---
 
-## Projects
+![Projects](images/projects_01.png)
 
-<small>
-Abdera, Accumulo, ACE, ActiveMQ, Airavata, Allura, Ambari, Any23, <b>Ant</b>, APR,
-Archiva, Aries, Attic, Avro, Axis, Bigtop, Bloodhound, Buildr, BVal,
-Camel, <b>Cassandra</b>, Cayenne, Chemistry, Chukwa, Clerezza, Click,
-<b>CloudStack</b>, Cocoon, Commons, Continuum, Cordova, CouchDB, Creadur,
-Crunch, cTAKES, Curator, CXF, DB, Deltacloud, DeltaSpike, DirectMemory,
-Directory, Empire-db, Etch, Felix, Flex, Flume, Forrest, Geronimo,
-Giraph, Gora, Gump, <b>Hadoop</b>, Hama, HBase, Helix, Hive, HttpComponents,
-<b>HTTP Server</b>, Isis, Jackrabbit, James, jclouds, Jena, JMeter,
-JSPWiki, jUDDI, Kafka, Karaf, Knox, Labs, Lenya, Libcloud, Logging,
-<b>Lucene</b>, Lucene.Net, Lucy, Mahout, ManifoldCF, Marmotta, Maven, Mesos,
-MINA, MRUnit, MyFaces, Nutch, ODE, OFBiz, Olingo, Oltu, Onami, OODT, Oozie, Open
-Climate Workbench, OpenJPA,
-OpenMeetings, OpenNLP, <b>OpenOffice</b>, OpenWebBeans, PDFBox, Perl, Pig,
-Pivot, POI, Portals, Qpid, Rave, River, Roller, Santuario, ServiceMix,
-Shindig, Shiro, SIS, Sling, <b>SpamAssassin</b>, Spark, Sqoop, Stanbol, Steve,
-Struts, Subversion, Synapse, Syncope, Tapestry, Tcl, Thrift, Tika,
-Tiles, <b>Tomcat</b>, TomEE, Traffic Server, Turbine, Tuscany, UIMA, VCL,
-Velocity, Web Services, Whirr, Wicket, Wink, Wookie, Xalan, Xerces, XML
-Graphics, ZooKeeper
-</small>
+---
+
+![Projects](images/projects_02.png)
+
+---
+
+![Projects](images/projects_03.png)
 
 ---
 
@@ -93,7 +79,7 @@ Graphics, ZooKeeper
 - Member-based corporation - individuals, not companies, can be members
 - Members nominate and elect new members
 - Members elect a board - 9 seats
-- Semi-annual meetings via IRC
+- Annual members meetings via IRC. Board meets monthly.
 - Each PMC has a Chair - eyes and ears of the board (oversight only)
 
 ---
@@ -245,6 +231,13 @@ Note:
 - Poisonous people/communities turn people off, and the project will die
 - End result - better code, long-term code
 
+Note:
+
+One of our sayings is "Community > Code", which is shorthand for saying
+that the community actually matters more than the code itself. A
+sustainable community leads to code you can depend on, but good code,
+all by itself, isn't sustainable, because the world changes around you.
+
 ---
 
 ## Consensus-based decisions
@@ -268,6 +261,12 @@ Note:
 - Time requirement on votes ensures representation across many timezones
 - Development done online and on-list - If it didn’t happen on-list, it didn’t happen
 
+Note:
+
+If you don't have enough people to vote on releases, then that's a
+leading indicator that something is seriously wrong with the project,
+and something needs to change.
+
 ---
 
 ![Email](images/email.jpg)
@@ -288,12 +287,11 @@ Note:
 - Archived - a permanent public record of what the project did
 - Allow 72 hours for important decisions to accommodate all time zones
 - some people are less aggressive than others and find email less intimidating
-- Most lists are in English, so having asynchronous access lets people
-  translate.
+- Most lists are in English, so having asynchronous access lets people translate in their own time
 
 ---
 
-## Non-development teams
+## Non-coding teams
 
 * Infrastructure
 * Public relations/Press
@@ -366,7 +364,7 @@ Note:
 
 Note:
 
-- No corporate memberships
+- No corporate memberships. You are not buying influence.
 
 ---
 
@@ -430,6 +428,24 @@ $5k annually
 **Talend**
 
 **Twitter**
+
+---
+
+## Infrastructure in-kind sponsors
+
+Server hosting and bandwidth provided by Oregon State University Open
+Source Lab (OSUOSL) (USA), SURFnet and FUB(EU).
+
+Secondary DNS provided by No-IP Managed DNS, develooper.com manages the
+bitnames DNS services. Hyperreal.org is our other provider.
+
+Donation of servers: Sun, IBM, HP, Dell and Calxeda.
+
+Donation of virtualization software: VMWare.
+
+Donation of wildcard SSL certificates: Thawte.
+
+Donation of server hosting by RackSpace
 
 ---
 
