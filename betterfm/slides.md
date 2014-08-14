@@ -38,15 +38,6 @@ Also ...
 
 ---
 
-## But ...
-
-* You came to my talk, so I'll try not to waste your time.
-* Documentation training consists of 15 years of doing it
-    
-    http://httpd.apache.org/docs
-
----
-
 ![Kathy](images/kathysierra.jpg)
 
 Note:
@@ -349,25 +340,11 @@ That's what hyperlinks are for, after all.
 
 ## How?
 
-* How do we answer the question?
-
-* Reference manuals
-
-* HowTos
-
-* FAQs
-
-* Examples
-
----
-
-## Or ...
-
+* Start Here
 * Reference Guide
 * Tutorials
 * Learning/Understanding
 * Cookbook/Recipe
-* Start Here
 
 Note:
 

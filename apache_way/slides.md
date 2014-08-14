@@ -174,18 +174,44 @@ attribution) to build your product, your service, your company.
 
 ---
 
-## The Apache Way
+## The Apache Way - Why the ASF Works
 
-- Best ideas win
-- Peer-based
-- Consensus decision making 
-- Collaborative development 
-- Responsible oversight
-- Individual Participation
+* Meritocracy
+* Transparency
+* Community
 
 Note:
 
-In addition to the license ...
+Our approach is based on three pillars, often referred to as “The Apache
+Way”:
+
+Meritocracy - Individuals come to our projects as individuals, and grow
+the community’s trust and appreciation by what they do and how they do
+it.
+
+Transparency - Our projects are developed and evolved in the open,
+ensuring that everyone that wants to contribute is able to.
+
+Community - We believe that great software is an emergent property of
+great communities, and therefore place community health over all else.
+
+---
+
+## The Results
+
+* Vendor Neutrality
+* Diversity
+* Trusted
+* Safe
+
+Note:
+
+Our focus on Meritocracy, Transparency and Community results in:
+
+* Vendor Neutrality - We are a natural meeting place for competitors to collaborate together on shared goals.
+* Diversity - Our flexible model of governance lets projects evolve independently, yet ensures they remain independent and diverse communities.
+* Trusted - We are trusted by organizations around the globe to serve as a home for their more important software projects.
+* Safe - Our governance model, intellectual property processes and licensing framework provide a safe environment for contributors and users alike.
 
 ---
 
