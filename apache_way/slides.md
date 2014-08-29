@@ -62,13 +62,27 @@ From those humble beginnings, we have grown very quickly ...
 
 ![Projects](images/projects_01.png)
 
+Notes:
+
+The web server project, of course ...
+
+Cloudstack, Ant, Cassandra
+
 ---
 
 ![Projects](images/projects_02.png)
 
+Notes:
+
+Hadoop, Mahout, Maven, Lucene
+
 ---
 
 ![Projects](images/projects_03.png)
+
+Notes:
+
+OpenOffice, Qpid, Subversion, SpamAssassin
 
 ---
 
@@ -472,6 +486,28 @@ Donation of virtualization software: VMWare.
 Donation of wildcard SSL certificates: Thawte.
 
 Donation of server hosting by RackSpace
+
+---
+
+## Where does it go?
+
+![Budget](images/ASFBudget.png)
+
+---
+
+## Where does it go?
+
+![Budget](images/ASFbudget2.png)
+
+---
+
+## Individual donations
+
+* In addition to corporate sponsorships, we accept individual donations
+
+* Paypal, Amazon, Bitcoin, Check
+
+* http://s.apache.org
 
 ---
 
