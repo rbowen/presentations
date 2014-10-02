@@ -442,9 +442,9 @@ Sub-project of Barbican
 ## Horizon
 
 ![Horizon](images/horizon.jpg)
-* Horizon is the "dashboard" - the web interface for OpenStack
-* The main (or at least first) interface for many users, so it needs to
-  be slick.
+Horizon is the "dashboard" - the web interface for OpenStack
+
+The main (or at least first) interface for many users, so it needs to be slick.
 
 ---
 
