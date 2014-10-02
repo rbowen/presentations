@@ -18,10 +18,28 @@ rbowen@redhat.com
 
 ---
 
+## Juno
+
+![Juno](images/juno.png)
+
+* Juno: Juno is a locality in Georgia
+
+---
+
+## Kilo
+
+![Kilo](images/kilo.jpg)
+
+* Kilo: Paris (Sèvres, actually, but that's close enough) is home to the Kilogram, the only remaining SI unit tied to an artifact
+
+---
+
 ## Design summit
 
 * ATCs (Active Technical Contributors) gather to decide what happens next
+
 * Summit in Atlanta was in April
+
 * Many projects have a mid-term meetup to evaluate progress
 
 ---
@@ -31,19 +49,118 @@ rbowen@redhat.com
 * Mid-term reports, and various blogs/podcasts since then
 * Feature freeze September 4
 * Release October 16
-* https://wiki.openstack.org/wiki/Juno_Release_Schedule
+
+---
+
+![Schedule](images/schedule.png) https://wiki.openstack.org/wiki/Juno_Release_Schedule
+
+---
+
+## Projects
+
+* OpenStack is comprised of 22 separate projects (sort of)
+* Each one is semi-independent as far as planning their roadmap
+
+---
+
+## Projects
+
+* Bare metal (Ironic)
+* Block Storage (Cinder)
+* Common Libraries (Oslo)
+* Compute (Nova)
+* DNS Services (Designate)
+* Dashboard (Horizon)
+* Data processing service (Sahara)
+* Database Service (Trove)
+* Deployment (TripleO)
+* Documentation (No Clever Name)
+* Identity (Keystone)
+
+---
+
+* Image Service (Glance)
+* Infrastructure (Infra)
+* Key management service (Barbican)
+* Message service (Zaqar, formerly Marconi)
+* Networking (Neutron)
+* Object Storage (Swift)
+* Orchestration (Heat)
+* Quality Assurance (QA)
+* Release cycle management (Thierry)
+* Shared File Systems (Manila)
+* Telemetry (Ceilometer)
+
+---
+
+    This presentation doesn't cover all of the projects, so I'm most
+    assuredly missing something.
+
+---
+
+## New projects in Juno
+
+* Sahara
+* Barbican (Incubating)
+* Designate (Incubating)
+* Manila (Incubating)
+
+---
+
+## Sahara
+
+![Sahara](images/sahara.jpg)
+    The Sahara project provides a simple means to provision a
+    data-intensive application cluster (Hadoop or Spark) on top of
+    OpenStack. 
+
+* Integrated in Juno
+
+---
+
+## Barbican
+
+![Barbican](images/barbican.jpg)
+    Barbican is a ReST API designed for the secure storage, provisioning
+    and management of secrets. It is aimed at being useful for all
+    environments, including large ephemeral Clouds. 
+
+* Incubating in Juno
+
+---
+
+## Designate
+
+    Designate provides DNSaaS services for OpenStack:
+
+    * REST API for domain/record management
+    * Multi-tenant
+    * Integrated with Keystone for authentication
+    * Framework in place to integrate with Nova and Quantum notifications (for
+    * auto-generated records)
+    * Support for PowerDNS and Bind9 out of the box
+
+* Incubating in Juno
+
+---
+
+## Manila
+
+![Manila](images/manila.jpg)
+    Shared filesystem service for OpenStack. Provides coordinated access
+    to shared or distributed file systems.
 
 ---
 
 ## Nova
 
-* The heart of OpenStack
-* A cloud computing fabric controller
-* Manages your VMs
+![Nova](images/nova.jpg)
+A cloud computing fabric controller - manages creation and management of
+VMs.
 
 ---
 
-### NFV
+### Nova: NFV
 
 * Network Function Virtualization
 * Moving networking hardware functionality to software
@@ -60,7 +177,7 @@ rbowen@redhat.com
 
 ---
 
-### Live Upgrades
+### Nova: Live Upgrades
 
 * Two versions ago, the upgrade process was "burn it down and start over"
 * In Icehouse, live upgrades were introduced, but still a little rocky
@@ -68,7 +185,7 @@ rbowen@redhat.com
 
 ---
 
-### More
+### Nova: More
 
 * http://blog.russellbryant.net/2014/07/07/juno-preview-for-openstack-compute-nova/
 
@@ -76,13 +193,15 @@ rbowen@redhat.com
 
 ## Ceilometer
 
+![Ceilometer](images/ceilometer.jpg)
+
 * Metering
 * Billing
 * Alarms
 
 ---
 
-### Speed
+### Ceilometer: Speed
 
 * Identified poor design decisions that can be changed for performance improvementA
 * State data was being stored with large amounts of resource metadata that seldom (if ever) changes.
@@ -92,7 +211,7 @@ rbowen@redhat.com
 
 ---
 
-### Community reboot
+### Ceilometer: Community reboot
 
 * Move from top-down decision making to a collaborative community approach
 * Earlier deadline on new functionality, so that everything is in before feature freeze
@@ -109,7 +228,7 @@ functionality in at the last minute, resulting in testing gaps.
 
 ---
 
-### QA
+### Ceilometer: QA
 
 * Better Tempest/Grenade test coverage
 * Improvement of existing tests, so that they'll actually run in the gate
@@ -122,7 +241,7 @@ reliability.
 
 ---
 
-### More
+### Ceilometer: More
 
 * http://community.redhat.com/blog/2014/07/upstream-podcast-episode-10-rich-bowen-with-eoghan-glynn-on-openstack-juno/
 
@@ -130,20 +249,18 @@ reliability.
 
 ## Heat
 
-* Orchestration
-* Deploy and tear down infrastructure automatically
-* Templates to define what it's supposed to look like
-* Works with Ceilometer to respond to alarms
+![Heat](images/heat.jpg)
+Orchestration - Deploy and tear down infrastructure automatically, using templates to define what it's supposed to look like
+
+Works with Ceilometer to respond to alarms
 
 Note:
 
-Heat is the orchestration component of OpenStack, which can be used to
-set up and tear down infrastructure automatically in response to
-environmental events, or scripted.
+Can be in response to environmental events, or scripted.
 
 ---
 
-### Rollback
+### Heat: Rollback
 
 * Before, if a deploy failed, there was no good way to clean up
 * Might end up with random pieces orphaned around your data center
@@ -151,7 +268,7 @@ environmental events, or scripted.
 
 ---
 
-### Create resources without being admin
+### Heat: Create resources without being admin
 
 * Some resources can only be created as admin
 * This made certain deployments difficult or impossible for non-admin users
@@ -159,7 +276,7 @@ environmental events, or scripted.
 * Creating/managing users still an admion-only function
 
 
-### More
+### Heat: More
 
 * http://www.zerobanana.com/archive/2014/07/10#heat-juno-update
 
@@ -176,7 +293,7 @@ environmental events, or scripted.
 
 ---
 
-### Artifacts
+### Glance: Artifacts
 
 * 'Artifacts', rather than just being images, are now generic data assets
 * Greater flexibility in how it can be used
@@ -190,7 +307,7 @@ greater flexibility in how it can be used.
 
 ---
 
-### More
+### Glance: More
 
 * http://blog.flaper87.com/post/juno-preview-glance-marconi/
 
@@ -204,7 +321,7 @@ greater flexibility in how it can be used.
 
 ---
 
-### New name
+### Zaqar: New name
 
 * Renamed to Zaqar due to copyright
 
@@ -212,7 +329,7 @@ greater flexibility in how it can be used.
 
 ---
 
-### Redis
+### Zaqar: Redis
 
 * In Juno, Marconi will add a storage driver to support redis
 * Support for storage engines is in the works
@@ -220,14 +337,14 @@ greater flexibility in how it can be used.
 
 ---
 
-### Queues migration
+### Zaqar: Queues migration
 
 * Add the ability to migrate queues between pools of the same type
 * https://blueprints.launchpad.net/marconi/+spec/queue-migration
 
 ---
 
-### More
+### Zaqar: More
 
 * http://blog.flaper87.com/post/juno-preview-glance-marconi/ 
 
@@ -235,12 +352,14 @@ greater flexibility in how it can be used.
 
 ## Keystone
 
-* Identity management
-* Handles any request for credentials from any other component
+![Keystone](images/keystone.jpg)
+Identity management
+
+Handles any request for credentials from any other component
 
 ---
 
-### LDAP integration
+### Keystone: LDAP integration
 
 * Having a separate authentication database is annoying
 * You want to use your existing corporate auth store, which is probably LDAP
@@ -256,22 +375,27 @@ integration with LDAP will be much easier.
 
 ---
 
-### Barbican
+### Keystone: Barbican
 
 * https://wiki.openstack.org/wiki/Barbican
 * Secure storage, provisioning, and management of secrets
+* Not actually part of Keystone, just of interest
 
 ---
 
-### Kite
+### Keystone: Kite
+![Kite](images/kite.jpg)
+"The easiest ways to get keys in the cloud"
 
-* "The easiest ways to get keys in the cloud"
-* Still in infancy
-* Works in conjunction with Barbican to provide secure key-based authentication
+Still in infancy
+
+Works in conjunction with Barbican to provide secure key-based authentication
+
+Sub-project of Barbican
 
 ---
 
-### More
+### Keystone: More
 
 * http://redhatstackblog.redhat.com/2014/08/05/juno-updates-security/
 * https://blog-nkinder.rhcloud.com/?p=130
@@ -287,7 +411,7 @@ integration with LDAP will be much easier.
 
 ---
 
-### Auto-scaling
+### TripleO: Auto-scaling
 
 * Auto-scale deployments based on various measures
 * Manage the auto-scaled cloud
@@ -295,21 +419,21 @@ integration with LDAP will be much easier.
 
 ---
 
-### Heat templates
+### TripleO: Heat templates
 
 * TripleO uses Heat as part of the automation of deployment
 * In Juno a lot of work has gone into the Heat templates that are used
 
 ---
 
-### Metric graphs
+### TripleO: Metric graphs
 
 * Integration with Ceilometer to provide usage graphs
 * Health metric for nodes
 
 ---
 
-### More
+### TripleO: More
 
 * http://blog-slagle.rhcloud.com/?p=235
 
@@ -317,13 +441,14 @@ integration with LDAP will be much easier.
 
 ## Horizon
 
+![Horizon](images/horizon.jpg)
 * Horizon is the "dashboard" - the web interface for OpenStack
 * The main (or at least first) interface for many users, so it needs to
   be slick.
 
 ---
 
-### Sahara (Hadoop)
+### Horizon: Sahara (Hadoop)
 
 * Recently incubated project
 * Deploy Apache Hadoop or Apache Spark on OpenStack
@@ -331,7 +456,7 @@ integration with LDAP will be much easier.
 
 ---
 
-### JavaScript unbundling
+### Horizon: JavaScript unbundling
 
 * Previously large amounts of JavaScript were bundled into the OpenStack
   release
@@ -342,7 +467,7 @@ integration with LDAP will be much easier.
 
 ---
 
-### More
+### Horizon: More
 
 * http://www.matthias-runge.de/2014/09/08/horizon-juno-cycle-features/
 
