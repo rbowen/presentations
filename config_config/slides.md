@@ -1,8 +1,8 @@
-# Configurable Configuration in Apache httpd 2.4
+### Configurable Configuration in Apache httpd 2.4
 
 Rich Bowen - rbowen@apache.org
 
-ApacheCon NA 2014
+ApacheCon EU 2014
 
 SLIDES ARE AT: http://boxofclue.com/presentations/
 
@@ -625,10 +625,12 @@ But if you have hundreds of those ...
 
 Go to Daniel's talk at 3:00pm
 
+---
+
 ![pony](images/pony8.jpg)
 ## What else?
 
-- Many client-side options via varios Javascript frameworks
+- Many client-side options via various Javascript frameworks
 - Various third-party modules at modules.apache.org
 - Things like `mod_sed` and `mod_proxy_html` that do request-time rewriting
 

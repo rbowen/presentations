@@ -98,6 +98,12 @@ rbowen@redhat.com
 
 ---
 
+## Layers
+
+![Layers](images/openstack_layers.png)
+
+---
+
 ## New projects in Juno
 
 * Sahara
