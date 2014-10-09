@@ -54,6 +54,10 @@ http://openstack.redhat.com/Quickstart
 
 ---
 
+![Launch](assets/launch.png)
+
+---
+
 # Get Involved
 
 - [rdo-list] mailing list

@@ -46,11 +46,7 @@
 
 ---
 
-![diagram](images/diagram2.jpg)
-
----
-
-![diagram](images/diagram3.png)
+![layers](images/openstack_layers.png)
 
 ---
 
