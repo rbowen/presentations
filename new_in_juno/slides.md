@@ -34,6 +34,13 @@ rbowen@redhat.com
 
 ---
 
+## L
+
+* L summit is in Vancouver
+* Should see a poll for naming that in the next few months
+
+---
+
 ## Design summit
 
 * ATCs (Active Technical Contributors) gather to decide what happens next
