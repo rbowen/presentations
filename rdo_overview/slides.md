@@ -46,6 +46,14 @@ http://openstack.redhat.com/Quickstart
 
 ---
 
+![dashboard](assets/dashboard.png)
+
+---
+
+![Networks](assets/network.png)
+
+---
+
 # Get Involved
 
 - [rdo-list] mailing list
@@ -73,8 +81,10 @@ http://openstack.redhat.com/Quickstart
 - [@rdocommunity][]
 - [Google+][]
 - [planet.openstack.org][]
+- [Facebook][]
 
 [@rdocommunity]: http://twitter.com/rdocommunity
 [Google+]: https://plus.google.com/communities/110409030763231732154
 [planet.openstack.org]: http://planet.openstack.org/
+[Facebook]: http://facebook.com/rdocommunity
 
