@@ -8,6 +8,10 @@ rbowen@redhat.com
 
 ---
 
+## Follow along at [boxofclue.com](http://boxofclue.com/)
+
+---
+
 ## Juno
 
 * 6 month release cycle
@@ -51,11 +55,18 @@ rbowen@redhat.com
 
 ---
 
-## So, what's coming
+## So, what's coming?
 
 * Mid-term reports, and various blogs/podcasts since then
 * Feature freeze September 4
-* Release October 16
+* Release October 16 (Tomorrow!)
+
+Note:
+
+Most of this information comes from the mid-term meetups and the
+mid-term reports, which happened at various times from July onwards.
+Most of the PTLs then reported in a series of webcasts, and more
+information comes from there.
 
 ---
 
@@ -102,6 +113,12 @@ rbowen@redhat.com
 
     This presentation doesn't cover all of the projects, so I'm most
     assuredly missing something.
+
+---
+
+## The components
+
+![Layers](images/spaghetti.png)
 
 ---
 
