@@ -26,7 +26,7 @@ rbowen@redhat.com
 
 ![Juno](images/juno.png)
 
-* Juno: Juno is a locality in Georgia
+* Juno: Juno is a locality near Atlanta, Georgia, USA, where the summit was held.
 
 ---
 
@@ -34,6 +34,7 @@ rbowen@redhat.com
 
 ![Kilo](images/kilo.jpg)
 
+* OpenStack Summit will be held in Paris in 2 weeks
 * Kilo: Paris (Sèvres, actually, but that's close enough) is home to the Kilogram, the only remaining SI unit tied to an artifact
 
 ---
