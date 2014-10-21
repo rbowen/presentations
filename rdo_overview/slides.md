@@ -9,7 +9,7 @@ http://openstack.redhat.com/
 ![RDO site](assets/openstacklogo.jpg)
 
 - A distribution of OpenStack for Fedora, CentOS and RHEL
-- A community of OpenStack users, helping one another
+- A community of OpenStack users on Red Hat platforms, helping one another
 - Documentation, mailing lists, IRC channel
 
 ---
@@ -26,7 +26,7 @@ http://openstack.redhat.com/stats/
 
 ---
 
-# Getting started
+## Getting started
 
 http://openstack.redhat.com/Quickstart
 
@@ -61,8 +61,8 @@ http://openstack.redhat.com/Quickstart
 # Get Involved
 
 - [rdo-list] mailing list
-- [ask.openstack.org][]
 - [rdo-newsletter] mailing list
+- [ask.openstack.org][]
 - [Events][]
 
 [rdo-list]: http://www.redhat.com/mailman/listinfo/rdo-list
