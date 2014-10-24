@@ -4,9 +4,9 @@ Rich Bowen
 
 EVP, Apache Software Foundation
 
-OpenStack Community Liaison, Red Hat
+rbowen@apache.org
 
-rbowen@rcbowen.com
+http://boxofclue.com/
 
 ---
 
@@ -20,7 +20,7 @@ Rich Bowen - rbowen@apache.org
 
 http://rcbowen.com/
 
-SLIDES ARE AT: http://tm3.org/betterfm
+SLIDES ARE AT: http://boxofclue.com/
 
 ---
 
@@ -35,6 +35,14 @@ SLIDES ARE AT: http://tm3.org/betterfm
 Also ...
 
 ![Anne](images/gentle.jpg)
+
+---
+
+Also ...
+
+![WTD](images/wtd.png)
+
+http://conf.writethedocs.org/
 
 ---
 
@@ -546,6 +554,23 @@ on their own
 * Text (ie, non-binary format)
 * Revision control
 
+--- 
+
+## Formats
+
+* rst
+* asciidoc
+* markdown
+* Wikis, possibly
+
+---
+
+## Avoid
+
+* Binary formats
+* XML/Docbook
+* HTML
+
 ---
 
 ## Searchable
@@ -597,7 +622,7 @@ Add a note
 
 * Make it obvious how to submit comments, improvements, errata
 * Don't ignore them once they're submitted
-* Be quick to offer commit bits to repeat customers
+* Be quick to offer commit bits to repeat contributors
 
 Note:
 
@@ -634,6 +659,17 @@ give them commit.
 
 ---
 
+If your error message tells what to do to fix it, they'll love you
+forever.
+
+            ap_log_error(APLOG_MARK, APLOG_WARNING, 0, cmd->server, APLOGNO(00664)
+                         "RewriteOptions: MaxRedirects option has been "
+                         "removed in favor of the global "
+                         "LimitInternalRecursion directive and will be "
+                         "ignored.");
+
+---
+
 ## Harness the Whiners
 
 ![Ass](images/ass.jpg)
@@ -667,5 +703,5 @@ Email: rbowen@apache.org
 
 Twitter: @rbowen
 
-Slides: http://tm3.org/betterfm 
+Slides: http://boxofclue.com/
 

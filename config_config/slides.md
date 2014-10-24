@@ -44,7 +44,7 @@ In the distant past ...
 ![dino](images/dino.jpg)
 Repeated config blocks, Maybe use `Include` to avoid repetition, Third party modules
 
-<small>*Photo Credit: [shoehorn99](http://www.flickr.com/photos/27664925@N00/2458505877/) on Twitter.*</small>
+<small>*Photo Credit: [shoehorn99](http://www.flickr.com/photos/27664925@N00/2458505877/) on Flickr.*</small>
 
 ---
 
@@ -317,10 +317,10 @@ configuration, making impossible things possible, and hard things easy.
 ![dino](images/dino3.gif)
 
         RewriteEngine on
-        RewriteCond   %{TIME_HOUR}%{TIME_MIN} >0700
-        RewriteCond   %{TIME_HOUR}%{TIME_MIN} <1900
-        RewriteRule   ^/foo\.html$             /foo.day.html [PT]
-        RewriteRule   ^/foo\.html$             /foo.night.html [PT]
+        RewriteCond   %{TIME_HOUR} >07
+        RewriteCond   %{TIME_HOUR} <19
+        RewriteRule   ^/hours\.html$             /open.html [PT]
+        RewriteRule   ^/hours\.html$             /closed.html [PT]
 
 ---
 
