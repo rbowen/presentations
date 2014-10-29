@@ -102,7 +102,7 @@ you need to step back and answer a few questions.
 ## Who?
 
 ![audience](images/audience1.jpg)
-<p>[CC alexkess, Flickr]</p>
+<small>[CC alexkess, Flickr]</small>
 
 Note:
 
@@ -191,7 +191,7 @@ need to know.
 
 ## Solutions
 
-![FixedIt](images/fixedit.jpg)
+![FixedIt](images/fixedit2.jpg)
 
 If you don't provide solutions to real problems, people will come up
 with their own solutions, which might not be quite the best idea.
@@ -202,6 +202,7 @@ People want solutions. They don't care if it's elegant. They care if it works. B
 
 ---
 
+![FixedIt](images/fixedit3.jpg)
 <blockquote>
 End-users do not necessarily care about the source of the information,
 or whether it was written by a professional; they judge the information
@@ -247,6 +248,20 @@ Good answers are the asker's responsibility.
 
 ---
 
+## Further down ... 
+
+Much of what looks like rudeness in hacker circles is not intended to
+give offense. Rather, it's the product of the direct,
+cut-through-the-bullshit communications style that is natural to people
+who are more concerned about solving problems than making others feel
+warm and fuzzy.
+
+Note:
+
+That's excusing laziness and rudeness as though it's a virtue!
+
+---
+
 ## Eric is Wrong
 
 ![Juvenile](images/juvenile.jpg)
@@ -257,13 +272,13 @@ It's bad manners, and it's juvenile.
 
 It's time to grow up.
 
-<p>[CC Jumer, Flickr]</p>
+<small>[CC Jumer, Flickr]</small>
 
 ---
 
 ![Larry](images/lwall.jpg)
 
-<p>[CC Sarahkim, Flickr]</p>
+<small>[CC Sarahkim, Flickr]</small>
 
 * Laziness
 
@@ -418,7 +433,7 @@ extending what's there to make something new.
 
 ---
 
-## See also ...
+## There, I fixed it
 
 ![FixedIt](images/fixedit.jpg)
 
@@ -554,7 +569,7 @@ on their own
 * Text (ie, non-binary format)
 * Revision control
 
---- 
+---
 
 ## Formats
 
@@ -589,6 +604,8 @@ on their own
 * Do something about it
 
 ---
+
+## PHP docs ...
 
 ![note](images/addnote.png)
 
@@ -676,6 +693,8 @@ forever.
 
 Note:
 
+* What you see in the picture here is, of course, an ass. But even an
+  ass can be useful.
 * Whiners -> Contributors: HARD
 * Potential contributors -> Whiners: EASY
 
