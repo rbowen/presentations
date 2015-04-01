@@ -1,4 +1,4 @@
-# Demystifying mod_rewrite
+# mod_rewrite and friends
 
         Less magic, more science
 
