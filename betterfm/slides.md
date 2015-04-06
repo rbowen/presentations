@@ -69,7 +69,7 @@ friendly community.
 
 ## The Truth
 
-* Lots of people want to write docs. Some of them can even write a coherent sentence.
+* *Lots* of people want to write docs. Many of them can even write a coherent sentence.
 * We make it way too hard for them to participate.
 * So, they flock to third-party forums, and Stack Overflow, where they share misconceptions and worst-practice "solutions" with one another.
 
@@ -113,6 +113,8 @@ Figure out who the audience is. Personas help. Actually talk to people. Realize 
 ## ドキュメント
 
 * Not all young white English-speaking men who grew up watching Monty Python.
+
+Note: Documentation
 
 ---
 
@@ -427,9 +429,18 @@ extending what's there to make something new.
 
 ## Best Practice
 
-* Beginners often just want it to work
-* The *best* answer is often more complicated than the *good enough* answer
-* Doing it right now saves time and tears later
+![Balance](images/balance.jpg)<small>[Angelina Earley, Flickr]</small>
+
+Note:
+
+Beginners often just want it to work
+
+The *best* answer is often more complicated than the *good enough* answer
+
+Doing it right now saves time and tears later
+
+It's a balancing act between helping the person now in their crisis, or
+helping them long term in becoming an expert.
 
 ---
 
@@ -481,7 +492,8 @@ Create an example company, PetStore.com or whatever
 ## But not too copious ...
 
 * Having 73 howtos for slightly different scenarios can scare off beginners
-* Docs days might focus on combining "almost the same" documents into
+* Might also be an indication that your software is too complicated
+* Pro Tip: Docs days might focus on combining "almost the same" documents into
   one general purpose one.
 
 ---
@@ -525,6 +537,9 @@ Eyes of the Dragon - Naomi and Frisky
 * Never say "easy", "trivial", "simple", "obvious", or "of course", or any other words or phrases that mean that. Your reader is there because it's not.
 * Test it. Repeatedly. On multiple systems.
 * Let your inexperienced co-workers read it.
+
+Note: Actually, Technically, Just sayin'. Don't miss Gina's keynote
+tomorrow!
 
 ---
 
@@ -602,6 +617,23 @@ on their own
 * Take their complaints seriously
 * Don't get offended when they tell you the docs suck
 * Do something about it
+
+---
+
+## But not too easy ...
+
+* Optimize to attracting newbies
+* Optimize to produce awesome docs
+
+Note:
+
+If you focus solely on making it easy for new people to contribute, you
+may end up with tools that don't produce quality documentation.
+
+Case study: Docbook vs Asciidoc/RST/Markdown for the Apache httpd docs.
+We *could* make it easier for people to contribute, but this would be a
+tradeooff in the quality of the final product, as well as a huge hill to
+climb for an unknown benefit.
 
 ---
 
