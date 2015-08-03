@@ -412,6 +412,7 @@ extending what's there to make something new.
 * "Comprehensive" needs to be clearly defined
 * Do the PHP docs need to cover the history of computing?
 * Do the Apache docs need to cover HTML?
+* *Scope* and *Comprehensive* are always in tension
 
 ---
 
