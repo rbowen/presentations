@@ -24,6 +24,16 @@ SLIDES ARE AT: http://boxofclue.com/
 
 ---
 
+## RTFM
+
+*Definition*: **RTFM (Read The F'ing Manual). (Occasionally ironically
+rendered as Read The Fine Manual.) A phrase uttered at people who have
+asked a question that we, the enlightened, feel is beneath our dignity
+to answer, but not beneath our dignity to use as an opportunity to
+squish a newbie's ego.**
+
+---
+
 ## Disclaimer
 
 * There are numerous books that say all of this better
@@ -96,6 +106,7 @@ tone, and user focus in the documentation.
 
 There's a lot to be said for "Just Start Writing", but as a docs team
 you need to step back and answer a few questions.
+![Bradbury](images/bradbury.jpg)
 
 ---
 
@@ -155,6 +166,8 @@ Be warned.
 ---
 
 ## Where?
+
+![FOD](images/fodbanner.jpg)
 
 * If you build it, they still won't come.
 * Find out where the audience is. 
@@ -303,6 +316,14 @@ Wall.)
 * Next time, give them a URL
 * Better to do something well, once, than to do to it poorly, again and again
 
+Note:
+
+Using a URL shortener for frequent questions is awesome.
+
+IRC bots are even more awesome.
+
+IRC macros are awesome.
+
 ---
 
 ## Patience
@@ -315,6 +336,11 @@ Wall.)
 
 Love is patient, love is kind ... it does not keep a record of offenses.
     (I Corinthians 13 - The Bible)
+
+Note:
+
+If you are able to forget the record of offenses, you have achieved tech
+support Zen
 
 ---
 
