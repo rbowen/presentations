@@ -411,7 +411,7 @@ Can then cut a release based on a particular answer or set of answers.
 
 * Ready to quickly iterate on stuff that's not right
 * Open to community review
-* #openstack-community on Freenode
+* \#openstack-community on Freenode
 
 Note:
 
@@ -442,5 +442,4 @@ following artists.
 * ekkoflok on Flickr
 * atoach on Flickr
 * rbowen on Flickr
-
 
