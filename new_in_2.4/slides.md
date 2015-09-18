@@ -465,7 +465,24 @@ Can specify a hook (phase of transaction) and an expression to check
         LogMessage "%{reqenv:X-Foo}" hook=all
     </Location>
 
+---
+
 * Together with microsecond time stamps in the error log, hook=all also lets you determine the times spent in the different parts of the request processing.
+
+        LogMessage '.' hook=all
+
+Yields:
+
+        [Fri Sep 18 14:51:51.000589 2015] [log_debug:info] [pid 26695:tid 140000938407680] [client 127.0.0.1:44269] .
+        [Fri Sep 18 14:51:51.000627 2015] [log_debug:info] [pid 26695:tid 140000938407680] [client 127.0.0.1:44269] .
+        [Fri Sep 18 14:51:51.000641 2015] [log_debug:info] [pid 26695:tid 140000938407680] [client 127.0.0.1:44269] .
+        [Fri Sep 18 14:51:51.000671 2015] [log_debug:info] [pid 26695:tid 140000938407680] [client 127.0.0.1:44269] .
+        [Fri Sep 18 14:51:51.000677 2015] [log_debug:info] [pid 26695:tid 140000938407680] [client 127.0.0.1:44269] .
+        [Fri Sep 18 14:51:51.000684 2015] [log_debug:info] [pid 26695:tid 140000938407680] [client 127.0.0.1:44269] .
+        [Fri Sep 18 14:51:51.000693 2015] [log_debug:info] [pid 26695:tid 140000938407680] [client 127.0.0.1:44269] .
+        [Fri Sep 18 14:51:51.000702 2015] [log_debug:info] [pid 26695:tid 140000938407680] [client 127.0.0.1:44269] .
+        [Fri Sep 18 14:51:51.000712 2015] [log_debug:info] [pid 26695:tid 140000938407680] [client 127.0.0.1:44269] .
+        [Fri Sep 18 14:51:51.000778 2015] [log_debug:info] [pid 26695:tid 140000938407680] [client 127.0.0.1:44269] .
 
 ---
 
@@ -529,6 +546,10 @@ Access is allowed only for the given HTTP methods.
     Require host example.com
     Require local
 
+Note:
+
+Require local is magical, and works for all meanings of 'local', both IPv4 and IPv6 and 'localhost'
+
 ---
 
 ![lock](images/lock.jpg)
@@ -557,6 +578,7 @@ Or ...
     <RequireAny>
         Require method GET POST OPTIONS
         Require valid-user
+        Require local
     </RequireAny>
 
 ---
@@ -598,6 +620,13 @@ Implements the "front controller" model that you've been doing with RewriteRules
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteBase /
     RewriteRule . index.php [PT]
+
+---
+
+## HTTP2
+
+* In trunk, will be in 2.4 real soon
+* http://httpd.apache.org/docs/trunk/mod/mod_h2.html
 
 ---
 
