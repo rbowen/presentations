@@ -1,4 +1,4 @@
 #!/bin/sh
 
-ssh sycamore.rcbowen.com "cd /var/www/vhosts/boxofclue/presentations && git pull"
+ssh grenache.rcbowen.com "cd /var/www/vhosts/boxofclue/presentations && git pull"
 
