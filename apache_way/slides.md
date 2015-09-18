@@ -25,6 +25,10 @@ Note:
 
 ---
 
+![Group](images/httpd_group_feather_2015.jpg)
+
+---
+
 ## Roots
 
 ![Roots](images/roots.jpg)
@@ -43,16 +47,16 @@ Bottom-up leadership - lead by example rather than by edict. Contrast with OpenS
 
 ## The Numbers
 
-- Projects = 149
-- Incubating Projects = 34
+- Projects = 160
+- Incubating Projects = 44
 - Board/President Committees = 10 
 - Board Members = 9
 
-- Foundation Members = ~530
+- Foundation Members = ~650
 - PMC Committee Members = ~1500
 - Committers = ~5000
 
-- Sponsors = 25, plus various in-kind sponsorships
+- Sponsors = 30, plus various in-kind sponsorships
 
 Note:
 
@@ -60,9 +64,15 @@ From those humble beginnings, we have grown very quickly ...
 
 ---
 
+## httpd has grown a little ...
+
+![Group](images/httpd_group_feather_2015_2.jpg)
+
+---
+
 ![Projects](images/projects_01.png)
 
-Notes:
+Note:
 
 The web server project, of course ...
 
@@ -72,7 +82,7 @@ Cloudstack, Ant, Cassandra
 
 ![Projects](images/projects_02.png)
 
-Notes:
+Note:
 
 Hadoop, Mahout, Maven, Lucene
 
@@ -80,7 +90,7 @@ Hadoop, Mahout, Maven, Lucene
 
 ![Projects](images/projects_03.png)
 
-Notes:
+Note:
 
 OpenOffice, Qpid, Subversion, SpamAssassin
 
@@ -375,6 +385,11 @@ Note:
 - Helping others with queries and questions
 - Issue / bug tracker triage
 - Testing new fixes, helping reproduce problems
+
+---
+
+## Ways to Contribute
+
 - Bug Fixes and New Features
 - Writing add-ons and extensions
 - Mentoring, volunteering for the Foundation
@@ -415,9 +430,18 @@ $100k annually
 ![Citrix](images/sponsor_citrix.png)
 ![Facebook](images/sponsor_fb-logo.png)
 ![Google](images/sponsor_google.jpg)
-![Matt](images/sponsor_matt-mullenweg.jpg)
 ![Microsoft](images/sponsor_microsoft.jpg)
+
+Note: 8 sponsors - see next slide
+
+---
+
+## Platinum Sponsors
+
 ![Yahoo](images/sponsor_yahoo.jpg)
+![Cloudera](images/cloudera.png)
+![Pivotal](images/pivotal-platinum.png)
+![Matt](images/sponsor_matt-mullenweg.jpg)
 
 ---
 
@@ -430,10 +454,13 @@ $40k annually
 ![Comcast](images/sponsor_comcast.jpg)
 
 ![HP](images/sponsor_hp.png)
+<br clear="all">
 
 ![Hortonworks](images/sponsor_hortonworks.png)
 
 ![IBM](images/sponsor_ibm.png)
+
+![PhoenixNAP](images/phoenixnap-gold.png)
 
 ---
 
@@ -441,11 +468,10 @@ $40k annually
 
 $20k annually
 
-![Budget Direct](images/sponsor_budget-direct-120.png)
-![Huawei](images/sponsor_huawei.png)
-![InMotion Hosting](images/sponsors_inmotion-hosting.png)
-![Pivotal](images/sponsor_pivotal.png)
-![Produban](images/sponsor_produban.png)
+<center>
+![Silver](images/silver_1.png)
+![Silver](images/silver_2.png)
+</center>
 
 ---
 
@@ -457,13 +483,11 @@ $5k annually
 
 **Basis Technology**
 
-**Cerner**
+**Bluehost**
 
 **Cloudsoft Corporation**
 
-**Liip AG SA Ltd**
-
-**LucidWorks**
+**Samsung**
 
 **Talend**
 
@@ -473,19 +497,7 @@ $5k annually
 
 ## Infrastructure in-kind sponsors
 
-Server hosting and bandwidth provided by Oregon State University Open
-Source Lab (OSUOSL) (USA), SURFnet and FUB(EU).
-
-Secondary DNS provided by No-IP Managed DNS, develooper.com manages the
-bitnames DNS services. Hyperreal.org is our other provider.
-
-Donation of servers: Sun, IBM, HP, Dell and Calxeda.
-
-Donation of virtualization software: VMWare.
-
-Donation of wildcard SSL certificates: Thawte.
-
-Donation of server hosting by RackSpace
+![Infra](images/infra_sponsor.png)
 
 ---
 
@@ -507,7 +519,7 @@ Donation of server hosting by RackSpace
 
 * Paypal, Amazon, Bitcoin, Check
 
-* http://s.apache.org
+* http://www.apache.org/foundation/contributing.html
 
 ---
 
