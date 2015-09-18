@@ -2,25 +2,13 @@
 
 Rich Bowen
 
-EVP, Apache Software Foundation
+OpenStack Community Liaison, Red Hat
 
-rbowen@apache.org
+rbowen@redhat.com
 
-http://boxofclue.com/
+Slides: http://boxofclue.com/
 
----
-
-## Write A Better FM
-
-Stop being a jerk, and try to understand your audience
-
-Rich Bowen - rbowen@apache.org
-
-@rbowen
-
-http://rcbowen.com/
-
-SLIDES ARE AT: http://boxofclue.com/
+### Stop being a jerk, and try to understand your audience
 
 ---
 
@@ -107,6 +95,9 @@ tone, and user focus in the documentation.
 There's a lot to be said for "Just Start Writing", but as a docs team
 you need to step back and answer a few questions.
 ![Bradbury](images/bradbury.jpg)
+
+Note: Just Start Writing works for fiction, and is a great daily
+practice, but is not the path to professional-quality documentation
 
 ---
 
@@ -246,6 +237,7 @@ work for it, so they should too.
 
 ![Eric](images/ericraymond.jpg)
 
+<blockquote>
 There is an ancient and hallowed tradition: if you get a 
 reply that reads “RTFM”, the person who sent it thinks 
 you should have Read The F\*\*\*ing Manual. He or she is 
@@ -256,6 +248,7 @@ RTFM has a younger relative. If you get a reply that reads
 Searched The F\*ing Web. He or she is almost certainly 
 right. Go search it. (The milder version of this is when 
 you are told “Google is your friend!”)
+</blockquote>
 
 Note:
 
@@ -265,11 +258,13 @@ Good answers are the asker's responsibility.
 
 ## Further down ... 
 
+<blockquote>
 Much of what looks like rudeness in hacker circles is not intended to
 give offense. Rather, it's the product of the direct,
 cut-through-the-bullshit communications style that is natural to people
 who are more concerned about solving problems than making others feel
 warm and fuzzy.
+</blockquote>
 
 Note:
 
@@ -421,6 +416,11 @@ extending what's there to make something new.
 
 * Obvious, right?
 * You'd think
+
+Note: But software moves so fast that the documentation is often not
+correct, because it can't keep up. This is where it's so critical to get
+the developers involved in the documentation process - not necessarily
+*doing* it, but notifying the docs folks that something has changed.
 
 ---
 
