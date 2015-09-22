@@ -343,7 +343,7 @@ Note:
 
 ## Non-coding teams
 
-* Infrastructure
+* Infrastructure (not non-coding actually)
 * Public relations/Press
 * Travel Assistance
 * Legal
