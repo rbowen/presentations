@@ -10,6 +10,16 @@ rbowen@apache.org
 
 ---
 
+## The Apache Way is ...
+
+- A method of developing software
+- A method of running communities
+- A method of governing a Foundation
+
+### Community > Code
+
+---
+
 ![Group](images/group.jpg)
 
 ## Apache Group
@@ -39,28 +49,7 @@ Note:
 
 Note:
 
-Bottom-up leadership - lead by example rather than by edict. Contrast with OpenStack or Linux
-
----
-
-![Numbers](images/numbers.jpg)
-
-## The Numbers
-
-- Projects = 160
-- Incubating Projects = 44
-- Board/President Committees = 10 
-- Board Members = 9
-
-- Foundation Members = ~650
-- PMC Committee Members = ~1500
-- Committers = ~5000
-
-- Sponsors = 30, plus various in-kind sponsorships
-
-Note:
-
-From those humble beginnings, we have grown very quickly ...
+Bottom-up leadership - lead by example rather than by edict.
 
 ---
 
@@ -68,65 +57,34 @@ From those humble beginnings, we have grown very quickly ...
 
 ![Group](images/httpd_group_feather_2015_2.jpg)
 
----
-
-![Projects](images/projects_01.png)
-
-Note:
-
-The web server project, of course ...
-
-Cloudstack, Ant, Cassandra
+Note: But the methodology stays the same
 
 ---
 
-![Projects](images/projects_02.png)
+## Today (httpd)
 
-Note:
+- 118 contributors
+- About a dozen in the last 60 days
+- Very few of the original contributors are still involved
+- New members brought on every year, based on the quality of their
+  contributions
 
-Hadoop, Mahout, Maven, Lucene
-
----
-
-![Projects](images/projects_03.png)
-
-Note:
-
-OpenOffice, Qpid, Subversion, SpamAssassin
+Note: And so, this idea was spread to many more projects (278 and
+counting ...)
 
 ---
 
-## ASF: Legal Structure
+## Principles
 
-![gavel](images/gavel.jpg)
+* Collaborative decision making
+* Flat organization - everyone has an equal voice
 
-- Member-based corporation - individuals, not companies, can be members
-- Members nominate and elect new members
-- Members elect a board - 9 seats
-- Annual members meetings via IRC. Board meets monthly.
-- Each PMC has a Chair - eyes and ears of the board (oversight only)
+Note: In reality, some people have earned a louder voice than others,
+but everyone is able to attain to that level.
 
 ---
 
-![org](images/asf_org.png)
-
----
-
-## Projects
-
-- Responsible for their own code, community and direction
-- Board provides oversight, but has no say on what code gets written, what direction projects take, what new projects we should start etc
-- Foundation provides support support (eg infra, branding, press) so that projects can focus just on their code + community
-
-Note:
-
-Difficulties with structure 
-
-- 'Hats' - What role are you in right now?
-- Who speaks for the project? 
-- Who speaks for the foundation? 
-- Can be difficult to make a decision quickly.
-- Seen as wielding too much power when board member speaks as developer
+## At the Foundation level ...
 
 ---
 
@@ -158,6 +116,70 @@ Note:
 
 - Consensus-based development - community-created
 - High quality software - Code should be exceptional
+
+---
+
+## ASF: Legal Structure
+
+![gavel](images/gavel.jpg)
+
+- Member-based corporation - individuals, not companies, can be members
+- Members nominate and elect new members
+- Members elect a board - 9 seats
+- Annual members meetings via IRC. Board meets monthly.
+- Each PMC has a Chair - eyes and ears of the board (oversight only)
+
+Note: Members meeting must be at least once a month. Can be more often.
+
+The ASF is a legal entity - a non-profit - and must conduct itself
+according to certain laws and bylaws.
+
+---
+
+![org](images/asf_org.png)
+
+---
+
+## From the project's perspective
+
+The foundation is 
+
+* Service provider
+* Mentor
+
+Note: The Foundation provides the tools to make it possible for projects
+to run themselves, and tries to mostly stay out of their way. The board
+is responsible to our constituency (the general public) to ensure that
+projects govern themselves in ways that are sustainable, and which live
+up to our very high standards.
+
+The Foundation doesn't drive technical direction.
+
+---
+
+## Projects
+
+- Responsible for their own code, community and direction
+- Board provides oversight, but has no say on what code gets written, what direction projects take, what new projects we should start etc
+- Foundation provides support support (eg infra, branding, press) so that projects can focus just on their code + community
+
+Note:
+
+Difficulties with structure 
+
+- 'Hats' - What role are you in right now?
+- Who speaks for the project? 
+- Who speaks for the foundation? 
+- Can be difficult to make a decision quickly.
+- Seen as wielding too much power when board member speaks as developer
+
+---
+
+## If it didn't happen on the mailing list ...
+
+- All decisions must be done in the open
+- Private discussions happen - bring it back to the list!
+- Provide time for feedback from those that weren't there
 
 ---
 
@@ -319,6 +341,35 @@ and something needs to change.
 
 ---
 
+## The Attic
+
+* Some projects are just done
+* And some lack adequate oversight
+* The attic provides a place for dorman projects to go, to preserve a
+  record of history, releases, and so on
+* Projects can revive from the Attic (although this hasn't happened so
+  far)
+
+Note: Don't have 3 people able to vote
+
+---
+
+## Myths
+
+There are many myths that surround the ASF ...
+
+---
+
+## Lots Of Rules
+
+* We have few rules. 
+* We have lots of documentation about what we think works, but the board
+  (the governing body of the ASF) doesn't like to interfere
+* The board has interfered only 2 or 3 times in the history of the
+  Foundation.
+
+---
+
 ![Email](images/email.jpg)
 
 ## Mailing Lists
@@ -421,86 +472,6 @@ Note:
 
 - No corporate memberships. You are not buying influence.
 
----
-
-## Platinum Sponsors
-
-$100k annually
-
-![Citrix](images/sponsor_citrix.png)
-![Facebook](images/sponsor_fb-logo.png)
-![Google](images/sponsor_google.jpg)
-![Microsoft](images/sponsor_microsoft.jpg)
-
-Note: 8 sponsors - see next slide
-
----
-
-## Platinum Sponsors
-
-![Yahoo](images/sponsor_yahoo.jpg)
-![Cloudera](images/cloudera.png)
-![Pivotal](images/pivotal-platinum.png)
-![Matt](images/sponsor_matt-mullenweg.jpg)
-
----
-
-## Gold Sponsors
-
-$40k annually
-
-![Cloudera](images/sponsor_cloudera.png)
-
-![Comcast](images/sponsor_comcast.jpg)
-
-![HP](images/sponsor_hp.png)
-<br clear="all">
-
-![Hortonworks](images/sponsor_hortonworks.png)
-
-![IBM](images/sponsor_ibm.png)
-
-![PhoenixNAP](images/phoenixnap-gold.png)
-
----
-
-## Silver Sponsors
-
-$20k annually
-
-<center>
-![Silver](images/silver_1.png)
-![Silver](images/silver_2.png)
-</center>
-
----
-
-## Bronze Sponsors
-
-$5k annually
-
-**Accor**
-
-**Basis Technology**
-
-**Bluehost**
-
-**Cloudsoft Corporation**
-
-**Samsung**
-
-**Talend**
-
-**Twitter**
-
----
-
-## Infrastructure in-kind sponsors
-
-![Infra](images/infra_sponsor.png)
-
----
-
 ## Where does it go?
 
 ![Budget](images/ASFBudget.png)
@@ -510,16 +481,6 @@ $5k annually
 ## Where does it go?
 
 ![Budget](images/ASFbudget2.png)
-
----
-
-## Individual donations
-
-* In addition to corporate sponsorships, we accept individual donations
-
-* Paypal, Amazon, Bitcoin, Check
-
-* http://www.apache.org/foundation/contributing.html
 
 ---
 
