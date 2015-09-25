@@ -220,6 +220,27 @@ attribution) to build your product, your service, your company.
 
 ---
 
+## Why we don't accept other licenses
+
+* Users know that *Apache == Apache License*
+* We don't want people to have to guess, research, or figure it out. If
+  it says Apache, you know what's in the box
+* We want our code to be a "universal donor" to other projects, whether
+  they are open or closed
+
+Note:
+
+Many companies and organizations have built products on top of ASF code.
+ASF code drives the software business. It's in your car, in your
+television, in your Windows servers, in your phone, and in your video
+games. And it powers the space program and the medical world.
+
+---
+
+![Minecraft](images/minecraft.png)
+
+---
+
 ## The Apache Way - Why the ASF Works
 
 * Meritocracy
