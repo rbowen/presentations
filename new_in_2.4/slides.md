@@ -85,7 +85,6 @@ Configure:
 
 Get the log info from just the module you're interested in
 
-
 ---
 
 ## Per-directory configuration
@@ -100,7 +99,6 @@ Just log the app that you know is giving you problems.
 ---
 
 ## Per-request configuration sections
-
 
 * <If>, <ElseIf>, and <Else> sections can be used to set the configuration based on per-request criteria.
 
@@ -149,20 +147,19 @@ Just log the app that you know is giving you problems.
             </VirtualHost>
         </Macro>
 
-
 ---
 
 ## mod_macro example
 
 * Invoke with:
 
-    # Create three vhosts
-    Use VHost example example.com
-    Use VHost myhost hostname.org
-    Use VHost apache apache.org
+        # Create three vhosts
+        Use VHost example example.com
+        Use VHost myhost hostname.org
+        Use VHost apache apache.org
 
-    # Clean up
-    UndefMacro VHost
+        # Clean up
+        UndefMacro VHost
 
 ---
 
