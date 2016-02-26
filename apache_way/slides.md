@@ -10,6 +10,18 @@ rbowen@apache.org
 
 ---
 
+# The Apache Way
+
+![Feather](images/feather.png)
+
+Rich Bowen, Executive Vice President
+
+The Apache Software Foundation
+
+rbowen@apache.org
+
+---
+
 ## The Apache Way is ...
 
 - A method of developing software
@@ -299,6 +311,17 @@ Note:
 
 ---
 
+## Meritocracy
+
+Worth mentioning that the word 'Meritocracy' has a PR problem lately,
+largely due to the fact that it often means 'Oligarchy' in practice.
+
+Note: Old white guys select other old white guys based on their "merit".
+We actively struggle against this, but we have a LOOOONG way to go
+before we've fixed it.
+
+---
+
 ![Merit](images/stairs.png)
 
 ---
@@ -469,20 +492,36 @@ Note:
 
 ---
 
-## Mentorship - Multiply your impact
+### Mentorship - Multiply your impact
 
 ![Ken](images/ken.jpg)
+
+Note: The work that you do through your "offspring" will outlast your
+personal participation. It's a way to extend your impact far into the
+future.
+
+- Ken encouraged me to speak at a conference
+
+---
+
+### Mentorship - bring out the best in others that they may not see in themselves
+
+![Sally](images/sally.jpg)
+
+---
+
+### Mentorship - Encourage others to do the things you could do yourself.
+
 ![Jim](images/jim.jpg)
 
 Note:
 
 - Train up two people to replace you
 - Jim encouraged me to stop complaining and actually fix stuff
-- Ken encouraged me to speak at a conference
 
 ---
 
-## How companies can contribute
+## How organizations can contribute
 
 - You can allow your employees to participate
 - You can sponsor the foundation financially (See me afterwards!)
@@ -492,6 +531,36 @@ Note:
 Note:
 
 - No corporate memberships. You are not buying influence.
+
+---
+
+### Speaking of Sponsors ...
+
+---
+
+### Platinum
+
+![platinum](images/platinum.png)
+
+---
+
+### Gold
+
+![gold](images/gold.png)
+
+---
+
+### Silver
+
+![silver](images/silver.png)
+
+---
+
+### Infra
+
+![infra](images/infra.png)
+
+---
 
 ## Where does it go?
 
@@ -505,13 +574,13 @@ Note:
 
 ---
 
-![Feather](images/large_feather.png)
+![Feather](images/feather.png) 
 
-<p>Thank you</p>
+<p>Thank you</p> 
 
 - http://www.apache.org/
 - Twitter - @TheASF
-- rbowen@apache.org
+- evp@apache.org
 
 <small>A collaborative slidedeck with contributions from 
 Nick Burch, Ross Gardler, Lars Eilebrecht, Justin Erenkrantz, Isabel
