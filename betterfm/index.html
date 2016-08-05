@@ -1,8 +1,50 @@
-<h1 id="rtfm---write-a-better-fm">RTFM - Write a Better FM</h1>
-<p><em>Definition</em>: <strong>RTFM</strong> - Read The F'ing Manual. Occasionally it is ironically rendered as Read The Fine Manual. A phrase uttered at people who have asked a question that we, the enlightened, feel is beneath our dignity to answer, but not beneath our dignity to use as an opportunity to squish a newbie's ego.</p>
-<h2 id="whats-here">What's here:</h2>
-<ul class="incremental">
-<li><a href="smart-questions.html">How to Ask and Answer Questions the Smart Way</a></li>
-<li><a href="http://opensource.com/business/15/5/write-better-docs">The Article on OpenSource.com</a></li>
-<li><a href="http://feathercast.apache.org/podcasts/ApacheConNA2015/Monday/Community/Monday_Community_04%20-%20Rich%20Bowen%20-%20RTFM%20-%20Write%20a%20Better%20FM.mp3">ApacheCon Presentation</a> (mp3 recording)</li>
-</ul>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RTFM? Write a Better FM</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+
+      }
+
+    /* Ensure certain elements are never larger than the slide itself */
+      img, video, iframe {
+            padding-right: 25px;
+            max-width: 75%;
+            max-height: 75%;
+            float: left;
+      }
+
+    /* yellow-on-black terminal code  */
+      pre, code {
+            padding: 5px;
+            overflow: auto;
+            max-height: 900px;
+            width: 125%;
+            word-wrap: normal;
+            background: black;
+            color: yellow;
+      }
+
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <script src="js/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create({
+            sourceUrl: 'slides.md'
+      });
+    </script>
+  </body>
+</html>
