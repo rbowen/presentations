@@ -105,10 +105,17 @@ This small vocabulary will get you around most social situations.
 
 ---
 
+## mod_rewrite regexes
+
+* By default, everything is a substring match, not a full string match
+* That is, the pattern can appear anywhere in the string (in the URL)
+
+---
+
 ## Literal characters
 
 * `a` matches a literal `a` in a string
-* All matches are substring matches
+* Reminder: All matches are substring matches
 * That is, `a` matches `a`, but also matches `banana` and `watermelon`.
 
 ---
@@ -119,6 +126,16 @@ This small vocabulary will get you around most social situations.
 - Matches one "atom"
 - In mod_rewrite syntax, it matches a 'character'
 - Use \\. if you want to match a literal "."
+
+---
+
+## .
+
+`a.d` matches `acd`, `ardvark`, and `forward`
+
+(Try it now)
+
+![ardvark](images/ardvark.png)
 
 ---
 
@@ -298,6 +315,15 @@ the end and see what this does differently.
 
 ---
 
+## Exercise
+
+Tell me what the following regexes mean:
+
+        \.jpg$
+        (.*)\.html
+
+---
+
 ## Discuss: `^` vs `.*`
 
 ???
@@ -371,6 +397,27 @@ Matches anything EXCEPT a, b, c
 
 ---
 
+## Exercise
+
+Tell me what this means:
+
+        ([^/]+)\.jpg$
+
+* What's inside the ( )
+* What will $1 contain
+* What will it *not* contain?
+* Try it out with various things on regex101.com
+
+???
+You may need to select `javascript` or `python` regexes to get this
+syntax to work, because the site is silly about slashes.
+
+---
+
+![notslash](images/notslash.png)
+
+---
+
 ## Not
 
 - Any regex can be negated in a RewriteRule or RewriteCond by putting a ! in front of it
@@ -424,6 +471,9 @@ Other places you will use regular expressions once you master them:
 - mod_rewrite uses regular expressions to match requests (or other things), and modify them in some way (or not, depending)
 - (And a lot of other things)
 
+???
+How's that for a concise definition?
+
 ---
 
 ## History
@@ -431,6 +481,8 @@ Other places you will use regular expressions once you master them:
 - Introduced in version 1.2 (so, basically from the beginning)
 - Written by Ralf Engelschall
 - Ralf is an evil genius. Also responsible for mod_ssl
+
+![ralf](images/ralf.jpg)
 
 ---
 
@@ -467,7 +519,7 @@ Almost certainly on by default
 
 ## `<IfModule mod_rewrite.c>`
 
-- Only executes If Module mod_rewrite is loaded
+- Only executes If Module `mod_rewrite` is loaded
 - Don't do this
 
 ???
@@ -971,42 +1023,6 @@ Map types
 - prg: External Rewriting Program
 - dbd or fastdbd: SQL Query
 
-*examples in bonus slides at the end, if we have extra time*
-
----
-
-Logging - 2.2 and earlier
-
-    RewriteLog /var/log/httpd/rewrite.log
-    RewriteLogLevel 9
-Then ...
-
-    tail -f /var/log/httpd/rewrite.log
-
----
-
-Logging - 2.4 and later
-
-    ErrorLog /var/log/httpd/error.log
-    LogLevel warn rewrite:trace6
-Then ...
-
-    tail -f /var/log/httpd/error.log | grep rewrite
-
----
-
-# Finis
-Email: rbowen@apache.org
-Twitter: @rbowen
-Slides: http://boxofclue.com/presentations and at https://github.com/rbowen/presentations
-
----
-
-## Bonus Slides
-- RewriteMap examples
-- Rewrite recipes
-- If, ElseIf, Else syntax
-
 ---
 
 ## rnd
@@ -1053,6 +1069,40 @@ Slides: http://boxofclue.com/presentations and at https://github.com/rbowen/pres
 
     RewriteMap myquery \
         "fastdbd:SELECT destination FROM rewrite WHERE source = %s"
+
+---
+
+Logging - 2.2 and earlier
+
+    RewriteLog /var/log/httpd/rewrite.log
+    RewriteLogLevel 9
+Then ...
+
+    tail -f /var/log/httpd/rewrite.log
+
+---
+
+Logging - 2.4 and later
+
+    ErrorLog /var/log/httpd/error.log
+    LogLevel warn rewrite:trace6
+Then ...
+
+    tail -f /var/log/httpd/error.log | grep rewrite
+
+---
+
+# Finis
+Email: rbowen@apache.org
+Twitter: @rbowen
+Slides: http://boxofclue.com/presentations and at https://github.com/rbowen/presentations
+
+---
+
+## Bonus Slides
+- RewriteMap examples
+- Rewrite recipes
+- If, ElseIf, Else syntax
 
 ---
 

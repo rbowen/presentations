@@ -584,6 +584,11 @@ all but the most popular languages.
 * Told you did it wrong, go back several steps and try again
 * ... Give up and go away angry
 
+???
+Or, more often, you can't even find step one. Where is the documentation
+developed? Is it even in revision control? Is it in a wiki? Is it in a
+CMS?
+
 ---
 ## Docs Comments
 * See the “Add a note” link at the bottom of every page of the PHP docs
