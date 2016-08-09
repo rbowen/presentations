@@ -246,12 +246,13 @@ This seems to be the one that we have the hardest time with.
 ![fixedit](images/fixedit.jpg)
 
 ---
-# We find it hard to accept that the customer is not an idiot because:
-* We know that we are brilliant
-* We worked hard to achieve our brilliance
-* We do not know the context of the problem that they are trying to solve
-* We do not know what tools they have at their disposal
-* Their proposed solution is not the one that we would have come up with
+# I find it hard to accept that the customer is not an idiot because:
+![awesome](images/awesome.png)
+* I know that I am brilliant
+* I worked hard to achieve my brilliance
+* I do not know the context of the problem that they are trying to solve
+* I do not know what tools they have at their disposal
+* Their proposed solution is not the one that I would have come up with
 ---
 
 ![uphill](images/uphill.png)
@@ -268,7 +269,7 @@ It’s not fair.
 # Also, conditioning
 ![eric](images/ericraymond.jpg)
 
-There is an ancient and hallowed tradition: if you get a
+There is an **ancient and hallowed tradition**: if you get a
 reply that reads “RTFM”, the person who sent it thinks
 you should have Read The F___ng Manual. He or she is
 almost certainly right. Go read it.
@@ -291,13 +292,12 @@ is an imbecile, and the answer is just a little lower than God.
 # It’s ok to be rude, because we’re more important than you
 ![eric](images/ericraymond.jpg)
 
-Much of what looks like rudeness in hacker circles is
-not intended to give offense. Rather, it's the
+Much of what **looks like rudeness** in hacker circles is
+**not intended to give offense**. Rather, it's the
 product of the direct, cut-through-the-bullshit
-communications style that is natural to people
-who are more concerned about solving problems
-than making others feel warm and fuzzy.
-
+communications style that is **natural** to people
+who are **more concerned about solving problems
+than making others feel warm and fuzzy**.
 
 *http://www.catb.org/esr/faqs/smart-questions.html*
 
@@ -305,9 +305,25 @@ than making others feel warm and fuzzy.
 Or, at least, our time is more important than yours.
 ---
 ## I strenuously disagree
+![juvenile](images/juvenile.jpg)
 * It is not a "hallowed tradition"
 * It's bad manners, and it's juvenile
 * It's time to grow up
+
+???
+2 weeks ago we had a party for my daughter, who I took to college last
+week. After the party was over and everyone went home, she sat down and
+started writing thank you notes. I was so proud, because, to me, the
+point at which a child becomes an adult is when they start to notice, on
+their own, without prompting, that other people matter.
+
+It appears that a lot of people never reach that point - especially
+people who are exceptionally intelligent, and so feel that the world
+owes them respect and adulation.
+
+Eric has taken this one step further - actively encouraging thousands of
+people to be rude to their peers, and dismissive of their struggles.
+
 ---
 ## Humility
 * You don't know everything
@@ -349,6 +365,9 @@ solutions to actual problems.
 However, you must ask yourself WHY are they asking that stupid question?
 
 (Hint: It’s almost never because they are an idiot.)
+
+???
+Often it's because the documentation is terrible and confusing.
 ---
 ## Solutions
 <blockquote>
@@ -445,10 +464,20 @@ It's a balancing act between helping the person now in their crisis, or
 helping them long term in becoming an expert.
 
 ---
-# Howtos, tutorials, examples
+## Howtos, tutorials, examples
 * Cover everything, even the trivial steps
 * Never say "easy", "trivial", "simple", "obvious", or "of course", or any other words or phrases that mean that. Your reader is there because it's not.
 * Test it. Repeatedly. On multiple systems.
+---
+
+## All the steps
+
+![owl](images/owl.jpg)
+
+???
+One of your primary jobs as a documentation author is to help the reader
+not feel like an idiot.
+
 ---
 ## Don’t ridicule your reader
 ![silly](images/silly.png)
