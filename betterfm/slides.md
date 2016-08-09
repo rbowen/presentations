@@ -14,6 +14,7 @@ LinuxCon North America, 2016
 
 ## $> whoami
 
+![rbowen](images/rbowen.jpg)
 * Docs guy on the Apache HTTP server for about 20 years
 * Written a few books about Apache httpd
 * Struggling with the question of “what makes good docs” for most of that time
@@ -24,10 +25,10 @@ LinuxCon North America, 2016
 ## Outline
 
 ![outline](images/outline.gif)
-* Your community is your documentation
-* Know who your audience is
-* The customer is not an idiot
-* Be welcoming of new docs, but not too welcoming
+1. Your community is your documentation
+2. Know who your audience is
+3. The customer is not an idiot
+4. Be welcoming of new docs, but not too welcoming
 
 ???
 This presentation has had many incarnations, because there’s so many different things I want to say. So, I’ve tried to get it down to these points.
