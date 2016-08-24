@@ -1,5 +1,7 @@
 # RTFM? Write A Better FM
 
+![rtfm](images/keep-calm-and-rtfm1.jpg)
+
 Rich Bowen
 
 rbowen@redhat.com
