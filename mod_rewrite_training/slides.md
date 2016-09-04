@@ -59,6 +59,11 @@ count:false
 
 ---
 
+class: center, middle
+# Introduction to Regular Expressions
+
+---
+
 ## Regular Expressions
 
 ![mre](images/mre.jpg)
@@ -466,6 +471,12 @@ Other places you will use regular expressions once you master them:
 
 ---
 
+class: center, middle
+
+# mod_rewrite directives
+
+---
+
 ## mod_rewrite
 
 - mod_rewrite uses regular expressions to match requests (or other things), and modify them in some way (or not, depending)
@@ -759,6 +770,10 @@ Without the PT, you will *probably* get a 404 here.
 
 ---
 
+TODO More [F] Examples
+
+---
+
 ## [G]
 - Returns a 410 GONE response to the client browser. 
 - I've never actually used this flag.
@@ -784,6 +799,10 @@ Without the PT, you will *probably* get a 404 here.
         RewriteBase /
         RewriteCond %{REQUEST_URI} !=/index.php
         RewriteRule ^(.*) /index.php?req=$1 [L,PT]
+
+---
+
+TODO, what implies L? [F], [R], [P], and so on.
 
 ---
 
@@ -817,6 +836,10 @@ Without the PT, you will *probably* get a 404 here.
 
 ---
 
+TODO [NE] example
+
+---
+
 ## [NS]
 
 - Causes a rule to be skipped if the current request is an internal sub-request. 
@@ -831,6 +854,10 @@ Without the PT, you will *probably* get a 404 here.
 
 ---
 
+TODO [P] examples, with ProxyPassReverse
+
+---
+
 ## [QSA]
 - Appends any query string from the original request URL to any query string created in the rewrite target.
 - That is, it preserves the user-submitted query string, in addition to the one you created
@@ -841,6 +868,10 @@ Without the PT, you will *probably* get a 404 here.
 
 ## [QSD]
 - Discard any query string attached to the incoming URI. 
+
+---
+
+TODO QSD example and justification.
 
 ---
 
@@ -865,6 +896,16 @@ Without the PT, you will *probably* get a 404 here.
 
         # Serve .pl files as plain text
         RewriteRule \.pl$ - [T=text/plain]
+
+---
+
+TODO [T] exercise
+
+---
+
+class: center, middle
+
+# .htaccess files.
 
 ---
 
@@ -916,6 +957,10 @@ Redirect based on client address
 
 ---
 
+TODO RewriteCond syntax, and possible arguments. All of them.
+
+---
+
 # Backreferences
 
         RewriteCond %{HTTP_HOST} (.*)
@@ -948,6 +993,10 @@ index.php can examine `$_SERVER['REQUEST_URI']` for the original request
 
 ---
 
+TODO examples of each of the above. And other '-' arguments.
+
+---
+
 ## LA-U
 - Look-ahead for a variable that hasn't been set yet
 - For example, use this for auth user, which is set *after* rewrite phase
@@ -963,6 +1012,15 @@ index.php can examine `$_SERVER['REQUEST_URI']` for the original request
         RewriteCond expr "! %{HTTP_REFERER} \
             -strmatch '*://%{HTTP_HOST}/*'"
         RewriteRule ^/images - [F]
+---
+
+See later Expressions section
+
+---
+
+class: center, middle
+
+# RewriteMap
 
 ---
 
@@ -977,6 +1035,7 @@ index.php can examine `$_SERVER['REQUEST_URI']` for the original request
 ## RewriteMap
 
     RewriteMap MapName MapType:MapSource
+
 eg.
 
     RewriteMap examplemap txt:/path/to/file/map.txt
@@ -1044,6 +1103,12 @@ Map types
 
 ---
 
+## dbm
+
+TODO
+
+---
+
 ## int
 
     RewriteMap lc int:tolower
@@ -1065,10 +1130,28 @@ Map types
 
 ---
 
+## prg
+
+TODO more useful exmaple goes here
+
+---
+
 ## dbd
 
     RewriteMap myquery \
         "fastdbd:SELECT destination FROM rewrite WHERE source = %s"
+
+---
+
+## dbd
+
+TODO detailed database setup, and hands-on exercise
+
+---
+
+class: center, middle
+
+# Rewrite Logging
 
 ---
 
@@ -1092,17 +1175,77 @@ Then ...
 
 ---
 
-# Finis
-Email: rbowen@apache.org
-Twitter: @rbowen
-Slides: http://boxofclue.com/presentations and at https://github.com/rbowen/presentations
+## Logging
+
+TODO examples go here
 
 ---
 
-## Bonus Slides
-- RewriteMap examples
-- Rewrite recipes
-- If, ElseIf, Else syntax
+# mod_substitute
+
+TODO
+
+---
+
+# mod_proxy_html
+
+TODO
+
+---
+
+# mod_macro
+
+TODO
+
+---
+
+# FallbackResource
+
+TODO
+
+---
+
+Front controller
+
+        <Directory /var/www/my_blog>
+          RewriteBase /my_blog
+          RewriteCond /var/www/my_blog/%{REQUEST_FILENAME} !-f
+          RewriteCond /var/www/my_blog/%{REQUEST_FILENAME} !-d
+          RewriteRule ^ index.php [PT]
+        </Directory>
+Or ...
+
+        <Directory /var/www/my_blog>
+          FallbackResource index.php
+        </Directory>
+
+---
+
+# *match directives
+
+TODO
+
+---
+
+# Expression engine
+
+TODO
+
+---
+
+# <If> and friends
+
+---
+
+If/Else syntax
+
+        <If "$req{Host} != 'www.wooga.com'">
+            RedirectMatch (.*) http://www.wooga.com$1
+        </If>
+
+---
+
+# Bonus Slides
 
 ---
 
@@ -1130,22 +1273,6 @@ Look somewhere else ...
 
 ---
 
-Front controller
-
-        <Directory /var/www/my_blog>
-          RewriteBase /my_blog
-          RewriteCond /var/www/my_blog/%{REQUEST_FILENAME} !-f
-          RewriteCond /var/www/my_blog/%{REQUEST_FILENAME} !-d
-          RewriteRule ^ index.php [PT]
-        </Directory>
-Or ...
-
-        <Directory /var/www/my_blog>
-          FallbackResource index.php
-        </Directory>
-
----
-
 Prevent hotlinking 
 
         RewriteEngine on
@@ -1161,14 +1288,6 @@ or ...
 
 ---
 
-If/Else syntax
-
-        <If "$req{Host} != 'www.wooga.com'">
-            RedirectMatch (.*) http://www.wooga.com$1
-        </If>
-
----
-
 Images should be from local pages: (Prevent image "hotlinking")
 
         <FilesMatch \.(jpg|png|gif)$>
@@ -1179,12 +1298,4 @@ Images should be from local pages: (Prevent image "hotlinking")
 
 ---
 
-## See also:
-- mod_macro
-- mod_substitute
-
----
-
-## Finis
-
-
+# Finis
