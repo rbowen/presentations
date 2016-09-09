@@ -100,6 +100,14 @@ regex101.com is vastly superior.
 
 ---
 
+## Testing/Experimenting
+
+https://www.debuggex.com/ - Interesting for learning more about how
+regular expressions actually work.
+
+---
+
+
 ## Regex vocabulary
 
 We'll start with the basics and fill in more as we go along.
@@ -138,9 +146,38 @@ This small vocabulary will get you around most social situations.
 
 `a.d` matches `acd`, `ardvark`, and `forward`
 
-(Try it now)
+(Try it now - regex101.com)
+
+--
 
 ![ardvark](images/ardvark.png)
+
+---
+
+![axb](images/axb.png)
+
+???
+Emphasize that regular expressions are substring matches, not
+full-string matches. So putting .* on the beginning and end is bad, and
+you should feel bad for doing it.
+
+---
+
+
+## Following the stack
+
+`a.d` matches 'I am a coward'. Follow the matching process through to
+give some appreciation for why it matters to craft regular expressions
+well.
+
+???
+If you have a whiteboard, try to step through.
+
+---
+
+## Following the stack
+
+![coward](images/coward.png)
 
 ---
 
@@ -152,10 +189,6 @@ This small vocabulary will get you around most social situations.
 In larger regex use (eg, Perl, Python, whatever) regexes match a
 byte, not a character. This can cause confusion with UTF8, double-byte
 characters, etc.
-
----
-
-![axb](images/axb.png)
 
 ---
 
@@ -268,7 +301,7 @@ Click the "regex debugger" link at the left. (regex101.com)
 
 ---
 
-## .*a
+## .*?a
 
 ![lazy](images/lazydot_details.png)
 
@@ -320,15 +353,6 @@ the end and see what this does differently.
 
 ---
 
-## Exercise
-
-Tell me what the following regexes mean:
-
-        \.jpg$
-        (.*)\.html
-
----
-
 ## Discuss: `^` vs `.*`
 
 ???
@@ -354,6 +378,15 @@ Tell me what the following regexes mean:
 
 ---
 
+## Exercise
+
+Tell me what the following regexes mean:
+
+        \.jpg$
+        (.*)\.html
+
+---
+
 ## Advanced: Non-capturing ( )
 
     (?:abc)
@@ -361,7 +394,7 @@ Tell me what the following regexes mean:
 Matches, but doesn't capture. Saves memory, which can matter in certain
 scenarios.
 
-??
+???
 ?:
 
 ---
@@ -375,12 +408,20 @@ scenarios.
 ???
 ?!
 
+Try this on regex101
+
+Match against /foo/bar and against /images/foo/bar  Select 'python' to
+avoid escaping the slashes.
+
 ---
 
 ## Discuss: `.*` vs `(.*)`
 
 ???
 ... vs just `^`
+
+Don't capture unless you're actually going to use it later. Wastes time
+and memory. This might matter on high-traffic sites.
 
 ---
 
@@ -421,6 +462,9 @@ syntax to work, because the site is silly about slashes.
 
 ![notslash](images/notslash.png)
 
+???
+Try ([^/]+)\.(jpg)$
+
 ---
 
 ## Not
@@ -456,6 +500,27 @@ Is there a difference between these last two things?
 
 ---
 
+## (some|thing) - Alternation
+
+* Parens can match a list of options
+
+        cheap ?(jordan|uggs)
+
+* (Example from spam-matching algorithm)
+* This *also* captures as a side-effect
+
+---
+
+## URL-related example
+
+        ([^/]+)\.(jpe?g|png|gif)
+
+???
+Exercise: Get the class to figure out what this matches, and what $1, $2
+contain when we're done.
+
+---
+
 ## Other regex uses
 
 Other places you will use regular expressions once you master them:
@@ -468,6 +533,8 @@ Other places you will use regular expressions once you master them:
 - php
 - python
 - java
+- mod_security
+- SpamAssassin
 
 ---
 
@@ -497,6 +564,39 @@ How's that for a concise definition?
 
 ---
 
+## nginx
+
+Note: Most of what you learn here is immediately applicable to nginx,
+once you learn their syntax.
+
+---
+
+## URL Mapping
+
+- The phase ("hook") of httpd processing where a URL gets translated
+  into a resource
+- A resource may be a file, a handler, an action (like a redirect), a
+  proxy request, a status (like FORBIDDEN or NOT FOUND), etc
+- mod_rewrite is one part of URL mapping
+
+---
+
+## URL Mapping - timing
+
+- Usually happens early
+- Can happen in .htaccess files (very late)
+- This will matter to you at some point.
+
+---
+
+## mod_rewrite timing
+
+- RewriteRule usually runs very early, in any given scope
+- In particular, runs before other config lines in a .htaccess file or
+  <Directory> block, for example
+
+---
+
 ## Enabling the module
 
      LoadModule rewrite_module modules/mod_rewrite.so
@@ -506,6 +606,7 @@ How's that for a concise definition?
 ## Enabling - Ubuntu/Debian
 
     a2enmod rewrite
+    service httpd restart
 
 Almost certainly on by default
 
@@ -515,6 +616,11 @@ Almost certainly on by default
 
 - Enabled by default
 - Look for the `LoadModule` line if it's not
+- This is in `/etc/httpd/conf.modules.d/00-base.conf` in the standard RPM
+  build
+
+???
+Go show the file to them.
 
 ---
 
@@ -525,6 +631,7 @@ Almost certainly on by default
 * Defaults to 'off' and must be turned on in the scope where you wish to
   use it.
 * Usually reasonable to turn this on globally
+* Will need to turn it on per .htaccess file
 
 ---
 
@@ -661,6 +768,12 @@ Replace the matched URL with /pics/ followed by what was captured.
 
 ---
 
+## Exercise
+
+    RewriteRule ^/images/(.*)\.jpg /pics/$1.gif [R=301]
+
+---
+
 ## Sidebar - Avoiding mod_rewrite
 
 - mod_rewrite should be considered a last resort
@@ -686,6 +799,7 @@ Replace the matched URL with /pics/ followed by what was captured.
   control the order of operation.
 - Order might be important - Rewrite (almost) always runs before Redirect,
   regarless of order in configuration file.
+- Use mod_rewrite when you want to map transparently
 
 ---
 
@@ -789,6 +903,16 @@ TODO More [F] Examples
 
 - Example causes .phps requests to be processed by PHP's syntax-highlighter
 
+--
+count:false
+
+Exercise -  Implement the above. Verify that you can visit a php file with
+two different URLs (ie .php and .phps) with different results. 
+
+
+???
+Discuss the security implications of this fact.
+
 ---
 
 ## [L]
@@ -802,15 +926,27 @@ TODO More [F] Examples
 
 ---
 
-TODO, what implies L? [F], [R], [P], and so on.
+## Implied [L]
+
+A number of flags imply [L], and take effect immediately
+
+* [F]
+* [R]
+* [P]
+* [PT]
+* [G]
 
 ---
 
 ## [END]
+
 - Stop the rewriting process immediately and don't apply any more rules.
 - Also prevents further execution of rewrite rules in per-directory and .htaccess context. 
 - (Available in 2.3.9 and later)
 - Note that a rule issuing a REDIRECT to itself will still result in rules being re-run
+
+Example - a RewriteRule in the main config, which you want to ensure is
+not overridden by something appearing in a .htaccess file.
 
 ---
 
@@ -832,17 +968,28 @@ TODO, what implies L? [F], [R], [P], and so on.
 ---
 
 ## [NE]
-- Prevent mod_rewrite from applying hexcode escaping of special characters in the result of the rewrite. * Not to be confused with [B]
+
+- Prevent mod_rewrite from applying hexcode escaping of special characters in the result of the rewrite. 
+- Not to be confused with [B]
 
 ---
 
-TODO [NE] example
+## [NE]
+
+        RewriteRule "^/anchor/(.+)" "/bigpage.html#$1" [NE,R]
+
+The above example will redirect `/anchor/xyz` to `/bigpage.html#xyz`
+Omitting the [NE] will result in the # being converted to its hexcode
+equivalent, `%23`, which will then result in a 404 Not Found error
+condition.
 
 ---
 
 ## [NS]
 
-- Causes a rule to be skipped if the current request is an internal sub-request. 
+- Causes a rule to be skipped if the current request is an internal sub-request.
+- Subrequests are things like server-side includes, or a -U check ("Does
+  this URL exist?" check. See later.)
 
 ---
 
@@ -850,11 +997,21 @@ TODO [NE] example
 - Force the substitution URL to be internally sent as a proxy request. 
 
         RewriteRule (.*\.(jpg|gif|png))$ http://images.example.com$1 [P,NC]
+
 - Proxy to back-end image server
+- [P] implies [L] - ie, do it now
 
 ---
 
-TODO [P] examples, with ProxyPassReverse
+## [P]
+
+- [P] invokes mod_proxy, and so that must be installed
+- Like `ProxyPass`, but without the same fine-grained control of proxy
+  variables
+- You should still use `ProxyPassReverse`
+
+        RewriteRule (.*\.(jpg|gif|png))$ http://images.example.com$1 [P,NC]
+        ProxyPassReverse / http://images.example.com/
 
 ---
 
@@ -866,20 +1023,51 @@ TODO [P] examples, with ProxyPassReverse
 
 ---
 
-## [QSD]
-- Discard any query string attached to the incoming URI. 
+## [QSA]
+
+        RewriteRule /pages/(.+) /page.php?page=$1 [QSA]
+
+With QSA, `/pages/thingy?arg=value` maps to `/page.php?arg=value&page=thingy`
+
+Without QSA, `/pages/thingy?arg=value` maps to `/page.php?page=thingy`
 
 ---
 
-TODO QSD example and justification.
+## [QSD]
+
+- Discard any query string attached to the incoming URI. 
+- This does the opposite of [QSA]
+- By default, a rewrite/redirect will preserve query strings (except
+  when you use [QSA]. Some people (mistakenly) believe that this harms
+  search engine placement. So [QSD] explicitly drops the query string
+  from rewritten values.
+
+Be very very cautious about using this for security, unless you can be
+certain there's no way around it.
+
+???
+Ah, SEO, is there anything you can't do?
+
+---
+
+## [QSD]
+
+        RewriteRule /pages/(.+) /page.php/$1 [QSD]
+
+Perhaps we don't trust the user, and think that they might inject extra
+query string arguments, or we just want to be sure we have complete
+control over what our app is receiving.
+
+???
+So, either SEO or paranoia
 
 ---
 
 ## [S]
 
 - Tells the rewriting engine to skip the next num rules if the current rule matches.
-- Like a GoTo statement for rewrite rules
-- Consider using `<If>` and `<Else>` instead
+- Like a GOTO statement for rewrite rules
+- Consider using `<If>` and `<Else>` instead (later today)
 
         # Is the request for a non-existent file?
         RewriteCond %{REQUEST_FILENAME} !-f
@@ -889,17 +1077,15 @@ TODO QSD example and justification.
         RewriteRule (.*\.gif) images.php?$1
         RewriteRule (.*\.html) docs.php?$1
 
+More about `RewriteCond` in a bit.
+
 ---
 
 ## [T]
 - Force the MIME-type of the target file to be the specified type. 
 
-        # Serve .pl files as plain text
-        RewriteRule \.pl$ - [T=text/plain]
-
----
-
-TODO [T] exercise
+        # Serve .php files as plain text
+        RewriteRule \.php$ - [T=text/plain]
 
 ---
 
@@ -933,9 +1119,29 @@ count:false
         RewriteBase /images/
         RewriteRule ^(.+)\.jpg $1.png
 
-???
-Always use RewriteBase. It's not generally necessary, but it aids
-comprehension by the poor slob who has to maintain it later.
+In Apache HTTP Server 2.4.16 and later, RewriteBase may be omitted
+when the request is mapped via Alias or mod_userdir.
+
+---
+
+## .htaccess files
+
+- Late acting. Rules are applied after URL mapping is already finished,
+  and has mapped you to a directory
+- This means you probably can't bypass directory-based authentication,
+  for example
+
+---
+
+## .htaccess files - Caveats
+
+- [L] probably doesn't mean what you initially think it does.
+- Control often returned back up to main URL mapping process, which may
+  result in the .htaccess file being invoked again.
+
+---
+
+# RewriteCond
 
 ---
 
@@ -950,6 +1156,8 @@ comprehension by the poor slob who has to maintain it later.
 
 ---
 
+## RewriteCond - example
+
 Redirect based on client address
 
         RewriteCond %{REMOTE_ADDR} ^10\.2\.
@@ -957,7 +1165,15 @@ Redirect based on client address
 
 ---
 
-TODO RewriteCond syntax, and possible arguments. All of them.
+## RewriteCond - example
+
+Loop avoidance (did we already do this?)
+
+        RewriteCond %{REQUEST_URI} !^/images
+        RewriteRule (.+\.(jpg|gif|png))$ /images/$1 [PT]
+
+Otherwise, a request for `/images/whotsit.png` will be rewritten to
+`/images/images/whotsit.png`. Rinse. Repeat
 
 ---
 
@@ -965,6 +1181,9 @@ TODO RewriteCond syntax, and possible arguments. All of them.
 
         RewriteCond %{HTTP_HOST} (.*)
         RewriteRule ^/(.*) /sites/%1/$1
+
+- RewriteRule backreferences: $1, $2, $3, etc
+- RewriteCond backreferences: %1, %2, %3, etc
 
 ---
 
@@ -984,6 +1203,9 @@ TODO RewriteCond syntax, and possible arguments. All of them.
 
 index.php can examine `$_SERVER['REQUEST_URI']` for the original request
 
+???
+See also FallbackResource (Later)
+
 ---
 
 ## Others
@@ -993,7 +1215,15 @@ index.php can examine `$_SERVER['REQUEST_URI']` for the original request
 
 ---
 
-TODO examples of each of the above. And other '-' arguments.
+## -U
+
+        RewriteCond %{REQUEST_URI} !-U
+        RewriteRule (.+) http://other.site$1 [R,L]
+
+- Follows proxy referrals, redirects, aliases, and so on
+- Can be very slow
+- Can be useful for "check elsewhere" kinds of rules, rather than simply
+  returning a 404.
 
 ---
 
@@ -1003,6 +1233,9 @@ TODO examples of each of the above. And other '-' arguments.
 
         RewriteCond %{LA-U:REMOTE_USER} (.+)
         RewriteRule (.*) http://people.example.org/%1/$1   [R,L]
+
+- This is usually a subrequest - see [NS] flag.
+- Like -U, can be very slow, and possibly inaccurate.
 
 ---
 
@@ -1015,6 +1248,93 @@ TODO examples of each of the above. And other '-' arguments.
 ---
 
 See later Expressions section
+
+---
+
+## RewriteCond ... what else?
+
+- %{ENV:variable} - any environment variable
+- %{SSL:variable} - any SSL variable
+- %{HTTP:header} - any HTTP header
+
+---
+
+## RewriteCond - condition pattern
+
+- Usually a PCRE, but can also be ...
+
+---
+
+## RewriteCond - condition pattern - string comparisons
+
+- Lexical string comparisions, rather then regex
+    - <, >, =, >=, <=, or !=
+- Numerical comparisions
+    - -eq, -ge, -gt, -le, -lt, -ne
+
+---
+
+## RewriteCond - file test attributes
+
+* -d Is directory.
+* -f Is regular file.
+* -F Is existing file, via subrequest.
+* -h Is symbolic link, bash convention.
+* -l Is symbolic link.
+* -L Is symbolic link, bash convention.
+* -s Is regular file, with size.
+* -U Is existing URL, via subrequest.
+* -x Has executable permissions.
+
+???
+You've already seen some of these. Here's the full list.
+
+---
+
+## Example
+
+Check somewhere else ...
+
+        RewriteCond /var/www/%{REQUEST_URI} !-f
+        RewriteRule ^(.+) /other/archive/$1 [R]
+
+---
+
+## Example
+
+        RewriteCond expr "! %{HTTP_REFERER} -strmatch '*://%{HTTP_HOST}/*'"
+        RewriteRule "^/images" "-" [F]
+
+---
+
+## RewriteCond Flags
+
+- Like RewriteRule, but fewer of them
+- [OR] - Subsequent rules are OR'ed rather than AND'ed
+- [NC] - Conds are applied in a case-insensitive manner
+- [NV] - If a HTTP header is used in the condition, this flag prevents this header from being added to the Vary header of the response. 
+
+???
+Using [NV] might break proper caching of the response if the
+representation of this response varies on the value of this header. So
+this flag should be only used if the meaning of the Vary header is well
+understood.
+
+---
+
+## One last example - flow control
+
+        RewriteCond  "%{HTTP_USER_AGENT}"  "(iPhone|Blackberry|Android)"
+        RewriteRule  "^/$"                 "/homepage.mobile.html"  [L]
+
+        RewriteRule  "^/$"                 "/homepage.std.html"     [L]
+
+Thought Exercise - work through the various possibilities, and convince
+yourself that this does in fact work as desired.
+
+???
+The second RewriteRule, in conjuction with the [L] flag, acts as an ELSE
+clause
 
 ---
 
@@ -1041,18 +1361,23 @@ eg.
     RewriteMap examplemap txt:/path/to/file/map.txt
     RewriteRule ^/ex/(.*) ${examplemap:$1}
 
+Think of `RewriteMap` as defining a function, or macro, which you can
+then call in your `RewriteRule` or `RewriteCond` directive.
+
 ---
 
-RewriteMap example
+## RewriteMap example
 
         RewriteMap product2id \
             txt:/etc/apache2/productmap.txt
         RewriteRule ^/product/(.*) \
              /prods.php?id=${product2id:$1|NOTFOUND} [PT]
 
+NOTFOUND is returned in the case that the lookup fails.
+
 ---
 
-Map file
+## Map file
 
         ##
         ## productmap.txt - Product to ID map file
@@ -1064,20 +1389,28 @@ Map file
         basketball 418
         telephone 328
 
+File lookup is sequential - thus, potentially slow for large files.
+
 ---
 
-## Other map types
+## RewriteMap exercise
+
+Set up a simple txt RewriteMap which maps band names to product IDs.
+
+Steps:
+
+* Create map file
+* Add RewriteMap directive
+* Add RewriteRule directive using that map
+* Test
+
+---
+
+## Map types
 
 - txt: Plain text maps
 - rnd: Randomized Plain Text
 - dbm: DBM Hash File
-
-    httxt2dbm -i rewritemap.txt -o rewritemap.dbm
-
----
-
-Map types
-
 - int: Internal Function
 - prg: External Rewriting Program
 - dbd or fastdbd: SQL Query
@@ -1086,12 +1419,12 @@ Map types
 
 ## rnd
 
-    ##
-    ## map.txt -- rewriting map
-    ##
-    
-    static www1|www2|www3|www4
-    dynamic www5|www6
+        ##
+        ## map.txt -- rewriting map
+        ##
+        
+        static www1|www2|www3|www4
+        dynamic www5|www6
 
 ---
 
@@ -1101,15 +1434,63 @@ Map types
     RewriteRule ^/(.*\.(png|gif|jpg)) http://${servers:static}/$1 [NC,P,L]
     RewriteRule ^/(.*) http://${servers:dynamic}/$1 [P,L]
 
+This is the so-called "poor man's load balancing" recipe.
+
+---
+
+## rnd - weighted randomization
+
+        ##
+        ## map.txt -- rewriting map
+        ##
+        
+        banner  sponsor1|sponsor2|sponsor2|sponsor3
+
+... if sponsor1 and sponsor3 are gold sponsors, and sponsor2 is a
+platinum sponsor, for example.
+
 ---
 
 ## dbm
 
-TODO
+- Exactly like the text mapping, in concept and syntax
+- Much faster/scalable in practice
+
+Convert your map from txt to dbm with:
+
+        httxt2dbm -i rewritemap.txt -o rewritemap.dbm
+
+You can then reference the resulting file in your RewriteMap directive:
+
+        RewriteMap mapname "dbm:/etc/apache/mapfile.map"
+
+---
+
+## RewriteMap - dbm
+
+- Update dbm, without having restart httpd - file timestamp is checked
+  (`stat`) with each request.
+- Otherwise, file contents are cached in memory for very fast lookups
 
 ---
 
 ## int
+
+- Provides a few internal macros that you can invoke in your maps
+- Far less useful than it sounds
+
+---
+
+## RewriteMap - int
+
+- toupper: Converts the key to all upper case.
+- tolower: Converts the key to all lower case.
+- escape: Translates special characters in the key to hex-encodings.
+- unescape: Translates hex-encodings in the key back to special characters.
+
+---
+
+## RewriteMap int example
 
     RewriteMap lc int:tolower
     RewriteRule (.*?[A-Z]+.*) ${lc:$1} [R]
@@ -1118,8 +1499,21 @@ TODO
 
 ## prg
 
+- Calls an external program to process a rewrite mapping
+- Almost always a bad idea
+- Blocking - all requests funneled through the same running instance.
+  Can cause serious performance impact.
+- Program isn't launched each time, but is launched on startup, and kept
+  running, so must expected streamed input/output
+
+---
+
+## RewriteMap prg example
+
         RewriteMap d2u prg:/www/bin/dash2under.pl
         RewriteRule - ${d2u:%{REQUEST_URI}}
+
+With a script like ...
 
         #!/usr/bin/perl
         $| = 1; # Turn off I/O buffering
@@ -1130,25 +1524,46 @@ TODO
 
 ---
 
-## prg
+## RewriteMap prg
 
-TODO more useful exmaple goes here
+- Was possibly more useful before we had the dbd/fastdbd map type. Even
+  then it was questionable.
 
 ---
 
 ## dbd
+
+- Call a SQL query to do your mapping
+- Uses mod_dbd for database connectivity
 
     RewriteMap myquery \
-        "fastdbd:SELECT destination FROM rewrite WHERE source = %s"
+        "dbd:SELECT destination FROM rewrite WHERE source = %s"
 
 ---
 
-## dbd
+## dbd setup
 
-TODO detailed database setup, and hands-on exercise
+- Set up database connection with mod_dbd
+
+        DBDriver mysql
+        DBDParams host=localhost,dbname=pony,user=pony,pass=pony
+
+- one persistent connection per child
+
+- Create map
+
+        RewriteEngine On
+        RewriteMap pony "dbd:SELECT stable FROM pony WHERE name= %s"
+        RewriteRule ^/(pony.+) /stable/${pony:$1} [R]
 
 ---
 
+## dbd vs fastdbd
+
+- dbd makes the query with each request
+- fastdbd caches responses until server restart
+
+---
 class: center, middle
 
 # Rewrite Logging
@@ -1177,7 +1592,221 @@ Then ...
 
 ## Logging
 
-TODO examples go here
+[Fri Sep 09 16:27:23.013851 2016] [rewrite:trace2] [pid 30254]
+mod_rewrite.c(477): [client 127.0.0.1:51440] 127.0.0.1 - -
+[localhost/sid#56363b94b400][rid#56363bbf53a0/initial] init rewrite
+engine with requested uri /pony1
+[Fri Sep 09 16:27:23.013891 2016] [rewrite:trace3] [pid 30254]
+mod_rewrite.c(477): [client 127.0.0.1:51440] 127.0.0.1 - -
+[localhost/sid#56363b94b400][rid#56363bbf53a0/initial] applying pattern
+'^/(pony.+)' to uri '/pony1'
+[Fri Sep 09 16:27:23.014161 2016] [rewrite:trace5] [pid 30254]
+mod_rewrite.c(477): [client 127.0.0.1:51440] 127.0.0.1 - -
+[localhost/sid#56363b94b400][rid#56363bbf53a0/initial] SQL map lookup
+OK: map pony key=pony1, val=1
+[Fri Sep 09 16:27:23.014183 2016] [rewrite:trace2] [pid 30254]
+mod_rewrite.c(477): [client 127.0.0.1:51440] 127.0.0.1 - -
+[localhost/sid#56363b94b400][rid#56363bbf53a0/initial] rewrite '/pony1'
+-> '/stable/1'
+[Fri Sep 09 16:27:23.014189 2016] [rewrite:trace2] [pid 30254]
+mod_rewrite.c(477): [client 127.0.0.1:51440] 127.0.0.1 - -
+[localhost/sid#56363b94b400][rid#56363bbf53a0/initial] explicitly
+forcing redirect with http://localhost/stable/1
+[Fri Sep 09 16:27:23.014194 2016] [rewrite:trace1] [pid 30254]
+mod_rewrite.c(477): [client 127.0.0.1:51440] 127.0.0.1 - -
+[localhost/sid#56363b94b400][rid#56363bbf53a0/initial] escaping
+http://localhost/stable/1 for redirect
+[Fri Sep 09 16:27:23.014201 2016] [rewrite:trace1] [pid 30254]
+mod_rewrite.c(477): [client 127.0.0.1:51440] 127.0.0.1 - -
+[localhost/sid#56363b94b400][rid#56363bbf53a0/initial] redirect to
+http://localhost/stable/1 [REDIRECT/302]
+[Fri Sep 09 16:27:23.029757 2016] [rewrite:trace2] [pid 30254]
+mod_rewrite.c(477): [client 127.0.0.1:51440] 127.0.0.1 - -
+[localhost/sid#56363b94b400][rid#56363bbf93c0/initial] init rewrite
+engine with requested uri /stable/1
+
+
+---
+
+Yeah, that was a lot of line noise. Let's try that again.
+
+---
+
+## Rewrite log entry
+
+        [Fri Sep 09 16:27:23.013891 2016] [rewrite:trace3] [pid 30254]
+        mod_rewrite.c(477): [client 127.0.0.1:51440] 127.0.0.1 - -
+        [localhost/sid#56363b94b400][rid#56363bbf53a0/initial] applying pattern
+        '^/(pony.+)' to uri '/pony1'
+
+--
+
+Let's break it down ...
+
+---
+
+## Timestamp
+
+        [Fri Sep 09 16:27:23.013891 2016] 
+
+Time stamp. Nothing exciting here.
+
+---
+
+## Module and loglevel
+
+        [rewrite:trace3] 
+
+This is the module that is logging, and what log level it logged at.
+Thus, if you set trace2 rather than trace6 in your ErrorLogLevel
+directive, you wouldn't see this one.
+
+---
+
+## pid
+
+        [pid 30254]
+
+The process ID, in the Unix process list.
+
+---
+
+## source code reference
+
+        mod_rewrite.c(477): 
+
+Which line of source code, in which source code file, was responsible
+for this particular log message. In case you want to go looking.
+
+---
+
+## Client info
+
+        [client 127.0.0.1:51440] 127.0.0.1 - -
+
+Client address, and the server it was talking to.
+
+---
+
+## sid
+
+        [localhost/sid#56363b94b400]
+
+The SID is the Server ID - unique per vhost. This is useful if you have
+multiple vhosts logging the same place, and want to split out just one
+vhost. However, there's no obvious way to determine your SID other than
+pawing through the log file.
+
+---
+
+## rid
+
+        [rid#56363bbf53a0/initial]
+
+This is the Request ID. All log entries from the same HTTP request will
+have the same Request ID. This is very useful in debugging what happened
+in a particular rewrite rule set, by isolating a particular request.
+
+initial, as opposed to subrequest.
+
+---
+
+## Log message
+
+        applying pattern '^/(pony.+)' to uri '/pony1'
+
+The actual log message. This can be extremely useful, as it tells you
+eactly what regex is being applied to exactly what URI. Remember back in
+the .htaccess section - the URI that it's being applied to might not
+always be what you expect, and here's how you make certain.
+
+---
+
+## Inspecting the Rewrite log entries
+
+For the most part, visually discard the first part of every log entry ...
+
+        init rewrite engine with requested uri /pony1
+
+        applying pattern '^/(pony.+)' to uri '/pony1'
+
+        SQL map lookup OK: map pony key=pony1, val=1
+
+        rewrite '/pony1' -> '/stable/1'
+
+        explicitly forcing redirect with http://localhost/stable/1
+
+        escaping http://localhost/stable/1 for redirect
+
+        redirect to http://localhost/stable/1 [REDIRECT/302]
+
+---
+
+## Next request
+
+This is the next request ...
+
+        init rewrite engine with requested uri /stable/1
+
+- You can tell because the rid changed
+- Also because of the 'init rewrite engine' bit.
+
+---
+
+## Let's try the same thing with the rule in a .htaccess file ...
+
+
+        RewriteEngine On
+        RewriteRule ^(pony.+) /stable/${pony:$1} [R]
+
+Note missing leading slash in pattern.
+
+---
+
+## And the log entries ...
+
+	[perdir /home/rbowen/devel/presentations/] strip per-dir prefix: /home/rbowen/devel/presentations/pony1 -> pony1
+	[perdir /home/rbowen/devel/presentations/] applying pattern '^(pony.+)' to uri 'pony1'
+	SQL map lookup OK: map pony key=pony1, val=1
+	[perdir /home/rbowen/devel/presentations/] rewrite 'pony1' -> '/stable/1'
+	[perdir /home/rbowen/devel/presentations/] explicitly forcing redirect with http://localhost/stable/1
+	[perdir /home/rbowen/devel/presentations/] escaping http://localhost/stable/1 for redirect
+	[perdir /home/rbowen/devel/presentations/] redirect to http://localhost/stable/1 [REDIRECT/302]
+
+And this is the next request:
+
+	init rewrite engine with requested uri /stable/1
+
+???
+Draw particular attention to the uri 'pony1' as opposed to '/pony1'
+
+---
+
+## Trying one more time, with a slightly different rule:
+
+        RewriteEngine On
+        RewriteRule ^(pony.+) /stable/${pony:$1} 
+
+---
+
+## The log entries ...
+
+	[perdir /home/rbowen/devel/presentations/] strip per-dir prefix: /home/rbowen/devel/presentations/pony1 -> pony1
+	[perdir /home/rbowen/devel/presentations/] applying pattern '^(pony.+)' to uri 'pony1'
+	SQL map lookup OK: map pony key=pony1, val=1
+	[perdir /home/rbowen/devel/presentations/] rewrite 'pony1' -> 'stable/1'
+	[perdir /home/rbowen/devel/presentations/] add per-dir prefix: stable/1 -> /home/rbowen/devel/presentations/stable/1
+	[perdir /home/rbowen/devel/presentations/] strip document_root prefix: /home/rbowen/devel/presentations/stable/1 -> /stable/1
+	[perdir /home/rbowen/devel/presentations/] internal redirect with /stable/1 [INTERNAL REDIRECT]
+
+If you keep following the log, you'll see more entries with `[rid#55a50d798720/initial/redir#1]` - ie, same request, but second pass through, when the request hits the .htaccess file the second time.
+
+---
+
+
+# RewriteOptions
+
+TODO
 
 ---
 
@@ -1248,6 +1877,13 @@ If/Else syntax
 # Bonus Slides
 
 ---
+
+# mod_security
+
+TODO
+
+---
+
 
 ## Rewrite Recipes
 
