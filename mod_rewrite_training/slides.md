@@ -1787,6 +1787,9 @@ Draw particular attention to the uri 'pony1' as opposed to '/pony1'
         RewriteEngine On
         RewriteRule ^(pony.+) /stable/${pony:$1} 
 
+In this case, rather than redirecting, we're doing a transparent local
+rewrite.
+
 ---
 
 ## The log entries ...
@@ -1803,10 +1806,75 @@ If you keep following the log, you'll see more entries with `[rid#55a50d798720/i
 
 ---
 
+## Exercise: Rewrite Logging
 
-# RewriteOptions
+Enable your rewrite log, and go back to look at the other `RewriteRule`
+examples we've done, to see their logging patterns. Compare
+configurations in `httpd.conf` vs `.htaccess`.
 
-TODO
+---
+
+## RewriteOptions
+
+* Configures certain twiddly bits of mod_rewrite
+* Usually will not need to meddle with this, but, in case you do ...
+
+---
+
+TODO Cleanup on aisle 9
+
+## RewriteOptions Inherit
+This forces the current configuration to inherit the configuration of the parent. In per-virtual-server context, this means that the maps, conditions and rules of the main server are inherited. In per-directory context this means that conditions and rules of the parent directory's .htaccess configuration or <Directory> sections are inherited. The inherited rules are virtually copied to the section where this directive is being used. If used in combination with local rules, the inherited rules are copied behind the local rules. The position of this directive - below or above of local rules - has no influence on this behavior. If local rules forced the rewriting to stop, the inherited rules won't be processed.
+
+---
+
+Rules inherited from the parent scope are applied after rules specified in the child scope.
+## RewriteOptions InheritBefore
+Like Inherit above, but the rules from the parent scope are applied before rules specified in the child scope.
+Available in Apache HTTP Server 2.3.10 and later.
+
+---
+
+## RewriteOptions InheritDown
+If this option is enabled, all child configurations will inherit the configuration of the current configuration. It is equivalent to specifying RewriteOptions Inherit in all child configurations. See the Inherit option for more details on how the parent-child relationships are handled.
+Available in Apache HTTP Server 2.4.8 and later.
+
+---
+
+## RewriteOptions InheritDownBefore
+Like InheritDown above, but the rules from the current scope are applied before rules specified in any child's scope.
+Available in Apache HTTP Server 2.4.8 and later.
+
+---
+
+## RewriteOptions IgnoreInherit
+This option forces the current and child configurations to ignore all rules that would be inherited from a parent specifying InheritDown or InheritDownBefore.
+Available in Apache HTTP Server 2.4.8 and later.
+
+---
+
+## RewriteOptions AllowNoSlash
+By default, mod_rewrite will ignore URLs that map to a directory on disk but lack a trailing slash, in the expectation that the mod_dir module will issue the client with a redirect to the canonical URL with a trailing slash.
+
+When the DirectorySlash directive is set to off, the AllowNoSlash option can be enabled to ensure that rewrite rules are no longer ignored. This option makes it possible to apply rewrite rules within .htaccess files that match the directory without a trailing slash, if so desired.
+Available in Apache HTTP Server 2.4.0 and later.
+
+---
+
+## RewriteOptions AllowAnyURI
+When RewriteRule is used in VirtualHost or server context with version 2.2.22 or later of httpd, mod_rewrite will only process the rewrite rules if the request URI is a URL-path. This avoids some security issues where particular rules could allow "surprising" pattern expansions (see CVE-2011-3368 and CVE-2011-4317). To lift the restriction on matching a URL-path, the AllowAnyURI option can be enabled, and mod_rewrite will apply the rule set to any request URI string, regardless of whether that string matches the URL-path grammar required by the HTTP specification.
+Available in Apache HTTP Server 2.4.3 and later.
+
+Security Warning
+
+Enabling this option will make the server vulnerable to security issues if used with rewrite rules which are not carefully authored. It is strongly recommended that this option is not used. In particular, beware of input strings containing the '@' character which could change the interpretation of the transformed URI, as per the above CVE names.
+MergeBase
+With this option, the value of RewriteBase is copied from where it's explicitly defined into any sub-directory or sub-location that doesn't define its own RewriteBase. This was the default behavior in 2.4.0 through 2.4.3, and the flag to restore it is available Apache HTTP Server 2.4.4 and later.
+
+---
+
+## RewriteOptions IgnoreContextInfo
+When a relative substitution is made in directory (htaccess) context and RewriteBase has not been set, this module uses some extended URL and filesystem context information to change the relative substitution back into a URL. Modules such as mod_userdir and mod_alias supply this extended context info. Available in 2.4.16 and later.
 
 ---
 
