@@ -59,6 +59,22 @@ count:false
 
 ---
 
+## A word on SEO
+
+* An entire industry has sprung up based on misinformation about how
+  search engines work. mod_rewrite is a major tool of that industry.
+* Your site will rank higher if it is fast, attractive, and has the best
+  information/product/presentation.
+* There are legitimate techniques for improving traffic to your site.
+  They are all well known, well documented, and take a *lot* of work.
+* Don't be fooled by charlatans who tell you they can improve your
+  search engine rankings overnight. They are lying.
+
+???
+Search Engine Optimization
+
+---
+
 class: center, middle
 # Introduction to Regular Expressions
 
@@ -139,6 +155,7 @@ This small vocabulary will get you around most social situations.
 - Matches one "atom"
 - In mod_rewrite syntax, it matches a 'character'
 - Use \\. if you want to match a literal "."
+- Similarly, use \\\\ if you want to match a literal \\
 
 ---
 
@@ -882,9 +899,7 @@ Without the PT, you will *probably* get a 404 here.
 
         RewriteRule \.exe - [F]
 
----
-
-TODO More [F] Examples
+- [F] implies [L] - no further rules are processed.
 
 ---
 
@@ -1245,9 +1260,8 @@ See also FallbackResource (Later)
         RewriteCond expr "! %{HTTP_REFERER} \
             -strmatch '*://%{HTTP_HOST}/*'"
         RewriteRule ^/images - [F]
----
 
-See later Expressions section
+- See later Expressions section
 
 ---
 
@@ -1304,6 +1318,8 @@ Check somewhere else ...
 
         RewriteCond expr "! %{HTTP_REFERER} -strmatch '*://%{HTTP_HOST}/*'"
         RewriteRule "^/images" "-" [F]
+
+- Again, we'll talk about the expression parser more later.
 
 ---
 
@@ -1821,88 +1837,548 @@ configurations in `httpd.conf` vs `.htaccess`.
 
 ---
 
-TODO Cleanup on aisle 9
-
 ## RewriteOptions Inherit
-This forces the current configuration to inherit the configuration of the parent. In per-virtual-server context, this means that the maps, conditions and rules of the main server are inherited. In per-directory context this means that conditions and rules of the parent directory's .htaccess configuration or <Directory> sections are inherited. The inherited rules are virtually copied to the section where this directive is being used. If used in combination with local rules, the inherited rules are copied behind the local rules. The position of this directive - below or above of local rules - has no influence on this behavior. If local rules forced the rewriting to stop, the inherited rules won't be processed.
+
+- forces the current configuration to inherit the configuration of the parent.
+- In per-virtual-server context, this means that the maps, conditions and rules of the main server are inherited. In per-directory context this means that conditions and rules of the parent directory's .htaccess configuration or <Directory> sections are inherited.
+- Rules inherited from the parent scope are applied after rules specified in the child scope.
+
+???
+
+The inherited rules are virtually copied to the section where this directive is being used. If used in combination with local rules, the inherited rules are copied behind the local rules. The position of this directive - below or above of local rules - has no influence on this behavior. If local rules forced the rewriting to stop, the inherited rules won't be processed.
 
 ---
 
-Rules inherited from the parent scope are applied after rules specified in the child scope.
 ## RewriteOptions InheritBefore
-Like Inherit above, but the rules from the parent scope are applied before rules specified in the child scope.
-Available in Apache HTTP Server 2.3.10 and later.
+- Like Inherit above, but the rules from the parent scope are applied *before* rules specified in the child scope.
+- Available in Apache HTTP Server 2.3.10 and later.
 
 ---
 
 ## RewriteOptions InheritDown
-If this option is enabled, all child configurations will inherit the configuration of the current configuration. It is equivalent to specifying RewriteOptions Inherit in all child configurations. See the Inherit option for more details on how the parent-child relationships are handled.
-Available in Apache HTTP Server 2.4.8 and later.
+
+- Like Inherit, but top-down rather than bottom-up
+- If this option is enabled, all child configurations will inherit the configuration of the current configuration. It is equivalent to specifying `RewriteOptions Inherit` in all child configurations.
+- Available in Apache HTTP Server 2.4.8 and later.
 
 ---
 
 ## RewriteOptions InheritDownBefore
-Like InheritDown above, but the rules from the current scope are applied before rules specified in any child's scope.
-Available in Apache HTTP Server 2.4.8 and later.
+
+- Like InheritDown, but the rules from the current scope are applied before rules specified in any child's scope.
+- Available in Apache HTTP Server 2.4.8 and later.
 
 ---
 
 ## RewriteOptions IgnoreInherit
-This option forces the current and child configurations to ignore all rules that would be inherited from a parent specifying InheritDown or InheritDownBefore.
-Available in Apache HTTP Server 2.4.8 and later.
+- forces the current and child configurations to ignore all rules that would be inherited from a parent specifying InheritDown or InheritDownBefore.
+- Available in Apache HTTP Server 2.4.8 and later.
 
 ---
 
 ## RewriteOptions AllowNoSlash
-By default, mod_rewrite will ignore URLs that map to a directory on disk but lack a trailing slash, in the expectation that the mod_dir module will issue the client with a redirect to the canonical URL with a trailing slash.
 
-When the DirectorySlash directive is set to off, the AllowNoSlash option can be enabled to ensure that rewrite rules are no longer ignored. This option makes it possible to apply rewrite rules within .htaccess files that match the directory without a trailing slash, if so desired.
-Available in Apache HTTP Server 2.4.0 and later.
+- By default, mod_rewrite will ignore URLs that map to a directory on disk but lack a trailing slash, in the expectation that the mod_dir module will issue the client with a redirect to the canonical URL with a trailing slash.
+
+- When the DirectorySlash directive is set to off, the AllowNoSlash option can be enabled to ensure that rewrite rules are no longer ignored. This option makes it possible to apply rewrite rules within .htaccess files that match the directory without a trailing slash, if so desired.
+- Available in Apache HTTP Server 2.4.0 and later.
 
 ---
 
 ## RewriteOptions AllowAnyURI
-When RewriteRule is used in VirtualHost or server context with version 2.2.22 or later of httpd, mod_rewrite will only process the rewrite rules if the request URI is a URL-path. This avoids some security issues where particular rules could allow "surprising" pattern expansions (see CVE-2011-3368 and CVE-2011-4317). To lift the restriction on matching a URL-path, the AllowAnyURI option can be enabled, and mod_rewrite will apply the rule set to any request URI string, regardless of whether that string matches the URL-path grammar required by the HTTP specification.
-Available in Apache HTTP Server 2.4.3 and later.
 
-Security Warning
+- Ordinarily, `RewriteRule` will only process URIs that are actually
+  valid URIs.
+- This option lifts that restriction
+- Don't use this unless you're *certain* you need it.
+- Available in Apache HTTP Server 2.4.3 and later.
 
-Enabling this option will make the server vulnerable to security issues if used with rewrite rules which are not carefully authored. It is strongly recommended that this option is not used. In particular, beware of input strings containing the '@' character which could change the interpretation of the transformed URI, as per the above CVE names.
-MergeBase
-With this option, the value of RewriteBase is copied from where it's explicitly defined into any sub-directory or sub-location that doesn't define its own RewriteBase. This was the default behavior in 2.4.0 through 2.4.3, and the flag to restore it is available Apache HTTP Server 2.4.4 and later.
+---
+## Security Warning
+
+Enabling `AllowAnyURI` will make the server vulnerable to security issues if used with rewrite rules which are not carefully authored. It is strongly recommended that this option is not used. In particular, beware of input strings containing the '@' character which could change the interpretation of the transformed URI.
+
+---
+
+## MergeBase
+
+- Causes the value of RewriteBase to be copied from where it's explicitly defined into any sub-directory or sub-location that doesn't define its own RewriteBase.
+- This was the default behavior in 2.4.0 through 2.4.3, and the flag to restore it is available Apache HTTP Server 2.4.4 and later.
 
 ---
 
 ## RewriteOptions IgnoreContextInfo
-When a relative substitution is made in directory (htaccess) context and RewriteBase has not been set, this module uses some extended URL and filesystem context information to change the relative substitution back into a URL. Modules such as mod_userdir and mod_alias supply this extended context info. Available in 2.4.16 and later.
+
+- When a relative substitution is made in directory (htaccess) context and RewriteBase has not been set, this module uses some extended URL and filesystem context information to change the relative substitution back into a URL. Modules such as mod_userdir and mod_alias supply this extended context info.
+- This option **disables** that functionality, so you can provide the
+  base yourself using RewriteBase
+- Available in 2.4.16 and later.
 
 ---
 
-# mod_substitute
-
-TODO
-
----
-
-# mod_proxy_html
-
-TODO
+class: center, middle
+# Expression engine
 
 ---
 
-# mod_macro
+## Expression Engine
 
-TODO
+- New in 2.4
+- Arbitrary logical expressions can be used in `RewriteCond`, and a variety of other directives (growing over time)
+- Any expression derived from anything you know at request time
+
+---
+
+## Expressions
+
+        "%{HTTP_HOST} == 'example.com'"
+
+        "%{QUERY_STRING} =~ /forcetext/"
+
+        "%{TIME_HOUR} -gt 9 && %{TIME_HOUR} -lt 17"
+
+---
+
+## Expressions
+
+- Can be used in `RewriteCond`
+- Also as part of authorization.
+
+        <Directory "/foo/bar/business">
+            Require expr %{TIME_HOUR} -gt 9 && %{TIME_HOUR} -lt 17
+        </Directory>
+
+- See also the `<If>` directive in a moment.
+
+---
+
+## Expressions - available syntax
+
+For `RewriteCond`, use the `expr` syntax to indicate that the next
+argument is an expression:
+
+        RewriteCond expr \
+            "! %{HTTP_REFERER} -strmatch '*://%{HTTP_HOST}/*'"
+
+In this case, strmatch uses glob-style matching to compare two strings.
+
+---
+
+## Expressions - Available syntax
+
+* Compound statements
+
+    A && B
+
+    A || B
+
+    !A
+
+    ( ... )
+
+???
+Logical AND
+Logical OR
+Negate an expression
+Combine more than two statements
+
+---
+
+# Example
+
+        RewriteCond expr \
+        "  (%{TIME_HOUR} -gt 9 && %{TIME_HOUR} -lt 17)  \
+        || (%{TIME_WDAY} -eq 6 || %{TIME_WDAY} eq 7)"
+
+Only if it's between 9am and 5pm, or it's on a weekend
+
+---
+
+## Regex, list functions
+
+    =~
+
+    !~
+
+    in {item, item2, item3}
+
+???
+Regular expression comparisons of some things was already possible, but
+this allows you to build more complex expressions.
+
+in{1,2,3} a list is very useful, but can be slow.
+
+---
+
+## String comparisons
+
+        ==
+
+        !=
+
+        <
+
+        <=
+
+        >
+
+        >=
+
+---
+
+## Integer comparisons
+
+        -eq
+
+        -ne
+
+        -lt
+
+        -le
+
+        -gt
+
+        -ge
+
+---
+
+## Binary operators
+
+* -ipmatch - IP address matches address/netmask
+* -strmatch - left string matches pattern given by right string (containing wildcards *, ?, [])
+* -strcmatch - same as -strmatch, but case insensitive
+* -fnmatch - same as -strmatch, but slashes are not matched by wildcards
+
+---
+
+## Unary operators
+
+* -d - The argument is treated as a filename. True if the file exists and is a directory 
+* -e - The argument is treated as a filename. True if the file (or dir or special) exists
+* -f - The argument is treated as a filename. True if the file exists and is regular file
+* -s - The argument is treated as a filename. True if the file exists and is not empty
+* -L - The argument is treated as a filename. True if the file exists and is symlink
+* -h - The argument is treated as a filename. True if the file exists and is symlink (same as -L)
+
+---
+
+## Unary operators (cont'd)
+
+* -F - True if string is a valid file, accessible via all the server's currently-configured access controls for that path. This uses an internal subrequest to do the check, so use it with care - it can impact your server's performance!  
+* -U - True if string is a valid URL, accessible via all the server's currently-configured access controls for that path. This uses an internal subrequest to do the check, so use it with care - it can impact your server's performance!  
+* -A - Alias for -U    
+* -n - True if string is not empty 
+* -z - True if string is empty 
+* -T  False if string is empty, "0", "off", "false", or "no" (case insensitive). True otherwise.   
+* -R - Same as "%{REMOTE_ADDR} -ipmatch ...", but more efficient
+
+---
+
+## Other Functions
+
+* req OR http -  Get HTTP request header; header names may be added to the Vary header, see below  
+* req_novary - Same as req, but header names will not be added to the Vary header  
+* resp   - Get HTTP response header    
+* reqenv  -Lookup request environment variable (as a shortcut, v can be used too to access variables).  
+* osenv -  Lookup operating system environment variable    
+
+---
+
+## Other functions, cont'd
+
+* note  -  Lookup request note 
+* env - Return first match of note, reqenv, osenv   
+* tolower - Convert string to lower case    
+* toupper - Convert string to upper case    
+* escape -  Escape special characters in %hex encoding  
+* unescape -    Unescape %hex encoded string, leaving encoded slashes alone; return empty string if %00 is found 
+* base64  - Encode the string using base64 encoding 
+* unbase64  -   Decode base64 encoded string, return truncated string if 0x00 is found   
+
+---
+
+## Other functions, cont'd
+
+* md5 - Hash the string using MD5, then encode the hash with hexadecimal encoding    
+* sha1 -    Hash the string using SHA1, then encode the hash with hexadecimal encoding    
+* file  -   Read contents from a file (including line endings, when present)
+* filesize -    Return size of a file (or 0 if file does not exist or is not regular file)
+
+---
+
+## If/Else syntax
+
+        <If "$req{Host} != 'www.wooga.com'">
+            RedirectMatch (.*) http://www.wooga.com$1
+        </If>
+
+???
+Before we move to the examples ...
+
+---
+
+## If/Else
+
+        <If ...>
+            ...
+        </If>
+        <ElseIf ...>
+            ...
+        </ElseIf>
+        <Else>
+            ...
+        </Else>
+
+---
+
+## Expression examples
+
+Most of the following examples were traditionally done with
+`mod_rewrite`, if they were possible. These alternatives are easier to
+read.
+
+---
+
+## Compare the host name to example.com and redirect to www.example.com if it matches
+
+        <If "%{HTTP_HOST} == 'example.com'">
+            Redirect permanent "/" "http://www.example.com/"
+        </If>
+
+Compare to
+
+        RewriteCond %{HTTP_HOST} ^example\.com$
+        RewriteRule (.*) http://www.example.com$1
+
+Not much difference. `<If>` example makes it easier to combine multiple
+conditions into a single statement, and is slightly easier to read.
+
+---
+
+## Force text/plain if requesting a file with the query string contains 'forcetext'
+
+        <If "%{QUERY_STRING} =~ /forcetext/">
+            ForceType text/plain
+        </If>
+
+Compare to
+
+        RewriteCond %{QUERY_STRING} forcetext
+        RewriteRule ^ - [T=text/plain]
+
+---
+
+## Only allow access to this content during business hours
+
+        <Directory "/var/www/html/business">
+            Require expr %{TIME_HOUR} -gt 9 && %{TIME_HOUR} -lt 17
+        </Directory>    
+
+Compare to
+
+        RewriteCond %{TIME_HOUR} >9
+        RewriteCond %{TIME_HOUR} <17
+        RewriteRule /business - [F]
+
+Of course, you can also put that whole expression in a `RewriteCond` now
+too
+
+---
+
+## Check a HTTP header for a list of values
+
+        <If "%{HTTP:X-example-header} in { 'foo', 'bar', 'baz' }">
+            Header set matched true
+        </If>
+
+This would be difficult without `<If>`
+
+---
+
+
+## Check an environment variable for a regular expression, negated.
+
+        <If "! reqenv('REDIRECT_FOO') =~ /bar/">
+            Header set matched true
+        </If>
+
+Note that `Header` now has fancy expression syntax too:
+
+        Header always set CustomHeader \
+            my-value "expr=%{REQUEST_URI} =~ m#^/special_path.php$#"
+
+---
+
+## Check result of URI mapping by running in Directory context with -f
+
+        <Directory "/var/www">
+            AddEncoding x-gzip gz
+            <If "-f '%{REQUEST_FILENAME}.unzipme' && ! %{HTTP:Accept-Encoding} =~ /gzip/">
+                SetOutputFilter INFLATE
+            </If>
+        </Directory>
+
+---
+
+## Check against the client IP
+
+        <If "-R '192.168.1.0/24'">
+            Header set matched true
+        </If>
+
+* Use a variety of IP address syntax, like '10.0/16' or '192.168.0.12' or
+'localhost'
+* 'localhost' matches all the right things, ie localhost, 127.\*, ::1,
+  and so on.
+
+---
+
+## Function example in boolean context
+
+        <If "md5('foo') == 'acbd18db4cc2f85cedef654fccc4a4d8'">
+            Header set checksum-matched true
+        </If>
+
+---
+
+## Function example in string context
+
+        Header set foo-checksum "expr=%{md5:foo}"
+
+---
+
+## This delays the evaluation of the condition clause compared to `<If>`
+
+        Header always set CustomHeader my-value \
+            "expr=%{REQUEST_URI} =~ m#^/special_path.php$#"
+
+Note that in this example we use a different delimeter, so that we don't
+have to escape slashes. m#..# rather than /../
+
+---
+
+class: center, middle
+# Other modules
+
+---
+
+class: center, middle
+Several other modules provide functionality similar to `mod_rewrite`.
+These modules can be used alongside `mod_rewrite`, or instead of it, in
+various scenarios.
+
+---
+
+## mod_substitute
+
+- Provides substitution of the content of the HTTP response (ie, the web
+  page).
+
+        <Location "/">
+            AddOutputFilterByType SUBSTITUTE text/html
+            Substitute "s/ariel/comicsans/ni"
+        </Location>
+
+???
+Don't run substitute on everything - you'll end up corrupting some
+binary file that just happens to match.
+
+---
+## More practical example:
+
+        ProxyPass        "/blog/" "http://internal.blog.example.com"
+        ProxyPassReverse "/blog/" "http://internal.blog.example.com/"
+
+        Substitute
+        "s|http://internal.blog.example.com/|http://www.example.com/blog/|i"
+
+???
+Replaces HTML references to internal server with the external server, so
+that the links still work.
+
+---
+
+## mod_proxy_html
+
+- More extensive rewriting of web content, including javascript,
+  cookies, css, and HTML.
+- Smarter about fixing stuff than mod_substitute.
+
+---
+
+## Example
+
+- When mapping to an internal server through a proxy, you may need to
+  fix up references to that internal server name.
+
+        ProxyPass /app1/ http://internal1.example.com/
+        ProxyPass /app2/ http://internal2.example.com/
+        ProxyHTMLURLMap http://internal1.example.com /app1
+        ProxyHTMLURLMap http://internal2.example.com /app2
+
+		<Location /app1/>
+			ProxyPassReverse /
+			ProxyHTMLEnable On
+			ProxyHTMLURLMap  /      /app1/
+			RequestHeader    unset  Accept-Encoding
+		</Location>
+
+		<Location /app2/>
+			ProxyPassReverse /
+			ProxyHTMLEnable On
+			ProxyHTMLURLMap /       /app2/
+			RequestHeader   unset   Accept-Encoding
+		</Location>
+
+---
+
+## mod_proxy_html
+
+- Extensive documentation and examples at http://apache.webthing.com/mod_proxy_html/
+- Part of httpd base release as of 2.4.0
+
+---
+
+## mod_macro
+
+- Build macros for repeated bits of configuration
+- Invoke these macros with arbitrary number of arguments, at server startup time.
+
+---
+
+## mod_macro example
+
+		<Macro VHost $name $domain>
+		<VirtualHost *:80>
+			ServerName $domain
+			ServerAlias www.$domain
+
+			DocumentRoot "/var/www/vhosts/$name"
+			ErrorLog "/var/log/httpd/$name.error_log"
+			CustomLog "/var/log/httpd/$name.access_log" combined
+		</VirtualHost>
+		</Macro>
+
+You would then invoke this macro several times to create virtual hosts:
+
+		Use VHost example example.com
+		Use VHost myhost hostname.org
+		Use VHost apache apache.org
 
 ---
 
 # FallbackResource
 
-TODO
+A "front controller" or "fallback resource" means the thing that will be
+served if all else fails, before an error message is sent.
+
+        FallbackResource /index.php
 
 ---
 
-Front controller
+## Front controller
+
+In the old days (2.2.15 and earlier)
 
         <Directory /var/www/my_blog>
           RewriteBase /my_blog
@@ -1910,7 +2386,8 @@ Front controller
           RewriteCond /var/www/my_blog/%{REQUEST_FILENAME} !-d
           RewriteRule ^ index.php [PT]
         </Directory>
-Or ...
+
+Now ...
 
         <Directory /var/www/my_blog>
           FallbackResource index.php
@@ -1918,37 +2395,56 @@ Or ...
 
 ---
 
-# *match directives
+## FalbackResource
 
-TODO
-
----
-
-# Expression engine
-
-TODO
+* This replaces standard config on various web applications, such as
+  Wordpress, which ship with `.htaccess` files to map all URLs to the
+  application.
+* The target can look in REQUEST_URI to see what was originally
+  requested.
 
 ---
 
-# <If> and friends
+## \*match directives
+
+* Various directives have a Match variant:
+
+        AliasMatch and ScriptAliasMatch
+        BrowserMatch and BrowserMatchNoCase
+        DirectoryMatch
+        FilesMatch
+        LocationMatch
+        ProxyMatch
+        ProxyPassMatch
+        ProxyRemoteMatch
+        RedirectMatch
 
 ---
 
-If/Else syntax
+## \*Match
 
-        <If "$req{Host} != 'www.wooga.com'">
-            RedirectMatch (.*) http://www.wooga.com$1
-        </If>
+These all take regular expressions as arguments
 
----
+        RedirectMatch ^/(pony|horse)/([^/+]) \
+            /equine?breed=$2
 
-# Bonus Slides
+Yes, you could do that with RewriteRule instead. Choosing one or the
+other may affect order that things run in, so be careful.
 
 ---
 
 # mod_security
 
+* `mod_rewrite` is often used as a way to provide filtering, or
+  regex-based security blocking.
+* mod_security is a much more efficient way to do this
+
 TODO
+
+---
+
+class: center, middle
+# Bonus Slides
 
 ---
 
@@ -1957,7 +2453,85 @@ TODO
 
 ---
 
-Look somewhere else ...
+## Simple rewrites:
+
+Transparent:
+
+        RewriteRule ^/oldname\.html$ /newname.html
+
+And visible ...
+
+        RewriteRule ^/oldname\.html$ /newname.html [R=301]
+
+Or ...
+
+        Redirect /oldname.html /newname.html
+
+---
+
+## Canonical hostname
+
+* There's a number of different ways to map an undesired hostname to a
+preferred hostname, eg www.example.com -> example.com
+
+---
+
+## Canonical hostname: Virtual hosts
+
+        <VirtualHost *:80>
+            ServerName undesired.example.com
+            ServerAlias example.com notthis.example.com
+
+            Redirect "/" "http://www.example.com/"
+        </VirtualHost>
+
+        <VirtualHost *:80>
+            ServerName www.example.com
+        </VirtualHost>
+
+Advantage: The redirect happens once, and doesn't have to be considered
+again.
+
+---
+
+## Canonical hostname: `<If>`
+
+        <If "%{HTTP_HOST} != 'www.example.com'">
+            Redirect "/" "http://www.example.com/"
+        </If>
+
+---
+
+## Canonical hostname, if you're stuck in .htaccess land
+
+        RewriteCond "%{HTTP_HOST}" "!^www\." [NC]
+        RewriteCond "%{HTTP_HOST}" "!^$"
+        RewriteRule "^/?(.*)"      "http://www.example.com/$1" [L,R,NE]
+
+---
+
+## Canonical hostname, generic for all domains:
+
+        RewriteCond "%{HTTP_HOST}" "!^www\." [NC]
+        RewriteCond "%{HTTP_HOST}" "!^$"
+        RewriteRule "^/?(.*)"      "http://www.%{HTTP_HOST}/$1" [L,R,NE]
+
+Or, vice versa.
+
+---
+
+## Mapping path info to query strings
+
+        RewriteRule ^/productID/(.+) /app/prod.php?ID=$1 [PT]
+
+* The `[PT]` ensures that the PHP will be correctly executed.
+* Maps /productID/123 to /app/prod.php?ID=123
+* Note that this does not magically make your site rank higher on
+  Google, contrary to some folks' ideas
+
+---
+
+## Look somewhere else ...
 
         RewriteEngine on
         
@@ -1977,29 +2551,61 @@ Look somewhere else ...
 
 ---
 
-Prevent hotlinking 
+## Prevent hotlinking 
 
         RewriteEngine on
         RewriteCond %{HTTP_REFERER} !^$
         RewriteCond %{HTTP_REFERER} !example.com [NC]
         RewriteRule \.(gif|jpg|png)$ - [F]
+--
 or ...
 
         RewriteEngine on
         RewriteCond %{HTTP_REFERER} !^$
         RewriteCond %{HTTP_REFERER} !example.com [NC]
         RewriteRule \.(gif|jpg|png)$ /images/goaway.gif [R,L]
-
 ---
-
-Images should be from local pages: (Prevent image "hotlinking")
+## or ...
 
         <FilesMatch \.(jpg|png|gif)$>
-            <If "%{HTTP_HOST} !~ 'example.com'>
+            <If "%{HTTP_REFERER} !~ 'example.com'>
                 Require all denied
+            </If>
+        </FilesMatch>
+
+--
+or ...
+
+        <FilesMatch \.(jpg|png|gif)$>
+            <If "%{HTTP_REFERER} !~ 'example.com'>
+                RedirectMatch . http://imgur.com/funnypic.png
             </If>
         </FilesMatch>
 
 ---
 
+## Dynamic virtual hosting
+
+        RewriteEngine on
+
+        RewriteMap    lowercase int:tolower
+
+        RewriteCond   "${lowercase:%{HTTP_HOST}}" "^www\.([^.]+)\.example\.com$"
+        RewriteRule   "^(.*)" "/home/%1/www$1"
+
+See also `mod_vhost_alias`.
+
+---
+
 # Finis
+
+http://boxofclue.com/presentations/mod_rewrite_training/
+
+rbowen@rcbowen.com
+
+http://apachecon.com/
+
+@rbowen
+
+@modrewrite (If I ever get back to writing my book ...)
+
