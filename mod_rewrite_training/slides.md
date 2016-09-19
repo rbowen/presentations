@@ -2531,6 +2531,16 @@ Or, vice versa.
 
 ---
 
+## Path to query string, example 2
+
+            RewriteRule ^/books?/(.+) \
+                http://www.amazon.com/exec/obidos/asin/$1/drbacchus/ [R,L]
+
+This maps http://drbacchus.com/books/{ISBN} to the right place on
+amazon.com including my referral code.
+
+---
+
 ## Look somewhere else ...
 
         RewriteEngine on
@@ -2594,6 +2604,30 @@ or ...
         RewriteRule   "^(.*)" "/home/%1/www$1"
 
 See also `mod_vhost_alias`.
+
+---
+
+## Change extension
+
+        RewriteRule (.+)\.html $1.php [PT]
+
+--
+... or, check first if it's there
+
+        RewriteCond %{DOCUMENT_ROOT}$1.php -f
+        RewriteRule (.+)\.html $1.php [PT]
+
+Note that $1 is used "before" it's defined, due to the way that rewrite
+rules flow.
+
+---
+
+## Fake a 'not found'
+
+        RewriteCond %{REMOTE_ADDR} 199.14.32.8
+        RewriteRule ^ - [R=404]
+
+[R] accepts any valid status code, even error codes.
 
 ---
 
