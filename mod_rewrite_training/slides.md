@@ -844,7 +844,12 @@ Without the PT, you will *probably* get a 404 here.
 
 ---
 
-## TODO [B] EXAMPLE
+## [B]
+
+        RewriteRule "^search/(.*)$" "/search.php?term=$1" [B]
+
+This escaping is particularly necessary in a proxy situation, when the
+backend may break if presented with an unescaped URL.
 
 ---
 
@@ -852,10 +857,6 @@ Without the PT, you will *probably* get a 404 here.
 
 - Rule is chained to the following rule. If the rule fails, the rule(s) chained to it will be skipped. 
 - Use this when you need to do several transformations in a row as part of a single logical operation.
-
----
-
-## TODO [C] EXAMPLE
 
 ---
 
@@ -874,11 +875,24 @@ Without the PT, you will *probably* get a 404 here.
 ---
 
 ## [DPI]
+
 - Causes the PATH_INFO portion of the rewritten URI to be discarded. 
+- PathInfo is any path-line bits that happen after an actual resource
+  path has been identified
+
+    http://example.com/dir/file.html/one/two/three
+
+- In that case, `/one/two/three` is stashed in `PATH_INFO` and passed in
+  an environment variable.
 
 ---
 
-## TODO [DPI] EXAMPLE AND EXPLANATION
+## [DPI]
+
+        RewriteRule ^en/(.*) $1?lang=English [QSA,DPI]
+        RewriteRule ^ee/(.*) $1?lang=Estonian [QSA,DPI]
+        RewriteRule ^ru/(.*) $1?lang=Russian [QSA,DPI]
+        RewriteRule ^fi/(.*) $1?lang=Finnish [QSA,DPI]
 
 ---
 
@@ -1078,9 +1092,9 @@ So, either SEO or paranoia
 
 ---
 
-## [S]
+## [S=n]
 
-- Tells the rewriting engine to skip the next num rules if the current rule matches.
+- Tells the rewriting engine to skip the next `n` rules if the current rule matches.
 - Like a GOTO statement for rewrite rules
 - Consider using `<If>` and `<Else>` instead (later today)
 
@@ -2439,7 +2453,57 @@ other may affect order that things run in, so be careful.
   regex-based security blocking.
 * mod_security is a much more efficient way to do this
 
-TODO
+---
+
+## mod_security example
+
+        SecDataDir /tmp
+        SecTmpDir /tmp
+        SecRequestBodyAccess On
+        SecDefaultAction log,deny,status:406,capture,phase:2
+
+        # Spammer keyword filtering
+        SecRule ARGS "Offshore banking" "id:5000000,msg:'banking spam'"
+        SecRule ARGS "Anonymous bank account" "msg:'banking spam',id:5000001"
+        SecRule ARGS "best-account.fi" "msg:'banking spam',id:5000002"
+        SecRule ARGS "goyard" "msg:'blog comment spam',id:5000003"
+        SecRule ARGS "(rayban|gaiss)" "msg:'blog comment spam',id:5000004"
+        SecRule ARGS "cheap ?(jordan|uggs)" "msg:'Commercial spam',id:5000005"
+        SecRule ARGS "jordan ?shoes" "msg:'Commercial spam',id:5000006"
+        SecRule ARGS "air jordan" "msg:'Commercial spam',id:5000007"
+        SecRule ARGS "cheap oakley" "msg:'Commercial spam',id:5000008"
+        SecRule ARGS "(oakley|ralph lauren|Ray Ban)" "msg:'Commercial spam',id:5000009"
+        SecRule ARGS "louis ?vuitton" "msg:'Commercial spam',id:5000010"
+        SecRule ARGS "oakley ?sunglas" "msg:'Commercial spam',id:5000011"
+        SecRule ARGS "(M|m)ichael ?kors" "msg:'Commercial spam',id:5000012"
+        SecRule ARGS "abercrombie" "msg:'Commercial spam',id:5000013"
+        SecRule ARGS "mulberry bags" "msg:'Commercial spam',id:5000014"
+        SecRule ARGS "(canada goose|ugg boots)" "msg:'Commercial spam',id:5000015"
+        SecRule ARGS "(prada|burberry|louboutin|moncler|parajumpers)" "msg:'Commercial spam',id:5000016"
+        SecRule ARGS "(nike air)" "msg:'Commercial spam',id:5000017"
+        SecRule ARGS "(north face)" "msg:'Commercial spam',id:5000018"
+        SecRule ARGS "tiffany ?(brace|jewel)" "msg:'Commercial spam',id:5000019"
+        SecRule ARGS "lacoste" "msg:'Commercial spam',id:5000020"
+        SecRule ARGS "LR[a-z]{3}\d{3}" "msg:'Persistent Spammer',id:5000021"
+        SecRule ARGS "(zoloft|acyclovir|zithromax)" "msg:'Pharm spam',id:5000022"
+        SecRule ARGS "GScraper" "msg:'Evil Spammers',id:5000023"
+
+---
+
+## mod_security logs
+
+        [Mon Sep 19 13:16:22.867218 2016] [:error] [pid 9650:tid
+        140049186240256] [client 91.200.12.97] ModSecurity: Access denied with
+        code 406 (phase 2). Pattern match "air jordan" at ARGS:comment_content.
+        [file "/etc/httpd/conf.d/vhosts/drbacchus.conf"] [line "20"] [id
+        "5000007"] [msg "Commercial spam"] [hostname "drbacchus.com"]
+        [uri "/january-24-florence-li-tim-oi"] [unique_id "V9-lJjxVw6@VGLoJo9Rz1gAAAAw"]
+
+---
+
+![modsec](images/mod_sec_rules.png)
+
+https://github.com/SpiderLabs/owasp-modsecurity-crs/tree/master/base_rules
 
 ---
 
@@ -2533,8 +2597,8 @@ Or, vice versa.
 
 ## Path to query string, example 2
 
-            RewriteRule ^/books?/(.+) \
-                http://www.amazon.com/exec/obidos/asin/$1/drbacchus/ [R,L]
+        RewriteRule ^/books?/(.+) \
+            http://www.amazon.com/exec/obidos/asin/$1/drbacchus/ [R,L]
 
 This maps http://drbacchus.com/books/{ISBN} to the right place on
 amazon.com including my referral code.
@@ -2607,7 +2671,26 @@ See also `mod_vhost_alias`.
 
 ---
 
-## Change extension
+## mod_vhost_alias
+
+        UseCanonicalName    Off
+        VirtualDocumentRoot "/usr/local/apache/vhosts/%3+/%2.1/%2.2/%2.3/%2"
+
+For `www.example.com.uk`:
+
+%1 = www, %2 = example, %3 = com
+
+%2.1 = e, %2.2 = x, and so on
+
+%3+ = com.uk (ie, 3rd and onwards)
+
+%-1 = com, %-2 = example, %-3 = www (Count from the right)
+
+So `/%3+/%2.1/%2.2/%2.3/%2` maps to `/com.uk/e/x/a/example`
+
+---
+
+## Rewrite extension
 
         RewriteRule (.+)\.html $1.php [PT]
 
