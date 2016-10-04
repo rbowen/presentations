@@ -19,6 +19,16 @@ cool voodoo, but still voodoo.
 
 ---
 
+## The Swiss Army Knife of URL manipulation
+
+![Wenger](images/wenger.jpg)
+
+???
+A Swiss Army Knife is what you use when you don't actually have the
+right tool on hand.
+
+---
+
 ## Shameless Plug
 
 ![book](images/book.jpg)
