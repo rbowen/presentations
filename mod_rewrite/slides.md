@@ -733,8 +733,15 @@ Images should be from local pages: (Prevent image "hotlinking")
 ## See also:
 - mod_macro
 - mod_substitute
+- My 'Apache Cookbook' talk in an hour.
 
 ---
 
 ## Finis
+
+http://boxofclue.com/
+
+@rbowen
+
+rbowen@apache.org
 

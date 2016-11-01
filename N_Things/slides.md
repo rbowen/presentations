@@ -1,5 +1,5 @@
-background-image: url(/N_Things/images/feather.png)
 class: center, middle
+background-image: url(images/feather.png)
 # Apache Cookbook
 
 N Things You Didn't Know Apache httpd Could Do
@@ -851,7 +851,7 @@ class: center, middle
 ## Come ask us
 
 * Lots of us spend way too much time on IRC
-* #httpd on the Freenode IRC network
+* \#httpd on the Freenode IRC network
 * Pro tip: fajita is the bot, and knows more than anyone else
 
 ---
@@ -868,3 +868,10 @@ class: center, middle
 # finis
 
 \#httpd on Freenode
+
+http://boxofclue.com/
+
+
+@rbowen
+
+rbowen@apache.org
