@@ -1,5 +1,5 @@
-class: center, middle
 background-image: url(/N_Things/images/feather.png)
+class: center, middle
 # Apache Cookbook
 
 N Things You Didn't Know Apache httpd Could Do
@@ -37,7 +37,7 @@ class: center, middle
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_URI} \
         (alias1|alias2|special|other) [NC]
-    RewriteRule . index.php [PT]
+    RewriteRule ^ /index.php [PT]
 
 ???
 This is called the Front Controller model, or the Fallback Resource
@@ -807,7 +807,57 @@ Thousands of example rules available at https://github.com/SpiderLabs/owasp-mods
 ---
 
 class: center, middle
-# What's yours?
+# 19: Define
+
+---
+
+## Define
+
+	Define DOCROOT /home/rbowen/devel/presentations/
+
+	DocumentRoot ${DOCROOT}
+
+	# Further relax access to the default document root:
+	<Directory ${DOCROOT}>
+		Options Indexes FollowSymLinks
+		AllowOverride None
+		Require all granted
+	</Directory>
+
+---
+
+## Set once, use everywhere
+
+* Allows you to set variables like DocRoot that you're likely to use multiple times
+* Be careful when using in conjuction with mod_macro (Variable clashes)
+* Use UnDefine to clean up, if you're paranoid
+
+---
+
+class: center, middle
+# 20: Fix it yourself
+
+---
+
+## Patches Welcome
+
+* If the docs are wrong, you can help fix them: http://httpd.apache.org/docs-project/
+* ... or leave a comment at the bottom of the page
+* If the code is wrong, you can help fix it: http://httpd.apache.org/dev/
+* ... or file a bug at http://issues.apache.org
+
+---
+
+## Come ask us
+
+* Lots of us spend way too much time on IRC
+* #httpd on the Freenode IRC network
+* Pro tip: fajita is the bot, and knows more than anyone else
+
+---
+
+class: center, middle
+# N: What's yours?
 
 ???
 Anybody got a cool trick you want to share?
