@@ -1,3 +1,5 @@
+class: center, middle
+background-image: url(images/feather.png)
 # mod_rewrite and friends
 
         Less magic, more science
@@ -20,9 +22,11 @@ cool voodoo, but still voodoo.
 And numerous websites offer mod_rewrite advice that is much more akin to
 magic than science.
 
-        RewriteCond %{REMOTE_ADDR} \
-            ^205\.209\.177\.
-        RewriteRule .* - [F]
+        RewriteCond %{REMOTE_ADDR} ^205\.209\.177\.
+        RewriteRule ^(.*)$ - [F]
+
+???
+Which is why you see people doing crap like ...
 
 ---
 
@@ -47,7 +51,9 @@ http://drbacchus.com/books/rewrite
 - Start with a small vocabulary and work up
 - Essential building block of mod_rewrite syntax
 - PCRE
-note:: Mastering Regular Expressions, Jeffrey Friedl
+
+???
+Mastering Regular Expressions, Jeffrey Friedl
 
 ---
 
@@ -247,7 +253,9 @@ RewriteRule *PATTERN* TARGET
 
         RewriteRule ^/images/(.*)\.jpg /pics/$1.gif [R=302]
         RewriteRule products http://products.example.org/ [R=301]
-note:: 302=temp, 301=permanent
+
+???
+302=temp, 301=permanent
 
 ---
 

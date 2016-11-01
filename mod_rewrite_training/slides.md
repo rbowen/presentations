@@ -1576,8 +1576,8 @@ With a script like ...
 - Call a SQL query to do your mapping
 - Uses mod_dbd for database connectivity
 
-    RewriteMap myquery \
-        "dbd:SELECT destination FROM rewrite WHERE source = %s"
+        RewriteMap myquery \
+            "dbd:SELECT destination FROM rewrite WHERE source = %s"
 
 ---
 
