@@ -2,11 +2,10 @@ class: center, middle
 background-image: url(images/feather.png)
 # mod_rewrite and friends
 
-        Less magic, more science
+Less magic, more science
 
 Rich Bowen - rbowen@apache.org
-@rbowen
-http://rcbowen.com/
+
 SLIDES ARE AT: http://boxofclue.com/presentations/
 
 ---
