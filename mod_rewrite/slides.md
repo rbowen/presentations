@@ -284,7 +284,7 @@ RewriteRule *PATTERN* TARGET
 - Sets a cookie in the client browser. 
 
         RewriteRule ^/index.html - \
-        CO=fontdoor:1:example.com
+        CO=frontdoor:1:example.com
 
 - Full syntax is: 
         CO=NAME:VAL:domain[:lifetime
