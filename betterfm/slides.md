@@ -4,11 +4,9 @@
 
 Rich Bowen
 
-rbowen@redhat.com
+rbowen@apache.org
 
 Slides: http://boxofclue.com/
-
-LinuxCon North America, 2016
 
 ### TL;DR: Your community is your documentation
 
@@ -51,18 +49,34 @@ squish a newbie's ego.**
 It has been pointed out to me that not everyone is even familiar
 with the term RTFM. That's actually good news.
 
+Note that it's the attitude - the dismissive arrogance towards beginners
+that I'm talking about here. Pointing people to the documentation is a
+good thing. Treating people like an irritation is not.
+
 ---
 
 ## 1) Your community is your documentation
 ![feather](images/feather.png)
 * Community > Code
 * Community > Docs
+
+???
+"Commnity > Code" is one of the Apache mottos. In this talk, I'm
+presenting the notion that Community not only dominates your
+code-generating machine, but also drives the way that you deliver
+documentation and end-user support to your "customers".
+
 ---
 ## Setting the tone
 
 ![knob](images/ToneKnob.jpg)
 * Your community sets the tone of your documentation
 * Your documentation sets the tone of your community
+
+???
+And, it's a balance, with each feedinb back into the other -
+particularly in communities where so much of our communication is
+text-based rather than in-person.
 
 ---
 ##Definitions
@@ -78,6 +92,11 @@ Documentation is:
 These things are increasingly further out of our control as the list proceeds. You get to decide how much you participate in each layer, and, thus, how much influence you exert over the culture.
 
 ---
+# Community > Docs
+![scribe](images/scribe.png)
+* Docs (as defined above) are delivered by a community, not by a writer working in his dark office
+
+---
 # Definition
 Customer
 ![customer](images/customer.jpg)
@@ -88,11 +107,11 @@ Customer
 
 # Example: Perl
 ![Perl](images/Perl.gif)
-* Academic language
+
 * Dedicated to elegant, but, more importantly clever, solutions to problems
 * Documentation is exhaustive and academic
 * Community attracts playful hubris
-* Reputation of unreadable code
+* *Reputation* of unreadable code
 * Consider the feedback loop
 
 ???
@@ -107,6 +126,10 @@ Perl
 * But Larry *started* by trying to develop a language for doing
   text-based parsing in elegant "do what I mean" ways.
 
+* That the reputation isn't necessarily true, or isn't any more true than any other language, doesn't break the feedback loop.
+
+* You can write Perl in any language
+
 ---
 
 ## Example: PHP
@@ -115,11 +138,15 @@ Perl
 * Very solution-oriented (community and docs, both)
 * Lots of solution-specific examples in docs
 * Community attracts non-programmers, or, at least, people who want a solution and don’t care about academic correctness
-* Reputation of sloppy, insecure code
+* *Reputation* of sloppy, insecure code
 * Consider the feedback loop
 
 ???
-PHP - web development for everyone. This leads to solutions-oriented documentation, with lots of user-contributed simple solutions. This, in turn, attracts a community of people that want to solve problems and don't care much about elegance, security, or best programming practice.
+* PHP - web development for everyone. 
+* This leads to solutions-oriented documentation, with lots of user-contributed simple solutions. 
+* This, in turn, attracts a community of people that want to solve problems and don't care much about elegance, security, or best programming practice.
+* That the reputation isn't necessarily true, or isn't any more true
+  than any other language, doesn't break the feedback loop.
 
 ---
 ## Choose your adventure
@@ -128,18 +155,13 @@ PHP - web development for everyone. This leads to solutions-oriented documentati
 * Choose wisely
 
 ---
-# Community > Docs
-![scribe](images/scribe.png)
-* Docs (as defined above) are delivered by a community, not by a writer working in his dark office
-
----
 ## Choose your community
 ![team](images/team.jpg)
 * By who you choose to be, you pick who will come hang out with you
 * Don’t pick the jerks
 
 ???
-You don't "choose your team" in the traditional sense. Rather, yo uset
+You don't "choose your team" in the traditional sense. Rather, you set
 the tone, and attract a team who want to be around that kind of
 community.
 
@@ -288,7 +310,8 @@ you are told “Google is your friend!”)
 It has become common knowledge that this is THE DOCUMENT about how to
 ask questions in public forums. The word 'idiot' appears first in the
 3rd paragraph. The idea that is communicated throughout is that the asker
-is an imbecile, and the answer is just a little lower than God.
+is an imbecile, and the answerer is the one that actually matters in the
+relationship.
 
 ---
 # It’s ok to be rude, because we’re more important than you
@@ -305,16 +328,19 @@ than making others feel warm and fuzzy**.
 
 ???
 Or, at least, our time is more important than yours.
+
 ---
 ## I strenuously disagree
-![juvenile](images/juvenile.jpg)
+![battle](images/battle.jpg)
 * It is not a "hallowed tradition"
-* It's bad manners, and it's juvenile
-* It's time to grow up
+* It's bad manners
+* If you don't have the time and patience to communicate with beginners,
+  then *don't*. There's lots of other people who can step into that
+  role.
 
 ???
-2 weeks ago we had a party for my daughter, who I took to college last
-week. After the party was over and everyone went home, she sat down and
+This summer we had a going away party for my daughter, who was about to leave for 
+college. After the party was over and everyone went home, she sat down and
 started writing thank you notes. I was so proud, because, to me, the
 point at which a child becomes an adult is when they start to notice, on
 their own, without prompting, that other people matter.
@@ -323,8 +349,15 @@ It appears that a lot of people never reach that point - especially
 people who are exceptionally intelligent, and so feel that the world
 owes them respect and adulation.
 
-Eric has taken this one step further - actively encouraging thousands of
+This "asking smart questions" document, which contains a LOT of good advice, and which
+has become practically holy writ
+in our community, has taken this one step further - actively encouraging thousands of
 people to be rude to their peers, and dismissive of their struggles.
+
+Now, it *IS* the responsibility of the student to do some work, and not
+treat the master as though they are the servant. This much is true.
+However, it is also the responsibility of the master to treat the
+student as though their struggles are important.
 
 ---
 ## Humility
@@ -337,6 +370,7 @@ people to be rude to their peers, and dismissive of their struggles.
 ## RTFM!
 * The RTFM attitude is indicative of arrogance and impatience, whereas truly great documentation is the result of patience and humility.
 * (Yes, they should read the docs. Yes, they should do their homework first. But, no, you should not be rude about it.)
+
 ---
 ## Three Virtues
 ![Larry](images/lwall.jpg)
@@ -605,7 +639,7 @@ all but the most popular languages.
 * You are entrusting your customer’s experience to this person. It’s ok to be a bit picky.
 
 ---
-## Too many projects ...
+## Too many projects are like ...
 ![frustration](images/frustration.jpg)
 * Create an account
 * Get a checkout
