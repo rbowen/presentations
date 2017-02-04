@@ -360,6 +360,14 @@ However, it is also the responsibility of the master to treat the
 student as though their struggles are important.
 
 ---
+class: center, middle
+## For the asker, not the answerer
+
+Remember: The "Asking questions the right way" doc is for the people
+asking, not the people answering. Your job as the answerer is to be kind
+and patient.
+
+---
 ## Humility
 * You don't know everything
 * The documentation isn't perfect yet
@@ -381,7 +389,8 @@ Three virtues of a programmer: Laziness, Impatience and Hubris
 Three virtues of a human: Diligence, patience, and humility
 
 Impatience with a question comes across as disrespect for the
-questioner. Perhaps it’s time to turn your talents elsewhere
+questioner. Perhaps it’s time to turn your talents elsewhere.
+
 ---
 ## Stupid questions?
 ![stupid](images/stupid.jpg)
