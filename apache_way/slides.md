@@ -1,20 +1,8 @@
 # The Apache Way
 
-![Feather](images/large_feather.png)
-
-Rich Bowen, Executive Vice President
-
-The Apache Software Foundation
-
-rbowen@apache.org
-
----
-
-# The Apache Way
-
 ![Feather](images/feather.png)
 
-Rich Bowen, Executive Vice President
+Rich Bowen, VP Conferences
 
 The Apache Software Foundation
 
@@ -93,6 +81,14 @@ counting ...)
 
 Note: In reality, some people have earned a louder voice than others,
 but everyone is able to attain to that level.
+
+---
+
+## Alternative governance models
+
+* BDFL
+* Technical lead who (maybe?) cycles out
+* Company-driven project management
 
 ---
 
@@ -536,29 +532,7 @@ Note:
 
 ### Speaking of Sponsors ...
 
----
-
-### Platinum
-
-![platinum](images/platinum.png)
-
----
-
-### Gold
-
-![gold](images/gold.png)
-
----
-
-### Silver
-
-![silver](images/silver.png)
-
----
-
-### Infra
-
-![infra](images/infra.png)
+![Sponsors](images/sponsors.png)
 
 ---
 
@@ -574,13 +548,39 @@ Note:
 
 ---
 
+## Why do companies sponsor?
+
+* To "give back" to the community
+* Because they understand that it costs money to produce Free Software,
+  and want to ensure the sustainability of the projects they rely on.
+
+---
+
+## Why do companies participate in Open Source?
+
+* To have a say in the direction projects take, and to implement the
+  functionality that they rely on
+* To build expertise in the projecs they rely on
+* So that they don't have to maintain "local patches" across multiple
+  versions
+
+---
+
+## Open Source businesses
+
+* "Freemium" model - free software with non-free add-ons, plugins, etc
+* Support and services model
+* Certification and training
+
+---
+
 ![Feather](images/feather.png) 
 
-<p>Thank you</p> 
+<p>Questions?</p> 
 
 - http://www.apache.org/
 - Twitter - @TheASF
-- evp@apache.org
+- rbowen@apache.org
 
 <small>A collaborative slidedeck with contributions from 
 Nick Burch, Ross Gardler, Lars Eilebrecht, Justin Erenkrantz, Isabel
