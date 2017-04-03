@@ -286,7 +286,7 @@ Our focus on Meritocracy, Transparency and Community results in:
 * Vendor Neutrality - We are a natural meeting place for competitors to collaborate together on shared goals.
 * Diversity - Our flexible model of governance lets projects evolve independently, yet ensures they remain independent and diverse communities.
 * Trusted - We are trusted by organizations around the globe to serve as a home for their more important software projects.
-* Safe - Our governance model, intellectual property processes and licensing framework provide a safe environment for contributors and users alike.
+* Safe - Our governance model, intellectual property processes, and licensing framework provide a safe environment for contributors and users alike.
 
 ---
 
@@ -303,7 +303,7 @@ Note:
 - Not authority to act autonomously - community must still agree to decisions
 - Privileges: commit, and a vote in direction
 - All votes hold same weight - no technical lead (This can be frustrating sometimes, but overall ensures that a project is independent from external influence.)
-- Commuity must agree on direction, individuals make it happen
+- Community must agree on direction, individuals make it happen
 
 ---
 
@@ -385,7 +385,7 @@ and something needs to change.
 
 * Some projects are just done
 * And some lack adequate oversight
-* The attic provides a place for dorman projects to go, to preserve a
+* The attic provides a place for dormant projects to go, to preserve a
   record of history, releases, and so on
 * Projects can revive from the Attic (although this hasn't happened so
   far)
