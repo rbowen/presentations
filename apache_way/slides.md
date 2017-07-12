@@ -2,7 +2,7 @@
 
 ![Feather](images/feather.png)
 
-Rich Bowen, VP Conferences
+Rich Bowen - Member and Director,
 
 The Apache Software Foundation
 
@@ -246,6 +246,10 @@ games. And it powers the space program and the medical world.
 ---
 
 ![Minecraft](images/minecraft.png)
+
+Note:
+
+Apache code is EVERYWHERE, because of this license.
 
 ---
 
@@ -553,24 +557,16 @@ Note:
 * To "give back" to the community
 * Because they understand that it costs money to produce Free Software,
   and want to ensure the sustainability of the projects they rely on.
+* For publicity and search engine karma (Yes, really)
 
 ---
 
-## Why do companies participate in Open Source?
+## Read more
 
-* To have a say in the direction projects take, and to implement the
-  functionality that they rely on
-* To build expertise in the projecs they rely on
-* So that they don't have to maintain "local patches" across multiple
-  versions
-
----
-
-## Open Source businesses
-
-* "Freemium" model - free software with non-free add-ons, plugins, etc
-* Support and services model
-* Certification and training
+* http://apache.org/
+* http://blogs.apache.org/
+* http://feathercast.apache.org/
+* http://opensource.com/
 
 ---
 
