@@ -1,33 +1,29 @@
 class: center, middle
 # Mentoring: Your Path To Immortality
 
-![Plato](images/Plato-Socrates-Aristotle.png)
-
 ---
-
-## Outline
-
-* You are mortal (Image of socrates offing himself)
-* Some day you will want to do something else, and your project will
-  only continue to matter if you have replaced yourself
-* Strategies for replacing yourself.
-
----
-
-## Socrates
 
 ![Socrates](images/David_-_The_Death_of_Socrates.jpg)
 
 ???
 * Didn't write anything (at least that we still have)
 * Is one of the most famous names in history
-* His students include Plato and Xenophon
-* Plato's students include Aristotle
+
+---
+
+![Vincent](images/van-gogh.jpg)
+
+???
+* By all accounts he was a very unpleasant man
+* Felt like a failure his whole life
+* Is famous only because his sister-in-law hunted down all of his work
+  after his death and mounted an aggressive marketing campaign
 
 ---
 
 ## Echecrates
 
+???
 * Appears as an "aid to the plot" in Plato's *Phaedo*
 * I wasn't able to find anything he wrote, or any pictures
 * (And then, of course, there's the dozens of others whose names we
@@ -70,8 +66,19 @@ class: center, middle
 ![Morons](images/morons.jpg)
 
 ???
-Because Socrates invested his entire life in his disciples, his legacy
+Oops, wrong image
+
+---
+
+## Option 2: Leave impressive students
+
+![Plato](images/Plato-Socrates-Aristotle.png)
+
+???
+* Because Socrates invested his entire life in his disciples, his legacy
 survives, and modern philosophy is the shape that it is.
+* His students include Plato and Xenophon
+* Plato's students include Aristotle
 
 ---
 
