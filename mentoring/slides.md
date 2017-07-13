@@ -1,6 +1,12 @@
 class: center, middle
 # Mentoring: Your Path To Immortality
 
+Rich Bowen
+
+Open Source Summit North America 2017
+
+Slides: BoxOfClue.com/mentoring
+
 ---
 
 ![Socrates](images/David_-_The_Death_of_Socrates.jpg)
