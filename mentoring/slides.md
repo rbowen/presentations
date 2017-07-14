@@ -12,36 +12,40 @@ Slides: BoxOfClue.com/mentoring
 ![Socrates](images/David_-_The_Death_of_Socrates.jpg)
 
 ???
-* Didn't write anything (at least that we still have)
-* Is one of the most famous names in history
+* Is one of the most famous names in history.
+* Didn't write anything (at least that we still have). In fact, thought
+  that debate, rather than writing things down, was the only valid way
+  to do philosophy.
 
 ---
 
 ![Vincent](images/van-gogh.jpg)
 
 ???
-* By all accounts he was a very unpleasant man
+* By all accounts he was a very unpleasant man (Dear Theo)
 * Felt like a failure his whole life
 * Is famous only because his sister-in-law hunted down all of his work
   after his death and mounted an aggressive marketing campaign
+* Mentored my other favorite painter, his lifelong friend Paul Gauguin.
 
 ---
 
 ## Echecrates
 
 ???
-* Appears as an "aid to the plot" in Plato's *Phaedo*
+* Appears as an "aid to the plot" in Plato's *Phaedo* (He's the person
+  to whom the story is told.)
 * I wasn't able to find anything he wrote, or any pictures
 * (And then, of course, there's the dozens of others whose names we
   don't even know.)
 
 ---
 
-## What did we learn
+## What did we learn?
 
 * Two paths to immortality:
 
-1) Leave extensive work
+1) Leave an extensive body of work
 
 2) Leave a student who is even more impressive than yourself
 
@@ -55,6 +59,9 @@ Slides: BoxOfClue.com/mentoring
 * Sisyphus, by Titian
 * Sisyphus was punished for his self-importance, and trying to make a
   name for himself, by having to perform an endless task.
+* Punishments in Greek Mythology always exactly match the sin. In this
+  case, making a name for yourself is a never ending task. As soon as
+  you stop, everyone begins to forget you.
 
 ---
 
@@ -63,7 +70,6 @@ Slides: BoxOfClue.com/mentoring
 * You have to actually **DO** that work
 * And you have to pick a medium that is permanent
 * Alas, we work in software, which is definitively *not* permanent
-* Note: You should probably do this **as well**
 
 ---
 
@@ -205,6 +211,10 @@ When you see a bug, don't fix it immediately unless it's actually urgent
 * Ask if anyone has time to look at it
 * Wait a bit
 
+???
+If tasks always get done quickly, by the usual suspects, newbies quickly
+realize that they have nowhere to fit in, and they go away.
+
 ---
 
 ## Ask people to do things
@@ -342,7 +352,7 @@ way to build out documentation of your development process
 ## How to ask - Offer to help
 
 * Offer to review whatever they produce
-    * Be very specific in your criticism
+    * Be very specific in your critique
     * Be kind, but don't approve bad work in order to be kind. That's
       not actually being kind.
 * Don't interfere or do it for them. Make it clear that you're willing
