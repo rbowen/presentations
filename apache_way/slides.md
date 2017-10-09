@@ -1,3 +1,4 @@
+class: center, middle
 # The Apache Way
 
 ![Feather](images/feather.png)
@@ -27,7 +28,7 @@ rbowen@apache.org
 - Sharing code patches for the abandoned NCSA httpd ("Scratching your own itch")
 - Equals, even from the beginning - no technical lead
 
-Note:
+???
 
 - To understand the ASF, we have to go back to the beginning
 - Brian wanted his website to work
@@ -47,7 +48,7 @@ Note:
 - Brian Behlendorf started the httpd project, but was not the technical leader
 - Today, projects have a "chair", but that's a secretary/facilitator, not a leader
 
-Note:
+???
 
 Bottom-up leadership - lead by example rather than by edict.
 
@@ -57,7 +58,7 @@ Bottom-up leadership - lead by example rather than by edict.
 
 ![Group](images/httpd_group_feather_2015_2.jpg)
 
-Note: But the methodology stays the same
+??? But the methodology stays the same
 
 ---
 
@@ -69,7 +70,7 @@ Note: But the methodology stays the same
 - New members brought on every year, based on the quality of their
   contributions
 
-Note: And so, this idea was spread to many more projects (278 and
+??? And so, this idea was spread to many more projects (278 and
 counting ...)
 
 ---
@@ -79,7 +80,7 @@ counting ...)
 * Collaborative decision making
 * Flat organization - everyone has an equal voice
 
-Note: In reality, some people have earned a louder voice than others,
+??? In reality, some people have earned a louder voice than others,
 but everyone is able to attain to that level.
 
 ---
@@ -102,7 +103,7 @@ but everyone is able to attain to that level.
 - Protect the ‘Apache’ brand, as applied to its software products, from being abused by other organizations
 - Provide legal and technical infrastructure for open source software development and to perform appropriate oversight of such software
 
-Note:
+???
 
 - Legal protection
 - Brand protection
@@ -120,7 +121,7 @@ that leads the way in its field**. We consider ourselves not simply a
 group of projects sharing a server, but rather a community of developers
 and users.
 
-Note:
+???
 
 - Consensus-based development - community-created
 - High quality software - Code should be exceptional
@@ -137,7 +138,7 @@ Note:
 - Annual members meetings via IRC. Board meets monthly.
 - Each PMC has a Chair - eyes and ears of the board (oversight only)
 
-Note: Members meeting must be at least once a month. Can be more often.
+??? Members meeting must be at least once a month. Can be more often.
 
 The ASF is a legal entity - a non-profit - and must conduct itself
 according to certain laws and bylaws.
@@ -155,7 +156,7 @@ The foundation is
 * Service provider
 * Mentor
 
-Note: The Foundation provides the tools to make it possible for projects
+??? The Foundation provides the tools to make it possible for projects
 to run themselves, and tries to mostly stay out of their way. The board
 is responsible to our constituency (the general public) to ensure that
 projects govern themselves in ways that are sustainable, and which live
@@ -171,7 +172,7 @@ The Foundation doesn't drive technical direction.
 - Board provides oversight, but has no say on what code gets written, what direction projects take, what new projects we should start etc
 - Foundation provides support support (eg infra, branding, press) so that projects can focus just on their code + community
 
-Note:
+???
 
 Difficulties with structure 
 
@@ -201,7 +202,7 @@ Difficulties with structure
 - Frequent releases
 - Direct user input
 
-Note:
+???
 
 Why Open Source? (Me)
 
@@ -221,7 +222,7 @@ Why Open Source? (Me)
 - Includes Patent Grant 
 - Easily reused by other projects & organizations
 
-Note:
+???
 
 Business friendly - can reuse our project code (with appropriate
 attribution) to build your product, your service, your company.
@@ -236,7 +237,7 @@ attribution) to build your product, your service, your company.
 * We want our code to be a "universal donor" to other projects, whether
   they are open or closed
 
-Note:
+???
 
 Many companies and organizations have built products on top of ASF code.
 ASF code drives the software business. It's in your car, in your
@@ -247,7 +248,7 @@ games. And it powers the space program and the medical world.
 
 ![Minecraft](images/minecraft.png)
 
-Note:
+???
 
 Apache code is EVERYWHERE, because of this license.
 
@@ -259,7 +260,7 @@ Apache code is EVERYWHERE, because of this license.
 * Transparency
 * Community
 
-Note:
+???
 
 Our approach is based on three pillars, often referred to as “The Apache
 Way”:
@@ -283,7 +284,7 @@ great communities, and therefore place community health over all else.
 * Trusted
 * Safe
 
-Note:
+???
 
 Our focus on Meritocracy, Transparency and Community results in:
 
@@ -302,7 +303,7 @@ Our focus on Meritocracy, Transparency and Community results in:
 - Provides incentive to Do More
 - The best ideas win
 
-Note:
+???
 
 - Not authority to act autonomously - community must still agree to decisions
 - Privileges: commit, and a vote in direction
@@ -316,7 +317,7 @@ Note:
 Worth mentioning that the word 'Meritocracy' has a PR problem lately,
 largely due to the fact that it often means 'Oligarchy' in practice.
 
-Note: Old white guys select other old white guys based on their "merit".
+??? Old white guys select other old white guys based on their "merit".
 We actively struggle against this, but we have a LOOOONG way to go
 before we've fixed it.
 
@@ -347,7 +348,7 @@ before we've fixed it.
 - Poisonous people/communities turn people off, and the project will die
 - End result - better code, long-term code
 
-Note:
+???
 
 One of our sayings is "Community > Code", which is shorthand for saying
 that the community actually matters more than the code itself. A
@@ -360,7 +361,7 @@ all by itself, isn't sustainable, because the world changes around you.
 
 ![Dice](images/dice.png)
 
-Note:
+???
 
 - voting
     - +1 - yes
@@ -377,7 +378,7 @@ Note:
 - Time requirement on votes ensures representation across many timezones
 - Development done online and on-list - If it didn’t happen on-list, it didn’t happen
 
-Note:
+???
 
 If you don't have enough people to vote on releases, then that's a
 leading indicator that something is seriously wrong with the project,
@@ -394,7 +395,7 @@ and something needs to change.
 * Projects can revive from the Attic (although this hasn't happened so
   far)
 
-Note: Don't have 3 people able to vote
+??? Don't have 3 people able to vote
 
 ---
 
@@ -426,7 +427,7 @@ There are many myths that surround the ASF ...
 - Asynchronous
 - Accommodate all personalities
 
-Note:
+???
 
 - Asynchronous - Developers in other time zones, languages have equal access
 - Archived - a permanent public record of what the project did
@@ -463,7 +464,7 @@ Note:
 ![Incubator](images/incu_logo.png)
 ![Incubator](images/incubator.png)
 
-Note: 
+??? 
 
 - Entry point for all new projects
 - Indoctrinates the project into the Apache Way
@@ -496,7 +497,7 @@ Note:
 
 ![Ken](images/ken.jpg)
 
-Note: The work that you do through your "offspring" will outlast your
+??? The work that you do through your "offspring" will outlast your
 personal participation. It's a way to extend your impact far into the
 future.
 
@@ -514,7 +515,7 @@ future.
 
 ![Jim](images/jim.jpg)
 
-Note:
+???
 
 - Train up two people to replace you
 - Jim encouraged me to stop complaining and actually fix stuff
@@ -528,7 +529,7 @@ Note:
 - You can donate your useful code to the foundation, so the whole world
   can benefit
 
-Note:
+???
 
 - No corporate memberships. You are not buying influence.
 
