@@ -324,6 +324,15 @@ sustainable.
 
 ---
 
+## Do What You Can't
+
+![Picasso](images/cant.jpg)
+
+Related: https://youtu.be/jG7dSXcfVqE ("Do What You Can't", by Casey
+Neistat and Max Joseph)
+
+---
+
 ## How to ask - Be specific
 
 * **Don't** say "come help"
@@ -515,6 +524,12 @@ Be carefully who you invest your life in
 
 ![clone](images/clones.jpg)
 
+???
+
+But be sure you're not just cloning yourself. Seek people that are
+different, so that you expand the pool of ideas, and don't just leave a
+stagnant pond.
+
 ---
 
 ## Touch the future
@@ -535,6 +550,10 @@ rbowen@redhat.com
 @rbowen
 
 @CentOSProject
+
+@RDOProject
+
+@TheASF
 
 http://community.redhat.com/
 

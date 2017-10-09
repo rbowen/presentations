@@ -1,4 +1,0 @@
-#!/bin/sh
-
-ssh grenache.rcbowen.com "cd /var/www/vhosts/boxofclue/presentations && git pull"
-
