@@ -70,7 +70,9 @@ Bottom-up leadership - lead by example rather than by edict.
 - New members brought on every year, based on the quality of their
   contributions
 
-??? And so, this idea was spread to many more projects (278 and
+???
+
+And so, this idea was spread to many more projects (278 and
 counting ...)
 
 ---
@@ -79,8 +81,11 @@ counting ...)
 
 * Collaborative decision making
 * Flat organization - everyone has an equal voice
+* Resolve conflicts by voting, and move on
 
-??? In reality, some people have earned a louder voice than others,
+???
+
+In reality, some people have earned a louder voice than others,
 but everyone is able to attain to that level.
 
 ---
@@ -138,7 +143,9 @@ and users.
 - Annual members meetings via IRC. Board meets monthly.
 - Each PMC has a Chair - eyes and ears of the board (oversight only)
 
-??? Members meeting must be at least once a month. Can be more often.
+???
+
+Members meeting must be at least once a month. Can be more often.
 
 The ASF is a legal entity - a non-profit - and must conduct itself
 according to certain laws and bylaws.
@@ -156,7 +163,9 @@ The foundation is
 * Service provider
 * Mentor
 
-??? The Foundation provides the tools to make it possible for projects
+???
+
+The Foundation provides the tools to make it possible for projects
 to run themselves, and tries to mostly stay out of their way. The board
 is responsible to our constituency (the general public) to ensure that
 projects govern themselves in ways that are sustainable, and which live
@@ -256,7 +265,7 @@ Apache code is EVERYWHERE, because of this license.
 
 ## The Apache Way - Why the ASF Works
 
-* Meritocracy
+* Individual Merit
 * Transparency
 * Community
 
@@ -265,7 +274,7 @@ Apache code is EVERYWHERE, because of this license.
 Our approach is based on three pillars, often referred to as “The Apache
 Way”:
 
-Meritocracy - Individuals come to our projects as individuals, and grow
+Merit - Individuals come to our projects as individuals, and grow
 the community’s trust and appreciation by what they do and how they do
 it.
 
@@ -286,7 +295,7 @@ great communities, and therefore place community health over all else.
 
 ???
 
-Our focus on Meritocracy, Transparency and Community results in:
+Our focus on Individual Merit, Transparency and Community results in:
 
 * Vendor Neutrality - We are a natural meeting place for competitors to collaborate together on shared goals.
 * Diversity - Our flexible model of governance lets projects evolve independently, yet ensures they remain independent and diverse communities.
@@ -312,17 +321,6 @@ Our focus on Meritocracy, Transparency and Community results in:
 
 ---
 
-## Meritocracy
-
-Worth mentioning that the word 'Meritocracy' has a PR problem lately,
-largely due to the fact that it often means 'Oligarchy' in practice.
-
-??? Old white guys select other old white guys based on their "merit".
-We actively struggle against this, but we have a LOOOONG way to go
-before we've fixed it.
-
----
-
 ![Merit](images/stairs.png)
 
 ---
@@ -331,11 +329,11 @@ before we've fixed it.
 
 -  Any constructive contribution earns merit
 -  Not just code
-    -  Evangelism
+    -  Promotion (Social media, events, etc)
     -  Bug reports and triage
     -  Testing
     -  Documentation
-    -  Design feedback
+    -  Design (product or website, for example)
     -  User support
     -  Etc.
 
@@ -395,13 +393,19 @@ and something needs to change.
 * Projects can revive from the Attic (although this hasn't happened so
   far)
 
-??? Don't have 3 people able to vote
+???
+
+Don't have 3 people able to vote
 
 ---
 
 ## Myths
 
 There are many myths that surround the ASF ...
+
+* Too many rules
+* Tied to outdated technology
+* The Foundation controls everything about your project
 
 ---
 
@@ -412,6 +416,12 @@ There are many myths that surround the ASF ...
   (the governing body of the ASF) doesn't like to interfere
 * The board has interfered only 2 or 3 times in the history of the
   Foundation.
+
+???
+
+A core principle is that projects are autonomous. Even when the board
+strenuously disagrees with a project's decisions, we will almost never
+intervene in their process.
 
 ---
 
@@ -437,6 +447,19 @@ There are many myths that surround the ASF ...
 
 ---
 
+## What do we "control"?
+
+* We protect usage of our marks
+* We ensure that projects operate in vendor-neutral ways
+* We protect the _provenance_ of our code
+
+???
+
+"Provenance" - where it came from, how it got here, our legal right to
+distribute it.
+
+---
+
 ## Non-coding teams
 
 * Infrastructure (not non-coding actually)
@@ -448,6 +471,11 @@ There are many myths that surround the ASF ...
 * Fundraising
 * Events/Community
 
+???
+
+There's lots of places to get involved in the ASF even if you're not a
+programmer.
+
 ---
 
 ## (Nearly) All Volunteer
@@ -457,14 +485,16 @@ There are many myths that surround the ASF ...
     - Press
     - Infrastructure
     - Administration
-- Although many developers are paid by companies to work on Apache code, the ASF will never pay for code development
+- Although many developers are paid by companies to work on Apache code, the ASF never pays for code development
 
 ---
 
 ![Incubator](images/incu_logo.png)
 ![Incubator](images/incubator.png)
 
-??? 
+---
+
+## Incubator
 
 - Entry point for all new projects
 - Indoctrinates the project into the Apache Way
@@ -472,6 +502,12 @@ There are many myths that surround the ASF ...
 - Ensures and tracks IP
     - Legal: Can we release the code under our license?
 - Community: Is the project diverse and sustainable?
+
+---
+
+### Podlings
+
+![Podlings](images/podlings.png)
 
 ---
 
@@ -497,7 +533,9 @@ There are many myths that surround the ASF ...
 
 ![Ken](images/ken.jpg)
 
-??? The work that you do through your "offspring" will outlast your
+???
+
+The work that you do through your "offspring" will outlast your
 personal participation. It's a way to extend your impact far into the
 future.
 
@@ -541,13 +579,13 @@ future.
 
 ---
 
-## Where does it go?
+## Where does it go? (2015)
 
 ![Budget](images/ASFBudget.png)
 
 ---
 
-## Where does it go?
+## Where does it go? (2015)
 
 ![Budget](images/ASFbudget2.png)
 
