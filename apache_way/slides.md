@@ -596,6 +596,7 @@ future.
 * To "give back" to the community
 * Because they understand that it costs money to produce Free Software,
   and want to ensure the sustainability of the projects they rely on.
+* Because they understand the tragedy of the commons
 * For publicity and search engine karma (Yes, really)
 
 ---
