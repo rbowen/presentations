@@ -1,17 +1,27 @@
 class: center, middle
 # Mentoring: Your Path To Immortality
 
-Rich Bowen
+Rich Bowen, (Apache|Red Hat)
 
-Open Source Summit North America 2017
+Open Source Summit, Prague
 
 Slides: BoxOfClue.com/mentoring
+
+???
+
+There are many motivations for writing open source software. A desire to
+be remembered is high on many people's list.
+
+* Scratching your own itch
+* Fun, socialization
+* Make the world a better place, and possibly be remembered for it
 
 ---
 
 ![Socrates](images/David_-_The_Death_of_Socrates.jpg)
 
 ???
+* Socrates
 * Is one of the most famous names in history.
 * Didn't write anything (at least that we still have). In fact, thought
   that debate, rather than writing things down, was the only valid way
@@ -542,8 +552,8 @@ stagnant pond.
 ![future](images/future.jpg)
 
 ---
-
-finis
+class: center,middle
+## finis
 
 rbowen@redhat.com
 
@@ -555,7 +565,7 @@ rbowen@redhat.com
 
 @TheASF
 
-http://community.redhat.com/
+Community.RedHat.com
 
-Slides: http://boxofclue.com/
+Slides: BoxOfClue.com
 
