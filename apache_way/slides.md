@@ -9,6 +9,8 @@ The Apache Software Foundation
 
 rbowen@apache.org
 
+MesosCon 2017, Prague
+
 ---
 
 ## The Apache Way is ...
@@ -236,17 +238,7 @@ Why Open Source? (Me)
 Business friendly - can reuse our project code (with appropriate
 attribution) to build your product, your service, your company.
 
----
-
-## Why we don't accept other licenses
-
-* Users know that *Apache == Apache License*
-* We don't want people to have to guess, research, or figure it out. If
-  it says Apache, you know what's in the box
-* We want our code to be a "universal donor" to other projects, whether
-  they are open or closed
-
-???
+Why we insist on one license:
 
 Many companies and organizations have built products on top of ASF code.
 ASF code drives the software business. It's in your car, in your
@@ -321,10 +313,6 @@ Our focus on Individual Merit, Transparency and Community results in:
 
 ---
 
-![Merit](images/stairs.png)
-
----
-
 ## Merit
 
 -  Any constructive contribution earns merit
@@ -355,20 +343,6 @@ all by itself, isn't sustainable, because the world changes around you.
 
 ---
 
-## Consensus-based decisions
-
-![Dice](images/dice.png)
-
-???
-
-- voting
-    - +1 - yes
-    - +0 - no real comment
-    - -1 - veto
-- Also, -0, -0.5, +0.5, etc... to indicate non-binding opinions
-
----
-
 ## Collaborative Development
 
 - Code is developed by the community
@@ -384,21 +358,6 @@ and something needs to change.
 
 ---
 
-## The Attic
-
-* Some projects are just done
-* And some lack adequate oversight
-* The attic provides a place for dormant projects to go, to preserve a
-  record of history, releases, and so on
-* Projects can revive from the Attic (although this hasn't happened so
-  far)
-
-???
-
-Don't have 3 people able to vote
-
----
-
 ## Myths
 
 There are many myths that surround the ASF ...
@@ -411,7 +370,7 @@ There are many myths that surround the ASF ...
 
 ## Lots Of Rules
 
-* We have few rules. 
+* We have few actual rules. 
 * We have lots of documentation about what we think works, but the board
   (the governing body of the ASF) doesn't like to interfere
 * The board has interfered only 2 or 3 times in the history of the
@@ -429,7 +388,7 @@ intervene in their process.
 
 ## Mailing Lists
 
-- Every project has:
+- Every project has (at least)
     - dev@ - primary list
     - users@ - user-to-user support
     - commits@
@@ -489,12 +448,9 @@ programmer.
 
 ---
 
-![Incubator](images/incu_logo.png)
-![Incubator](images/incubator.png)
-
----
-
 ## Incubator
+
+![Incubator](images/incu_logo.png)
 
 - Entry point for all new projects
 - Indoctrinates the project into the Apache Way
@@ -517,11 +473,6 @@ programmer.
 - Helping others with queries and questions
 - Issue / bug tracker triage
 - Testing new fixes, helping reproduce problems
-
----
-
-## Ways to Contribute
-
 - Bug Fixes and New Features
 - Writing add-ons and extensions
 - Mentoring, volunteering for the Foundation
@@ -540,23 +491,6 @@ personal participation. It's a way to extend your impact far into the
 future.
 
 - Ken encouraged me to speak at a conference
-
----
-
-### Mentorship - bring out the best in others that they may not see in themselves
-
-![Sally](images/sally.jpg)
-
----
-
-### Mentorship - Encourage others to do the things you could do yourself.
-
-![Jim](images/jim.jpg)
-
-???
-
-- Train up two people to replace you
-- Jim encouraged me to stop complaining and actually fix stuff
 
 ---
 
@@ -585,12 +519,6 @@ future.
 
 ---
 
-## Where does it go? (2015)
-
-![Budget](images/ASFbudget2.png)
-
----
-
 ## Why do companies sponsor?
 
 * To "give back" to the community
@@ -601,23 +529,13 @@ future.
 
 ---
 
-## Read more
+<p>Questions?</p> 
 
 * http://apache.org/
 * http://blogs.apache.org/
 * http://feathercast.apache.org/
-* http://opensource.com/
-
----
-
-![Feather](images/feather.png) 
-
-<p>Questions?</p> 
-
-- http://www.apache.org/
 - Twitter - @TheASF
 - rbowen@apache.org
 
 <small>A collaborative slidedeck with contributions from 
-Nick Burch, Ross Gardler, Lars Eilebrecht, Justin Erenkrantz, Isabel
-Drost, Sally Khudairi and many others</small>
+Nick Burch, Ross Gardler, Lars Eilebrecht, Justin Erenkrantz, Isabel Drost-Fromm, Sally Khudairi and many others</small>
