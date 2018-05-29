@@ -3,8 +3,6 @@ class: center, middle
 
 Rich Bowen, (Apache|Red Hat)
 
-Open Source Summit, Prague
-
 Slides: BoxOfClue.com/mentoring
 
 ???
@@ -227,6 +225,27 @@ realize that they have nowhere to fit in, and they go away.
 
 ---
 
+## Corporate participation
+
+
+* Waiting for new contributors to participate can be particularly
+  difficult in projects with a large corporate presence
+* This is hard, and is becoming more and more common in open source as a
+  whole
+* I don't know how to fix this. Suggestions welcome.
+
+![trucks](images/trucks.jpg)
+???
+Anecdote: $Project at Apache where a large software company started
+participating. The project started moving much faster (good, right?!)
+but the volunteer participants quickly felt that $Company had "taken
+over" the project. The $company participants felt that they were being
+held back. This eventually led to a split in the project.
+
+This is HARD.
+
+---
+
 ## Ask people to do things
 
 Directly asking someone to work on something serves a number of purposes
@@ -350,6 +369,12 @@ Neistat and Max Joseph)
 * Ask someone to answer a question on the forum/IRC/mailing list, rather
   than just answering it yourself
 
+???
+
+"Micromentoring" - asking people to do one specific task (like answering
+a question) instead of doing it yourself. Takes 2 minutes, but conveys
+all of the above messages of trust and permission.
+
 ---
 
 ## How to ask - set expectations
@@ -362,9 +387,14 @@ Neistat and Max Joseph)
     * Test procedure
 
 ???
+
 If you don't have these expectations codified, do write down what you
 tell them, so that you have it for the next time. This is also a great
 way to build out documentation of your development process
+
+Setting standards makes it clear that you think they can live up to
+them. It also communicates that this is serious business that you are
+trusting to them.
 
 ---
 
@@ -392,17 +422,17 @@ things that wouldn't happen if you "help" too much.
     * In the release notes
 
 OpenStack mentions every contributor to each release of the software.
-https://www.openstack.org/software/ocata/ lists all 1,925 contributors
+https://www.openstack.org/software/queens/ lists all 1,925 contributors
 by name.
 
-Wordpress does this too: https://wordpress.org/news/2017/06/evans/
+Wordpress does this too: https://wordpress.org/news/2018/05/wordpress-4-9-6-privacy-and-maintenance-release/
 
 ---
 
 ## Even if you helped ...
 
 * If you mentored a contribution through to a commit, even if you did
-  most of the work, give the credit to your student.
+  *most of the work*, give the credit to your student.
 * Remember that it's not about you
 
 ---
@@ -417,17 +447,25 @@ Wordpress does this too: https://wordpress.org/news/2017/06/evans/
 ???
 It will often take you more time to write up the ticket in this way than
 it will to fix it yourself. Remember that it's not about this ticket.
-It's about investing in the future of your project.
+It's about investing in the future of your project, and amplifying
+yourself.
 
 ---
 
 ![firstbug](images/firstbug.png)
+
+???
+
+Wordpress
 
 ---
 
 ![easyfix](images/easyfix.png)
 
 ???
+
+RDO 
+
 FWIW, I dislike the use of the word "easy" in most contexts. In this
 case, however, I think it sets expectations in a reasonable way. ie, if
 you find this easy, this is likely a good project for you to be involved
@@ -436,6 +474,18 @@ with.
 ---
 
 ![easyfix](images/easyfix_detail.png)
+
+???
+
+RDO, detail
+
+---
+
+## Easyfix: Reference
+
+* https://fedoraproject.org/easyfix/
+* http://rdoproject.org/easyfix
+* https://core.trac.wordpress.org/tickets/good-first-bugs
 
 ---
 
@@ -501,14 +551,16 @@ Be carefully who you invest your life in
 
 * Be aware that mentoring can be a significant time investment
 * Sometimes, the people that you mentor can become lifelong friends
-* but sometimes ...
+* However ...
+
+???
+
+Next slide: People to avoid
 
 ---
 
 ## Mentees to avoid
 
-* No, "mentees" is not a real word. I hate people that use it. Also, it
-  always makes me think of manatees.
 * Some people are just looking for something to pad their resume
 * Others are trying to bypass the hard work and get straight to the
   fame and adulation that invariably comes with open source
@@ -516,12 +568,16 @@ Be carefully who you invest your life in
 
 ![images](images/mentees.jpg)
 
+???
+
+* No, "mentees" is not a real word. I hate people that use it. Also, 
+  it always makes me think of manatees.
 ---
 
 ## "Do my homework" mentoring
 
 * And some are just looking for you to do your job for them
-* It's very hard to detect these folks before you've already sunk hours
+* It can be hard to detect these folks before you've already sunk hours
   of your life into it.
 
 ---
