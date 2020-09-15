@@ -611,17 +611,13 @@ stagnant pond.
 class: center,middle
 ## finis
 
-rbowen@redhat.com
+rbowen@apache.org
 
 @rbowen
 
 @CentOSProject
 
-@RDOProject
-
-@TheASF
-
-Community.RedHat.com
+@ApacheCommunity
 
 Slides: BoxOfClue.com
 
