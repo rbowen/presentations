@@ -110,7 +110,7 @@ Welcome to ApacheCon, day three!
 
 # Event survey
 
-URL GOES HERE
+## s.apache.org/acah-survey
 
 ---
  
