@@ -90,6 +90,17 @@ Welcome to ApacheCon!
 
 ---
 
+# Code of Conduct
+
+## apachecon.com/acah2020/conduct.html
+
+???
+
+Violators will be thrown off of the platform. No, there will not be any
+refunds.
+
+---
+
 # Get Your ApacheCon Tshirt
 
 ## s.apache.org/acah-tshirt
