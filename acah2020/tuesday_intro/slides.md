@@ -80,7 +80,7 @@ Welcome to ApacheCon!
 <br />
 ![postgresql](postgresql.png)
 <br />
-![muse](muse.png)
+![muse](musedev.png)
 
 ???
 
@@ -116,6 +116,16 @@ refunds.
 * Visit our sponsor booths for more information!
 * Hallway track/networking, all day
 * Follow us on Twitter - @apachecon - for schedule updates and other information
+
+---
+
+# Bug Bash
+
+## s.apache.org/bugbash
+
+Thanks to Muse.dev!
+
+![musebot](musebot.png)
 
 ---
  
