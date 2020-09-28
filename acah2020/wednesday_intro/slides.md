@@ -100,7 +100,7 @@ Welcome to ApacheCon, day two!
 
 # Print your ApacheCon Badge
 
-## https://s.apache.org/acah-badge
+## s.apache.org/acah-badge
 
 ![badge](badge.png)
 
