@@ -98,6 +98,14 @@ Welcome to ApacheCon, day two!
 
 ---
 
+# Print your ApacheCon Badge
+
+## https://s.apache.org/acah-badge
+
+![badge](badge.png)
+
+---
+
 # Today's Highlights
 
 ![banner](achome_thumb.png)

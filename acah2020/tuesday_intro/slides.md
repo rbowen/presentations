@@ -135,6 +135,8 @@ refunds.
 
 ## https://s.apache.org/acah-badge
 
+![badge](badge.png)
+
 ---
 
 # Today's Highlights
