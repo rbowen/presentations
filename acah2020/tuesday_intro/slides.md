@@ -58,6 +58,26 @@ Welcome to ApacheCon!
 
 ---
 
+## Daily seminars in the Imply booth
+
+ * 9/29: 12:30-1:30pm EST
+ * 9/30: 1:30-2:30pm EST
+ * 10/1: 2:30-3:30pm EST
+
+Meet the New Hot Analytics Stack - Apache Kafka, Spark and Druid
+
+???
+
+Come learn why thousands of companies use Apache Druid and Imply (powered by Apache Druid) for hot analytics alongside their data warehouses.
+Learn from the experts at Imply, the creators of Apache Druid, as they show you how to:
+
+ *   Graphically load streaming data from Kafka and Spark, and create dimensions and metrics
+ *   Combine streaming and historical data from your data lake or data warehouse
+ *   Get alerts, build and explore real-time dashboards, and see AI-powered explanations
+ *   Perform drag-and-drop visual data exploration with sub-second response times
+
+---
+
 # Gold
 
 ![openlogic](openlogic.png)
@@ -106,6 +126,14 @@ refunds.
 ## s.apache.org/acah-tshirt
 
 ![tshirt](tshirt.png)
+
+(See @apachecon on Twitter for this URL)
+
+---
+
+# Print your ApacheCon Badge
+
+## https://s.apache.org/acah-badge
 
 ---
 
