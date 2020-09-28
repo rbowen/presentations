@@ -157,6 +157,13 @@ Thanks to Muse.dev!
 
 ![musebot](musebot.png)
 
+???
+
+* Muse.dev is running a bug bash on some of the participating projects.
+Sign up at the above URL to participate.
+
+* Drop by the booth for more details
+
 ---
  
 # State of the Feather
