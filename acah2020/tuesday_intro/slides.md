@@ -139,6 +139,14 @@ refunds.
 
 ---
 
+# Ways to connect:
+
+* Chat on the Hopin platform
+* Slack: **s.apache.org/apachecon-slack**
+* Hallway track (listed in Sessions)
+
+---
+
 # Today's Highlights
 
 ![banner](achome_thumb.png)
@@ -162,7 +170,7 @@ Thanks to Muse.dev!
 * Muse.dev is running a bug bash on some of the participating projects.
 Sign up at the above URL to participate.
 
-* Drop by the booth for more details
+* Drop by the booth for more details and the #bugbash channel on Slack
 
 ---
  

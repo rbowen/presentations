@@ -106,6 +106,14 @@ Welcome to ApacheCon, day two!
 
 ---
 
+# Ways to connect:
+
+* Chat on the Hopin platform
+* Slack: **s.apache.org/apachecon-slack**
+* Hallway track (listed in Sessions)
+
+---
+
 # Today's Highlights
 
 ![banner](achome_thumb.png)
