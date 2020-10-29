@@ -107,6 +107,8 @@ Learn from the experts at Imply, the creators of Apache Druid, as they show you 
 * Codethink
 * US PostsgreSQL Association
 * muse.dev
+*  ..
+* Other thank yous - track chairs, Ruth, Brian
 
 ---
 
@@ -144,6 +146,7 @@ refunds.
 * Chat on the Hopin platform
 * Slack: **s.apache.org/apachecon-slack**
 * Hallway track (listed in Sessions)
+* Polls
 
 ---
 
@@ -171,6 +174,7 @@ Thanks to Muse.dev!
 Sign up at the above URL to participate.
 
 * Drop by the booth for more details and the #bugbash channel on Slack
+
 
 ---
  

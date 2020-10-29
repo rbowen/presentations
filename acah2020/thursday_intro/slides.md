@@ -80,13 +80,21 @@ Welcome to ApacheCon, day three!
 <br />
 ![postgresql](postgresql.png)
 <br />
-![muse](muse.png)
+![muse](musedev.png)
 
 ???
 
 * Codethink
 * US PostsgreSQL Association
 * muse.dev
+
+---
+
+# Muse.dev Bug Bash
+
+## [bugbash.muse.dev](https://bugbash.muse.dev/)
+
+![bugbash](bugbash.png)
 
 ---
 
@@ -111,6 +119,24 @@ Welcome to ApacheCon, day three!
 * Chat on the Hopin platform
 * Slack: **s.apache.org/apachecon-slack**
 * Hallway track (listed in Sessions)
+* Polls
+
+---
+
+# And after the event ...
+
+* Twitter: @apachecon and @TheASF and @ApacheCommunity
+* YouTube: www.youtube.com/theapachefoundation
+* blogs.apache.org
+* And all the mailing lists: lists.apache.org
+
+---
+
+# Event survey
+
+## s.apache.org/acah-survey
+
+(You'll also receive email about this tomorrow.)
 
 ---
 
@@ -121,12 +147,6 @@ Welcome to ApacheCon, day three!
 * Visit our sponsor booths for more information!
 * Hallway track/networking, all day
 * Follow us on Twitter - @apachecon - for schedule updates and other information
-
----
-
-# Event survey
-
-## s.apache.org/acah-survey
 
 ---
  
@@ -148,7 +168,7 @@ Leads R&D at Oak Ridge National Laboratory
 
 #  Anil Inamdar, Instaclustr
 
-![inamdar](keynote_instaclusrt_inamdar.png)
+![inamdar](keynote_instaclustr_inamdar.jpg)
 &nbsp;
 ![instaclustr](instaclustr.png)
 <br />
@@ -158,16 +178,14 @@ Head of US Consulting and Delivery, Instaclustr
 
 ---
 
-# TBD: Imply.io
+# Gian Merlino
 
-![tbd](keynote_imply_tbd.jpg)
+![tbd](keynote_imply_merlino.jpg)
 &nbsp;
-&nbsp;
-&nbsp;
-![imply](imply.png)
+![imply](imply.png)<br />
+CTO and Co-Founder, and Apache Druid PMC Chair
 
-<br />
-Imply.io
+
 
 ???
 
