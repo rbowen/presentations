@@ -1,0 +1,12 @@
+tr.odd{ background-color: pink }
+tr.even{ background-image: url("/mod_rewrite/images/feather.png") }
+
+tr.indexhead{ font-size: 150% }
+
+#indextitle{
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
