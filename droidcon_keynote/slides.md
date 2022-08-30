@@ -17,6 +17,7 @@ believe it's (one of?) the best way to develop software.
 
 ---
 ## What is the Apache way?
+
 * Community of Peers (Level playing field)
 * Earned Authority (Merit)
 * Transparency
