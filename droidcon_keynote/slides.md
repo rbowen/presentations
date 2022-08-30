@@ -14,6 +14,7 @@ Director, The Apache Software foundation
 ???
 I'm here to talk about the Apache Way of software development, and why I
 believe it's (one of?) the best way to develop software.
+
 ---
 ## What is the Apache way?
 * Community of Peers (Level playing field)
@@ -26,6 +27,14 @@ believe it's (one of?) the best way to develop software.
 The Apache Way is notoriously hard to define, because it's more culture
 than a rule book. But these are some of the most important components
 that are consistent across most interpretations.
+
+---
+![](images/orig_feather_group.jpg)
+
+???
+Most of the philosophy comes directly out of the history. Many of our
+processes/policies are actually scars from past mistakes.
+
 ---
 ## A Brief History
 ![oldfeather](images/oldfeather.png)
@@ -42,12 +51,16 @@ because of NCSA httpd disappearing once people had already built their
 businesses around it. Brian wanted to ensure that he would never again
 have his business held hostage to the shifting plans of another
 organization in which he had no input.
+
+---
+![](images/httpd_group_feather_2015.jpg)
 ---
 ![rcb](images/rcb_kenya.png)
 
 ???
 I started in open source the way that many of us do - to solve a
 problem. RCBowen Kenya Site, circa 1993
+
 ---
 ## Community of Peers
 * Vendor neutrality
@@ -57,6 +70,7 @@ problem. RCBowen Kenya Site, circa 1993
 ???
 Of course, reality and philosophy seldom match up exactly. And that's
 why projects have foundation-level oversight.
+
 ---
 ## Earned Authority
 * Project leadership is granted to people who do the work
@@ -65,6 +79,7 @@ why projects have foundation-level oversight.
 ???
 This is sometimes called Meritocracy, although that word has other 
 connotations and is falling out of favor.
+
 ---
 ## Transparency
 * The "Open" in "Open Source" is not just about the source being visible
@@ -75,14 +90,19 @@ connotations and is falling out of favor.
 * Surprise is the opposite of engagement: public communication about the road map ensures that the community is never surprised
 * Can slow the speed of development, but ensures that participants in all time zones, all languages, can participate as equals.
 * Shift to synchronous communication mediums - eg Slack - threaten this openness.
+
 ---
 ## Consensus
 * Decisions are made by the entire community
 * Votes are only necessary when we cannot achieve consensus
+
 ---
 ## Self-governed projects
 * Board oversight ...
 * But each project determines their own local culture and rules
+* What does "governance" mean? It's just writing down who makes the
+  decisions, and how, and the path to becoming one of those people.
+
 ---
 ## Governance
 * Board
@@ -95,6 +115,18 @@ connotations and is falling out of favor.
 * The membership selectes the board, and any new members, each year.
 * PMC selects new committers, and new PMC members
 * Each PMC determines what the criteria are for selecting new project members
+
+---
+## What does the Board do?
+
+* The boring stuff ...
+    * Ensures the bills are paid
+    * Ensures we're not breaking the law
+    * Ensures that projects are behaving in ways likely to lead to success
+
+---
+## Open is more than just a list of rules
+
 ---
 ## The Four Opens
 * Open Source
@@ -112,12 +144,14 @@ A bit of a sidebar ... but ...
 * Open Design means planning in public, with public input
 * Open Development means all code changes happen in public
 * Open Community refers to governance models that clearly document a path to leadership, regardless of what organization you're part of, based on your demonstrated leadership
+
 ---
 ## Apache Software License v2
 ![asl](images/aslv2.png)
 
 ???
 * The Apache License is a so-called "permissive" license, because it allows you to do (almost) anything with the code, as long as you give credit for where you got it.
+
 ---
 ## Four Freedoms
 
@@ -134,10 +168,19 @@ A program is “free software” if the program’s users have the four essentia
 Richard Stallman
 ---
 ## Running your project the Apache Way
+
 * Radical transparency - Default to open
 * Document the path to leadership
 * Evaluate contributions based on the contributions, not based on the contributor
 * Delegate everything to the people willing to do the work, and then TRUST them to do it.
+
+???
+
+* What if you want to run your own project this way?
+* Radical transparency means *all* conversations have to be in public.
+  That is a significant change to team dynamics. Make sure you're ready
+  for that
+
 ---
 * Q&A
 
@@ -146,6 +189,5 @@ Richard Stallman
     @rbowen
 
     <small>github.com/rbowen/presentations/droidcon_keynote</small>
-
 
 
