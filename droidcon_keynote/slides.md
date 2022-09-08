@@ -77,6 +77,19 @@ these principles are actually practiced, since the natural progression
 of things leads to them being ignored.
 
 ---
+## Community > Code
+
+* The community sustains the code
+* The code motivates the community
+* Community building is hard work
+
+???
+An open source project without a community is just a personal hobby that
+you happen to do in public. More about this later under "Four Opens"
+
+If you build it ...
+
+---
 ## Earned Authority
 * Project leadership is granted to people who do the work
 * Each project defines this a little differently
@@ -148,6 +161,21 @@ We like diagrams like this, but the truth tends to be a little messier.
     * Report to the Board (Chair role)
 
 ---
+## Technical decisions
+
+* Made by consensus. Votes happen only when consensus cannot be
+  achieved. Most decisions are "lazy" consensus
+* Vetoes must be on technical grounds, and have a respectful
+  path to resolution
+* PMC votes are binding
+
+---
+## PMC Chair
+
+* No special authority in the project. Not the technical lead
+* Responsible for quarterly report to the Board.
+
+---
 
 ## PMC reporting
 
@@ -201,7 +229,7 @@ We like diagrams like this, but the truth tends to be a little messier.
 * Public/Archived mailing lists ensures that we can discover past decisions, and the reasons for them, forever
 * Surprise is the opposite of engagement: public communication about the road map ensures that the community is never surprised
 * Can slow the speed of development, but ensures that participants in all time zones, all languages, can participate as equals.
-* Shift to synchronous communication mediums - eg Slack - threaten this openness.
+* Shift to synchronous communication mediums - e.g. Slack - threaten this openness.
 
 ---
 ## Consensus
@@ -265,6 +293,8 @@ A program is “free software” if the program’s users have the four essentia
 ---
 ## Running your project the Apache Way
 
+So ... what if you want to run your project this way?
+
 * Radical transparency - Default to open
 * Document the path to leadership
 * Evaluate contributions based on the contributions, not based on the contributor
@@ -276,6 +306,45 @@ A program is “free software” if the program’s users have the four essentia
 * Radical transparency means *all* conversations have to be in public.
   That is a significant change to team dynamics. Make sure you're ready
   for that
+
+---
+## Transparency
+
+* Conversations where everyone can see them, both now, and in the future
+* Allow anyone to speak up, but set expectations around who actually
+  makes the decisions. (Everyone is heard DOES NOT mean that every
+  suggestion is acted on.)
+* Be aware that listening to everyone takes a LOT of time
+
+---
+## Define your governance
+
+* Document who makes the decisions
+* Document the path to leadership
+
+<small>https://github.com/github/MVG</small>
+
+---
+## Level playing field
+
+* Contributions evaluated on merit
+
+but ...
+
+* Clearly document the criteria by which this evaluation is done (Coding
+  standards, testing framework, etc.)
+
+---
+## Delegate and trust
+
+* Welcome new contributors, and let them make mistakes
+* Succession planning is a way to make yourself immortal
+* Mentoring is one of the most rewarding things you can ever do in your
+  career
+
+???
+
+Licked cookies
 
 ---
 * Q&A
