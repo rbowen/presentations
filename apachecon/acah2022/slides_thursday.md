@@ -89,7 +89,7 @@ Lunch is on your own, and there are numerous lovely options within a short walk.
 Visit the link on your badge (or use the QR code) for current updates
 
 ---
-## Have a great day!
+## See you next year!
 
 ### Twitter: @apachecon
 
