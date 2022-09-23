@@ -67,6 +67,8 @@ Let’s Open Source Diversity and Inclusion
 
 Senior Director, Global D&I Strategy, GitHub
 
+Demetris Cheatham is the Senior Director of Diversity, Inclusion and Belonging at GitHub. She is responsible for leading the company’s long-term strategy across four pillars: People, Platform, Policy, and Philanthropy. Her work includes aligning diversity, inclusion and belonging to the company’s global expansion, growth and business strategy, and plan for the future footprint of its workforce.
+
 ---
 ## Keynote
 

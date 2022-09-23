@@ -67,6 +67,10 @@ Developer Productivity Engineering for Open Source Communities
 
 CEO, Gradle Inc.
 
+Hans Dockter is the founder and project lead of the Gradle build system and the CEO of Gradle Inc., a company with the mission to transform how software is built and shipped. Hans is a thought leader in the field of project automation and has successfully been in charge of numerous large-scale enterprise builds. In the earlier days, Hans was also a committer for the JBoss project and founded the JBoss-IDE.
+
+Please welcome Hans
+
 ---
 ## Today's Events
 
