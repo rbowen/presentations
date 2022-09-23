@@ -76,6 +76,10 @@ Engineering Manager, Google
 
 Apache Beam as a platform for machine learning workflows
 
+???
+
+Kerry Donny-Clark is a manager of the Apache Beam team at Google. Before this he has been a professional yo-yo player, an English teacher in Japan, a cancer researcher, an elven fighter/mage, a janitor, a circus performer, and various kinds of software engineer.
+
 ---
 ## Events
 
