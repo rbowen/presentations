@@ -59,14 +59,12 @@ Bronze Sponsors Aiven, datagrate, and DBeaver.
 
 Tonight: BoFs, 5:50pm
 
-Lightning Talks tonight
-
 ---
-## Announcements
- 
-Lunch is on your own, and there are numerous lovely options within a short walk.
+## Lightning Talks
 
-Visit the link on your badge (or use the QR code) for current updates
+Tonight, 5:50pm, Rhythms II
+
+![](images/lightning.jpg)
 
 ---
 ## Keynote

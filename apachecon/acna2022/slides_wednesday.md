@@ -59,7 +59,14 @@ Bronze Sponsors Aiven, datagrate, and DBeaver.
 
 Tonight: BoFs, 5:50pm
 
-Attendee Reception, sponsored by AWS and the Apache Software Foundation
+---
+## Attendee Reception
+
+Sponsored by AWS and the Apache Software Foundation
+
+Crescent City Brewhouse, 8pm - 11pm
+
+![](images/crescentcity.jpg)
 
 ---
 ## Announcements
