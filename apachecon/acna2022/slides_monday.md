@@ -57,7 +57,7 @@ Bronze Sponsors Aiven, datagrate, and DBeaver.
 ---
 ## Events
 
-Tonight: BoFs [LIST] 5:50pm
+Tonight: BoFs start 5:50pm
 
 Tomorrow: Lightning talks! Get your ideas ready.
 
@@ -66,7 +66,7 @@ Speakers: Reception this evening. Bring your badge!
 ---
 ## Announcements
 
-Visit the Infrastructure team table at [LOCATION]k
+Visit the Infrastructure team table at [LOCATION]
 
 Lunch is on your own, and there are numerous lovely options within a short walk
 
@@ -79,11 +79,18 @@ The **ASF Infra team** will be present at the conference (exact location TBD) an
 
 Code of Conduct reminder
 
-COVID policy
-
 Visit the link on your badge (or use the QR code) for current updates
 
 Mask policy reminder - and there are masks at the Apache Community Development booth (Sponored by Bona Fide Masks!) if you need any.
+
+![](images/bonafide.jpg)
+
+???
+
+Reminder: We will throw you out if you do not abide by the code of
+conduct. Note that this conference is not a dating site.
+
+Thank you for keeping our at-risk attendees safe.
 
 ---
 ## Alternate Activities
