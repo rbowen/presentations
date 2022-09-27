@@ -55,6 +55,46 @@ Silver Sponsor Apple;
 Bronze Sponsors Aiven, datagrate, and DBeaver.
 
 ---
+## Events
+
+Tonight: BoFs [LIST] 5:50pm
+
+Tomorrow: Lightning talks! Get your ideas ready.
+
+Speakers: Reception this evening. Bring your badge!
+
+---
+## Announcements
+
+Visit the Infrastructure team table at [LOCATION]k
+
+Lunch is on your own, and there are numerous lovely options within a short walk
+
+???
+
+The **ASF Infra team** will be present at the conference (exact location TBD) and will be available for answering questions and discussing ideas for future improvements to our services. We'll also be having a BoF session discussing the future of service offerings (TBD).
+
+---
+## Announcements
+
+Code of Conduct reminder
+
+COVID policy
+
+Visit the link on your badge (or use the QR code) for current updates
+
+Mask policy reminder - and there are masks at the Apache Community Development booth (Sponored by Bona Fide Masks!) if you need any.
+
+---
+## Alternate Activities
+
+Did you bring a partner/spouse/friend/family?
+
+https://s.apache.org/apachecon2022-altern-invite
+
+![](images/alternateqr.png)
+
+---
 ## Keynote
 
 ![](images/feather_sm.png)
@@ -79,38 +119,6 @@ Apache Beam as a platform for machine learning workflows
 ???
 
 Kerry Donny-Clark is a manager of the Apache Beam team at Google. Before this he has been a professional yo-yo player, an English teacher in Japan, a cancer researcher, an elven fighter/mage, a janitor, a circus performer, and various kinds of software engineer.
-
----
-## Events
-
-Tonight: BoFs [LIST] 5:50pm
-
-Tomorrow: Lightning talks! Get your ideas ready.
-
-Speakers: Reception this evening. Bring your badge!
-
----
-## Announcements
-
-Visit the Infrastructure team table at [LOCATION]k
-
-Lunch is on your own, and there are numerous lovely options within a short walk
-
-???
-
-The **ASF Infra team** will be present at the conference (exact location TBD) and will be available for answering questions and discussing ideas for future improvements to our services. We'll also be having a BoF session discussing the future of service offerings (TBD).
-
-
----
-## Announcements
-
-Code of Conduct reminder
-
-COVID policy
-
-Visit the link on your badge (or use the QR code) for current updates
-
-Mask policy reminder - and there are masks at the Apache Community Development booth (Sponored by Bona Fide Masks!) if you need any.
 
 ---
 ## Have a great day!

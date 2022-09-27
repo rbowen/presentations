@@ -55,6 +55,23 @@ Silver Sponsor Apple;
 Bronze Sponsors Aiven, datagrate, and DBeaver.
 
 ---
+## Today's Events
+
+Tonight: BoFs, 5:50pm
+
+Attendee Reception, sponsored by AWS and the Apache Software Foundation
+
+---
+## Announcements
+ 
+Lunch is on your own, and there are numerous lovely options within a short walk.
+
+Visit the link on your badge (or use the QR code) for current updates
+
+Tomorrow we will be starting a little later (9:35 rather than 9) so you
+can sleep in a little more
+
+---
 ## Keynote
 
 ![](images/github.png)
@@ -83,23 +100,6 @@ Open Source Opens New Doors: Trends to Watch
 Speaker Title: Chief Product Officer
 
 Speaker Bio: As chief product officer, Sudhir Menon leads the organization’s engineering and support teams.
-
----
-## Today's Events
-
-Tonight: BoFs, 5:50pm
-
-Attendee Reception, sponsored by AWS and the Apache Software Foundation
-
----
-## Announcements
- 
-Lunch is on your own, and there are numerous lovely options within a short walk.
-
-Visit the link on your badge (or use the QR code) for current updates
-
-Tomorrow we will be starting a little later (9:35 rather than 9) so you
-can sleep in a little more
 
 ---
 ## Have a great day!
