@@ -101,6 +101,12 @@ https://s.apache.org/apachecon2022-altern-invite
 
 ![](images/alternateqr.png)
 
+???
+
+Before keynote intro: Thank you to staff, planners, TAC, track chairs, and
+speakers.
+
+
 ---
 ## Keynote
 
