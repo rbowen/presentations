@@ -55,6 +55,20 @@ Silver Sponsor Apple;
 Bronze Sponsors Aiven, datagrate, and DBeaver.
 
 ---
+## Today's Events
+
+Tonight: BoFs, 5:50pm
+
+Lightning Talks tonight
+
+---
+## Announcements
+ 
+Lunch is on your own, and there are numerous lovely options within a short walk.
+
+Visit the link on your badge (or use the QR code) for current updates
+
+---
 ## Keynote
 
 ![](images/strangeworks.png)
@@ -82,20 +96,6 @@ Security and Performance Implications of QUIC
 Paul Vixie, VP/DE, Security, Amazon Web Services
 
 Paul Vixie left school in 1980 to work on BSD UNIX and the Internet. In the following 40 years he founded five companies including the first anti-spam company (MAPS), the first neutral commercial internet exchange business (PAIX), and the first non-profit Internet infrastructure company (ISC). His notable artifacts include Cron, BIND, and a bunch of DNS related Internet RFC documents. He received his Ph.D. from Keio University in 2011, and was inducted into the Internet hall of fame in 2014. His day job as of 2022 is VP and Distinguished Engineer at AWS Security.
-
----
-## Today's Events
-
-Tonight: BoFs, 5:50pm
-
-Lightning Talks tonight
-
----
-## Announcements
- 
-Lunch is on your own, and there are numerous lovely options within a short walk.
-
-Visit the link on your badge (or use the QR code) for current updates
 
 ---
 ## Have a great day!
