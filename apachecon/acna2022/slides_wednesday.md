@@ -36,9 +36,12 @@ Gold Sponsors DataStax, Instaclustr, Red Hat, Salesforce, and Sonatype;
 
 ![](images/apple.png)
 
+![](images/opensearch.png)
+
 ???
 
-Silver Sponsor Apple;
+
+Silver Sponsors: Apple, OpenSearch
 
 ---
 ## Thanks to our sponsors

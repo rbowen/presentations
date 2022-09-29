@@ -11,7 +11,7 @@ class: center, middle
 
 ![](images/google.png)
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![](images/gradle.png)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![](images/gradle.png)
 
 ???
 AWS, Cloudera, Google Cloud, Gradle
@@ -34,25 +34,25 @@ Gold Sponsors DataStax, Instaclustr, Red Hat, Salesforce, and Sonatype;
 ## Thanks to our sponsors
 ### Silver
 
-![](images/apple.png)
+![](images/apple.png) 
+
+![](images/opensearch.png)
 
 ???
 
-Silver Sponsor Apple;
+Silver Sponsors: Apple, OpenSearch
 
 ---
 ## Thanks to our sponsors
 ### Bronze
 
-![](images/aiven.png) 
+![](images/aiven.png) &nbsp; &nbsp; &nbsp; ![](images/datagrate.png)
 
-![](images/datagrate.png)
-
-![](images/dbeaver.png)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![](images/dbeaver.png) &nbsp; &nbsp; ![](images/bloomberg.png)
 
 ???
 
-Bronze Sponsors Aiven, datagrate, and DBeaver.
+Bronze Sponsors Aiven, datagrate, Bloomberg and DBeaver
 
 ---
 ## Today's Events
