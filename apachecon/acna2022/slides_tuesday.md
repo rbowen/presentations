@@ -9,9 +9,10 @@ class: center, middle
 
 ![](images/aws.png) ![](images/cloudera.png)
 
-![](images/google.png)
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![](images/gradle.png)
+&nbsp; &nbsp; &nbsp; &nbsp; ![](images/google.png)
+
+&nbsp; &nbsp; &nbsp; &nbsp; ![](images/gradle.png)
 
 ???
 AWS, Cloudera, Google Cloud, Gradle
