@@ -57,8 +57,6 @@ Bronze Sponsors Aiven, datagrate, Bloomberg and DBeaver
 ---
 ## Events
 
-Tonight: BoFs start 5:50pm
-
 Tomorrow: Lightning talks! Get your ideas ready.
 
 Speakers: Reception this evening. Bring your badge!
@@ -66,13 +64,25 @@ Speakers: Reception this evening. Bring your badge!
 ---
 ## Announcements
 
-Visit the Infrastructure team table at [LOCATION]
+<!-- Visit the Infrastructure team table at [LOCATION] -->
 
 Lunch is on your own, and there are numerous lovely options within a short walk
 
 ???
 
-The **ASF Infra team** will be present at the conference (exact location TBD) and will be available for answering questions and discussing ideas for future improvements to our services. We'll also be having a BoF session discussing the future of service offerings (TBD).
+The **ASF Infra team** will be present at the conference and will be available for answering questions and discussing ideas for future improvements to our services. We'll also be having a BoF session this evening in Endymion discussing the future of service offerings(TBD).
+
+---
+## BoFs
+
+Tonight: BoFs start 5:50pm
+
+* Apache Hadoop: Rhythms I
+* Apache Impala: Rhythms II
+* Apache Ozone: Bacchus
+* FinTech: Iris
+* First time Contributors to Apache Airflow: Mid-City
+* Infrastructure Team - Ask Us Anything: Endymion
 
 ---
 ## Announcements
