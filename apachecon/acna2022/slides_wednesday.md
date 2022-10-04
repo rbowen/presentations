@@ -56,9 +56,9 @@ Silver Sponsors: Apple, OpenSearch
 Bronze Sponsors Aiven, datagrate, Bloomberg and DBeaver
 
 ---
-## Today's Events
+## Birds of a Feather
 
-Tonight: BoFs, 5:50pm
+5:50 p.m.
 
 * Cassandra BoF (Rhythms)
 * Ozone BoF (Rhythms II)
