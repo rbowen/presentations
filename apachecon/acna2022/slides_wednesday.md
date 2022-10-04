@@ -47,39 +47,41 @@ Silver Sponsors: Apple, OpenSearch
 ## Thanks to our sponsors
 ### Bronze
 
-![](images/aiven.png) 
+![](images/aiven.png) &nbsp; &nbsp; &nbsp; ![](images/datagrate.png)
 
-![](images/datagrate.png)
-
-![](images/dbeaver.png)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![](images/dbeaver.png) &nbsp; &nbsp; ![](images/bloomberg.png)
 
 ???
 
-Bronze Sponsors Aiven, datagrate, and DBeaver.
+Bronze Sponsors Aiven, datagrate, Bloomberg and DBeaver
 
 ---
 ## Today's Events
 
 Tonight: BoFs, 5:50pm
 
+* Cassandra BoF (Rhythms)
+* Ozone BoF (Rhythms II)
+* Apache Solr BoF (Endymion)
+* First time Contributor’s to Apache Airflow workshop BoF (Mid-City)
+* Groovy BoF (Bacchus)
+* Pulsar BOF (Iris)
+* Iceberg BoF (Muses)
+
 ---
 ## Attendee Reception
 
-Sponsored by AWS and the Apache Software Foundation
-
-Crescent City Brewhouse, 8pm - 11pm
+* Sponsored by AWS and the Apache Software Foundation
+* Crescent City Brewhouse, 8 p.m. - 11 p.m.
+* Bring your badge for admission.
 
 ![](images/crescentcity.jpg)
 
 ---
-## Announcements
+## Tomorrow
  
-Lunch is on your own, and there are numerous lovely options within a short walk.
-
-Visit the link on your badge (or use the QR code) for current updates
-
 Tomorrow we will be starting a little later (9:35 rather than 9) so you
-can sleep in a little more
+can enjoy the party and sleep in a little more
 
 ---
 ## Keynote
