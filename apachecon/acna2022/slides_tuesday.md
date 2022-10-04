@@ -58,7 +58,11 @@ Bronze Sponsors Aiven, datagrate, Bloomberg and DBeaver
 ---
 ## Today's Events
 
-Tonight: BoFs, 5:50pm
+Tonight: Speaker reception
+
+???
+
+Yes, we were in error yesterday. Sorry for anyone who showed up.
 
 ---
 ## Lightning Talks
@@ -66,6 +70,37 @@ Tonight: BoFs, 5:50pm
 Tonight, 5:50pm, Rhythms II
 
 ![](images/lightning.jpg)
+
+???
+
+If you have ideas for talks, please see Ruth or Brian, or write your
+title, name, and contact info on a note at the reg desk. And enjoy a
+drink, on us.
+
+---
+## Apache Infrastructure Team
+
+???
+
+The Apache Infrastructure team are the people that provide technical support for all projects at Apache. If you want to discuss anything with them, they’re sitting at a table at the bottom of the escalators, on the opposite side of the elevators from the registration desk, most of the day. Drop by any time.
+
+---
+## Expo area 
+Please visit our sponsors in the Expo areas (Rhythms III and Lagniappe), which will be open from 10:30 a.m. until 6 p.m.
+
+---
+## Get more involved in the ASF
+
+During yesterday’s keynotes, we learned a lot of you are here for the first time, and some of you have asked how you can get more involved.
+
+???
+
+We’re very excited to have you! The Apache newcomers guide is a great place to start, but you can hear about one specific way to help out today at 12:10 in Bob Paulin’s talk on fundraising at the ASF in Muses.
+
+---
+## Reminder
+
+Wear a mask
 
 ---
 ## Keynote
@@ -79,7 +114,6 @@ The Role Of Open Source in Quantum Computing
 ???
 
 CEO @Strangeworks, Eisenhower Fellow, Innovator in Residence @MIT, Sr. Member @IEEE, Chairman of the Quantum Computing Standards Workgroup, Ambassador to CERN and Society, contributor to TechCrunch, and the co-author of "Quantum Computing For Babies”. 
-
 
 ---
 ## Keynote
