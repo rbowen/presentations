@@ -69,6 +69,20 @@ Bronze Sponsors Aiven, datagrate, Bloomberg and DBeaver
 * Iceberg BoF (Muses)
 
 ---
+## GPG Key Signing
+
+Thinking of becoming a Release Manager? Just want to join the GPG web of trust?
+
+Join us on Thursday in the coffee break, right after the keynote!
+
+???
+
+Before you do... we need you to have your GPG Key on either https://people.apache.org/keys/committer/ or your Github account. If you
+don't already, and/or don't know how, help will be on hand on Wednesday during the coffee break
+
+For more information, see https://cwiki.apache.org/confluence/display/APACHECON/ACNA22-GPGKeySigning
+
+---
 ## Attendee Reception
 
 * Sponsored by AWS and the Apache Software Foundation
