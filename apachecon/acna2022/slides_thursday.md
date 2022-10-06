@@ -55,11 +55,6 @@ Silver Sponsors: Apple, OpenSearch
 Bronze Sponsors Aiven, datagrate, Bloomberg and DBeaver
 
 ---
-## Today's Events
-
-Tonight: BoFs, 5:50pm
-
----
 ## THANK YOU!!!
 
 ???
@@ -69,11 +64,15 @@ Attendees
 Organizers, staff, TAC, track chairs, Ruth and Brian
 
 ---
-## Announcements
- 
-Lunch is on your own, and there are numerous lovely options within a short walk.
+## After the event
 
-Visit the link on your badge (or use the QR code) for current updates
+In the coming days we'll send you a survey. Please help us make next
+year's event even better.
+
+Speaker slides will be available within the next week.
+
+We'll let you know soon about next year's event. We hope to see you
+there!
 
 ---
 ## Keynote

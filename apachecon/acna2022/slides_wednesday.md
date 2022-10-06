@@ -83,6 +83,12 @@ don't already, and/or don't know how, help will be on hand on Wednesday during t
 For more information, see https://cwiki.apache.org/confluence/display/APACHECON/ACNA22-GPGKeySigning
 
 ---
+## App time zone bug
+
+Force quit the app, and restart it. Seems to work. They're working on a
+fix.
+
+---
 ## Attendee Reception
 
 * Sponsored by AWS and the Apache Software Foundation
