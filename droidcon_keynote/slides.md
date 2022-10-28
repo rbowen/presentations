@@ -77,6 +77,19 @@ these principles are actually practiced, since the natural progression
 of things leads to them being ignored.
 
 ---
+## Vendor neutrality - Why?
+
+* One org (or possibly even one manager!) cannot steer the direction of
+  the project
+* No ability to "rug pull" a project that you rely on
+* Your voice is as loud as Google's, Amazon's, Microsoft's.
+* Forces you to focus on the customer, rather than on your own vision of
+  how things should be
+
+???
+Rug pull - license change on a project you rely on.
+
+---
 ## Community > Code
 
 * The community sustains the code
@@ -91,15 +104,13 @@ If you build it ...
 
 ---
 ## Earned Authority
+
 * Project leadership is granted to people who do the work
 * Each project defines this a little differently
 
-???
-This is sometimes called Meritocracy, although that word has other 
-connotations and is falling out of favor.
-
 ---
 ## Self-governed projects
+
 * Board oversight ...
 * But each project determines their own local culture and rules
 * What does "governance" mean? It's just writing down who makes the
@@ -111,7 +122,6 @@ connotations and is falling out of favor.
 ![progression](images/progression.png)
 
 ???
-
 We like diagrams like this, but the truth tends to be a little messier.
 
 ---
@@ -345,6 +355,36 @@ but ...
 ???
 
 Licked cookies
+
+---
+## Project lifecycle
+
+* Incubator
+* Top level project
+* Attic
+
+---
+## Incubator
+
+* Learn how to run a project 
+* Build a community
+* Ensure *legal* compliance with the license
+
+  https://incubator.apache.org/
+
+---
+## Attic
+
+* Signals that a project is no longer healthy
+* Preserves code, documentation, releases in perpetuity
+* Can reboot if a community steps up to do it
+
+  https://attic.apache.org/
+
+???
+Retiring projects continues to build trust - you don't accidentally bet
+your company on a project that is no longer maintained, and so
+expectations are set correctly.
 
 ---
 * Q&A
