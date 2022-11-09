@@ -16,20 +16,6 @@ I'm here to talk about the Apache Way of software development, and why I
 believe it's (one of?) the best way to develop software.
 
 ---
-## What is the Apache way?
-
-* Community of Peers (Level playing field)
-* Earned Authority (Merit)
-* Transparency
-* Consensus
-* Self-governed projects, with oversight
-
-???
-The Apache Way is notoriously hard to define, because it's more culture
-than a rule book. But these are some of the most important components
-that are consistent across most interpretations.
-
----
 ![](images/orig_feather_group.jpg)
 
 ???
@@ -55,12 +41,27 @@ organization in which he had no input.
 
 ---
 ![](images/httpd_group_feather_2015.jpg)
+
 ---
 ![rcb](images/rcb_kenya.png)
 
 ???
 I started in open source the way that many of us do - to solve a
 problem. RCBowen Kenya Site, circa 1993
+
+---
+## What is the Apache way?
+
+* Community of Peers (Level playing field)
+* Earned Authority (Merit)
+* Transparency
+* Consensus
+* Self-governed projects, with oversight
+
+???
+The Apache Way is notoriously hard to define, because it's more culture
+than a rule book. But these are some of the most important components
+that are consistent across most interpretations.
 
 ---
 ## Community of Peers
@@ -230,6 +231,42 @@ We like diagrams like this, but the truth tends to be a little messier.
   money
 
 ---
+## Project lifecycle
+
+![](images/lifecycle.png)
+
+???
+
+* Incubator
+* Top level project
+* Attic
+
+---
+## Incubator
+
+![](images/incubator.png)
+
+* Learn how to run a project 
+* Build a community
+* Ensure *legal* compliance with the license
+
+  https://incubator.apache.org/
+
+---
+## Attic
+
+* Signals that a project is no longer healthy
+* Preserves code, documentation, releases in perpetuity
+* Can reboot if a community steps up to do it
+
+  https://attic.apache.org/
+
+???
+Retiring projects continues to build trust - you don't accidentally bet
+your company on a project that is no longer maintained, and so
+expectations are set correctly.
+
+---
 ## Transparency
 * The "Open" in "Open Source" is not just about the source being visible
 * Public communication ensures that anyone can participate
@@ -322,9 +359,12 @@ So ... what if you want to run your project this way?
 
 * Conversations where everyone can see them, both now, and in the future
 * Allow anyone to speak up, but set expectations around who actually
-  makes the decisions. (Everyone is heard DOES NOT mean that every
-  suggestion is acted on.)
+  makes the decisions.
 * Be aware that listening to everyone takes a LOT of time
+
+???
+
+Everyone is heard DOES NOT mean that every suggestion is acted on.
 
 ---
 ## Define your governance
@@ -332,7 +372,7 @@ So ... what if you want to run your project this way?
 * Document who makes the decisions
 * Document the path to leadership
 
-<small>https://github.com/github/MVG</small>
+[https://github.com/github/MVG]()
 
 ---
 ## Level playing field
@@ -348,7 +388,7 @@ but ...
 ## Delegate and trust
 
 * Welcome new contributors, and let them make mistakes
-* Succession planning is a way to make yourself immortal
+* Mentoring (and succession planning) is a way to make yourself immortal
 * Mentoring is one of the most rewarding things you can ever do in your
   career
 
@@ -356,35 +396,7 @@ but ...
 
 Licked cookies
 
----
-## Project lifecycle
-
-* Incubator
-* Top level project
-* Attic
-
----
-## Incubator
-
-* Learn how to run a project 
-* Build a community
-* Ensure *legal* compliance with the license
-
-  https://incubator.apache.org/
-
----
-## Attic
-
-* Signals that a project is no longer healthy
-* Preserves code, documentation, releases in perpetuity
-* Can reboot if a community steps up to do it
-
-  https://attic.apache.org/
-
-???
-Retiring projects continues to build trust - you don't accidentally bet
-your company on a project that is no longer maintained, and so
-expectations are set correctly.
+Amplify your impact by recruiting minions
 
 ---
 * Q&A
