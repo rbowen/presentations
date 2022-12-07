@@ -1,9 +1,10 @@
-Conference Presentation Proposals
----------------------------------
+# Conference Presentation Proposals
 
-Title: The Path To Maintainer
+## Title: The Path To Maintainer
 
-Idea: Talk about how to progress from a contributor to a maintainer.
+### Idea: 
+
+Talk about how to progress from a contributor to a maintainer.
 Of course this varies greatly from one project to another, but there
 are some things that are universal ways to earn trust in a project:
 
@@ -12,27 +13,27 @@ are some things that are universal ways to earn trust in a project:
 * Writing and running tests
 * Providing end-user support
 
-Abstract:
+### Abstract:
 
 TBD
 
-Submitted to:
+### Submitted to:
 
-##
+## Title: Vendor Neutrality (need better title)
 
-Title: Vendor Neutrality (need better title)
-
-Idea:
+### Idea:
 
 Discuss why vendor neutrality is good for open source projects, users,
 and participating companies. Discuss the risks of using, or creating,
 single-vendor projects. Discuss the difference between vendor-led and
 vendor-controlled projects.
 
-Abstract:
+### Abstract:
 
 TBD
 
-Submitted to:
+### Submitted to:
+
+
 
 
