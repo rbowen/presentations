@@ -1,5 +1,12 @@
 # Conference Presentation Proposals
 
+## Bio
+
+Rich Bowen has been involved in open source since before we started
+calling it that. He's a member of the Apache Software Foundation, where
+he currently serves as a board member and VP Conferences. Rich is an
+Open Source Evangelist at AWS. 
+
 ## Title: The Path To Maintainer
 
 ### Idea: 
@@ -19,7 +26,7 @@ TBD
 
 ### Submitted to:
 
-## Title: Vendor Neutrality (need better title)
+## Title: Why single-vendor projects hurt everyone
 
 ### Idea:
 
@@ -34,7 +41,18 @@ TBD
 
 ### Submitted to:
 
-## Title: Best Practices For Growing Your Project Community
+### Notes
+
+* Even if you're the leader, it hurts you, because people will be
+  reluctant to contribute because 1) you're already paying a team to do
+  the work 2) why should I do your work for you for free so that you
+  can charge me to use it and 3) not sure I trust you not to change the
+  license some day.
+* Project is always at risk of the dominant company changing their
+  direction, or changing their mind entirely, leaving you holding the
+  bag.
+
+## Title: Community Growth - more art than science
 
 ### Idea:
 
@@ -55,9 +73,10 @@ be less so.
 * Tell people what the path is to being a maintainer
 * Welcome each newcomer, individually, in public
 * Hand out the keys earlier rather than later
+* Recognize that their voice (at least) as important as yours
 * ...
 
-## Title Why Open Source Matters
+## Title: Why Open Source Matters
 
 ## Idea: 
 
@@ -65,6 +84,8 @@ For a newbie audience, explain very simply what open source is, and why
 they should care. Geared primarily to a non-technical, customer-facing
 audience who needs to know enough to know what to say to customers, and
 how to understand what customers are saying.
+
+## Audience: Beginners
 
 ## Abstract
 
@@ -80,7 +101,16 @@ risks.
 
 AWS MKO - https://w.amazon.com/bin/view/MKO23/Content/
 
+## Title: Talking with management about open source
 
+## Abstract
 
+For those of us who already know how important open source is, it can be challenging to persuasively make the case to management, because we assume that everyone already knows the basics. This can work against us, confusing our audience and making us come across as condescending or concerned about irrelevant lofty philosophical points.
+
+In this talk, we take it back to the basics. What does management actually need to know about open source, why it matters, and how to make decisions about consuming open source, contributing to open source, and open sourcing company code?
+
+## Audience: Open source experts
+
+## Submitted to:
 
 
