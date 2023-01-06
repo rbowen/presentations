@@ -7,6 +7,16 @@ calling it that. He's a member of the Apache Software Foundation, where
 he currently serves as a board member and VP Conferences. Rich is an
 Open Source Evangelist at AWS. 
 
+## References
+
+Mentoring: Your path to immortality
+FOSS Backstage 2018
+https://youtu.be/FtKE5M2LBWQ
+
+Delivering Bad News: Helping your community through a rough patch
+FOSS Backstage 2022
+https://youtu.be/LcrYunSGTXA
+
 ## Title: The Path To Maintainer
 
 ### Idea: 
@@ -52,13 +62,17 @@ TBD
   direction, or changing their mind entirely, leaving you holding the
   bag.
 
-## Title: Community Growth - more art than science
+## Title: If you build it ... The art of community growth
 
 ### Idea:
 
 Tips for being more welcoming.
 
 ### Abstract:
+
+It's an alarmingly common assumption that once you make something open
+source, "the community" will show up to work on it. The reality is that
+building community is hard work.
 
 While there's no guaranteed way to grow your project community, there's
 things you can do to make it more likely that people will show up, get
