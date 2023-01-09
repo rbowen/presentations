@@ -5,7 +5,7 @@
 Rich Bowen has been involved in open source since before we started
 calling it that. He's a member of the Apache Software Foundation, where
 he currently serves as a board member and VP Conferences. Rich is an
-Open Source Evangelist at AWS. 
+Open Source Strategist at AWS. 
 
 ## References
 
@@ -81,6 +81,11 @@ be less so.
 
 ### Submitted to:
 
+Open Source Leadership Summit 2023
+https://events.linuxfoundation.org/open-source-summit-north-america/program/cfp/
+
+Berlin Buzzwords 2023
+
 ### Notes
 
 * Tell people how to contribute
@@ -117,14 +122,33 @@ AWS MKO - https://w.amazon.com/bin/view/MKO23/Content/
 
 ## Title: Talking with management about open source
 
-## Abstract
+### Abstract
 
 For those of us who already know how important open source is, it can be challenging to persuasively make the case to management, because we assume that everyone already knows the basics. This can work against us, confusing our audience and making us come across as condescending or concerned about irrelevant lofty philosophical points.
 
 In this talk, we take it back to the basics. What does management actually need to know about open source, why it matters, and how to make decisions about consuming open source, contributing to open source, and open sourcing company code?
 
-## Audience: Open source experts
+### Audience: Open source experts
 
-## Submitted to:
+### Submitted to:
+
+Open Source Leadership Summit 2023
+https://events.linuxfoundation.org/open-source-summit-north-america/program/cfp/
+
+FOSS Asia Summit 2023
+
+Berlin Buzzwords 2023
+
+## Title: Mentoring: Your path to immortality
+
+### Abstract
+
+The best way to leave a legacy is to mentor others. This talk discusses
+practical steps that you can implement today to leave that legacy.
+
+### Submitted to
+
+FOSS BackStage 2018
+https://www.youtube.com/watch?v=FtKE5M2LBWQ
 
 
