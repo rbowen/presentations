@@ -139,6 +139,10 @@ FOSS Asia Summit 2023
 
 Berlin Buzzwords 2023
 
+### Notes
+
+https://enterprisersproject.com/article/2015/1/top-advantages-open-source-offers-over-proprietary-solutions
+
 ## Title: Mentoring: Your path to immortality
 
 ### Abstract
