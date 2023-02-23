@@ -113,44 +113,56 @@ take and take and take, with no end in sight.
 
 ---
 
-# Instead:
+# Instead talk about the supply chain
 
 * Sustainability
 * Supply chain security
 
 ???
 
-When you use a natural resource, you need to ensure that it's still
+* When you use a natural resource, you need to ensure that it's still
 around next year.
+
+* Your manager loved talking about the supply chain. They read an
+  article about SBOMs last month, and have been looking for an
+  opportunity to bring it up in conversation.
+
+* If your company is betting millions (billions?) of dollars on
+  something that relies on an open source project, shouldn't they be
+  concerned that the project is healthy and sustainable?
 
 ---
 
-# Single vendor, single developer
+# Sustainable open source
+
+* Multiple vendors
+* Multiple maintainers
+* Responsive to user (customer) needs
 
 ---
 
 # Earning trust/merit
 
 * Your company is not in it to be *popular*, but to be *successful*
+* They certainly don't care if *you* are popular
 
 ---
 
 # Instead talk about Influence
 
-* Steering the project in our direction
+* Steering/leading the project in our direction
 
 ???
 
-This can be dangerous, though, if your company doesn't understand open
-source marketing principles. Don't claim you own/lead/invented an open
-source project.
+* This can be dangerous, though, if your company doesn't understand open social norms
+* Don't claim you own/lead/invented an open source project.
 
 ---
 
-# Adoption
+# And talk about Adoption
 
-* Adoption of our solution
-* Influsnce in the larger tech space
+* Open sourcing to drive adoption of our solution
+* Influence in the larger tech space
 
 ???
 
@@ -181,6 +193,32 @@ eg Kubernetes
 
 * Expertise in software your company relies on
 * Even better, it's free
+
+---
+
+# Free!
+
+* Your company does not want to give their product away for free
+
+???
+
+Free as in puppies!
+
+---
+
+# Instead talk about customer value
+
+* If you're hosting a service, customers can build and test at home, deploy on your service, what you sell is expertise, not software
+* If you sell software, open source is a way for the customer to
+  directly influence the feature set, and helps them trust your solution
+
+---
+
+# Can't we just ... ?
+
+???
+
+* 
 
 ---
 class: center,middle
