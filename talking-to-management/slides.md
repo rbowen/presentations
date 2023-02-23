@@ -3,7 +3,7 @@ class: center, middle
 
 Rich Bowen, (Apache|AWS)
 
-Slides: BoxOfClue.com/presentations/mentoring
+Slides: BoxOfClue.com/presentations/talking-to-management
 
 ???
 
