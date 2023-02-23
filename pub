@@ -1,11 +1,4 @@
 #!/bin/sh
 
-ssh grenache.rcbowen.com "cd /var/www/vhosts/boxofclue/presentations && git pull"
+ssh twist.rcbowen.com "cd /var/www/vhosts/boxofclue.com/presentations && git pull"
 
-# scp -r /home/rbowen/devel/redhat/project-presos/rdo/presentations/rdo_overview grenache.rcbowen.com:/var/www/vhosts/boxofclue/presentations/
-# scp -r /home/rbowen/devel/redhat/project-presos/rdo/presentations/openstack grenache.rcbowen.com:/var/www/vhosts/boxofclue/presentations/
-# scp -r /home/rbowen/devel/redhat/project-presos/rdo/presentations/centos_packaging grenache.rcbowen.com:/var/www/vhosts/boxofclue/presentations/
-
-rsync -avz -e ssh /home/rbowen/devel/redhat/project-presos/rdo/presentations/rdo_overview rbowen@grenache.rcbowen.com:/var/www/vhosts/boxofclue/presentations/
-# rsync -avz -e ssh /home/rbowen/devel/redhat/project-presos/rdo/presentations/openstack rbowen@grenache.rcbowen.com:/var/www/vhosts/boxofclue/presentations/
-rsync -avz -e ssh /home/rbowen/devel/redhat/project-presos/rdo/presentations/centos_packaging rbowen@grenache.rcbowen.com:/var/www/vhosts/boxofclue/presentations/
