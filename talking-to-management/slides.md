@@ -5,23 +5,54 @@ Rich Bowen, (Apache|AWS)
 
 Slides: BoxOfClue.com/presentations/talking-to-management
 
+![aws](images/awsopen.jpg)
+
 ???
 
-There are many motivations for writing open source software. Your
-company's motivations are entirely different.
+* Introduce yourself. AWS, Apache, 20+ years in FLOSS
+* There are many motivations for writing open source software. Your company's motivations are entirely different.
+
+---
+
+# What I'm going to tell you, and why you should care
+
+* How to talk to management about open source
+
+### Because
+
+* You like getting paid to work on open source
+* So you want your company to have a positive experience with it
+* And it's up to you to persuade management to do this correctly
+
+### Also 
+
+* You should want your company to **succeed**
+
+---
+
+# So ... why are you here?
+
+???
+
+* What do you want to learn?
+* Are you in a specific scenario you want help with?
+
 ---
 
 # Why do you do open source?
 
+![question](images/question.png)
+
 ???
 
 * Ask the question
-* Fun
-* Scratching your own itch
-* Socialization
-* "Giving back"
-* Make the world a better place, and possibly be remembered for it
-* Resume building, education
+    * Fun
+    * Scratching your own itch
+    * Socialization
+    * "Giving back"
+    * Make the world a better place, and possibly be remembered for it
+    * Resume building, education
+    * Oh, and because it's your job
 
 ---
 
@@ -29,8 +60,10 @@ company's motivations are entirely different.
 
 ???
 
-The great thing about FOSSAsia, and events like it, is that we can sit
+* The great thing about FOSSAsia, and events like it, is that we can sit
 around the campfire and speak a common language.
+* We all have stories about corporate types who Just Don't Get It, and
+  we can laugh at them together.
 
 ---
 
@@ -49,17 +82,19 @@ Probably in that order
 
 ---
 
-# Disclaimer
+# Disclaimer: 
+
+## Obviously not **YOUR** manager!
 
 ???
 
-I am sure you have a wonderful manager, and that they understand open
-source. Otherwise you wouldn't be at this event. But somewhere up the
-management chain is someone with different priorities.
+* I am sure you have a wonderful manager, and that they understand open
+  source. Otherwise you wouldn't be at this event. But somewhere up the
+  management chain is someone with different priorities.
 
 ---
 
-*Translation*
+![translate](images/translation.png)
 
 ???
 
@@ -68,8 +103,11 @@ their language.
 
 ---
 
-# How does this benefit ...
+# What's in it for the company?
 
+![dollar](images/dollar.png)
+
+???
 * The customer
 * The product/service
 * The company
@@ -79,11 +117,14 @@ their language.
 
 ---
 
+# Philosophy
+
 ![philosophy](images/Plato-Socrates-Aristotle.png)
 
 ???
 
-Don't talk philosophy
+Don't talk philosophy, unless they ask. Certainly not in a first
+conversation.
 
 * Licenses
 * Jargon
@@ -91,34 +132,48 @@ Don't talk philosophy
 
 ---
 
-*Time image goes here*
+# Got a minute?
+
+![stopwatch](images/stopwatch.jpg)
 
 ???
 
-You have a limited amout of time to make your point. Spending that time
-on the nuances of Free/Libre/Open/Puppies will work against you, and
-persuade your manager that you are don't care about the same things she
-does.
+* You have a limited amout of time to make your point - or, at least, 
+  to persuade your audience that you are worth listening to. Spending that time
+  on the nuances of Free/Libre/Open/Puppies will work against you, and
+  persuade your manager that you are don't care about the same things she
+  does.
+* Miguel De Icaza presentation, OSCon, long long ago.
 
 ---
 
 # "Giving back"
 
+* Giving back is a moral obligation
+* You are building your company on the back of "free" labor
+
+### But ...
+
 * Your company is not a charity
 
 ???
 
-Management often sees open source as a renewable resource that they can
-take and take and take, with no end in sight.
+* Management often sees open source as a renewable resource that they can
+  take and take and take, with no end in sight.
+* Your attitude that open source contribution is a moral obligation, or
+  "for the greater good" or any such thing, comes across as nonsense
+  unless there is an actual business benefit.
 
 ---
 
 # Instead talk about the supply chain
 
-* Sustainability
-* Supply chain security
+![chain](images/chain.jpg)
 
 ???
+
+* Sustainability
+* Supply chain security
 
 * When you use a natural resource, you need to ensure that it's still
 around next year.
@@ -131,13 +186,23 @@ around next year.
   something that relies on an open source project, shouldn't they be
   concerned that the project is healthy and sustainable?
 
+* Demonstrate, with numbers, how this project is a critical part of your
+  supply chain. Data is your friend here.
+
+* Talk about supply chain horror stories. There are so many from which
+  to choose.
+
+* This is **long term** thinking, not about solving immediate problems.
+  That looks good to managers.
+
 ---
 
-# Sustainable open source
+# What is sustainable open source?
 
 * Multiple vendors
 * Multiple maintainers
 * Responsive to user (customer) needs
+* Stake holders participate!
 
 ---
 
@@ -196,9 +261,9 @@ eg Kubernetes
 
 ---
 
-# Free!
+# But, isn't open source free?
 
-* Your company does not want to give their product away for free
+![puppy](images/puppy.jpg)
 
 ???
 
@@ -208,7 +273,12 @@ Free as in puppies!
 
 # Instead talk about customer value
 
-* If you're hosting a service, customers can build and test at home, deploy on your service, what you sell is expertise, not software
+???
+
+* Software is easy, people are hard. What you sell is expertise, not software
+* Participation in open source establishes that expertise
+* Open source is also a way to comodotize your competitor's product, and
+  make the conversation about expertise, not software
 * If you sell software, open source is a way for the customer to
   directly influence the feature set, and helps them trust your solution
 
