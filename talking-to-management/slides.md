@@ -392,9 +392,12 @@ Free as in puppies!
 
 # Instead talk about customer value
 
+## Software is easy, people are hard. Customers come to you because they trust you.
+
 ???
 
-* Software is easy, people are hard. What you sell is expertise, not software
+* Your company is your product. Everything else is just a delivery
+  mechanism
 * Participation in open source establishes that expertise
 * Open source is also a way to comodotize your competitor's product, and
   make the conversation about expertise, not software
