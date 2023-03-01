@@ -56,6 +56,18 @@ Slides: BoxOfClue.com/presentations/talking-to-management
 
 ---
 
+![why](images/why.png)
+Source: OpenSource.com survey
+
+???
+
+Main reasons:
+* Learn something new, or career opportunities
+* Fun
+* Altruism
+
+---
+
 ![campfire](images/campfire.jpg)
 
 ???
@@ -91,6 +103,25 @@ Probably in that order
 * I am sure you have a wonderful manager, and that they understand open
   source. Otherwise you wouldn't be at this event. But somewhere up the
   management chain is someone with different priorities.
+
+---
+
+# Disclaimer 2:
+
+Every project is weird, in its own special way
+
+???
+
+* Nothing in open source is a guarantee. You can do everything right, and
+  still have a bad experience with an open source project. The maintainers
+  could be awful people. The project could be run by a company that has
+  their own reasons for ignoring you. Maybe you have some weird corporate
+  policy that makes it impossible for you to do the right thing. And maybe
+  your manager isn't awesome as mine after all.
+* Open source, as you already know, is part culture, part religion, part
+  science, part law, and part ego, with a lot of language, timezone, and
+  network latency thrown in.
+* Nothing in this presentation should be construed as a promise
 
 ---
 
@@ -138,7 +169,7 @@ conversation.
 
 ???
 
-* You have a limited amout of time to make your point - or, at least, 
+* You have a limited amount of time to make your point - or, at least, 
   to persuade your audience that you are worth listening to. Spending that time
   on the nuances of Free/Libre/Open/Puppies will work against you, and
   persuade your manager that you are don't care about the same things she
@@ -149,8 +180,8 @@ conversation.
 
 # "Giving back"
 
-* Giving back is a moral obligation
 * You are building your company on the back of "free" labor
+* Giving back is a moral obligation
 
 ### But ...
 
@@ -175,12 +206,12 @@ conversation.
 * Sustainability
 * Supply chain security
 
-* When you use a natural resource, you need to ensure that it's still
-around next year.
-
-* Your manager loved talking about the supply chain. They read an
+* Your manager loves talking about the supply chain. They read an
   article about SBOMs last month, and have been looking for an
   opportunity to bring it up in conversation.
+
+* When you use a natural resource, you need to ensure that it's still
+around next year.
 
 * If your company is betting millions (billions?) of dollars on
   something that relies on an open source project, shouldn't they be
@@ -197,59 +228,138 @@ around next year.
 
 ---
 
+# Obligatory XKCD
+
+![dependency](images/dependency.png)
+
+<small>https://xkcd.com/2347/</small>
+
+???
+
+* Understand that your company is one of those things teetering on top.
+
+---
+
+# Data is your friend
+
+*Apache Commons is a critical component in our product ZYX, which earned
+$27M last year. If the project were to fail, we would have to replace it
+with something else, which would take approximately six months of work by 4
+engineers, assuming we could find a comparable project with which to
+replace it, rather than developing what we need from scratch. Therefore, it is
+in the best interests of our customers, and our bottom line, to
+participate in the sustainability of that project by contributing bug
+fixes, feature enhancements, and PR reviews.*
+
+???
+
+* Be specific. Use numbers. Reference reports.
+* Tie it to a company priority - in this case, profitability and budget
+
+---
+
 # What is sustainable open source?
 
 * Multiple vendors
 * Multiple maintainers
 * Responsive to user (customer) needs
-* Stake holders participate!
+* Stakeholders participate!
+
+???
+
+* Multiple vendors protects you from one vendor changing priorities, and
+  killing the project, or relicensing it to something that precludes
+  your use.
+* Multiple maintainers protects you from skiing accidents
+* Participating ensures that you, and your customers, are heard in
+  decisions
+* Focus on what you're good at, collaborate on what's common
 
 ---
 
-# Earning trust/merit
+# Earning merit and reputation
 
 * Your company is not in it to be *popular*, but to be *successful*
 * They certainly don't care if *you* are popular
+![breakfast](images/breakfast.png)
+<small>The Breakfast Club, 1985</small>
+
+???
+
+Yes, I know I'm the only person in the room old enough to remember The
+Breakfast Club.
 
 ---
 
-# Instead talk about Influence
+# Instead talk about earning trust and influence
 
 * Steering/leading the project in our direction
+* Championing our out customers' needs
+
+![lever](images/lever.gif)
 
 ???
 
 * This can be dangerous, though, if your company doesn't understand open social norms
 * Don't claim you own/lead/invented an open source project.
+* Also, there's no guarantee that your contributions/recommendations
+  will be accepted, so be careful about promising too much
+* Surveys show (reference needed) that customers view open source
+  participation as an indication of trust, expertise, and ability to
+  provide good customer service.
 
 ---
 
-# And talk about Adoption
+# And talk about adoption
 
 * Open sourcing to drive adoption of our solution
 * Influence in the larger tech space
 
 ???
 
-eg Kubernetes
+* eg Kubernetes/CNCF projects where one project drives the use of
+  another, and earns trust in the ecosystem as a whole
+* (Possibly) Controversial opinion: Open core is anti-community, because
+  it draws lines around what is, and is not, appropriate to contribute
+  to the project. Use extreme caution before pursuing this model
 
 ---
 
 # Fun
 
-* Your company is not interested in you having fun
+![fun](images/fun.jpg)
+
+???
+
+Open source is an endless party, and can be a source of lifelong
+friends. Right?
 
 ---
 
-# Instead talk about recruitement
+# Instead talk about recruitment
+
+* Your company is not interested in you having fun, despite what they
+  said in your interview.
 
 * Talking about your open source work makes your employer an attractive
   place to work
+
+???
+
+* Warning: If you hire someone with the (implied?) promise that they'll
+  get to work on open source, breaking that promise will immediately be
+  public information, and damage your reputation
+* Also, open source people (whatever that means) can be very
+  opinionated, lean libertarian/anarchic, and can be difficult to
+  manage.
 
 ---
 
 # Resume building
 
+![resume](images/resume.png)
+
+???
 * Your employer is **very** not interested in you building your resume
 
 ---
@@ -257,7 +367,16 @@ eg Kubernetes
 # Instead talk about continuing education
 
 * Expertise in software your company relies on
-* Even better, it's free
+* General programming skills
+* A lot of open source is about people skills, rather than technical
+  skills
+* Even better, it's free (Disclaimer: Nothing is free)
+
+???
+
+* People skills - and you can practice on strangers!
+
+* And, speaking of free ... (next slide)
 
 ---
 
@@ -302,3 +421,7 @@ rbowen@apache.org
 
 Slides: BoxOfClue.com/presentations/talking-to-management
 
+---
+Credits
+
+Lever image, By Koltepranita, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=17198274
