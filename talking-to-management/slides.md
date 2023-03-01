@@ -3,7 +3,7 @@ class: center, middle
 
 Rich Bowen, (Apache|AWS)
 
-Slides: BoxOfClue.com/presentations/talking-to-management
+Slides: BoxOfClue.com/presentations/talking-to-management and github.com/rbowen/presentations
 
 ![aws](images/awsopen.jpg)
 
@@ -90,7 +90,10 @@ around the campfire and speak a common language.
 
 ???
 
-Probably in that order
+* Probably in that order
+* Clarification - "doing" open source can mean
+  * Contributing to existing projects
+  * Open sourcing an internal project
 
 ---
 
@@ -408,9 +411,16 @@ Free as in puppies!
 
 # Can't we just ... ?
 
+* Fork it? (This is an entire other presentation)
+* Throw money at it? (Yes, but ...)
+
 ???
 
-* 
+* Situations to avoid at all costs
+  * Fork, internal vs external
+  * Throwing money at a project solves only a small part of the problem.
+    Also it maintains a situation where your employees are powerless to
+    make needed changes.
 
 ---
 class: center,middle
