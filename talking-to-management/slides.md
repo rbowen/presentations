@@ -132,8 +132,12 @@ Every project is weird, in its own special way
 
 ???
 
-When you are talking to management about open source, you must speak
+* When you are talking to management about open source, you must speak
 their language.
+
+* Note: This is translation, not lying. Open source is, above all,
+  *practical*. It's an objectively better way to build software, and
+  what's good for the customer is also the right thing to do.
 
 ---
 
