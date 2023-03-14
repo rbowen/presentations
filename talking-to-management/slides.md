@@ -28,6 +28,12 @@ Slides: BoxOfClue.com/presentations/talking-to-management and github.com/rbowen/
 
 * You should want your company to **succeed**
 
+???
+
+* Ideally, you are interested in the success of your company. Correct
+  understanding of open source is a long-term investment in the success
+  of your company, as well as in your own career.
+
 ---
 
 # So ... why are you here?
