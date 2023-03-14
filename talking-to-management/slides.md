@@ -36,15 +36,6 @@ Slides: BoxOfClue.com/presentations/talking-to-management and github.com/rbowen/
 
 ---
 
-# So ... why are you here?
-
-???
-
-* What do you want to learn?
-* Are you in a specific scenario you want help with?
-
----
-
 # Why do you do open source?
 
 ![question](images/question.png)
@@ -440,7 +431,3 @@ rbowen@apache.org
 
 Slides: BoxOfClue.com/presentations/talking-to-management
 
----
-Credits
-
-Lever image, By Koltepranita, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=17198274
