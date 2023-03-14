@@ -210,26 +210,22 @@ conversation.
 
 ???
 
+* **WHY** is giving back the right thing to do? Because you derived good
+  from it, and so should nurture it in return.
 * Sustainability
 * Supply chain security
-
 * Your manager loves talking about the supply chain. They read an
   article about SBOMs last month, and have been looking for an
   opportunity to bring it up in conversation.
-
 * When you use a natural resource, you need to ensure that it's still
 around next year.
-
 * If your company is betting millions (billions?) of dollars on
   something that relies on an open source project, shouldn't they be
   concerned that the project is healthy and sustainable?
-
 * Demonstrate, with numbers, how this project is a critical part of your
   supply chain. Data is your friend here.
-
 * Talk about supply chain horror stories. There are so many from which
   to choose.
-
 * This is **long term** thinking, not about solving immediate problems.
   That looks good to managers.
 
