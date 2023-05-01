@@ -91,6 +91,7 @@ around the campfire and speak a common language.
 * Clarification - "doing" open source can mean
   * Contributing to existing projects
   * Open sourcing an internal project
+  * Adopting an open source solution
 
 ---
 
