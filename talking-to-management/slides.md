@@ -38,7 +38,7 @@ Slides: BoxOfClue.com/presentations/talking-to-management and github.com/rbowen/
 
 # Why do you do open source?
 
-![question](images/question.png)
+![question](images/why.jpg)
 
 ???
 
@@ -53,8 +53,8 @@ Slides: BoxOfClue.com/presentations/talking-to-management and github.com/rbowen/
 
 ---
 
+<small>Source: OpenSource.com survey - http://tm3.org/fl</small>
 ![why](images/why.png)
-Source: OpenSource.com survey
 
 ???
 
@@ -69,7 +69,7 @@ Main reasons:
 
 ???
 
-* The great thing about FOSSAsia, and events like it, is that we can sit
+* The great thing about OSSummit, and events like it, is that we can sit
 around the campfire and speak a common language.
 * We all have stories about corporate types who Just Don't Get It, and
   we can laugh at them together.
@@ -108,10 +108,11 @@ around the campfire and speak a common language.
 
 # Disclaimer 2:
 
-Every project is weird, in its own special way
+![weirdo](images/weirdos.jpg)
 
 ???
 
+* Every project is weird, in its own special way
 * Nothing in open source is a guarantee. You can do everything right, and
   still have a bad experience with an open source project. The maintainers
   could be awful people. The project could be run by a company that has
@@ -140,7 +141,7 @@ their language.
 
 # What's in it for the company?
 
-![dollar](images/dollar.png)
+![dollar](images/dollar.jpg)
 
 ???
 * The customer
@@ -169,7 +170,7 @@ conversation.
 
 # Got a minute?
 
-![stopwatch](images/stopwatch.jpg)
+![stopwatch](images/pocketwatch.jpg)
 
 ???
 
@@ -178,7 +179,6 @@ conversation.
   on the nuances of Free/Libre/Open/Puppies will work against you, and
   persuade your manager that you are don't care about the same things she
   does.
-* Miguel De Icaza presentation, OSCon, long long ago.
 
 ---
 
@@ -201,9 +201,9 @@ conversation.
 
 ---
 
-# Instead talk about the supply chain
+# Supply chain
 
-![chain](images/chain.jpg)
+![chain](images/weak_link.jpg)
 
 ???
 
@@ -231,8 +231,8 @@ around next year.
 # Obligatory XKCD
 
 ![dependency](images/dependency.png)
-
 <small>https://xkcd.com/2347/</small>
+
 
 ???
 
@@ -267,13 +267,30 @@ fixes, feature enhancements, and PR reviews.*
 
 ???
 
+* At AWS, we call this "undifferentiated heavy lifting", but it means
+* Focus on what you're good at, collaborate on what's common
+
+---
+
+# Dangers of single-vendor projects
+
+* This is an entire other presentation
+
+Short version: Single-vendor projects tend to be primarily about that
+  vendor's priorities. (Sounds obvious when you say it ...)
+
+???
+
 * Multiple vendors protects you from one vendor changing priorities, and
   killing the project, or relicensing it to something that precludes
   your use.
 * Multiple maintainers protects you from skiing accidents
-* Participating ensures that you, and your customers, are heard in
-  decisions
-* Focus on what you're good at, collaborate on what's common
+
+---
+
+# Dangers of single-maintaner projects
+
+* Same as single-vendor, but so much moreso
 
 ---
 
@@ -282,7 +299,7 @@ fixes, feature enhancements, and PR reviews.*
 * Your company is not in it to be *popular*, but to be *successful*
 * They certainly don't care if *you* are popular
 ![breakfast](images/breakfast.png)
-<small>The Breakfast Club, 1985</small>
+<small>Source: The Breakfast Club, 1985</small>
 
 ???
 
@@ -291,12 +308,11 @@ Breakfast Club.
 
 ---
 
-# Instead talk about earning trust and influence
+# Instead: trust and influence
 
-* Steering/leading the project in our direction
-* Championing our out customers' needs
+* Steering/leading the project to benefit our customers
 
-![lever](images/lever.gif)
+![lever](images/steering.jpg)
 
 ???
 
@@ -327,7 +343,7 @@ Breakfast Club.
 
 # Fun
 
-![fun](images/fun.jpg)
+![fun](images/fun2.jpg)
 
 ???
 
@@ -357,7 +373,7 @@ friends. Right?
 
 # Resume building
 
-![resume](images/resume.png)
+![resume](images/resume.jpg)
 
 ???
 * Your employer is **very** not interested in you building your resume
@@ -382,7 +398,7 @@ friends. Right?
 
 # But, isn't open source free?
 
-![puppy](images/puppy.jpg)
+![kitten](images/kitten.jpg)
 
 ???
 
@@ -406,18 +422,28 @@ Free as in puppies!
 
 ---
 
-# Can't we just ... ?
+# Other things to talk to your management about
 
-* Fork it? (This is an entire other presentation)
-* Throw money at it? (Yes, but ...)
+* Can't we just ...
+    * ... fork it?
+    * ... throw money at it?
+    * ... hire the maintainer?
 
 ???
 
-* Situations to avoid at all costs
-  * Fork, internal vs external
-  * Throwing money at a project solves only a small part of the problem.
-    Also it maintains a situation where your employees are powerless to
-    make needed changes.
+* Each of these is another whole presentation
+* Earn trust gradually with your employer. These are complicated
+  conversations
+
+---
+
+## Final caution: It's a marathon, not a sprint
+
+![marathon](images/marathon.jpg)
+
+???
+* Open source investments take a while to pay off
+* Most companies are not good a patience
 
 ---
 class: center,middle
