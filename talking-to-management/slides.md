@@ -240,6 +240,22 @@ around next year.
 
 ---
 
+# Don't be afraid to tell scary stories
+
+![heartbleed](images/heartbleed.png)
+![meltdown](images/meltdown.png)
+![spectre](images/spectre.png)
+
+???
+
+* log4shell
+* The list goes on
+* Caution: Be sure to communicate that in each case, these happened
+  because of little community engagement, not because they were open
+  source.
+
+---
+
 # Obligatory XKCD
 
 ![dependency](images/dependency.png)
@@ -299,13 +315,16 @@ Short version: Single-vendor projects tend to be primarily about that
 * Multiple vendors protects you from one vendor changing priorities, and
   killing the project, or relicensing it to something that precludes
   your use.
-* Multiple maintainers protects you from skiing accidents
 
 ---
 
 # Dangers of single-maintaner projects
 
 * Same as single-vendor, but so much moreso
+
+???
+
+* Multiple maintainers protects you from skiing accidents
 
 ---
 
@@ -449,6 +468,7 @@ Free as in puppies!
 
 * Can't we just ...
     * ... fork it?
+    * ... write our own?
     * ... throw money at it?
     * ... hire the maintainer?
 
@@ -466,7 +486,13 @@ Free as in puppies!
 
 ???
 * Open source investments take a while to pay off
+* My manager suggests that investments in open source take 3 years to
+  pay off
+    * It takes a while to become a committer/maintainer
+    * It take a long time to master the code base
+    * It takes a long time to change company culture
 * Most companies are not good a patience
+    * Especially if they have to produce a quarterly earnings report
 
 ---
 class: center,middle
