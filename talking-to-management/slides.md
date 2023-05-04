@@ -123,7 +123,8 @@ around the campfire and speak a common language.
 * Open source, as you already know, is part culture, part religion, part
   science, part law, and part ego, with a lot of language, timezone, and
   network latency thrown in.
-* Nothing in this presentation should be construed as a promise
+* Nothing in this presentation should be construed as a promise of
+  success
 
 ---
 
@@ -136,7 +137,10 @@ their language.
 
 * Note: This is translation, not lying. Open source is, above all,
   *practical*. It's an objectively better way to build software, and
-  what's good for the customer is also the right thing to do.
+  what's good for the customer is also the right thing to do. I am not
+  telling you to lie to your management. Merely to understand where they
+  are coming from, as you attempt to understand where you are coming
+  from.
 
 ---
 
@@ -145,20 +149,27 @@ their language.
 ![dollar](images/dollar.jpg)
 
 ???
+
+It would be reductionist to say that your company only cares about
+profits. It's more complicated than that.
+
 * The customer
 * The product/service
 * The company
     * Cost/Profit
     * Recruiting
     * Reputation
+    * Legacy
 
 ---
 
 # Philosophy
 
-![philosophy](images/Plato-Socrates-Aristotle.png)
+![philosophy](images/opensources.jpg)
 
 ???
+
+This is a great book, but ...
 
 Don't talk philosophy, unless they ask. Certainly not in a first
 conversation.
@@ -210,8 +221,7 @@ conversation.
 
 * **WHY** is giving back the right thing to do? Because you derived good
   from it, and so should nurture it in return.
-* Sustainability
-* Supply chain security
+* Note because of a moral obligation, but because of sustainability
 * Your manager loves talking about the supply chain. They read an
   article about SBOMs last month, and have been looking for an
   opportunity to bring it up in conversation.
@@ -225,7 +235,8 @@ around next year.
 * Talk about supply chain horror stories. There are so many from which
   to choose.
 * This is **long term** thinking, not about solving immediate problems.
-  That looks good to managers.
+  That looks good to managers. It shows you care about the company, not
+  just about your own personal needs.
 
 ---
 
@@ -253,6 +264,9 @@ participate in the sustainability of that project by contributing bug
 fixes, feature enhancements, and PR reviews.*
 
 ???
+
+* This is an example report to your manager about why it's important tat
+  you contribute to the sustainability of a project.
 
 * Be specific. Use numbers. Reference reports.
 * Tie it to a company priority - in this case, profitability and budget
@@ -317,8 +331,11 @@ Breakfast Club.
 
 ???
 
-* This can be dangerous, though, if your company doesn't understand open social norms
+* This can be dangerous, though, if your company doesn't understand open social norms. Be sure to ask someone here at this conference if you yourself are unsure how to interact with an open source project.
 * Don't claim you own/lead/invented an open source project.
+
+    XYZCo. is a driving force behind Apache Thingy™.
+
 * Also, there's no guarantee that your contributions/recommendations
   will be accepted, so be careful about promising too much
 * Surveys show (reference needed) that customers view open source
@@ -347,6 +364,8 @@ Breakfast Club.
 ![fun](images/fun2.jpg)
 
 ???
+
+DroidCon Kenya, 2022!
 
 Open source is an endless party, and can be a source of lifelong
 friends. Right?
@@ -409,12 +428,15 @@ Free as in puppies!
 
 # Instead talk about customer value
 
-## Software is easy, people are hard. Customers come to you because they trust you.
+* Software is easy, people are hard. 
+* Customers come to you because they trust you.
+* This is doubly true if your product is based on open source
 
 ???
 
 * Your company is your product. Everything else is just a delivery
   mechanism
+* Customers tend to select technology first, and the company second
 * Participation in open source establishes that expertise
 * Open source is also a way to comodotize your competitor's product, and
   make the conversation about expertise, not software
