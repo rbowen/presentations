@@ -211,6 +211,10 @@ conversation.
   "for the greater good" or any such thing, comes across as nonsense
   unless there is an actual business benefit.
 
+* Dawn Foster: If you talk about what you do as though it's charity,
+  then it's going to be the first thing cut when there are budget
+  conversations.
+
 ---
 
 # Supply chain
