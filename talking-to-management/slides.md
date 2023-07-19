@@ -336,13 +336,6 @@ Short version: Single-vendor projects tend to be primarily about that
 
 * Your company is not in it to be *popular*, but to be *successful*
 * They certainly don't care if *you* are popular
-![breakfast](images/breakfast.png)
-<small>Source: The Breakfast Club, 1985</small>
-
-???
-
-Yes, I know I'm the only person in the room old enough to remember The
-Breakfast Club.
 
 ---
 
