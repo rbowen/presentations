@@ -207,7 +207,7 @@ conversation.
 
 * **WHY** is giving back the right thing to do? Because you derived good
   from it, and so should nurture it in return.
-* Note because of a moral obligation, but because of sustainability
+* Not because of a moral obligation, but because of sustainability
 * Your manager loves talking about the supply chain. They read an
   article about SBOMs last month, and have been looking for an
   opportunity to bring it up in conversation.
