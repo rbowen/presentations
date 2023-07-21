@@ -3,13 +3,16 @@ class: center, middle
 
 Rich Bowen, (Apache|AWS)
 
-Slides: BoxOfClue.com/presentations/talking-to-management and github.com/rbowen/presentations
+Slides: github.com/rbowen/presentations
 
 ![aws](images/awsopen.jpg)
 
 ???
 
-* Introduce yourself. AWS, Apache, 20+ years in FLOSS
+* Introduce yourself. 
+    * Apache, 20+ years in FLOSS
+    * Open Source Strategist at AWS
+    * Open Source zealot trying to communicate to prosaic managers
 * There are many motivations for writing open source software. Your company's motivations are entirely different.
 
 ---
@@ -104,27 +107,6 @@ around the campfire and speak a common language.
 * I am sure you have a wonderful manager, and that they understand open
   source. Otherwise you wouldn't be at this event. But somewhere up the
   management chain is someone with different priorities.
-
----
-
-# Disclaimer 2:
-
-![weirdo](images/weirdos.jpg)
-
-???
-
-* Every project is weird, in its own special way
-* Nothing in open source is a guarantee. You can do everything right, and
-  still have a bad experience with an open source project. The maintainers
-  could be awful people. The project could be run by a company that has
-  their own reasons for ignoring you. Maybe you have some weird corporate
-  policy that makes it impossible for you to do the right thing. And maybe
-  your manager isn't awesome as mine after all.
-* Open source, as you already know, is part culture, part religion, part
-  science, part law, and part ego, with a lot of language, timezone, and
-  network latency thrown in.
-* Nothing in this presentation should be construed as a promise of
-  success
 
 ---
 
