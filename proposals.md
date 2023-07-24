@@ -132,12 +132,14 @@ In this talk, we take it back to the basics. What does management actually need 
 
 ### Submitted to:
 
-Open Source Leadership Summit 2023
+Open Source Leadership Summit 2023, Vancouver
 https://events.linuxfoundation.org/open-source-summit-north-america/program/cfp/
 
-FOSS Asia Summit 2023
+FOSS Asia Summit 2023, Singapore
 
-Berlin Buzzwords 2023
+Community Over Code Asia, 2023, Beijing
+
+Airflow Summit 2023, Toronto
 
 ### Notes
 
