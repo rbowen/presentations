@@ -173,7 +173,7 @@ conversation.
 
 ---
 
-# Got a minute? 有一分钟时间吗？/长话短说 /抓住重点，直击要害
+# Got a minute? 长话短说 
 
 ![stopwatch](images/pocketwatch.jpg)
 
@@ -241,7 +241,7 @@ around next year.
 
 ---
 
-# Don't be afraid to tell scary stories 危言耸听
+# Don't be afraid to tell scary stories 善用“危言耸听”
 
 ![heartbleed](images/heartbleed.png)
 ![meltdown](images/meltdown.png)
@@ -257,7 +257,7 @@ around next year.
 
 ---
 
-# Obligatory XKCD  强制性的 XKCD
+# Obligatory XKCD  关键又脆弱的依赖
 
 ![dependency](images/dependency.png)
 <small>https://xkcd.com/2347/</small>
@@ -269,7 +269,7 @@ around next year.
 
 ---
 
-# Data is your friend  数据就是朋友 / 充分利用数据
+# Data is your friend  充分利用数据
 
 *Apache Commons is a critical component in our product ZYX, which earned
 $27M last year. If the project were to fail, we would have to replace it
@@ -280,7 +280,7 @@ in the best interests of our customers, and our bottom line, to
 participate in the sustainability of that project by contributing bug
 fixes, feature enhancements, and PR reviews.*
 
-*Apache Commons 是我们众多产品中的一个关键组件，去年创造了2700万美元的收益。如果这个项目失败，我们就需要其他组件来替换它；如果我们找到一个合适的项目替换 Apache Commons，大概需要4名工程师6个月的时间，这还不是从0开始构建我们需要的功能。所以，考虑到客户利益和我们的底线，我们需要参与到这个项目中，修复 bugs、增强功能、审核 PR。*
+*Apache Commons 是我们众多产品中的一个关键组件，去年创造了2700万美元的收益。如果这个项目失败，我们就需要替换成其他组件；如果我们找到一个合适的项目替换 Apache Commons，大概需要4名工程师6个月的时间，这还不是从0开始构建我们需要的功能。所以，考虑到客户利益和我们的底线，我们需要参与到这个项目中，修复 bugs、增强功能、审核 PR。*
 
 ???
 
@@ -299,7 +299,7 @@ fixes, feature enhancements, and PR reviews.*
 * Responsive to user (customer) needs
 * Stakeholders participate!
 
-# 开源如何可持续？
+# 开源如何可持续发展？
 
 * 多个供应商
 * 多个维护者
@@ -323,7 +323,7 @@ Short version: Single-vendor projects tend to be primarily about that
 # 单一供应商的危险
 
 这要展开讲，又能讲一节课了
-简单地说：如果项目只有一个供应商，这个项目会被这个供应商的优先级主导（这么一说，你就懂了...）
+简单地说：如果项目只有一个供应商，那项目会被供应商的优先级牵着鼻子走（这么一说，你就懂了...）
 
 ???
 
@@ -363,7 +363,7 @@ Short version: Single-vendor projects tend to be primarily about that
 
 * Steering/leading the project to benefit our customers
 
-# 聊聊信任和影响力
+# 赢得信任和影响力
 
 引导/领导项目会让我们的客户受益
 
@@ -492,9 +492,9 @@ Free as in puppies!
 
 # 聊聊客户价值
 
-* 软件易得，人才难求 / 开发软件容易，抓住/留住客户很难。
+* 开发软件容易，抓住客户很难。
 * 客户来找你是因为他们信任你。
-* 如果你的产品基于开源，这一点尤为重要。
+* 如果你的产品基于开源，信任就更为重要。
 
 ???
 
