@@ -23,17 +23,12 @@ Slides: github.com/rbowen/presentations
 
 ### 原因如下
 
-* You like getting paid to work on open source
-* So you want your company to have a positive experience with it
-* And it's up to you to persuade management to do this correctly
-
 * 你想为开源工作
 * 希望公司积极开源
 * 那你得说服管理层正确开源
 
 ### 同时 
 
-* You should want your company to **succeed**
 * 你要和公司勠力同心，**取得成功**
 
 ???
@@ -44,7 +39,7 @@ Slides: github.com/rbowen/presentations
 
 ---
 
-# Why do you do open source? 为什么要搞开源？
+# 为什么要搞开源？
 
 ![question](images/why.jpg)
 
@@ -84,14 +79,8 @@ around the campfire and speak a common language.
 
 ---
 
-# That is not why your company does open source 这些都不是公司要开源的原因
+# 这些都不是公司要开源的原因
 
-* Profit
-* Customers
-* Shareholders
-* Profit
-* Employees (If you're lucky)
-* Profit
 * 利润
 * 客户
 * 股东
@@ -109,9 +98,9 @@ around the campfire and speak a common language.
 
 ---
 
-# Disclaimer: 免责声明
+# 免责声明
 
-## Obviously not **YOUR** manager!  显然不是**你的**经理！
+## 显然不是**你的**经理！
 
 ???
 
@@ -137,7 +126,7 @@ their language.
 
 ---
 
-# What's in it for the company?  对公司有什么好处呢？
+# 对公司有什么好处呢？
 
 ![dollar](images/dollar.jpg)
 
@@ -156,7 +145,7 @@ profits. It's more complicated than that.
 
 ---
 
-# Philosophy 哲学
+# 哲学
 
 ![philosophy](images/opensources.jpg)
 
@@ -173,7 +162,7 @@ conversation.
 
 ---
 
-# Got a minute? 长话短说 
+# 长话短说 
 
 ![stopwatch](images/pocketwatch.jpg)
 
@@ -187,17 +176,13 @@ conversation.
 
 ---
 
-# "Giving back" 回馈
-
-* You are building your company on the back of "free" labor
-* Giving back is a moral obligation
+# 反哺
 
 * 使用“免费”劳力为公司做贡献
-* 回馈是道义
+* 反哺是道义
 
 ### 但 ...
 
-* Your company is not a charity
 * 公司不是慈善机构
 
 ???
@@ -214,7 +199,7 @@ conversation.
 
 ---
 
-# Supply chain 供应链
+# 供应链
 
 ![chain](images/weak_link.jpg)
 
@@ -241,7 +226,7 @@ around next year.
 
 ---
 
-# Don't be afraid to tell scary stories 善用“危言耸听”
+# 善用“危言耸听”
 
 ![heartbleed](images/heartbleed.png)
 ![meltdown](images/meltdown.png)
@@ -257,7 +242,7 @@ around next year.
 
 ---
 
-# Obligatory XKCD  关键又脆弱的依赖
+# 关键又脆弱的依赖
 
 ![dependency](images/dependency.png)
 <small>https://xkcd.com/2347/</small>
@@ -269,16 +254,7 @@ around next year.
 
 ---
 
-# Data is your friend  充分利用数据
-
-*Apache Commons is a critical component in our product ZYX, which earned
-$27M last year. If the project were to fail, we would have to replace it
-with something else, which would take approximately six months of work by 4
-engineers, assuming we could find a comparable project with which to
-replace it, rather than developing what we need from scratch. Therefore, it is
-in the best interests of our customers, and our bottom line, to
-participate in the sustainability of that project by contributing bug
-fixes, feature enhancements, and PR reviews.*
+# 充分利用数据
 
 *Apache Commons 是我们众多产品中的一个关键组件，去年创造了2700万美元的收益。如果这个项目失败，我们就需要替换成其他组件；如果我们找到一个合适的项目替换 Apache Commons，大概需要4名工程师6个月的时间，这还不是从0开始构建我们需要的功能。所以，考虑到客户利益和我们的底线，我们需要参与到这个项目中，修复 bugs、增强功能、审核 PR。*
 
@@ -291,13 +267,6 @@ fixes, feature enhancements, and PR reviews.*
 * Tie it to a company priority - in this case, profitability and budget
 
 ---
-
-# What is sustainable open source? 
-
-* Multiple vendors
-* Multiple maintainers
-* Responsive to user (customer) needs
-* Stakeholders participate!
 
 # 开源如何可持续发展？
 
@@ -313,16 +282,9 @@ fixes, feature enhancements, and PR reviews.*
 
 ---
 
-# Dangers of single-vendor projects
-
-* This is an entire other presentation
-
-Short version: Single-vendor projects tend to be primarily about that
-  vendor's priorities. (Sounds obvious when you say it ...)
-
 # 单一供应商的危险
 
-这要展开讲，又能讲一节课了
+展开讲，又是一节课了
 简单地说：如果项目只有一个供应商，那项目会被供应商的优先级牵着鼻子走（这么一说，你就懂了...）
 
 ???
@@ -333,24 +295,11 @@ Short version: Single-vendor projects tend to be primarily about that
 
 ---
 
-# Dangers of single-maintaner projects
-
-* Same as single-vendor, but so much moreso
-
-???
-
-* Multiple maintainers protects you from skiing accidents
-
 # 单一维护者的危险
 
 * 和单一供应商项目类似，情况会更糟糕。
 
 ---
-
-# Earning merit and reputation
-
-* Your company is not in it to be *popular*, but to be *successful*
-* They certainly don't care if *you* are popular
 
 # 赢得声誉和口碑
 
@@ -358,10 +307,6 @@ Short version: Single-vendor projects tend to be primarily about that
 * 当然公司不在乎*你*是否受欢迎
 
 ---
-
-# Instead: trust and influence
-
-* Steering/leading the project to benefit our customers
 
 # 赢得信任和影响力
 
@@ -384,11 +329,6 @@ Short version: Single-vendor projects tend to be primarily about that
 
 ---
 
-# And talk about adoption
-
-* Open sourcing to drive adoption of our solution
-* Influence in the larger tech space
-
 # 聊聊应用
 
 * 开源可以普及我们的解决方案
@@ -405,7 +345,7 @@ Short version: Single-vendor projects tend to be primarily about that
 
 ---
 
-# Fun 乐趣
+# 乐趣
 
 ![fun](images/fun2.jpg)
 
@@ -417,14 +357,6 @@ Open source is an endless party, and can be a source of lifelong
 friends. Right?
 
 ---
-
-# Instead talk about recruitment
-
-* Your company is not interested in you having fun, despite what they
-  said in your interview.
-
-* Talking about your open source work makes your employer an attractive
-  place to work
 
 # 聊聊招聘
 
@@ -442,7 +374,7 @@ friends. Right?
 
 ---
 
-# Resume building 个人履历
+# 个人履历
 
 ![resume](images/resume.jpg)
 
@@ -450,14 +382,6 @@ friends. Right?
 * Your employer is **very** not interested in you building your resume
 
 ---
-
-# Instead talk about continuing education
-
-* Expertise in software your company relies on
-* General programming skills
-* A lot of open source is about people skills, rather than technical
-  skills
-* Even better, it's free (Disclaimer: Nothing is free)
 
 # 聊聊继续教育
 
@@ -474,7 +398,7 @@ friends. Right?
 
 ---
 
-# But, isn't open source free? 难道开源不免费吗？
+# 难道开源不免费吗？
 
 ![kitten](images/kitten.jpg)
 
@@ -483,12 +407,6 @@ friends. Right?
 Free as in puppies!
 
 ---
-
-# Instead talk about customer value
-
-* Software is easy, people are hard. 
-* Customers come to you because they trust you.
-* This is doubly true if your product is based on open source
 
 # 聊聊客户价值
 
@@ -509,14 +427,6 @@ Free as in puppies!
 
 ---
 
-# Other things to talk to your management about
-
-* Can't we just ...
-    * ... fork it?
-    * ... write our own?
-    * ... throw money at it?
-    * ... hire the maintainer?
-
 # 和管理层讨论的其他事项
 
 * 难道我们不能...
@@ -533,7 +443,6 @@ Free as in puppies!
 
 ---
 
-## Final caution: It's a marathon, not a sprint
 ## 再次提醒：这是一场马拉松，不是短跑。
 
 ![marathon](images/marathon.jpg)
