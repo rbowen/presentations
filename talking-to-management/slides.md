@@ -1,5 +1,5 @@
 class: center, middle
-# 和管理层聊开源
+# Talking To Management About Open Source
 
 Rich Bowen, (Apache|AWS)
 
@@ -17,31 +17,21 @@ Slides: github.com/rbowen/presentations
 
 ---
 
-# 我要讲的，也是你要关注的
+# What I'm going to tell you, and why you should care
 
-* 如何与管理层聊开源
+* How to talk to management about open source
 
-### 原因如下
-
-* 你想为开源工作
-* 希望公司积极开源
-* 那你得说服管理层正确开源
-
-### 同时 
-
-* 你要和公司勠力同心，**取得成功**
-
-???
-
-What I'm going to tell you, and why you should care:
-
+### Because
 
 * You like getting paid to work on open source
 * So you want your company to have a positive experience with it
 * And it's up to you to persuade management to do this correctly
 
+### Also 
 
 * You should want your company to **succeed**
+
+???
 
 * Ideally, you are interested in the success of your company. Correct
   understanding of open source is a long-term investment in the success
@@ -49,13 +39,13 @@ What I'm going to tell you, and why you should care:
 
 ---
 
-# 为什么要搞开源？
+# Why do you do open source?
 
 ![question](images/why.jpg)
 
 ???
 
-* Why do you participate in open source?
+* Ask the question
     * Fun
     * Scratching your own itch
     * Socialization
@@ -71,8 +61,6 @@ What I'm going to tell you, and why you should care:
 
 ???
 
-These are the reults from an Opensource.com survey a few years ago
-
 Main reasons:
 * Learn something new, or career opportunities
 * Fun
@@ -84,32 +72,23 @@ Main reasons:
 
 ???
 
-* The great thing about this event, and events like it, is that we can sit
-around the campfire and speak a common language. Even when we don't
-have a common language.
-
-* We all have stories about management who Just Don't Get It, and
+* The great thing about OSSummit, and events like it, is that we can sit
+around the campfire and speak a common language.
+* We all have stories about corporate types who Just Don't Get It, and
   we can laugh at them together.
 
 ---
 
-# 这些都不是公司要开源的原因
+# That is not why your company does open source
 
-* 利润
-* 客户
-* 股东
-* 利润
-* 员工 (如果你够幸运)
-* 利润
+* Profit
+* Customers
+* Shareholders
+* Profit
+* Employees (If you're lucky)
+* Profit
 
 ???
-
-This is not why your company does open source.
-
-* profit
-* customers
-* shareholders
-* employees
 
 * Probably in that order
 * Clarification - "doing" open source can mean
@@ -119,13 +98,11 @@ This is not why your company does open source.
 
 ---
 
-# 免责声明
+# Disclaimer: 
 
-## 显然不是**你的**经理！
+## Obviously not **YOUR** manager!
 
 ???
-
-Obviously not your manager
 
 * I am sure you have a wonderful manager, and that they understand open
   source. Otherwise you wouldn't be at this event. But somewhere up the
@@ -149,7 +126,7 @@ their language.
 
 ---
 
-# 对公司有什么好处呢？
+# What's in it for the company?
 
 ![dollar](images/dollar.jpg)
 
@@ -168,7 +145,7 @@ profits. It's more complicated than that.
 
 ---
 
-# 哲学
+# Philosophy
 
 ![philosophy](images/opensources.jpg)
 
@@ -183,13 +160,9 @@ conversation.
 * Jargon
 * "Free" vs "Open"
 
-These things distract from the core messages, and lead your management
-to conclude that you are talking about a hobby, or charity, rather than
-about something that is key to business practices.
-
 ---
 
-# 长话短说 
+# Got a minute?
 
 ![stopwatch](images/pocketwatch.jpg)
 
@@ -203,25 +176,16 @@ about something that is key to business practices.
 
 ---
 
-# 反哺
-
-* 使用“免费”劳力为公司做贡献
-* 反哺是道义
-
-### 但 ...
-
-* 公司不是慈善机构
-
-???
-
-"Giving back"
+# "Giving back"
 
 * You are building your company on the back of "free" labor
 * Giving back is a moral obligation
 
-But ...
+### But ...
 
 * Your company is not a charity
+
+???
 
 * Management often sees open source as a renewable resource that they can
   take and take and take, with no end in sight.
@@ -235,13 +199,11 @@ But ...
 
 ---
 
-# 供应链
+# Supply chain
 
 ![chain](images/weak_link.jpg)
 
 ???
-
-Supply Chain
 
 * **WHY** is giving back the right thing to do? Because you derived good
   from it, and so should nurture it in return.
@@ -264,19 +226,13 @@ around next year.
 
 ---
 
-# 善用“危言耸听”
+# Don't be afraid to tell scary stories
 
 ![heartbleed](images/heartbleed.png)
 ![meltdown](images/meltdown.png)
 ![spectre](images/spectre.png)
 
 ???
-
-Don't be afraid to tell scary stories
-
-* heartbleed
-* meltdown
-* spectre
 
 * log4shell
 * The list goes on
@@ -286,7 +242,7 @@ Don't be afraid to tell scary stories
 
 ---
 
-# 关键又脆弱的依赖
+# Obligatory XKCD
 
 ![dependency](images/dependency.png)
 <small>https://xkcd.com/2347/</small>
@@ -294,36 +250,30 @@ Don't be afraid to tell scary stories
 
 ???
 
-XKCD comic
-
 * Understand that your company is one of those things teetering on top.
 
 ---
 
-# 充分利用数据
+# Data is your friend
 
-*Apache Commons 是我们众多产品中的一个关键组件，去年创造了2700万美元的收益。如果这个项目失败，我们就需要替换成其他组件；如果我们找到一个合适的项目替换 Apache Commons，大概需要4名工程师6个月的时间，这还不是从0开始构建我们需要的功能。所以，考虑到客户利益和我们的底线，我们需要参与到这个项目中，修复 bugs、增强功能、审核 PR。*
+*Apache Commons is a critical component in our product ZYX, which earned
+$27M last year. If the project were to fail, we would have to replace it
+with something else, which would take approximately six months of work by 4
+engineers, assuming we could find a comparable project with which to
+replace it, rather than developing what we need from scratch. Therefore, it is
+in the best interests of our customers, and our bottom line, to
+participate in the sustainability of that project by contributing bug
+fixes, feature enhancements, and PR reviews.*
 
 ???
 
-Note that this is a fictional example
-
-* This is an example report to your manager about why it's important that
+* This is an example report to your manager about why it's important tat
   you contribute to the sustainability of a project.
 
 * Be specific. Use numbers. Reference reports.
 * Tie it to a company priority - in this case, profitability and budget
 
 ---
-
-# 开源如何可持续发展？
-
-* 多个供应商
-* 多个维护者
-* 响应用户（客户）需求
-* 干系人共同参与！
-
-???
 
 # What is sustainable open source?
 
@@ -332,18 +282,12 @@ Note that this is a fictional example
 * Responsive to user (customer) needs
 * Stakeholders participate!
 
+???
 
 * At AWS, we call this "undifferentiated heavy lifting", but it means
 * Focus on what you're good at, collaborate on what's common
 
 ---
-
-# 单一供应商的危险
-
-展开讲，又是一节课了
-简单地说：如果项目只有一个供应商，那项目会被供应商的优先级牵着鼻子走（这么一说，你就懂了...）
-
-???
 
 # Dangers of single-vendor projects
 
@@ -352,6 +296,7 @@ Note that this is a fictional example
 Short version: Single-vendor projects tend to be primarily about that
   vendor's priorities. (Sounds obvious when you say it ...)
 
+???
 
 * Multiple vendors protects you from one vendor changing priorities, and
   killing the project, or relicensing it to something that precludes
@@ -359,22 +304,15 @@ Short version: Single-vendor projects tend to be primarily about that
 
 ---
 
-# 单一维护者的危险
+# Dangers of single-maintaner projects
 
-* 和单一供应商项目类似，情况会更糟糕。
+* Same as single-vendor, but so much moreso
 
 ???
 
 * Multiple maintainers protects you from skiing accidents
 
 ---
-
-# 赢得声誉和口碑
-
-* 公司参与开源不是为了“受欢迎”，而是为了“成功”
-* 当然公司不在乎*你*是否受欢迎
-
-???
 
 # Earning merit and reputation
 
@@ -383,17 +321,13 @@ Short version: Single-vendor projects tend to be primarily about that
 
 ---
 
-# 赢得信任和影响力
+# Instead: trust and influence
 
-引导/领导项目会让我们的客户受益
+* Steering/leading the project to benefit our customers
 
 ![lever](images/steering.jpg)
 
 ???
-
-Instead, talk about trust and influence
-
-* Steering/leading the project to benefit our customers
 
 * This can be dangerous, though, if your company doesn't understand open social norms. Be sure to ask someone here at this conference if you yourself are unsure how to interact with an open source project.
 * Don't claim you own/lead/invented an open source project.
@@ -408,20 +342,12 @@ Instead, talk about trust and influence
 
 ---
 
-# 聊聊应用
-
-* 开源可以普及我们的解决方案
-* 影响更广的技术领域
-
-
-???
-
-
 # And talk about adoption
 
 * Open sourcing to drive adoption of our solution
 * Influence in the larger tech space
 
+???
 
 * eg Kubernetes/CNCF projects where one project drives the use of
   another, and earns trust in the ecosystem as a whole
@@ -431,29 +357,18 @@ Instead, talk about trust and influence
 
 ---
 
-# 乐趣
+# Fun
 
 ![fun](images/fun2.jpg)
 
 ???
-
-Open Source is FUN!
 
 DroidCon Kenya, 2022!
 
 Open source is an endless party, and can be a source of lifelong
 friends. Right?
 
-But, for the most part, your employer doesn't care if you're having fun.
-
 ---
-
-# 聊聊招聘
-
-* 尽管面试中公司提到开心工作，但公司并不关心你工作是否开心。
-* （和管理层说）开源会吸引更多应聘者
-
-???
 
 # Instead talk about recruitment
 
@@ -463,6 +378,7 @@ But, for the most part, your employer doesn't care if you're having fun.
 * Talking about your open source work makes your employer an attractive
   place to work
 
+???
 
 * Warning: If you hire someone with the (implied?) promise that they'll
   get to work on open source, breaking that promise will immediately be
@@ -473,7 +389,7 @@ But, for the most part, your employer doesn't care if you're having fun.
 
 ---
 
-# 个人履历
+# Resume building
 
 ![resume](images/resume.jpg)
 
@@ -481,15 +397,6 @@ But, for the most part, your employer doesn't care if you're having fun.
 * Your employer is **very** not interested in you building your resume
 
 ---
-
-# 聊聊继续教育
-
-* 掌握公司软件的专业知识
-* 具备通用的编程技能
-* 开源项目不仅锻炼技术技能，还能锻炼人际交往能力
-* 更重要的是，它免费（免责声明：天下没有免费的午餐）
-
-???
 
 # Instead talk about continuing education
 
@@ -499,41 +406,34 @@ But, for the most part, your employer doesn't care if you're having fun.
   skills
 * Even better, it's free (Disclaimer: Nothing is free)
 
-* People skills are the most valuable skill that you will learn in open
-  source. Especially cross cultural, cross language, cross-timezone
-  skills.
+???
+
+* People skills - and you can practice on strangers!
 
 * And, speaking of free ... (next slide)
 
 ---
 
-# 难道开源不免费吗？
+# But, isn't open source free?
 
 ![kitten](images/kitten.jpg)
 
 ???
 
-This is a "free" kitten we were given. Free kittens are very expensive.
-You have to feed them. And they break stuff.
-
-Like open source.
+Free as in puppies!
 
 ---
 
-# 聊聊客户价值
-
-* 开发软件容易，抓住客户很难。
-* 客户来找你是因为他们信任你。
-* 如果你的产品基于开源，信任就更为重要。
-
-???
-
 # Instead talk about customer value
 
-* Software is easy, people are hard.
+* Software is easy, people are hard. 
 * Customers come to you because they trust you.
 * This is doubly true if your product is based on open source
 
+???
+
+* Your company is your product. Everything else is just a delivery
+  mechanism
 * Customers tend to select technology first, and the company second
 * Participation in open source establishes that expertise
 * Open source is also a way to comodotize your competitor's product, and
@@ -543,17 +443,6 @@ Like open source.
 
 ---
 
-# 和管理层讨论的其他事项
-
-* 难道我们不能...
-   * ...fork 吗？
-   * ...自己开发一套吗？
-   * ...投入更多资金吗？
-   * ...雇佣项目维护者吗？
-
-???
-
-
 # Other things to talk to your management about
 
 * Can't we just ...
@@ -562,20 +451,19 @@ Like open source.
     * ... throw money at it?
     * ... hire the maintainer?
 
+???
+
 * Each of these is another whole presentation
 * Earn trust gradually with your employer. These are complicated
   conversations
 
 ---
 
-## 再次提醒：这是一场马拉松，不是短跑。
+## Final caution: It's a marathon, not a sprint
 
 ![marathon](images/marathon.jpg)
 
 ???
-
-Final caution: It's a marathon, not a sprint
-
 * Open source investments take a while to pay off
 * My manager suggests that investments in open source take 3 years to
   pay off
@@ -587,7 +475,7 @@ Final caution: It's a marathon, not a sprint
 
 ---
 class: center,middle
-## Thank you!
+## finis
 
 rbowen@apache.org
 
@@ -595,5 +483,5 @@ rbowen@apache.org
 
 @AWSOpen
 
-Slides: github.com/rbowen/presentations
+Slides: BoxOfClue.com/presentations/talking-to-management
 
