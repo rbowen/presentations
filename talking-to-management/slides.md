@@ -17,21 +17,19 @@ Slides: github.com/rbowen/presentations
 
 ---
 
-# What I'm going to tell you, and why you should care
+# Agenda:
 
-* How to talk to management about open source
+* You care about open source
+* Your manager cares about results
+* These things are not at odds
 
-### Because
+???
 
 * You like getting paid to work on open source
 * So you want your company to have a positive experience with it
 * And it's up to you to persuade management to do this correctly
 
-### Also 
-
 * You should want your company to **succeed**
-
-???
 
 * Ideally, you are interested in the success of your company. Correct
   understanding of open source is a long-term investment in the success
@@ -39,9 +37,7 @@ Slides: github.com/rbowen/presentations
 
 ---
 
-# Why do you do open source?
-
-![question](images/why.png)
+![question](images/why.jpg)
 
 ???
 
@@ -57,7 +53,7 @@ Slides: github.com/rbowen/presentations
 ---
 
 <small>Source: OpenSource.com survey - http://tm3.org/fl</small>
-![why](images/why.png)
+![why](images/why_chart.png)
 
 ???
 
@@ -99,11 +95,12 @@ around the campfire and speak a common language.
 ---
 
 # Disclaimer: 
-
-## Obviously not **YOUR** manager!
+![David](images/djnalley.png)
 
 ???
 
+* Obviously not **YOUR** manager!
+* This is my manager
 * I am sure you have a wonderful manager, and that they understand open
   source. Otherwise you wouldn't be at this event. But somewhere up the
   management chain is someone with different priorities.
@@ -126,7 +123,7 @@ their language.
 
 ---
 
-# What's in it for the company?
+## What's in it for the company?
 
 ![dollar](images/dollar.jpg)
 
@@ -145,11 +142,11 @@ profits. It's more complicated than that.
 
 ---
 
-# Philosophy
-
 ![philosophy](images/opensources.jpg)
 
 ???
+
+## Philosophy
 
 This is a great book, but ...
 
@@ -162,11 +159,11 @@ conversation.
 
 ---
 
-# Got a minute?
-
 ![stopwatch](images/pocketwatch.jpg)
 
 ???
+
+## Got a minute?
 
 * You have a limited amount of time to make your point - or, at least, 
   to persuade your audience that you are worth listening to. Spending that time
@@ -176,16 +173,15 @@ conversation.
 
 ---
 
-# "Giving back"
-
-* You are building your company on the back of "free" labor
-* Giving back is a moral obligation
-
-### But ...
-
-* Your company is not a charity
+![Charity](images/charity.png)
 
 ???
+
+Giving back is a moral obligation
+
+...but
+
+Your company is not a charity
 
 * Management often sees open source as a renewable resource that they can
   take and take and take, with no end in sight.
@@ -199,11 +195,11 @@ conversation.
 
 ---
 
-# Supply chain
-
 ![chain](images/weak_link.jpg)
 
 ???
+
+### Instead, talk about the Supply chain
 
 * **WHY** is giving back the right thing to do? Because you derived good
   from it, and so should nurture it in return.
@@ -226,13 +222,13 @@ around next year.
 
 ---
 
-# Don't be afraid to tell scary stories
-
-![heartbleed](images/heartbleed.png)
 ![meltdown](images/meltdown.png)
 ![spectre](images/spectre.png)
+![heartbleed](images/heartbleed.png)
 
 ???
+
+## Don't be afraid to tell scary stories
 
 * log4shell
 * The list goes on
@@ -242,28 +238,30 @@ around next year.
 
 ---
 
-# Obligatory XKCD
+## Obligatory
 
 ![dependency](images/dependency.png)
 <small>https://xkcd.com/2347/</small>
 
-
 ???
 
 * Understand that your company is one of those things teetering on top.
+* Shoring up that bottom layer is an investment, not charity
 
 ---
 
 # Data is your friend
 
-*Apache Commons is a critical component in our product ZYX, which earned
-$27M last year. If the project were to fail, we would have to replace it
-with something else, which would take approximately six months of work by 4
-engineers, assuming we could find a comparable project with which to
+Apache Commons is a critical component in our product ZYX, which earned
+earned <font color="red"><big><strong>$27M last year</strong></big></font>.
+If the project were to fail, we would have to replace it
+with something else, which would take approximately <font color="red"><big><strong>six
+months of work by 4 engineers</strong></big></font>,
+assuming we could find a comparable project with which to
 replace it, rather than developing what we need from scratch. Therefore, it is
-in the best interests of our customers, and our bottom line, to
+in the best interests of our <font color="red"><big><strong>customers</strong></big></font>, and our bottom line, to
 participate in the sustainability of that project by contributing bug
-fixes, feature enhancements, and PR reviews.*
+fixes, feature enhancements, and PR reviews.
 
 ???
 
@@ -289,14 +287,16 @@ fixes, feature enhancements, and PR reviews.*
 
 ---
 
-# Dangers of single-vendor projects
+## Single-vendor projects
 
-* This is an entire other presentation
+![Single vendor](images/single-vendor.png)
+
+???
+
+This is an entire other presentation
 
 Short version: Single-vendor projects tend to be primarily about that
   vendor's priorities. (Sounds obvious when you say it ...)
-
-???
 
 * Multiple vendors protects you from one vendor changing priorities, and
   killing the project, or relicensing it to something that precludes
@@ -304,30 +304,41 @@ Short version: Single-vendor projects tend to be primarily about that
 
 ---
 
-# Dangers of single-maintaner projects
+## Single-maintaner projects
 
-* Same as single-vendor, but so much moreso
+![Single developer](images/single-developer.png)
 
 ???
+
+* Anyone know who the pink box is?
+
+* Same as single-vendor, but so much moreso
 
 * Multiple maintainers protects you from skiing accidents
 
 ---
 
-# Earning merit and reputation
+![popular](images/popular.jpg)
+
+???
+
+* My beautiful kids, both of whom were very popular in highschool
 
 * Your company is not in it to be *popular*, but to be *successful*
 * They certainly don't care if *you* are popular
 
 ---
 
-# Instead: trust and influence
-
-* Steering/leading the project to benefit our customers
-
-![lever](images/steering.jpg)
+![steering](images/steering.jpg)
 
 ???
+
+## Instead: trust and influence
+
+* My other beautiful kid, who was far less concerned with being popular
+
+* Talk about *driving* the project's direction on behalf of our
+  customers
 
 * This can be dangerous, though, if your company doesn't understand open social norms. Be sure to ask someone here at this conference if you yourself are unsure how to interact with an open source project.
 * Don't claim you own/lead/invented an open source project.
