@@ -250,7 +250,7 @@ around next year.
 
 ---
 
-# Data is your friend
+# Data 
 
 Apache Commons is a critical component in our product ZYX, which earned
 earned <font color="red"><big><strong>$27M last year</strong></big></font>.
@@ -273,14 +273,15 @@ fixes, feature enhancements, and PR reviews.
 
 ---
 
-# What is sustainable open source?
+# Sustainable
+![sustainable](images/sustainable.jpg)
+
+???
 
 * Multiple vendors
 * Multiple maintainers
 * Responsive to user (customer) needs
 * Stakeholders participate!
-
-???
 
 * At AWS, we call this "undifferentiated heavy lifting", but it means
 * Focus on what you're good at, collaborate on what's common
@@ -335,7 +336,7 @@ Short version: Single-vendor projects tend to be primarily about that
 
 ## Instead: trust and influence
 
-* My other beautiful kid, who was far less concerned with being popular
+* My other beautiful kid, who is far less concerned with being popular
 
 * Talk about *driving* the project's direction on behalf of our
   customers
@@ -409,7 +410,11 @@ friends. Right?
 
 ---
 
-# Instead talk about continuing education
+# Education
+
+![education](images/education.gif)
+
+???
 
 * Expertise in software your company relies on
 * General programming skills
@@ -417,7 +422,6 @@ friends. Right?
   skills
 * Even better, it's free (Disclaimer: Nothing is free)
 
-???
 
 * People skills - and you can practice on strangers!
 
@@ -425,7 +429,7 @@ friends. Right?
 
 ---
 
-# But, isn't open source free?
+# Free as in kittens
 
 ![kitten](images/kitten.jpg)
 
@@ -434,19 +438,19 @@ friends. Right?
 Free as in puppies!
 
 ---
+# Customer value
+![value](images/value.jpg)
 
-# Instead talk about customer value
+???
 
 * Software is easy, people are hard. 
 * Customers come to you because they trust you.
 * This is doubly true if your product is based on open source
 
-???
-
-* Your company is your product. Everything else is just a delivery
-  mechanism
+* Your people are your product. Everything else is just a delivery mechanism
 * Customers tend to select technology first, and the company second
-* Participation in open source establishes that expertise
+
+* Participation in open source establishes expertise
 * Open source is also a way to comodotize your competitor's product, and
   make the conversation about expertise, not software
 * If you sell software, open source is a way for the customer to
@@ -470,7 +474,7 @@ Free as in puppies!
 
 ---
 
-## Final caution: It's a marathon, not a sprint
+## Not a sprint
 
 ![marathon](images/marathon.jpg)
 
@@ -494,5 +498,5 @@ rbowen@apache.org
 
 @AWSOpen
 
-Slides: BoxOfClue.com/presentations/talking-to-management
+Slides: github.com/rbowen/presentations
 
