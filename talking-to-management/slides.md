@@ -354,12 +354,19 @@ Short version: Single-vendor projects tend to be primarily about that
 
 ---
 
-# And talk about adoption
+# Adoption
 
-* Open sourcing to drive adoption of our solution
-* Influence in the larger tech space
+![msk](images/msk.png)
 
 ???
+
+* The tide lifts all boats
+
+* We contribute to Kafka in order to make it better for the customer,
+  and drive adoption of the technology. Then, we're available to help
+  with the deployment, if customers need that.
+
+* Influence in the larger tech space
 
 * eg Kubernetes/CNCF projects where one project drives the use of
   another, and earns trust in the ecosystem as a whole
@@ -458,13 +465,17 @@ Free as in puppies!
 
 ---
 
-# Other things to talk to your management about
+# And another thing ...
 
 * Can't we just ...
     * ... fork it?
     * ... write our own?
     * ... throw money at it?
     * ... hire the maintainer?
+
+* Won't this help our competition?
+
+* What about our secrets?
 
 ???
 
