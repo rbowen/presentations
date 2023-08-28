@@ -41,7 +41,7 @@ Slides: github.com/rbowen/presentations
 
 # Why do you do open source?
 
-![question](images/why.jpg)
+![question](images/why.png)
 
 ???
 
