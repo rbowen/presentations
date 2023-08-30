@@ -19,9 +19,9 @@ Slides: github.com/rbowen/presentations
 
 # Agenda:
 
-* You care about open source
-* Your manager cares about results
-* These things are not at odds
+### You care about open source
+### Your manager cares about results
+### These things are not at odds
 
 ???
 
@@ -391,11 +391,9 @@ friends. Right?
 
 # Instead talk about recruitment
 
-* Your company is not interested in you having fun, despite what they
-  said in your interview.
+### Your company is not interested in you having fun, despite what they said in your interview.
 
-* Talking about your open source work makes your employer an attractive
-  place to work
+### Talking about your open source work makes your employer an attractive place to work
 
 ???
 
@@ -478,6 +476,11 @@ Free as in puppies!
 * What about our secrets?
 
 ???
+
+* As you discuss open source with your manager, they will have lots of
+  objections, and lots of brilliant new ideas that nobody has thought of
+  before. It's important, as in any conversation, to be patient, polite,
+  and kind.
 
 * Each of these is another whole presentation
 * Earn trust gradually with your employer. These are complicated
