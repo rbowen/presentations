@@ -482,6 +482,9 @@ Free as in puppies!
   before. It's important, as in any conversation, to be patient, polite,
   and kind.
 
+* Remember that things that you think everyone knows may be completely
+  foreign to people outside of our little bubble.
+
 * Each of these is another whole presentation
 * Earn trust gradually with your employer. These are complicated
   conversations
