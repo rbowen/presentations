@@ -305,7 +305,7 @@ Short version: Single-vendor projects tend to be primarily about that
 
 ---
 
-## Single-maintaner projects
+## Single-maintainer projects
 
 ![Single developer](images/single-developer.png)
 
@@ -491,8 +491,7 @@ Free as in puppies!
 
 ???
 * Open source investments take a while to pay off
-* My manager suggests that investments in open source take 3 years to
-  pay off
+* Investments in open source take 3 years to pay off
     * It takes a while to become a committer/maintainer
     * It take a long time to master the code base
     * It takes a long time to change company culture
