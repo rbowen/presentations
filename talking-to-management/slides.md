@@ -86,10 +86,12 @@ around the campfire and speak a common language.
 ???
 
 * Probably in that order
-* Clarification - "doing" open source can mean
+* Clarification. Your company probably doesn't mean the same thing when
+  they talk about doing open source that you do - "doing" open source can mean
   * Contributing to existing projects
   * Open sourcing an internal project
   * Adopting an open source solution
+  * Building products and services on top of open source
 
 ---
 
@@ -386,14 +388,14 @@ friends. Right?
 
 ---
 
-# Instead talk about recruitment
+# Recruitment
 
-### Your company is not interested in you having fun, despite what they said in your interview.
-
-### Talking about your open source work makes your employer an attractive place to work
+![recruit](images/recruit.jpg)
 
 ???
 
+* Your company is not interested in you having fun, despite what they said in your interview.
+* Talking about your open source work makes your employer an attractive place to work
 * Warning: If you hire someone with the (implied?) promise that they'll
   get to work on open source, breaking that promise will immediately be
   public information, and damage your reputation
