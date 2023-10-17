@@ -77,12 +77,11 @@ around the campfire and speak a common language.
 
 # That is not why your company does open source
 
-* Profit
-* Customers
-* Shareholders
-* Profit
-* Employees (If you're lucky)
-* Profit
+### Profit
+### Customers
+### Shareholders
+### Profit
+### Employees (If you're lucky)
 
 ???
 
@@ -265,11 +264,11 @@ fixes, feature enhancements, and PR reviews.
 
 ???
 
-* This is an example report to your manager about why it's important tat
+* This is an example report to your manager about why it's important that
   you contribute to the sustainability of a project.
-
 * Be specific. Use numbers. Reference reports.
 * Tie it to a company priority - in this case, profitability and budget
+* Don't waste words on things they don't care about
 
 ---
 
@@ -282,7 +281,6 @@ fixes, feature enhancements, and PR reviews.
 * Multiple maintainers
 * Responsive to user (customer) needs
 * Stakeholders participate!
-
 * At AWS, we call this "undifferentiated heavy lifting", but it means
 * Focus on what you're good at, collaborate on what's common
 
@@ -315,7 +313,7 @@ Short version: Single-vendor projects tend to be primarily about that
 
 * Same as single-vendor, but so much moreso
 
-* Multiple maintainers protects you from skiing accidents
+* Having multiple maintainers protects you from skiing accidents
 
 ---
 
@@ -330,13 +328,15 @@ Short version: Single-vendor projects tend to be primarily about that
 
 ---
 
-![steering](images/steering.jpg)
+![steering](images/steering.jpg?12345)
 
 ???
 
 ## Instead: trust and influence
 
-* My other beautiful kid, who is far less concerned with being popular
+* My other beautiful kid, who is far less concerned with being popular,
+  or what folks think. Rather, they're interested in setting the
+  narrative, and being the one to steer the conversation.
 
 * Talk about *driving* the project's direction on behalf of our
   customers
@@ -370,9 +370,6 @@ Short version: Single-vendor projects tend to be primarily about that
 
 * eg Kubernetes/CNCF projects where one project drives the use of
   another, and earns trust in the ecosystem as a whole
-* (Possibly) Controversial opinion: Open core is anti-community, because
-  it draws lines around what is, and is not, appropriate to contribute
-  to the project. Use extreme caution before pursuing this model
 
 ---
 
