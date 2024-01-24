@@ -16,6 +16,25 @@ Slides: github.com/rbowen/presentations
 
 ---
 
+![Easter](images/easter.png)
+
+???
+
+Motivations: Job or Passion?
+
+30 years ago, I got involved in open source because my hobby was
+calendar calculations. This resulted in very different ways of engaging
+with projects than if I was doing this as part of my job.
+
+Understand your own reasons, and how it
+benefits you (personally) and your team. Be honest with your
+motivations.
+
+You should know why you want to become a maintainer. Hopefully it
+includes "because I care about the project" at some level.
+
+---
+
 # Why I care about this topic
 
 ## (and why you should care)
@@ -29,18 +48,37 @@ is deeply concerning, because it means that:
 1) You are blindly trusting that someone else will do the right thing on
 a project you rely on.
 
-2) You are taking the role of customer, and expecting the world to
+2) You are taking the role of consumer, and expecting the world to
 revolve around you. This is not how open source works, and you *will* be
-disappointed.
+disappointed. If you do not participate, then you have no voice. (And
+your customers have no voice.)
 
 3) You will be completely unprepared if the project takes an unexpected
 direction, changes license, or ceases to operate. Becoming a maintainer
 gives you more control of your destiny.
 
-You are, in short, treating the project as a proprietery shrink-wrap
+---
+
+![Windows](images/windows.jpg)
+
+???
+
+You are, in short, treating the project as a proprietary shrink-wrap
 product, rather than an open source project, and are thus missing out on
 the majority of the benefits of open source. And you are treating the
-(volunteer!) maintainers as your employees, which they are not.
+(volunteer!) maintainers as your employees, which they are not. This
+disrespects the project, your customers, and yourself.
+
+---
+
+![Supply](images/weak_link.jpg)
+
+???
+
+If you're participating as part of a company, then you MUST view open
+source as a critical part of your supply chain. Any project where you do
+not have a voice is a weak link in that chain, and a risk to your
+business.
 
 ---
 
@@ -55,25 +93,6 @@ make changes to the source code. PMC members are the gatekeepers on
 releases, and determine who will become a committer or PMC member.
 
 In general, it refers to someone who makes decisions about a project.
-
----
-
-![Easter](images/easter.png)
-
-???
-
-Job or Passion?
-
-30 years ago, I got involved in open source because my hobby was
-calendar calculations. This resulted in very different ways of engaging
-with projects than if I was doing this as part of my job.
-
-Understand your own reasons, and how it
-benefits you (personally) and your team. Be honest with your
-motivations.
-
-You should know why you want to become a maintainer. Hopefully it
-includes "because I care about the project" at some level.
 
 ---
 
