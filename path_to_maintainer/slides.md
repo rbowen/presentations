@@ -58,22 +58,28 @@ In general, it refers to someone who makes decisions about a project.
 
 ---
 
-# Why do you care?
+![Easter](images/easter.png)
 
 ???
 
-Not just because I said so. Understand your own reasons, and how it
-benefits you (personally) and your team.
+Job or Passion?
+
+30 years ago, I got involved in open source because my hobby was
+calendar calculations. This resulted in very different ways of engaging
+with projects than if I was doing this as part of my job.
+
+Understand your own reasons, and how it
+benefits you (personally) and your team. Be honest with your
+motivations.
 
 You should know why you want to become a maintainer. Hopefully it
 includes "because I care about the project" at some level.
 
-If you're just doing it because it seems like the thing to do, you're
-going to find a lot of this advice just frustrating.
-
 ---
 
 # How?
+
+[Practical Advice Goes Here]
 
 ???
 
@@ -99,8 +105,13 @@ unsuccessful.
 
 ???
 
-Listen more than you speak. Learn the community norms. Find out who the
-cast of characters is. Figure out where the community pain points are -
+Listen more than you speak. Especially at first. Learn the community norms.
+
+Find out who the cast of characters is. Projects are like a TV show, and
+often revolve around one or two strong characters. Get to know the main
+actors and what role they are playing.
+
+Figure out where the community pain points are -
 what's not getting done? Who is getting burned out? How can you help
 with that?
 
@@ -123,17 +134,85 @@ you closer to your goal.
 
 ---
 
-* Be useful
-    * Review PRs, Issues
-    * Improve the docs
-    * Summarize discussions
+![Janitor](images/janitor.jpg)
+<small>CC by "Carlos Ebert" on Flickr</small>
+
+???
+
+Be useful
+
+A good maintainer is a janitor. They clean up messes. They make the
+place beautiful and welcoming for others. They work hard and bring real
+value, and are only noticed when they miss things.
+
+---
+
+![PR](images/openprs.png)
+
+???
+
+Review PRs, Issues
+
+Reviewing PRs teaches you about the code. It makes you visible. It
+improves the code for everyone. It teaches you what people care about,
+and what's broken, and how you can be useful.
+
+It also improves the project as a whole, because it is part of welcoming
+new contributors.
+
+---
+
+![docs](images/docs.png)
+
+???
+
+Documentation can *always* be improved. And doc improvements are almost
+always appreciated.
+
+Working on the docs is also one of the very best ways to learn more
+about the project.
+
+Turn on spell check in your editor, and fix spelling and grammar errors.
+It's not much, but it shows an attention to detail that will be
+appreciated. (Usually.)
+
+Translations are almost always out of date on any active project.
+
+Summarize discussions: Another useful think you can do is summarize
+discussions that have gone on for longer than people are likely to read.
+Summarize the main points, and any decisions that have been made, in a
+clearly marked [SUMMARY] post.
+
+---
+
+![welcome](images/welcome.jpg)
+<small>CC by "alborzshawn" on Flickr</small>
+
+???
+
 * Be welcoming
-    * Be the mentor you wish you had
-    * Acknowledge and thank new contributors
-    * Improve the onboarding documentation (if there even is any!)
-* Be an owner, not a renter
-    Don't act like an outsider trying to break in. Act like you're at
-    home and just haven't been given your own keys yet.
+
+What do you wish someone had done for you when you started contributing?
+Do that.
+
+Acknowledge and thank new contributors
+
+Improve the onboarding documentation (if there even is any!) What did
+you find hard when you started contributing? Document that, or, better
+yet, improve it.
+
+---
+
+![welcome](images/rent.jpg)
+<small>CC by "Anthony Easton" on Flickr</small>
+
+???
+
+If you think of a place as your own, you will treat it very differently.
+And you will treat "visitors" very differently.
+
+Don't act like an outsider trying to break in. Act like you're at
+home and just haven't been given your own keys yet.
 
 ---
 class: center,middle
