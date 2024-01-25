@@ -26,12 +26,17 @@ Motivations: Job or Passion?
 calendar calculations. This resulted in very different ways of engaging
 with projects than if I was doing this as part of my job.
 
-Understand your own reasons, and how it
-benefits you (personally) and your team. Be honest with your
-motivations.
+Understand your own reasons, and how it benefits you (personally) and
+(if relevalnt) your team. Be honest with your motivations.
 
 You should know why you want to become a maintainer. Hopefully it
-includes "because I care about the project" at some level.
+includes "because I care about the project" at some level. Becoming a
+maintainer purely for ego, or for your resume, will undermine your
+efforts, because your ownership of the project will be dishonest.
+
+This talk is slanted towards companies which rely on open source as part
+of their supply chain, but it also has lessons for passion-only
+involvement.
 
 ---
 
@@ -41,15 +46,31 @@ includes "because I care about the project" at some level.
 
 ???
 
-Increasingly, over the years, I am seeing people content to Consume and
-Complain, rather than taking any kind of ownership of open source. This
-is deeply concerning, because it means that:
+Increasingly, over the years, I am seeing people (and, more alarmingly,
+companies) content to Consume and Complain, rather than taking any kind
+of ownership of open source. This is deeply concerning, because it means
+that:
 
-1) You are blindly trusting that someone else will do the right thing on
-a project you rely on.
+---
 
-2) You are taking the role of consumer, and expecting the world to
-revolve around you. This is not how open source works, and you *will* be
+![Stranger](images/stranger.jpg)
+<small>CC by "byronv2" on Flickr</small>
+
+
+???
+
+1) You are blindly trusting a stranger to set the road map, and
+generally do the right thing, on a project you rely on.
+
+---
+
+![Ingredients](images/ingredients.jpg)
+
+???
+
+2) You are taking the role of consumer, without having any idea what's
+in it, and and expecting that "the community" will fix all problems that
+arise. This is not how open source works, and you *will* be
 disappointed. If you do not participate, then you have no voice. (And
 your customers have no voice.)
 
