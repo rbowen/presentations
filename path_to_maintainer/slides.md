@@ -74,9 +74,16 @@ arise. This is not how open source works, and you *will* be
 disappointed. If you do not participate, then you have no voice. (And
 your customers have no voice.)
 
+---
+
+![mxnet](images/mxnet.png)
+
+???
+
 3) You will be completely unprepared if the project takes an unexpected
 direction, changes license, or ceases to operate. Becoming a maintainer
-gives you more control of your destiny.
+gives you more control of your destiny, and an ability to steer the
+ship, or at least be aware when it's approaching the edge of the world.
 
 ---
 
@@ -107,6 +114,8 @@ business.
 
 ???
 
+Let's start with definitions:
+
 Definition: There is no consistent, standard definition.
 
 At the ASF, we divide it into Committer and PMC Member. Committers can
@@ -133,10 +142,23 @@ committer/maintainer
 
 ???
 
-Patience.
+1 Patience.
 
 Earning trust takes time. If you are impatient, or pushy, you will be
 unsuccessful.
+
+---
+
+![Tree](images/tree.jpg)
+
+???
+
+The best time to plant a tree is 20 years ago. The next best time is
+now.
+
+Anecdote: A junior developer once asked me how he could gain the same
+stature as me in open source. I said, well, you contributing, and you
+keep at it, consistently, for 20 years. He said, no, I mean now.
 
 ---
 
@@ -145,7 +167,7 @@ unsuccessful.
 
 ???
 
-Listen more than you speak. Especially at first. Learn the community norms.
+2 Listen more than you speak. Especially at first. Learn the community norms.
 
 Find out who the cast of characters is. Projects are like a TV show, and
 often revolve around one or two strong characters. Get to know the main
@@ -160,17 +182,39 @@ you closer to your goal.
 
 ---
 
+![Two Ears](images/two_ears.png)
+
+---
+
 ![Visible](images/visible.jpg)
 <small>CC by "Matthew Paul Argall" on Flickr</small>
 
 ???
 
-* You will never become a maintainer if nobody knows you're there.
-* Where does the community chat? You should be a regular there.
-  * Answer questions
-  * Vote when a decision is being made. (Make it clear that you're
+3 Be visible
+
+You will never become a maintainer if nobody knows you're there.
+
+Where does the community chat? You should be a regular there.
+
+ Answer questions
+
+ Vote when a decision is being made. (Make it clear that you're
     opinionated, but not authoritative. In Apache we call this
     "non-binding")
+
+---
+
+![Visible](images/argue.jpg)
+<small>CC by "Alan Levine" on Flickr</small>
+
+???
+
+Important note:
+
+You will not win every argument. That's ok, because you're not always
+right. And even when you are, you are part of a community, and trust is,
+long term, more important than being right all the time.
 
 ---
 
@@ -179,9 +223,11 @@ you closer to your goal.
 
 ???
 
-Be useful
+4 Be useful
 
-A good maintainer is a janitor. They clean up messes. They make the
+A good maintainer is a janitor, not a CEO.
+
+They clean up messes. They make the
 place beautiful and welcoming for others. They work hard and bring real
 value, and are only noticed when they miss things.
 
@@ -230,7 +276,7 @@ clearly marked [SUMMARY] post.
 
 ???
 
-* Be welcoming
+5 Be welcoming
 
 What do you wish someone had done for you when you started contributing?
 Do that.
@@ -248,6 +294,8 @@ yet, improve it.
 
 ???
 
+6 Think of yourself as an owner, not a renter.
+
 If you think of a place as your own, you will treat it very differently.
 And you will treat "visitors" very differently.
 
@@ -255,6 +303,26 @@ Don't act like an outsider trying to break in. Act like you're at
 home and just haven't been given your own keys yet.
 
 ---
+
+![Haven](images/haven.jpg)
+
+???
+
+Where I live, there's a law that says that if you occupy a piece of land
+for 10 years, and nobody challenges you on it, that's yours now. Open
+source is the same way. Sort of.
+
+---
+
+1. Be patient
+2. Be attentive
+3. Be visible
+4. Be useful
+5. Be welcoming
+6. Be a maintainer
+
+---
+
 class: center,middle
 ## finis
 
