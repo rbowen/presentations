@@ -246,6 +246,10 @@ so that you know whether they're getting it.
 
 Talk with me, not at me. (ie, listen, too)
 
+However awkward it is, make eye contact with everyone in the audience at
+some point during the talk. This is a cheap psychological trick and
+makes that person then feel awkward about looking back at their phone.
+
 Pro tip: don't let anyone hijack your talk. This can be very challenging
 if you have someone that won't shut up. Practice saying "Let's take that
 question out to the hallway afterwards, since I have a lot of material
@@ -284,17 +288,24 @@ cannot hear you) and it's for the videographer.
 
 6 Record yourself.
 
+You have a recording device in your pocket.
+
 Listen to yourself. Watch yourself
 
 You say "um" a lot more than you think you do. Or whatever your
-particular annoying speech pattern is. And your audience notices.
+particular annoying speech pattern is. And your audience notices. Most
+people find their own voice annoying. Get over that.
 
 Practice not saying that.
 
-You touch your face a lot, or put your hands in your pockets, or ...
-something.
+You touch your face a lot, or put your hands in your pockets, or pull on
+your ear, or look down at the floor, or ... something.
 
-Practice not doing that.
+Practice not doing that. Notice when you do it and consciously avoid
+doing it.
+
+I play with stuff in my pockets, so I empty my pockets before I start.
+And I slouch, so I consciously tell myself to stand up straighter.
 
 ---
 
