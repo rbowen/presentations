@@ -148,6 +148,8 @@ chat at the party tonight. That's not what my talk is about.
 
 3 Your slides are not your presentation. YOU are your presentation.
 
+Giving a presentation is a *performance*, not a document.
+
 Slides are cuecards, not your entire presentation. They are there to
 remind *you* of the point you wanted to make. They are also there to
 make the audience look at YOU, rather than your slides, or their phone.
@@ -167,6 +169,7 @@ your cat. But be sure that everything that you have on the slide is
 
 ---
 
+<!-- {{{ !-->
 <div style="font-size:50%">
 <p>Amazon Managed Streaming for Apache Kafka (MSK) offers fully managed Apache Kafka. This means Amazon MSK provisions your servers, configures your Apache Kafka clusters, replaces servers when they fail, orchestrates server patches and upgrades, architects clusters for high availability, ensures data is durably stored and secured, sets up monitoring and alarms, and runs scaling to support load changes. With a managed service, you can spend your time developing and running streaming event applications.</p>
 
@@ -185,7 +188,7 @@ your cat. But be sure that everything that you have on the slide is
 
 <p>All clusters are distributed across multiple AZs (three is the default), are supported by Amazon MSK’s service-level agreement, and are supported by automated systems that detect and respond to issues within cluster infrastructure and Apache Kafka software. If a component fails, Amazon MSK automatically replaces it without downtime to your applications. Amazon MSK manages the availability of your Apache ZooKeeper nodes so you don’t need to start, stop, or directly access the nodes yourself. It also automatically deploys software patches as needed pto keep your cluster up to date and running smoothly.</p>
 </div>
-
+<!-- }}} !-->
 
 ???
 
@@ -238,6 +241,7 @@ the back.
 ---
 
 ![conversation](images/conversation.jpg)
+<small>CC by Kristopher Traquair, photos.apachecon.com</small>
 
 ???
 
