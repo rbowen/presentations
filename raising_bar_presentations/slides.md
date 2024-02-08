@@ -22,10 +22,10 @@ Slides: github.com/rbowen/presentations
 
 ???
 
-This is Damian Conway, who is probably the best presenter ever. It has
-probably been 20 years since I last saw him on stage, and I still
-remember his presentations. The first time I saw him speak, I determined
-that I wanted to be as good as him. Still not there yet.
+This is Damian Conway, who is probably the best presenter I've ever 
+attended. It has probably been 20 years since I last saw him on stage, 
+and I still remember his presentations. The first time I saw him speak,
+I determined that I wanted to be as good as him. Still not there yet.
 
 ---
 
@@ -169,6 +169,16 @@ your cat. But be sure that everything that you have on the slide is
 
 ---
 
+![Excitement](images/excitement.jpg)
+<small>CC by Robby Van Arsdale, on Flickr</small>
+
+???
+
+If you are not excited about your topic, I won't be either. Convince me
+this is the most exciting thing I'm going to see this week.
+
+---
+
 <!-- {{{ !-->
 <div style="font-size:50%">
 <p>Amazon Managed Streaming for Apache Kafka (MSK) offers fully managed Apache Kafka. This means Amazon MSK provisions your servers, configures your Apache Kafka clusters, replaces servers when they fail, orchestrates server patches and upgrades, architects clusters for high availability, ensures data is durably stored and secured, sets up monitoring and alarms, and runs scaling to support load changes. With a managed service, you can spend your time developing and running streaming event applications.</p>
@@ -193,7 +203,7 @@ your cat. But be sure that everything that you have on the slide is
 ???
 
 DO NOT make me read your slides. Not only is that boring, and hard on my
-eyes, it also makes it impossible for me to focus on what you ar saying.
+eyes, it also makes it impossible for me to focus on what you are saying.
 
 DO NOT read your slides to me. I have attended talks where the speaker
 *literally* stood with their back to me and read their slides to me.
@@ -204,7 +214,8 @@ is not a rhetorical question. Think explicitly about what value you add,
 by being here, that I do not get directly from your slides.)
 
 Most of your content should NOT be on the screen. If I wanted to read a
-blog post, I would not be in your talk.
+blog post, I would not be in your talk. (But, yes, write the blog post
+too.)
 
 ---
 
