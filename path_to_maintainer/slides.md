@@ -126,6 +126,24 @@ In general, it refers to someone who makes decisions about a project.
 
 ---
 
+![snowflake](images/snowflake.jpg)
+<small>Photo CC by James Mann on Flickr</small>
+
+???
+
+Disclaimer: Every project is different and unique in ways that no
+presentation can prepare you for, because projects are made of people,
+and people have inscrutable motives and egos.
+
+Some projects will literally make you a maintainer the first day, while
+others never will, no matter how much you contribute.
+
+Hopefully the advice I'm giving will be applicable for most healthy
+projects.
+
+
+---
+
 # How?
 
 [Practical Advice Goes Here]
@@ -157,8 +175,22 @@ The best time to plant a tree is 20 years ago. The next best time is
 now.
 
 Anecdote: A junior developer once asked me how he could gain the same
-stature as me in open source. I said, well, you contributing, and you
+stature as me in open source. I said, well, you start contributing, and you
 keep at it, consistently, for 20 years. He said, no, I mean now.
+
+---
+
+### "We opened a PR 2 weeks ago, and it hasn't been reviewed yet. Is it ok to go ahead and fork now?
+
+???
+
+Open source projects are mostly composed of volunteers, with limited
+time. You cannot expect that simply opening a ticket or a PR is going to
+be the sole interaction that will put you in view of the project.
+
+Becoming a maintainer - or even just getting one change in - involves
+conversation and earning trust. This may be annoying if this is your
+*job* rather than your *passion*. But it's how it works.
 
 ---
 
@@ -320,6 +352,12 @@ source is the same way. Sort of.
 4. Be useful
 5. Be welcoming
 6. Be a maintainer
+
+---
+
+# Bonus Slide
+
+## Maintainers: What's the thing you wish contributors would do?
 
 ---
 
