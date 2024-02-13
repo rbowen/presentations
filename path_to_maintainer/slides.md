@@ -292,7 +292,8 @@ about the project.
 
 Turn on spell check in your editor, and fix spelling and grammar errors.
 It's not much, but it shows an attention to detail that will be
-appreciated. (Usually.)
+appreciated. (Usually.) And it's a great way to learn the contribution
+process.
 
 Translations are almost always out of date on any active project.
 
@@ -336,6 +337,14 @@ home and just haven't been given your own keys yet.
 
 ---
 
+![batman](images/cosplay.jpg)
+
+???
+
+Dress for the job you want, not the one you have.
+
+---
+
 ![Haven](images/haven.jpg)
 
 ???
@@ -346,12 +355,12 @@ source is the same way. Sort of.
 
 ---
 
-1. Be patient
-2. Be attentive
-3. Be visible
-4. Be useful
-5. Be welcoming
-6. Be a maintainer
+## 1. Be patient
+## 2. Be attentive
+## 3. Be visible
+## 4. Be useful
+## 5. Be welcoming
+## 6. Be a maintainer
 
 ---
 
