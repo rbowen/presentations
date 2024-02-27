@@ -14,6 +14,14 @@ Slides: github.com/rbowen/presentations
     * Open Source Strategist at AWS
 * Why I care about this topic
 
+* How many of you are maintainers?
+    * This is for you, too, because part of your job is to mentor the
+      next generation of maintainers
+
+* How many of you contribute in non-code ways?
+    * This is for you, too, because what you do is absolutely as
+      important as the code. Don't let anyone tell you differently.
+
 ---
 
 ![Easter](images/easter.png)

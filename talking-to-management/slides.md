@@ -68,8 +68,8 @@ Main reasons:
 
 ???
 
-* The great thing about OSSummit, and events like it, is that we can sit
-around the campfire and speak a common language.
+* The great thing about FOSSBackstage, and events like it, is that we 
+  can sit around the campfire and speak a common language.
 * We all have stories about corporate types who Just Don't Get It, and
   we can laugh at them together.
 
@@ -239,12 +239,13 @@ around next year.
 
 ---
 
-## Obligatory
-
 ![dependency](images/dependency.png)
 <small>https://xkcd.com/2347/</small>
 
 ???
+
+Yes, the obligatory XKCD comic, which is useful in almost every open
+source conversation.
 
 * Understand that your company is one of those things teetering on top.
 * Shoring up that bottom layer is an investment, not charity
@@ -294,6 +295,8 @@ fixes, feature enhancements, and PR reviews.
 
 ???
 
+Elephant Factor definition
+
 This is an entire other presentation
 
 Short version: Single-vendor projects tend to be primarily about that
@@ -311,7 +314,7 @@ Short version: Single-vendor projects tend to be primarily about that
 
 ???
 
-* Anyone know who the pink box is?
+Pony factor definition
 
 * Same as single-vendor, but so much moreso
 
@@ -323,10 +326,12 @@ Short version: Single-vendor projects tend to be primarily about that
 
 ???
 
-* My beautiful kids, both of whom were very popular in highschool
+* My beautiful kids, both of whom were very *popular* in highschool
 
 * Your company is not in it to be *popular*, but to be *successful*
 * They certainly don't care if *you* are popular
+
+* But popularity is a proxy for *influence*. Maybe.
 
 ---
 
@@ -334,7 +339,7 @@ Short version: Single-vendor projects tend to be primarily about that
 
 ???
 
-## Instead: trust and influence
+## Instead: talk about trust and influence
 
 * My other beautiful kid, who is far less concerned with being popular,
   or what folks think. Rather, they're interested in setting the
@@ -350,6 +355,7 @@ Short version: Single-vendor projects tend to be primarily about that
 
 * Also, there's no guarantee that your contributions/recommendations
   will be accepted, so be careful about promising too much
+
 * Surveys show (reference needed) that customers view open source
   participation as an indication of trust, expertise, and ability to
   provide good customer service.
@@ -500,7 +506,7 @@ Free as in puppies!
     * It takes a while to become a committer/maintainer
     * It take a long time to master the code base
     * It takes a long time to change company culture
-* Most companies are not good a patience
+* Most companies are not good at patience
     * Especially if they have to produce a quarterly earnings report
 
 ---
