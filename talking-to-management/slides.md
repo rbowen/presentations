@@ -37,6 +37,19 @@ Slides: github.com/rbowen/presentations
 
 ---
 
+![windows](images/windows.jpg)
+
+???
+
+Meta-reason I want you to care:
+
+As open source has become critical to businesses over the last decade,
+more companies treat it like a product to consume rather than a project
+to sustain or participate in.
+
+
+---
+
 ![question](images/why.jpg)
 
 ???
