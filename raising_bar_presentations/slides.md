@@ -135,10 +135,17 @@ For example, I told you only four things:
   speaking about
 * What I will be speaking about.
 
-That's all. Because that's all that's relevant.
+That's all. Because that's all that's relevant. ie, the stuff that
+establishes your authority on this topic.
 
 I'll be here all week. If you want to get to know more about me, let's
 chat at the party tonight. That's not what my talk is about.
+
+Caveat: If you are part of an underrepresented group, you may,
+unfortunately, need to establish your credibility, and that may require
+saying a few things about your accomplishments. Just try really hard to
+hold it down to less than a minute, because people are there for the
+content, not for your resume.
 
 ---
 
@@ -231,6 +238,9 @@ When you are giving contact information
 
 When you are trying to make a dramatic point - in which case, fewer
 words are better
+
+When they are the words that you want people to literally walk away with
+in their heads.
 
 In a technical talk: Content that directly illustrates the point you're
 making.

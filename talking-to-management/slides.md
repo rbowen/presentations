@@ -15,6 +15,10 @@ Slides: github.com/rbowen/presentations
     * Open Source zealot trying to communicate to prosaic managers
 * There are many motivations for writing open source software. Your company's motivations are entirely different.
 
+Always had the luxury of working with people who are as passionate about
+open source as I am but now that I'm at a megacorp I find myself
+spending a lot more time talking to managers and using terms like "ROI".
+
 ---
 
 # Agenda:
