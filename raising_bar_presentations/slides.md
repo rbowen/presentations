@@ -15,6 +15,10 @@ Slides: github.com/rbowen/presentations
 * I want to talk to you about making your conference presentations
   better.
 
+
+Think of the best talk you've ever attended. What about it
+struck you as valuable/effective/memorable?
+
 ---
 
 ![Damian](images/damian.jpg)
