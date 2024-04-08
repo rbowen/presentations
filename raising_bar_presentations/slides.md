@@ -230,6 +230,15 @@ too.)
 
 ---
 
+![diagram](images/diagram.jpg)
+
+???
+
+While we're on the topic of squinting, here's a slide at an event I
+recently attended. It's not just words you can have too much of.
+
+---
+
 ![words](images/words.jpg)
 <small>CC by "Eric Dillalogue" on Flickr</small>
 
@@ -262,15 +271,6 @@ the back.
 ---
 
 ![code](images/easter2.png)
-
----
-
-![diagram](images/diagram.jpg)
-
-???
-
-While we're on the topic of squinting, here's a slide at an event I
-recently attended.
 
 ---
 
