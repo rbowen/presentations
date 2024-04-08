@@ -11,8 +11,7 @@ Slides: github.com/rbowen/presentations
 
 * Introduce yourself. 
     * Open Source Strategist at AWS
-    * I have been attending technical conference presentations since
-      1996. Most of them have been awful
+    * I have been attending technical conference presentations since 1996. Most of them have been awful
 * I want to talk to you about making your conference presentations
   better.
 
@@ -114,6 +113,18 @@ from the point.
 
 ---
 
+![Excitement](images/excitement.jpg)
+<small>CC by Robby Van Arsdale, on Flickr</small>
+
+???
+
+I should believe that you are excited about your point.
+
+If you are not excited about your topic, I won't be either. Convince me
+this is the most exciting thing I'm going to see this week.
+
+---
+
 ![biography](images/biography.jpg)
 
 ???
@@ -141,11 +152,10 @@ establishes your authority on this topic.
 I'll be here all week. If you want to get to know more about me, let's
 chat at the party tonight. That's not what my talk is about.
 
-Caveat: If you are part of an underrepresented group, you may,
-unfortunately, need to establish your credibility, and that may require
-saying a few things about your accomplishments. Just try really hard to
-hold it down to less than a minute, because people are there for the
-content, not for your resume.
+You have credibility on three counts: 1) The selection committee
+thought you should give your talk 2) the people in the seats thought you
+were worth coming to listen to and 3) your ACTUAL authority to speak on
+the topic.
 
 ---
 
@@ -173,16 +183,6 @@ your cat. But be sure that everything that you have on the slide is
 * Relevant
 * Important
 * Legible
-
----
-
-![Excitement](images/excitement.jpg)
-<small>CC by Robby Van Arsdale, on Flickr</small>
-
-???
-
-If you are not excited about your topic, I won't be either. Convince me
-this is the most exciting thing I'm going to see this week.
 
 ---
 
@@ -258,6 +258,15 @@ the back.
 ---
 
 ![code](images/easter2.png)
+
+---
+
+![diagram](images/diagram.jpg)
+
+???
+
+While we're on the topic of squinting, here's a slide at an event I
+recently attended.
 
 ---
 
