@@ -15,6 +15,8 @@ Slides: github.com/rbowen/presentations
 * I want to talk to you about making your conference presentations
   better.
 
+I don't have the answers - just suggestions. You need to develop your
+own style.
 
 Think of the best talk you've ever attended. What about it
 struck you as valuable/effective/memorable?
