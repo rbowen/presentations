@@ -441,11 +441,9 @@ Summary (And Q&A)
 class: center,middle
 ## finis
 
-rbowen@apache.org
+rbowen@apache.org // @rbowen // @AWSOpen
 
-@rbowen
-
-@AWSOpen
+![contactinfo](images/contactinfo.png)
 
 Slides: github.com/rbowen/presentations
 
