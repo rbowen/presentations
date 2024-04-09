@@ -51,6 +51,18 @@ jokes.
 
 ---
 
+![Harish](images/harish.jpg)
+
+???
+
+Yesterday: Harish was excited about his topic, wanted us to understand
+the larger context, and wanted us to look towards what could come next,
+and how we could be part of that.
+
+AND, he did most of the things that I mention in my presentation.
+
+---
+
 ![me](images/me.jpg)
 <small>CC by Kristopher Traquair, photos.apachecon.com</small>
 
