@@ -85,7 +85,7 @@ Main reasons:
 
 ???
 
-* The great thing about FOSSBackstage, and events like it, is that we 
+* The great thing about C/C, and events like it, is that we 
   can sit around the campfire and speak a common language.
 * We all have stories about corporate types who Just Don't Get It, and
   we can laugh at them together.

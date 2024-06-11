@@ -35,7 +35,7 @@ calendar calculations. This resulted in very different ways of engaging
 with projects than if I was doing this as part of my job.
 
 Understand your own reasons, and how it benefits you (personally) and
-(if relevalnt) your team. Be honest with your motivations.
+(if relevant) your team. Be honest with your motivations.
 
 You should know why you want to become a maintainer. Hopefully it
 includes "because I care about the project" at some level. Becoming a
@@ -369,12 +369,6 @@ source is the same way. Sort of.
 ## 4. Be useful
 ## 5. Be welcoming
 ## 6. Be a maintainer
-
----
-
-# Bonus Slide
-
-## Maintainers: What's the thing you wish contributors would do?
 
 ---
 
