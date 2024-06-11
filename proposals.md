@@ -32,9 +32,12 @@ are some things that are universal ways to earn trust in a project:
 
 ### Abstract:
 
-TBD
+Everyone tells you that getting involved in open source projects is easy - just show up, right? But there’s more to it than that, because projects are made of people, and people are complicated. This talk will guide you through some of the ways to effectively earn trust in a project, and progress from user, through contributor, to maintainer.
 
 ### Submitted to:
+
+* https://ccoss.org/sessions/2024/the-path-to-maintainer/
+* https://www.youtube.com/watch?v=HERJKYR9sKQ
 
 ## Title: Why single-vendor projects hurt everyone
 
