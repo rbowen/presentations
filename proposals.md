@@ -157,4 +157,16 @@ practical steps that you can implement today to leave that legacy.
 FOSS BackStage 2018
 https://www.youtube.com/watch?v=FtKE5M2LBWQ
 
+## Title: Raising the bar on your conference presentation
+
+## Abstract
+
+We've all attended - or given - presentations that put the audience to sleep, or at least had most of them playing Candy Crush on their phones. In this presentation, we talk about ways that you can improve your conference presentations by making a few simple changes.
+
+You know the presentations I'm talking about. The slides are 73 lines of 12-point font, and the speaker reads them to you with their back turned. Ok, maybe not that bad. But you want to leave the audience wanting more, and eager to take the next step. Here's a few simple tips for making your conference presentations engaging, rather than soporific.
+
+### Submitted to
+
+Presented at FOSSAsia Summit 2024, Hanoi -- https://eventyay.com/e/55d2a466/session/8800
+
 
