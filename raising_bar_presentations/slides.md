@@ -57,7 +57,7 @@ jokes.
 
 ???
 
-Yesterday: Harish was excited about his topic, wanted us to understand
+FOSSAsia 2024: Harish was excited about his topic, wanted us to understand
 the larger context, and wanted us to look towards what could come next,
 and how we could be part of that.
 
@@ -168,7 +168,7 @@ That's all. Because that's all that's relevant. ie, the stuff that
 establishes your authority on this topic.
 
 I'll be here all week. If you want to get to know more about me, let's
-chat at the party tonight. That's not what my talk is about.
+chat later in the hallway. That's not what my talk is about.
 
 You have credibility on three counts: 1) The selection committee
 thought you should give your talk 2) the people in the seats thought you
@@ -310,6 +310,9 @@ to get through."
 If you are giving your talk online and cannot see your audience,
 practice for someone that is similar to your audience, and ask them to
 be harsh, because that will make you better.
+
+Having a (friendly) heckler in the audience can be a very powerful way to
+loosen up the audience and encourage participation.
 
 ---
 
