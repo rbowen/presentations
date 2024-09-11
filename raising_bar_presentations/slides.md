@@ -286,6 +286,12 @@ the back.
 
 ![code](images/easter2.png)
 
+https://metacpan.org/pod/Date::Easter
+
+???
+
+Better still, offer the text as ... y'know ... text, at a shortlink
+
 ---
 
 ![conversation](images/conversation.jpg)
@@ -324,6 +330,9 @@ loosen up the audience and encourage participation.
 
 No, you are not loud enough.
 
+Going to a talk and being unable to hear what is being said because
+the speaker thinks they are "loud enough" is *hugely* frustrating.
+
 No, they cannot hear you in the back. They're just being polite.
 
 No, you do not know how to project your voice.
@@ -331,9 +340,19 @@ No, you do not know how to project your voice.
 Use. The. Mic.
 
 It's for me (I'm very hard of hearing, and without the mic, I simply
-cannot hear you) and it's for the videographer.
+cannot hear you) and it's for the videographer
+
+
+---
+
+![microphone](images/microphone2.jpg)
+
+???
 
 (Demonstrate how to use a mic.)
+
+If you are unsure how to use the mic, ask the AV team. They are experts
+on this, but may be tired of people who ignore their advice.
 
 ---
 
@@ -364,6 +383,19 @@ And I slouch, so I consciously tell myself to stand up straighter.
 
 ---
 
+![Practice](images/practice.jpg)
+<small>CC by Henri Bergius on Flickr</small>
+
+???
+
+Practice.
+
+Show up early and ask the AV team if you can get the feel of the stage.
+Figure out where the "teleprompter" screen is. See if the lights are in
+your eyes. Sing a song.
+
+---
+
 ![slow](images/slow.jpg)
 <small>CC by "cloclo109" on Flickr</small>
 
@@ -380,6 +412,11 @@ you are considering just the right word choice.
 
 This is nonsense, of course, but it's surprising how much it affects how
 an audience listens to you.
+
+Nobody appreciates it when they have paid to be there, and hear your
+talk, and you say "I'll give you 15 minutes back."
+
+Take a breath. Move around the stage. Make eye contact.
 
 ---
 
@@ -415,6 +452,15 @@ are not me.
 
 ---
 
+![Pacing](images/pacing.png)
+
+???
+Get to know your presentation tool. It has cool features. One of them
+might be a pacing guide, which tells you how much time you could spend
+on this slide if you want to maintain your pacing.
+
+---
+
 ![picture](images/1000words.jpg)
 <small>CC by Kristopher Traquair, photos.apachecon.com</small>
 
@@ -431,7 +477,7 @@ to make the connection, so that they'll remember it. Throw in the
 occasional random non-sequitur.
 
 ---
-Summary (And Q&A)
+Summary
 
 1. Know what your talk is about (so that I know, too)
 2. I'm not here for your life story
@@ -443,15 +489,28 @@ Summary (And Q&A)
 8. A picture is worth 1000 words
 
 ---
+
+![Questions](images/question-time.jpg)
+<small>CC by Colm MacCárthaigh on Flickr</small>
+
+???
+
+* Have a bonus slide!
+* Leave time for questions
+* Use the mic for question time, and repeat every question for the
+  audience
+* Be wary of the "Not a question so much as a comment" guy. Practice the
+  phrase "perhaps we can take that one out into the hallway" or even
+  "People came to listen to me, not you" if you're feeling spicy.
+
+---
 class: center,middle
 ## finis
 
 rbowen@apache.org // @rbowen // @AWSOpen
 
-![contactinfo](images/contactinfo.png)
-
 Slides: github.com/rbowen/presentations
 
-<small>Photos are mine where not noted. All others are Creative 
-Commons from Flickr.<br />Except the one of Damian, which I stole from YouTube</small>
+<small>Photos are mine where not noted. All others are credited on the
+slide.<br />Except the one of Damian, which I stole from YouTube</small>
 
