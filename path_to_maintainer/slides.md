@@ -44,7 +44,10 @@ efforts, because your ownership of the project will be dishonest.
 
 This talk is slanted towards companies which rely on open source as part
 of their supply chain, but it also has lessons for passion-only
-involvement.
+involvement. There can be unstated, but still very real, assumption, in
+ASF projects, that hobby involvement is more pure, or honorable, than
+folks who do this "just for a paycheck." Being aware of this bias going
+in can help avoid some misunderstandings.
 
 ---
 
@@ -105,6 +108,10 @@ the majority of the benefits of open source. And you are treating the
 (volunteer!) maintainers as your employees, which they are not. This
 disrespects the project, your customers, and yourself.
 
+But it's not just disrespect - it leads you to make false assumptions
+about the obligations of the project to serve your needs. They have
+*none*, and the only guarantee of results is if we do it ourselves.
+
 ---
 
 ![Supply](images/weak_link.jpg)
@@ -131,6 +138,10 @@ make changes to the source code. PMC members are the gatekeepers on
 releases, and determine who will become a committer or PMC member.
 
 In general, it refers to someone who makes decisions about a project.
+
+This varies from one project to another. Cassandra, in particular, gives
+a *lot* of voice to committers, even those who have non-code roles. But
+they also have a pretty high bar to achieving that status.
 
 ---
 
@@ -382,4 +393,63 @@ rbowen@apache.org
 @AWSOpen
 
 Slides: github.com/rbowen/presentations
+
+---
+
+## Bonus slides
+
+* history
+* cast of characters
+
+---
+
+## History
+
+https://sdtimes.com/afs/apache-foundation-board-reining-datastax/
+
+![PMC](images/pmc_story.png)
+
+???
+
+Cassandra is watched more closely than many other projects, due to its
+history. I believe that they have course corrected. Certain other
+people don't. Our involvement in Cassandra must be completely above
+reproach.
+
+---
+
+## Planet Cassandra
+
+https://planetcassandra.org/
+
+![planet](images/planet.png)
+
+---
+
+## Cassandra, cast of characters
+
+---
+
+* Chair: Dinesh Joshi
+
+![Dinesh](images/dinesh.png)
+
+---
+
+* Mick Semb Wever (Datastax)
+
+![mck](images/mick.png)
+
+---
+
+* Jun Rao (Covalent)
+
+![jun](images/jun.png)
+
+---
+
+* Jeff Jirsa (Board member)
+
+![jj](images/jj.png)
+
 
