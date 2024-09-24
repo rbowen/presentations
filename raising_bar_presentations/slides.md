@@ -123,8 +123,8 @@ presentations 10 times better.
 
 1 Know what your talk is about
 
-Yes, that sounds obvious, but most presentations leave you wondering
-what they were trying to communication.
+Yes, that sounds obvious, but many presentations leave you wondering
+what they were trying to communicate.
 
 If someone missed your talk, what would you tell them it's about? Does
 that take more than 3 sentences? If you cannot explain it, then maybe
@@ -520,7 +520,8 @@ Summary
 ???
 
 * Have a bonus slide!
-* Leave time for questions
+* Leave time for questions (Unless you don't want to answer questions,
+  which is a totally valid thing to want)
 * Use the mic for question time, and repeat every question for the
   audience
 * Be wary of the "Not a question so much as a comment" guy. Practice the
@@ -538,3 +539,9 @@ Slides: github.com/rbowen/presentations
 <small>Photos are mine where not noted. All others are credited on the
 slide.<br />Except the one of Damian, which I stole from YouTube</small>
 
+???
+
+* Tell them on the last slide where to find your slides.
+* Tell them your preferred way of getitng in touch.
+* Don't use photos you don't have the rights to, because that's rude,
+  and illegal.
