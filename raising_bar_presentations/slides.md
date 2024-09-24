@@ -1,3 +1,15 @@
+# Pre-talk ritual
+
+What are your nervous habits?
+
+* Show up just a little early
+* Empty pockets
+* Remove lanyard
+* Test mic
+* Turn off phone
+
+---
+
 class: center, middle
 # Raising the Bar on your Presentations
 
@@ -31,6 +43,18 @@ This is Damian Conway, who is probably the best presenter I've ever
 attended. It has probably been 20 years since I last saw him on stage, 
 and I still remember his presentations. The first time I saw him speak,
 I determined that I wanted to be as good as him. Still not there yet.
+
+---
+
+![Kathy](images/kathysierra.jpg)
+
+???
+
+This is Kathy Sierra, at Ohio Linux Fest probably 10 years ago.
+(Yes, it's a terrible picture. Sorry.)
+She is also possibly the best presenter I've ever
+attended. Funny, engaging, and directly relevant to the needs of the
+audience. Google her and watch some of her presentations. So, so good.
 
 ---
 
