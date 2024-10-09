@@ -160,7 +160,9 @@ practical steps that you can implement today to leave that legacy.
 FOSS BackStage 2018
 https://www.youtube.com/watch?v=FtKE5M2LBWQ
 
-## Title: Raising the bar on your conference presentation
+SCaLE 2025
+
+# Title: Raising the bar on your conference presentation
 
 ## Abstract
 
@@ -170,6 +172,22 @@ You know the presentations I'm talking about. The slides are 73 lines of 12-poin
 
 ### Submitted to
 
-Presented at FOSSAsia Summit 2024, Hanoi -- https://eventyay.com/e/55d2a466/session/8800
+* Presented at FOSSAsia Summit 2024, Hanoi -- https://eventyay.com/e/55d2a466/session/8800
+* SCaLE 2025
 
+# 40+ years of FLOSS: What we (should) have learned
 
+## Abstract
+
+Free software arguably started in 1983 with the launch of the GNU
+project, but of course the concept is older than that. We have, of
+course, learned a lot in 40 years, and done some amazing things along
+the way. But while solving really hard technical problems, we seem to
+keep making the same human mistakes again and again.
+
+This talk will revisit some of these mistakes, and offer suggestions of
+how we might take steps to break out of some of these patterns.
+
+### Submitted to
+
+* SCaLE 2025
