@@ -7,6 +7,7 @@ What are your nervous habits?
 * Remove lanyard
 * Test mic
 * Turn off phone
+* Visit the restroom
 
 ---
 
@@ -39,7 +40,7 @@ struck you as valuable/effective/memorable?
 
 ???
 
-This is Damian Conway, who is probably the best presenter I've ever 
+This is Damian Conway, who is one of the top 5 presenters I've ever 
 attended. It has probably been 20 years since I last saw him on stage, 
 and I still remember his presentations. The first time I saw him speak,
 I determined that I wanted to be as good as him. Still not there yet.
@@ -52,7 +53,7 @@ I determined that I wanted to be as good as him. Still not there yet.
 
 This is Kathy Sierra, at Ohio Linux Fest probably 10 years ago.
 (Yes, it's a terrible picture. Sorry.)
-She is also possibly the best presenter I've ever
+She is also definitely one of the top 5 presenters I've ever
 attended. Funny, engaging, and directly relevant to the needs of the
 audience. Google her and watch some of her presentations. So, so good.
 
@@ -81,7 +82,7 @@ jokes.
 
 ???
 
-FOSSAsia 2024: Harish was excited about his topic, wanted us to understand
+FOSSAsia 2024: Harish Pilay was excited about his topic, wanted us to understand
 the larger context, and wanted us to look towards what could come next,
 and how we could be part of that.
 
@@ -116,6 +117,15 @@ presentations 10 times better.
 
 ---
 
+![yesterday](images/yesterday.png)
+
+???
+
+For those of you who spoke yesterday (raise your hands) I am not making
+fun of you, I promise. Ok, maybe a little.
+
+---
+
 ![what](images/what.jpg)
 <small>CC by "Walt Jabsco" on Flickr</small>
 
@@ -132,12 +142,73 @@ you need to spend some time focusing your story.
 
 ---
 
+![einstein](images/einstein.jpg)
+<small>Einstein, CC by katiett on Flickr</small>
+
+???
+
+### Abstract
+
+Einstein may have said, but probably didn't:
+"If you can't explain it simply, you don't understand it well enough."
+
+If your abstract is a page long, I will not read it, and will therefore
+not attend your talk. Your abstract is a sales pitch, not the talk
+itself. This is not an academic conference.
+
+While "clickbait" abstracts can be effective, they are usually not. If I
+cannot tell from the abstract what tangible benefit I will get from your
+talk, I will not attend.
+
+---
+
+# Tell ’em what you’re going to tell ’em; then tell ’em; then tell ’em what you told ’em.
+
+???
+
+The abstract is where you tell me what you're going to tell me. Web
+journalism has made us think that if you tell people what the article is
+about they won't read the article. That is a *bug* that has been caused
+by an advertising model where effectiveness is measured by clicks.
+
+---
+
+![dolphin](images/dolphin.jpg)
+* Yes, this is a real book, and you should buy it
+
+???
+
+### Title
+
+... But they won't even read the abstract unless the title is good.
+
+Your title is a balancing act. It should catch the eye. Being amusing is
+one way to do that, but not the only way. But it should also tell you
+what the talk is about. *MOST* conference-goers will not read your
+abstract, and they almost certainly won't if the title doesn't grab them
+first.
+
+---
+
+![modest](images/modest.jpg)
+
+???
+
+Your title shouldn't be longer than your talk.
+
+Back when there was a website called Twitter, I used to encourage people
+to ensure that their title could fit in a tweet along with their name,
+the name of the conference, and a URL. This is still good advice, even
+though Twitter is no longer safe for human consumption.
+
+---
+
 ![action](images/action.jpg)
 <small>CC by "Julia Sergina" on Flickr</small>
 
 ???
 
-Call to action
+End your talk with a call to action
 
 I should leave your talk wanting to do something. Everyone in your talk
 should know what that thing is. You should know what that thing is. You
@@ -160,7 +231,8 @@ from the point.
 
 ???
 
-I should believe that you are excited about your point.
+I should believe that you are excited about your point. Or at least that
+you care about it passionately.
 
 If you are not excited about your topic, I won't be either. Convince me
 this is the most exciting thing I'm going to see this week.
@@ -173,9 +245,7 @@ this is the most exciting thing I'm going to see this week.
 
 2 Don't tell me your life story
 
-Introduce yourself, but ...
-
-Don't tell me your life story, unless that's literally the topic of the
+Introduce yourself, but Don't tell me your life story, unless that's literally the topic of the
 talk. I am not here to learn about *you* but about your topic. Only tell
 as much about yourself as is actually relevant to the topic you are
 covering. This is *not* time to read me your resume.
@@ -209,11 +279,11 @@ the topic.
 
 Giving a presentation is a *performance*, not a document.
 
+Clay, aka Clayface, aka Ethan Bennet, aka Squirrel, aka Tiny Tiger.
+
 Slides are cuecards, not your entire presentation. They are there to
 remind *you* of the point you wanted to make. They are also there to
 make the audience look at YOU, rather than your slides, or their phone.
-
-Here, have a picture of my cat.
 
 Maybe provide a doc or blogpost that goes along with it, if you wanted
 to write everything down.
@@ -388,18 +458,15 @@ on this, but may be tired of people who ignore their advice.
 
 You have a recording device in your pocket.
 
-Listen to yourself. Watch yourself
-
-You say "um" a lot more than you think you do. Or whatever your
-particular annoying speech pattern is. And your audience notices. Most
+Listen to yourself. But also, watch yourself and figure out your
+annoying habits. Maybe you say "um" a lot more than you think you do. Or whatever your
+particular annoying habit is. And your audience notices. Most
 people find their own voice annoying. Get over that.
-
-Practice not saying that.
 
 You touch your face a lot, or put your hands in your pockets, or pull on
 your ear, or look down at the floor, or ... something.
 
-Practice not doing that. Notice when you do it and consciously avoid
+Practice not saying and doing those things. Notice when you do it and consciously avoid
 doing it.
 
 I play with stuff in my pockets, so I empty my pockets before I start.
@@ -438,7 +505,7 @@ This is nonsense, of course, but it's surprising how much it affects how
 an audience listens to you.
 
 Nobody appreciates it when they have paid to be there, and hear your
-talk, and you say "I'll give you 15 minutes back."
+talk, and you rush through it then say "I'll give you 15 minutes back."
 
 Take a breath. Move around the stage. Make eye contact.
 
@@ -457,6 +524,9 @@ In a presentation, switching the view, intentionally, is called a
 "Beat", and it regains the audience's attention for a moment. Thus the
 more beats you have, the more time your audience's attention is on you,
 not on their phone.
+
+If you change the beat frequently, they will be afraid they'll miss
+something by looking away.
 
 ---
 
@@ -512,12 +582,27 @@ Summary
 7. Lots of short beats
 8. A picture is worth 1000 words
 
+???
+
+1. Main point and action item
+2. Don't tell me meaningless stories
+3. Add value to "just the slides"
+4. Talk with me, not at me
+5. Remember the deaf guy
+6. Watch yourself, and figure out what you hate about it
+7. Keep my attention on stage
+8. Fewer words, more pictures
+
 ---
 
 ![Questions](images/question-time.jpg)
 <small>CC by Colm MacCárthaigh on Flickr</small>
 
 ???
+
+Oh, and another thing ...
+
+Any Columbo fans here?
 
 * Have a bonus slide!
 * Leave time for questions (Unless you don't want to answer questions,
@@ -532,16 +617,21 @@ Summary
 class: center,middle
 ## finis
 
-rbowen@apache.org // @rbowen // @AWSOpen
+rbowen@apache.org // mastodon.social/@rbowen // @AWSOpen
 
 Slides: github.com/rbowen/presentations
 
 <small>Photos are mine where not noted. All others are credited on the
 slide.<br />Except the one of Damian, which I stole from YouTube</small>
 
+![qr](images/qr.png)
+
 ???
 
-* Tell them on the last slide where to find your slides.
-* Tell them your preferred way of getitng in touch.
+* Tell them on the last slide where to find your slides. Better yet, use
+  a QR code that sends them to that location, so that folks who care can
+  take a picture rather than trying to scribble down a URL.
+* Tell them your preferred way of getting in touch.
 * Don't use photos you don't have the rights to, because that's rude,
   and illegal.
+
