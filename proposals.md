@@ -4,7 +4,7 @@
 
 Rich Bowen has been involved in open source since before we started
 calling it that. He's a member of the Apache Software Foundation, where
-he currently serves as a board member and VP Conferences. Rich is an
+he currently serves as a board member and Vice Chair. Rich is an
 Open Source Strategist at AWS. 
 
 ## References
@@ -191,3 +191,13 @@ how we might take steps to break out of some of these patterns.
 ### Submitted to
 
 * SCaLE 2025
+
+# Plan to fork (So you don't have to fork)
+
+## Abstract
+
+If your product or service relies on an open source project, ensuring the sustainability of that project is just good business sense. Forking that source project should be a last resort, to be considered only after all other options have been exhausted. But writing a detailed plan to fork has two benefits. First, it ensures that should the worst happen, you’ve already considered how you’ll deal with it. But perhaps more importantly, thinking proactively about forking will help you take actions that will ensure that it never gets to that.
+
+## Submitted to
+
+* Open Source Summit EU 2025
