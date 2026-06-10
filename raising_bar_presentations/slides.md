@@ -190,6 +190,16 @@ first.
 
 ---
 
+![sched](images/sched.png)
+
+???
+
+The way most of us decide which talk to go to is by looking at the
+schedule, in teensy font, on our phone, while we balance a coffee and
+stale muffin in the other hand.
+
+---
+
 ![modest](images/modest.jpg)
 
 ???
@@ -344,6 +354,8 @@ too.)
 
 While we're on the topic of squinting, here's a slide at an event I
 recently attended. It's not just words you can have too much of.
+
+"How to avoid death by PowerPoint", David JP Phillips, TED talk
 
 ---
 

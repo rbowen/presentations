@@ -1,0 +1,559 @@
+////
+
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+////
+
+// 40 minutes - 5 minutes Q&A = 2400 seconds
+:revealjs_totalTime: 2400
+
+// Highlight code samples
+:source-highlighter: highlight.js
+
+== !
+:description: 40 minute talk on Apache Training
+:keywords: Apache Training
+:authors: Rich Bowen
+:email: rbowen@apache.org
+image:training.png[width=50%]
+
+Intro to Apache Training
+
+Rich Bowen
+
+[.notes]
+--
+* PMC member, Apache Training
+* ASF advocate in my day job, and I need a starter deck for stuff (ie,
+  this is 100% self-serving, as all open source should be.)
+--
+
+== Apache Training
+
+image:training.png[width=15%]
+
+* 💥 New TLP project (As of last month!)
+* Open source training material, and the tools to maintain and publish them
+* Slides! Workshops! Labs! Tutorials!
+* Come help us!
+
+== Why Apache Training?
+
+image:apache-way-shane.png[]
+
+++++
+<small>CC-Attribution by The Linux Foundation</small>
+++++
+
+[.notes]
+--
+* 900 "Apache Way" talks with very different perspectives
+* Crowdsource a shared view, with peer review of materials
+* IP approved resources (appropriate image attribution, for example)
+* Presenters can give it their own personality, and then contribute to
+  the shared presentation, all under the Apache 2.0 license.
+--
+
+== What it is Not 
+
+image:certificate.jpg[]
+
+++++
+<small>CC BY-NC-SA 2.0 by newrambler on Flickr</small>
+++++
+
+[.notes]
+--
+* We are not providing professional skills certification
+* We *may* offer some kind of "badge" for completion of training, in the future. Come help us figure out what that looks like.
+--
+
+== Slide format: AsciiDoctor
+
+image:asciidoctor-logo.png[width=15%]
+
+* Simple markdown style markup
+* MIT license
+* Multiple outputs
+* https://github.com/asciidoctor/asciidoctor
+
+image:asciidoc-qr.png[]
+
+[.notes]
+--
+There are strong feelings in the AsciiDoctor vs Markdown vs
+reStructuredText debate. I find them pretty much the same for practical
+purposes.
+--
+
+== AsciiDoctor Reveal.js
+
+https://docs.asciidoctor.org/reveal.js-converter/latest/
+
+* HTML / CSS
+* Reveal.js
+* Ruby, Node, Maven
+
+image:reveal-qr.png[]
+
+[.notes]
+--
+* Creates HTML and CSS output from your AsciiDoctor slides
+* Provides several mechanisms for conversion. We're using the Maven one
+--
+
+== Text vs other formats
+
+* Easy to edit
+* Easy to translate
+* Real version control
+* Searchable
+
+== Things to work on
+
+* Releases and versioning of presentations?
+* Ease of use and reuse of content.
+* Is ALv2 the best license for content?
+
+[.notes]
+--
+The "Apache Software License" was renamed to the "Apache Licence" in v2
+*specifically* so that it could be unambiguously used for
+documentation. That came, in part,  out of a discussion around the httpd
+documentation and the right license for it.
+--
+
+== Slide Features
+* Speaker notes / timer
+* Keyboard navigation
+* Vertical slides
+* Simple markup
+* Styled via CSS
+* PDF generation
+
+== Creating a new presentation
+
+[source]
+----
+mvn archetype:generate -DarchetypeGroupId=org.apache.training
+                       -DarchetypeArtifactId=content-archetype 
+                       -DarchetypeVersion=1.3.0
+----
+
+(Check docs to see if the Version has changed since this slide)
+
+image::new-preso-doc-qr.png[]
+
+[.notes]
+--
+Check the docs page to make sure the Version hasn't changed since the
+last time.
+--
+
+=== !
+
+This will ask you a few questions. Only two of them really matter:
+
+[source]
+----
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------< org.apache.maven:standalone-pom >-------------------
+[INFO] Building Maven Stub Project (No POM) 1
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] >>> archetype:3.4.0:generate (default-cli) > generate-sources @ standalone-pom >>>
+[INFO]
+[INFO] <<< archetype:3.4.0:generate (default-cli) < generate-sources @ standalone-pom <<<
+[INFO]
+[INFO]
+[INFO] --- archetype:3.4.0:generate (default-cli) @ standalone-pom ---
+[INFO] Generating project in Interactive mode
+[INFO] Archetype repository not defined. Using the one from [org.apache.training:content-archetype:1.3.0] found in catalog remote
+[INFO] Using property: apacheTrainingToolsVersion = 1.3.0
+Define value for property 'groupId': org.apache.training
+----
+
+=== !
+
+[source]
+----
+Define value for property 'artifactId': NameOfYourPresentation
+----
+
+(This is the directory that will be created)
+
+=== !
+
+Just hit enter on the next few questions ...
+
+Then answer `Y` to confirm.
+
+[source]
+----
+Define value for property 'version' 1.0-SNAPSHOT:
+Define value for property 'package' org.apache.training:
+Confirm properties configuration:
+apacheTrainingToolsVersion: 1.3.0
+groupId: org.apache.training
+artifactId: NameOfYourPresentation
+version: 1.0-SNAPSHOT
+package: org.apache.training
+ Y: Y
+----
+
+=== !
+
+Then it will build stuff ...
+
+[source]
+----
+[INFO] ----------------------------------------------------------------------------
+[INFO] Using following parameters for creating project from Archetype: content-archetype:1.3.0
+[INFO] ----------------------------------------------------------------------------
+[INFO] Parameter: groupId, Value: org.apache.training
+[INFO] Parameter: artifactId, Value: NameOfYourPresentation
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[INFO] Parameter: package, Value: org.apache.training
+[INFO] Parameter: packageInPathFormat, Value: org/apache/training
+[INFO] Parameter: package, Value: org.apache.training
+[INFO] Parameter: groupId, Value: org.apache.training
+[INFO] Parameter: artifactId, Value: NameOfYourPresentation
+[INFO] Parameter: apacheTrainingToolsVersion, Value: 1.3.0
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[WARNING] CP Don't override file /private/tmp/NameOfYourPresentation/pom.xml
+[INFO] Executing META-INF/archetype-post-generate.groovy post-generation script
+[INFO] Project created from Archetype in dir: /private/tmp/NameOfYourPresentation
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  03:56 min
+[INFO] Finished at: 2025-09-05T10:38:34-04:00
+[INFO] ------------------------------------------------------------------------
+----
+
+=== !
+
+[source]
+----
+$ cd ./NameOfYourPresentation/
+$ ls -la
+
+total 88
+drwxr-xr-x@ 3 rcbowen  wheel     96 Sep  5 10:38 .mvn
+-rw-r--r--@ 1 rcbowen  wheel   1090 Sep  5 10:38 docker-compose.yaml
+-rw-r--r--@ 1 rcbowen  wheel   3698 Sep  5 10:38 Dockerfile
+-rwxr--r--@ 1 rcbowen  wheel  10665 Sep  5 10:38 mvnw
+-rw-r--r--@ 1 rcbowen  wheel   6912 Sep  5 10:38 mvnw.cmd
+-rw-r--r--@ 1 rcbowen  wheel   2740 Sep  5 10:38 pom.xml
+-rw-r--r--@ 1 rcbowen  wheel   2406 Sep  5 10:38 README.md
+drwxr-xr-x@ 3 rcbowen  wheel     96 Sep  5 10:38 src
+----
+
+[.notes]
+--
+This contains some sample content that will help you get started
+--
+
+== Steps to build slides
+
+Content goes in `src/main`
+
+* Edit the `index.adoc` file in `asciidoc`
+* Images go in `resources/images`
+* Build with `mvn install`
+
+== Converting ...
+
+video::mvn-install.mp4[options=autoplay]
+
+== Presenting
+* HTML in browser
+
+[source]
+----
+./target/generated-slides/index.html
+----
+
+* Self hosted web server
+
+== PDF
+
+Add `?print-pdf` to the end of your presentation deck URL.
+
+== Hosted project slides
+
+training.apache.org
+
+image::project-slides.png[]
+
+[.notes]
+--
+* Peer reviewed slides
+* If your project is featured here, please improve the slides!
+* If it's not, please help us make those slides!
+--
+
+== Slide formatting:
+
+== Text
+[source]
+----
+Put your text here
+----
+
+== Titles
+
+[source]
+----
+== !
+No title
+----
+
+[source]
+----
+== Slide One
+
+== Slide Two
+
+== Slide Three
+
+----
+
+== Images
+[.columns]
+--
+[source]
+----
+image::cat.jpg[Cat, width=50%]
+----
+
+image::cat.jpg[Cat, width=200%]
+--
+
+[.notes]
+--
+BYOC - Bring Your Own Cat
+--
+
+== Video
+[.columns]
+--
+[source]
+----
+video::sydney.mp4[width=640, start=30, end=60, options=autoplay]
+video::dQw4w9WgXcQ[youtube]
+video::148751763[vimeo]
+----
+
+video::sydney.mp4[width=640, options=autoplay]
+--
+
+sydney.mp4
+
+[.notes]
+--
+* Note: Three different ways to reference a video - either local or remote.
+* Be sure you have sufficient internet access if you're going to reference
+a remote video.
+--
+
+== Background images
+
+[source]
+----
+image::stars.jpg[background, size=cover]
+----
+
+== Background images
+image::stars.jpg[background, size=cover]
+
+== Background Video
+
+* Slide attribute, so different syntax
+* Place the following immediately before the slide header (ie, the `==` line)
+
+[source]
+----
+[background-video="sydney.mp4",background-video-loop=true]
+== Background Video
+----
+
+[background-video="sydney.mp4",background-video-loop=true]
+== Background Video
+
+[source]
+----
+[background-video="sydney.mp4",background-video-loop=true]
+----
+
+== Bullet Lists
+[.columns]
+--
+[source]
+----
+* one
+* two
+* three
+----
+
+* one
+* two
+* three
+--
+
+== Columns
+
+[source]
+----
+
+[.columns]
+--
+one
+
+two
+--
+
+----
+
+== Bullet Lists
+[.columns]
+--
+[source]
+----
+* one
+* two
+** one
+** two
+----
+
+* one
+* two
+** one
+** two
+--
+
+== Speaker Notes
+
+[source]
+----
+[.notes]
+--
+* your notes go here
+* Slides should contain sufficient notes that a reasonably knowledgeable
+  individual could pick them up and present confidently.
+--
+----
+
+== Speaker View
+image:speakernotes.jpg[]
+
+== Timer and time left
+
+Before the first slide ...
+
+[source]
+----
+// 40 minutes - 5 minutes Q&A = 2400 seconds
+:revealjs_totalTime: 2400
+----
+
+=== !
+
+image:speakernotes-zoom.jpg[]
+
+== Vertical Slides
+[source]
+----
+=== Next Slide
+----
+
+[.note]
+--
+Use this when you want a 'deep dive' on a topic, or expect additional
+questions on a particular slide.
+--
+
+=== Next slide
+This is the next slide
+
+=== And another
+How deep does the rabbit hole go?
+
+== Syntax highlighting
+[source, python]
+----
+with urllib.request.urlopen("https://whimsy.apache.org/public/public_ldap_people.json") as url:
+    data = json.loads(url.read().decode())
+    people = data["people"]
+    print(":committers: " + str(len(people)))
+----
+
+[.note]
+--
+ Uses highlight.js
+--
+
+=== Languages
+
+Works for 34 "commonly used" languages.
+
+[source,perl]
+----
+use Acme::Bleach;
+print "Hello world!";
+----
+
+=== Turning on
+
+May need to put at the top of your doc:
+
+[source,adoc]
+----
+// Highlight code samples
+:source-highlighter: highlight.js
+----
+
+== Other Features
+* HTML pass through
+* Layout Flex / grid 
+* ASCII to diagrams
+
+== Project status
+
+* Graduated as a TLP in August 2025
+* Working with a few projects on content
+
+== You can help!
+* Did you speak at this conference?
+* Have some internal training material?
+* Have slide decks from other conference?
+* Consider donating i
+
+== Other skills?
+* Writer? Work with a project to produce materials.
+* Designer? Help us make presentations more appealing.
+* Programmer? Improve the tools and developer experience.
+
+[.notes]
+--
+Figure out how to do more cool stuff with reveal.js and document that in
+the *Writing Slides* part of the docs.
+--
+
+== Questions?
+Ask now, see me after the session,
+or email me at {email}.

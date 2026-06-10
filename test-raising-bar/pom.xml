@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.apache.training</groupId>
+        <artifactId>content-parent-pom</artifactId>
+        <version>1.4.0-SNAPSHOT</version>
+        <relativePath></relativePath>
+    </parent>
+    <groupId>org.apache.training.content</groupId>
+    <artifactId>training-content-apache-training-presentation</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>war</packaging>
+    <name>Training: Content: Apache: Training: Presentation</name>
+    <description>An Apache Training talk</description>
+<build>
+    <pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.rat</groupId>
+                <artifactId>apache-rat-plugin</artifactId>
+                <version>0.16.1</version>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+        </plugins>
+    </pluginManagement>
+</build>
+<!-- Make Snapshots of Apache projects available -->
+<repositories>
+    <repository>
+        <id>apache-snapshots</id>
+        <url>https://repository.apache.org/content/repositories/snapshots</url>
+        <releases>
+            <enabled>false</enabled>
+        </releases>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+    </repository>
+</repositories>
+
+<!-- Make Snapshots of Apache plugins available -->
+<pluginRepositories>
+    <pluginRepository>
+        <id>apache-snapshots</id>
+        <url>https://repository.apache.org/content/repositories/snapshots</url>
+        <releases>
+            <enabled>false</enabled>
+        </releases>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+    </pluginRepository>
+</pluginRepositories>
+
+</project>

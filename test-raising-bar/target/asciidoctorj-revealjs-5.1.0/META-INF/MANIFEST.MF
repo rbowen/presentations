@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Built-By: runner
+Created-By: 11.0.21 (Eclipse Adoptium 11.0.21+9)
+Build-Date: 2023-12-25
+Implementation-Title: asciidoctorj-revealjs
+Implementation-Version: 5.1.0
+Implementation-Vendor: asciidoctor.org
+

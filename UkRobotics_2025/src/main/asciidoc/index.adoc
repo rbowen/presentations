@@ -1,0 +1,359 @@
+////
+
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+////
+
+include::_settings.adoc[]
+:presenter_name: Rich Bowen
+:presenter_company: Apache Software Foundation
+
+// 50 minutes :revealjs_totalTime: 3000
+
+// Highlight code samples
+:source-highlighter: highlight.js
+
+== Open Source And the Apache Software Foundation
+
+Rich Bowen, (Apache|AWS)
+
+image::awsopen.jpg[]
+
+[.notes]
+--
+Hi, I'm Rich Bowen, Director at the Apache Software Foundation, and Open
+Source Strategist at AWS.
+--
+
+== !
+
+image::hands.jpg[]
+
+[.notes]
+--
+* Familiar with open source
+* Familiar with the ASF
+* Use open source
+* Have contributed anything to an open source project
+* Have contributed anything to an apache project
+--
+
+== Four Freedoms
+
+* The freedom to run the program as you wish, for any purpose
+* The freedom to study how the program works, and change it to make it do what you wish. Access to the source code is a precondition for this.
+* The freedom to redistribute copies so you can help others
+* The freedom to distribute copies of your modified versions to others
+
+[.notes]
+--
+Definition of Free Software, Richard Stallman
+--
+
+== Open Source Definition
+
+image::osi.png[width=10%]
+
+1. **Free redistribution**
+2. **Source code must be available**
+3. **Must allow derived works**
+4. Integrity of The Author’s Source Code
+5. No Discrimination Against Persons or Groups
+
+== cont'd ...
+
+image::osi.png[width=10%]
+
+6. **No Discrimination Against Fields of Endeavor**
+7. Distribution of License
+8. License Must Not Be Specific to a Product
+9. License Must Not Restrict Other Software
+10. License Must Be Technology-Neutral
+
+image::osd_qr.png[]
+
+[.notes]
+--
+* Can use it for anything. Cannot restrict who, and for what.
+--
+
+== Four Opens
+
+* Open license
+* Open design (decisions)
+* Open development
+* Open community (governance)
+
+image::four_opens.png[]
+
+[.notes]
+--
+* The Four Opens - Open Infrastructure Foundation
+* While Open Source, strictly speaking, is just a license, "real" open
+ source projects typically demonstrate more than just the legal
+ definition
+--
+
+== License
+
+* Permissive
+* Copyleft
+
+[.notes]
+--
+* Permissive: Do what you like, for whatever purpose you like
+* Copyleft: If you create a derived work, then you *must* also publish the source
+--
+
+== Open Design
+
+* Discussions, and decisions, made in public
+* All voices welcome, but trust must be earned
+
+
+== Open Development
+
+* Code changes happen in public code repositories
+* All voices welcome, but trust must be earned
+
+== Open Community
+
+* Who makes the decisions?
+* How do I get to be one of those people?
+* Vendor-neutral access to those roles
+
+== !
+
+image::rooted.jpg[]
+
+++++
+<small>"Rooted" by nazly on Flickr</small>
+++++
+
+[.notes]
+--
+
+* Roots in academia
+* Much of serious open source is the codification of research 
+--
+
+== !
+
+image::hadoop.png[]
+
+Reference implementation of the Dean/Ghemawat Mapreduce paper
+
+image::mapreduce.png[]
+
+[.notes]
+--
+So many other examples
+--
+
+== !
+
+Best way to
+
+* Demonstrate a theory
+* Prove it works
+* Solicit and accept improvements
+* Ensure reproducible results
+
+== Students
+
+Learn ...
+* job skills
+* problem solving
+* human/social skills
+* leadership/management skills
+
+== Companies
+
+* Collaborate on projects that they could not staff by themselves
+* Establish technical standards
+* Focus on their unique value-add
+* Greater visibility leads to better security practices
+
+
+== !
+
+image::new_feather.png[]
+
+== !
+
+image::apache_leaf.png[width=75%]
+
+image::new_logo_blog.png[]
+
+[.notes]
+--
+Rebrand last week. (Discuss this if people are interested.)
+--
+
+=== Why?
+
+* The feather is a sacred image for the Apache people
+* Natives In Tech approached us about this a few years ago
+* We worked with members to create new branding
+* Not changing the name at this time
+
+[.notes]
+--
+* There are many organizations and products named "Apache"
+* It was specifically the juxtaposition of the name and the feather that
+  was objectionable to the Apache nations.
+* Many technical reasons why changing the name would be hugely time
+  consuming and expensive
+--
+
+== The Apache License
+
+* Ensures that you can use it however you want
+* ... including building a for-profit product around it
+* Permissive license (see earlier)
+* (Currently) the most popular open source license on Github
+
+== !
+
+image::group.jpg[width=150%]
+1998
+
+[.notes]
+--
+* Started in 1994 as a web server project, to keep the NCSA httpd project
+alive
+* Foundation created in 1999
+--
+
+== !
+
+image::httpd_group_feather_2015.jpg[]
+2015
+
+== !
+
+image::curiosity.jpg[]
+
+[.notes]
+--
+
+* 320 projects
+* You're already using some of them, whether you know it or not
+* It's running on almost every computer on earth, as well as all of the
+  computers on Mars.
+--
+
+== !
+
+projects.apache.org
+image::projects_qr.png[]
+
+image::projects.png[]
+
+[.notes]
+--
+projects.apache.org lists all projects with basic information about each
+--
+
+== !
+
+* Spark
+* Airflow
+* Hadoop
+* Cassandra
+* Kafka
+
+* ActiveMQ
+* httpd
+* OpenOffice
+* Fineract
+* Iceberg
+
+== Tenets
+
+* Earned Authority
+* Community of Peers
+* Open Communication
+* Consensus Decision Making
+* Self Governing Project Communities
+
+== Earned Authority
+
+* Earn trust by doing the work
+* Earn authority by participating in decision making
+
+== Community of Peers
+
+* Vendor neutrality
+* Every voice is equal
+
+[.notes]
+--
+We're all human, so this is aspirational, but most projects do a good
+job of this.
+--
+
+== Open Communication
+
+* We like mailing lists
+* So many mailing lists
+* Why?
+** Archived for inspection
+** Asynchronous so anyone can participate (time zone, language, availability)
+
+image::lists_qr.png[]
+
+== Self governing project communities
+
+* Report quarterly to the Board, which ensures that projects are operating ...
+** Legally
+** With adequate oversight
+** According to ASF principles
+
+[.notes]
+--
+* Three active PMC members (More about PMCs in a moment)
+* Board does *not* give technical input
+--
+
+== Ladder
+
+* PMC
+* Committer
+* Contributor
+* User
+
+[.notes]
+--
+* Users are critical to projects, since they shape what gets created
+* Contributors have input in how it gets created
+* Committers have earned trust, and can directly make changes
+* PMC members vote on releases, and on new community members
+--
+
+== Membership organization
+
+* Members elect new members
+* Members elect the board
+* The Board creates new projects, and retires old ones
+
+== Q&A
+
+* rbowen@apache.org
+* https://rcbowen.com/
+* https://apache.org/
+* https://www.linkedin.com/in/rcbowen/
+

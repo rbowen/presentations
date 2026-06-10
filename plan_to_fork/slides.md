@@ -1,6 +1,7 @@
 class: center, middle
 # Plan to fork
 ## (So you don't have to fork)
+### (And convincing your manager of that)
 
 Rich Bowen, (Apache|AWS)
 
@@ -53,13 +54,17 @@ Today we're going to talk about the strategic, technical, and cultural aspects o
 ### Definitions:
 
 A *contributing fork* or *social fork* is a normal part of the software development
-process, and is when you're making changes with the intent to contribut
+process, and is when you're making changes with the intent to contribute
 them back.
 
 A *diverging fork* or *competitive fork* is what we're talking about in
 this presentation, and is a fork where you intend to continue operating
 as a separate project indefinitely. This is sometimes also called a
-*hostile fork*.
+*hostile fork*. We're also talking about private/internal forks that
+carry private patches with no intent to contribute these upstream.
+
+A *github* fork is a co-opting of a well-unserstood word to mean
+something else entirely, just to confuse you.
 
 ---
 
@@ -69,12 +74,12 @@ as a separate project indefinitely. This is sometimes also called a
 ???
 
 Think of a fork plan as a disaster recovery plan, rather than as
-something that you want to do. That is, you're getting prepared
+something that you're hoping to do. That is, you're getting prepared
 for a worst-case scenario that you hope will never happen. Why do this?
 
 Planning ahead is a sign of maturity and responsibility. It gives your team and your customers confidence that you're prepared no matter what.
 
-Writing a forking plan is less about the fork and more about assessing community health and sustainability, and what *you* are doing about it. It helps you identify weaknesses and shore them up now. It also clarifies what internal teams need to be ready, and makes conversations around staffing and ownership easier.
+Writing a forking plan is less about the fork and more about assessing community health and sustainability, and what you can do about it today. It clarifies what internal teams need to be ready, and makes conversations around staffing and ownership easier.
 
 - Planning now prevents future crises, and ensures continuity should
   that crisis occur
@@ -118,6 +123,8 @@ What I hear most frequently from teams is that the project isn't keeping up with
 
 ???
 
+Trigger 1: If the perceived problem is unbalanced vendor participation:
+
 You should know who the prominent and dominant corporate players are, if
 any, in the projects that you participate in. And you should have a good
 relationship with those players, both personally and corporately.
@@ -133,11 +140,30 @@ from at least 3 different employers.
 
 ---
 
+![community](images/more_community.jpg)
+
+???
+
+In her book Perseverence, Margaret Wheatley says, the answer to
+community problems is almost always MORE COMMUNITY.
+
+If one part of the community has too loud a voice, it is not necessary
+or sufficient to silence or remove that part, but, rather, to increase
+the whole so that their voice is no longer the loudest.
+
+Investing in community growth is a great path to *reducing* the
+single-vendor imbalance. It also grows your own funnel of potential
+customers.
+
+---
+
 ![license](images/license.jpg)
 
 <small>"license" CC by waterlilysage on Flickr</small>
 
 ???
+
+Trigger 2: License change
 
 A change of license is *never* done just because someone likes one
 license better than another. It's *always* done to solve a (perceived)
@@ -180,7 +206,7 @@ the benefits are enormous, and accrue to all parties.
 
 ???
 
-### Not enough "control"
+Trigger 3: Not enough "control"
 
 * We don't have enough influence in the direction of the project
 * Open source is about *doing*. Step up and do the work
@@ -188,7 +214,9 @@ the benefits are enormous, and accrue to all parties.
   story-telling, which isn't going to get any better when you're the
   only one telling them
 * Tell better stories about why your vision for the software is the
-  right one. Stories are about people, not about cool technology
+  right one. Stories are about people, not about cool technology.
+  Remember that the community does not care about your customers or your
+  product schedule. They care about solving problems for all users.
 
 ---
 
@@ -196,7 +224,7 @@ the benefits are enormous, and accrue to all parties.
 
 ???
 
-### Slow Contributions
+Trigger 4: Slow Contributions
 
 Having your work be ignored can be very demoralizing.
 
@@ -205,6 +233,9 @@ Having your work be ignored can be very demoralizing.
   or PRs.
 - Thank people, publicly, when they review something. 
     (This can usually be automated, but a human touch is important.)
+- "Open source takes longer" is often used as a disparaging argument
+  against upstream work. But doing the wrong thing fast is not
+  necessarily better.
 
 ---
 
@@ -212,6 +243,8 @@ Having your work be ignored can be very demoralizing.
 <small>"Typing 2" CC by dirkstoop on Flickr</small>
 
 ???
+
+(Picture is a single developer typing at a single keyboard)
 
 Particularly concerning is when a project is primarily maintained by one
 person, as they can, and eventually will, be less active.
@@ -230,7 +263,7 @@ first place.
 
 ???
 
-Now we get into the actual costs of forking ...
+Now let's talk about THE PLAN: Plan for the world in which you have to staff the whole assembly line.
 
 - How many engineers would it take to maintain the current pace?
 - What skills are required? (e.g., Erlang, Go, Rust, Java)
@@ -306,7 +339,8 @@ working actively against you.
 
 Join or form the messaging committee. Volunteer for booths, write
 blog posts, and build visibility now. That groundwork is critical if a
-fork happens.
+fork happens. This is generally not something you have to ask permission
+to do, as long as you respect trademark and community norms.
 
 ---
 
@@ -371,6 +405,8 @@ unpaid press and promotion.
 
 ![recruit](images/recruit.jpg)
 
+<small>recruit., CC by Piro* on Flickr</small>
+
 ???
 
 ### Recruiting Contributors
@@ -409,9 +445,50 @@ What can you do today:
 
 ---
 
+### Budget and Headcount
+
+**Sample Plan Needs:**
+
+- *xyz* headcount (engineering, community, project management)
+- $xxM program budget
+- Legal, marketing, events, foundation onboarding
+- Make sure management understands the cost
+- How will you measure success?
+
+???
+
+Forking isn’t free. You'll need engineers, community managers, legal
+help, and event presence. The upfront and ongoing costs should be
+weighed against the risks of project unavailability. And this cost
+should be budgeted *before* any crisis. Treat this like a *real project*
+as you would any internal project.
+
+Note that it's not sufficient to staff the project with warm bodies.
+They need to be people who are respected by the community, and who the
+community will follow. Start *today* earning trust in the project so
+that you have those people, and that you identify your company as a
+place where people like that might want to work.
+
+Remember that this is a one-way door, since it is a promise to your
+customers and the community.
+
+---
+
+![roi](images/roi.png)
+
+![roi_qr](images/roi_qr.png)
+
+???
+
+Recent LF report says that participating in an upstream delivers 2x to
+5x the ROI vs working on your own fork.
+
+---
+
 **Milestones:**
 
-- Day 1: PR, domain, comms plan
+- Day 0: Name, domain
+- Day 1: PR, comms plan
 - Day 7: Understand infrastructure needs, and start setting those up
 - Day 14: Github repo, website, partner outreach
 - Day 30: Docs, client verification, build
@@ -430,38 +507,26 @@ Do you understand the infrastructure needs of the project? Is it all on
 Github, or is there shadow infra somewhere?
 
 ---
-
-### Budget and Headcount
-
-**Sample Plan Needs:**
-
-- *xyz* headcount (engineering, community)
-- $xxM program budget
-- Legal, marketing, events, foundation onboarding
-- Make sure management understands the cost
-- How will you measure success?
+![naming](images/naming.png)
 
 ???
 
-Forking isn’t free. You'll need engineers, community managers, legal
-help, and event presence. The upfront and ongoing costs should be
-weighed against the risks of project unavailability. And this cost
-should be budgeted *before* any crisis.
+Naming
 
-Note that it's not sufficient to staff the project with warm bodies.
-They need to be people who are respected by the community, and who the
-community will follow. Start *today* earning trust in the project so
-that you have those people, and that you identify your company as a
-place where people like that might want to work.
-
-Remember that this is a one-way door, since it is a promise to your
-customers and the community.
+- Naming is hard
+- Don't riff off of the old name - that ties you permanently to that
+  brand, and hinders establishing your own brand
+- Consider registering a trademark for your name. The cost of this
+  varies widely based on jurisdiction. Do you want to register in Europe
+  and the US and China and Brazil and India and ...  This is going to
+  get expensive.
 
 ---
 
 ### Final Thoughts
 
-- Forking is a leadership moment
+- Having a plan will reveal costs and pitfalls that you're not thinking
+  about yet.
 - Plan early, communicate clearly
 - Build strength through community engagement
 - Working *now* to mitigate the risk of a fork will almost certainly

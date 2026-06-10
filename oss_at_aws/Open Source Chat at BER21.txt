@@ -1,0 +1,571 @@
+My job is I work with Service teams and with people all the way up to VPs about 
+the importance of participating in the open source that we depend on. And that can sometimes be a 
+difficult case to make. one of the things that we have done in the open source community is, 
+use a lot of words like community and give back and Donate and that can make it difficult to 
+make the case to businesses that this is not charity. open source is not charity. Open source 
+is investing in our supply chain. It's investing in the things that we use to serve our 
+customers. 
+
+if you have attended an open source talk in the last 10 years, you've seen this, 
+this comic, and You know, this talks about the fact that all of us in technology 
+rely on open source for everything that we do. at AWS, from the very first day of AWS, 
+everything that we did depended on open source. Our first service S3 was built on Tomcat and 
+Everything after that, almost without exception is built on open source and it all runs on Linux. 
+And when we don't invest in that, we are incurring risks. So what I try to do in my job is 
+Avoid the fluffy community words and, you know, talk in terms of risk and 
+investment. 
+
+So when you look at a, when you look at a diagram like this
+As somebody that is supporting AWS 
+services, you have to understand what each one of those boxes do. And what's missing from this 
+diagram is that each one of those boxes is sitting on top of an open source stack, and we have to 
+understand that as well 
+
+So, what I wanna do, hopefully in this presentation is give you some 
+of the tools, some of the words to use when your management questions whether it is valuable for 
+you to be spending time working with all of those community freaks. because, you know, it tends 
+to be when we couch it in terms of charity, when we couch it in terms of altruism and giving 
+back, it tends to be the first thing that gets cut when, the budget crunch comes. So, 
+the first thing that we need to talk about is sustainability. You need to make sure that 
+if you are building a service on top of an open source project, you need to be part of ensuring 
+that project is around in 5 years when your customers have built their business around 
+it. 
+
+And so I work with a number of our hosted open source services and when a service is 
+called something like managed streaming for Apache Kafka, when the name of the project is right 
+there in the service name, it tends to be an easy case to make. But when the service is called 
+something like S3 and it depends on Apache iceberg. it's a little more hidden and so it becomes 
+a little more difficult to make the case for that sustainability and so what you need to do here is 
+make sure that you understand which one of the services relies on the open source project that 
+you're participating in. And make sure that we have a plan in place to sustain that.
+
+one of the 
+things that I do is pay close attention to participation metrics around the open source 
+projects that. just with the various services that I work with depend on. so I have, I 
+have like some metrics dashboards that track which AWS engineers participate in, , I'm tracking 
+about 50 open source projects right now. And then I talked with those service team 
+leads and I say, now your $10 million business depends on this project and we're only putting 
+one person to work on that and that's, that incurs substantial risk and it also puts us in a 
+position where all of the decisions around that project are being made by our competitors. so 
+it's, it's important to have our voice in those conversations so that our customers' needs are 
+represented. one of the specific ways that I encourage our teams to participate, 
+
+we have this phrase in the open source world that you may have heard, chop wood, carry water. 
+it's also the phrase originally comes from, Buddhist philosophy that, in order 
+to achieve enlightenment, you have to chop wood and carry water. You have to do the hard work. You 
+know, you're not just working on the A feature that is specific to your service, but you're also 
+working on things like reviewing other people's PRs, triaging issues as they come in, answering 
+user questions on the forums, and these are ways to sustain the open source project. And make sure 
+that you're, you're, giving it longevity while also building your trust in that community 
+because earning trust is the real capital of open source. You have to establish your 
+credentials, you have to do the hard work, and then you have to establish that the community can 
+trust you as an individual as well as your, as well as your technical. and this is, this is 
+by far the fastest way to earn trust in an open source project. unfortunately, it can be 
+difficult at AWS to make the case that your time answering user questions on a user forum, that may 
+or may not be AWS customers that's valuable and so, you know what I would say to them is that. 
+Establishing trust, earning trust, it's one of our leadership principles. It is, it is the way that 
+you gain influence in open source projects and if we want to have our customers' voices heard, then 
+we need to be heard and we need to have established credibility. Looking at it from the opposite 
+direction, listening on user forums, listening on. The Reddit that's about your open source project 
+participating in the discussion threads on GitHub. This is the most effective way to understand 
+the pain that our customers are having because our customers are a subset of the global user 
+community around an open source project and so the pain, the questions, the bugs that those users 
+are encountering, our customers are as well, and they might not be telling you. they might be. 
+Uh, asking on Reddit, they might be just keeping it to themselves, but this is a way to understand 
+what we need to be doing in our services and in these projects to support our customers, to be 
+customer-obsessed. let's see. Right, and again, failure to advocate for our customers in 
+these communities again ensures that decisions are being made in these projects by our competitors. 
+Now we have a number of service teams that consume open source projects and make local changes 
+like having an internal port and carry patches and that incurs a great deal of technical debt. um 
+I'm not gonna pick on any particular teams here but one of the teams that I work with um the 
+Well, the managed workflows for Apache Airflow, they're a great example of a team that works 
+directly with the upstream. When they make changes to Apache Airflow, they do it directly in the 
+upstream, they work with the community on these changes and as a direct result of that, when 
+airflow makes a new release, there's a, there's a release that's going out early next week and the 
+managed workflows for Apache Airflow service will have it deployed by the end of next week. Because 
+their service is exactly using the upstream. The only changes that they carry are ones that are 
+specific to our infrastructure and that the community isn't interested in and that's why it even 
+takes a week, otherwise they could just deploy it. but one of the other teams that I work with 
+that I won't mention carries substantial changes to an upstream open source project and they 
+believe, and I disagree with them. Every once in a while, they believe that this is their 
+competitive advantage, but as a result, when that project makes a release, it takes them 6 months 
+to push out a new release on AWS service because they have to integrate all of these massive 
+patch sets, ensure that they don't break with the new version, so there's an extended testing 
+cycle, um. They have to ensure that the project hasn't decided to go a different direction on one 
+of those features. And then you're in the situation where the customer who is building and testing 
+at home compares the upstream to what we've got and they're like, wait a second, this is not how it 
+worked when I was building at home. And now when I'm deploying on AWS, the functionality is 
+different. So there's considerable cost to maintaining internal forces. Security is a major 
+consideration. Uh, when you work with the upstream, you are getting the security posture of not 
+just us, but everyone else that's deploying this software in their weird situations and 
+encountering security problems that our customers will eventually encounter. And so working with 
+the upstream is critical, but another aspect of this is that when you work directly with an 
+upstream project. You're the first one to know when there's been a security exploit reported. If 
+you're simply consuming an open source project, you'll find out about it when the CVE gets 
+published and you've spent all that time being vulnerable that you didn't know about. So this is 
+another reason why if security is job zero, then participating in the upstream is critical to our 
+customers' security. I hope some of these points are helpful. Um this guy is, this is Bill 
+Joy. He's the guy that founded um Sun Microsystems back in the 80s. And this is one of my 
+favorite quotes from him, no matter where you are. Uh, the smartest people work for someone else, 
+um. Collaborating with our peers is the fastest way to innovate on the software that we work with. 
+When we think that we have all the answers, we're missing something. there's also a tendency 
+that I've seen all too often for, AWS engineers to work internally on a massive change set and 
+then take it to an upstream project and say, here you go, it's wonderful because we are Amazon, and 
+the project, you know, rightfully declines it because it's too big to review or because they 
+weren't involved in the decision making. so this is why working with the upstream continuously, 
+not just doing code dumps, is a critical part of ensuring that our customers' priorities are 
+reflected in the upstream because you can't just show up after six months of work and say, here you 
+go. Now this is um challenging with AWS culture. We are very fond of the launch. And the launch 
+culture can be antithetical to open source culture. And so mitigating between these two is 
+something that requires a lot of, a lot of persuasion. the next major point that I tend 
+to make with managers is that the best way to gain expertise in open source software is to 
+participate in the community. Um I've been attending today and yesterday, I've been attending a 
+conference called FOSS Backstage. and, one of the speakers said that, I wish I could 
+remember the quote. He said, the most efficient means of information transfer is to work 
+hands-on with something. if we are again simply consuming an open source project and not 
+actively engaged in the community, then chances are we will become an expert on one tiny portion of 
+it. Working in the upstream, reviewing pull requests, triaging issues is a way to see the whole 
+picture and become an expert on the entire package. So those are all the reasons, all the good 
+reasons why I strenuously encourage you to talk with your management about direct involvement in 
+open source. Send them to me to persuade them. there's also the very negative aspect of 
+not getting involved in the upstream. this is an article from The New York Times from 2019 and 
+was actually the impetus for my department being created. there was an article that. said that 
+AWS. Consumes open source and never participates that we, that we strip mine the open source 
+projects and There's, there's a couple of different aspects of why this is a problem. I mean, 
+open source, it's, it's free, right? So it's free, so the license says that you can take it and do 
+what you want with it. There's nothing illegal about that. But Participating or not 
+participating in open source in this way has a number of immediate negative consequences. One is 
+that it can lead to a resistance to AWS priorities. projects that we simply consume and don't 
+really contribute back to have been known to make changes to lock us out all the way up to changing 
+licenses. the negative press is not wonderful either, and it's not just about PR, it's also 
+about recruiting. when people that are talented in these technologies see in the press that 
+we're not good at working in open source, they don't come work here. And that greatly limits 
+our ability to hire and retain the best. and then there's, you know. Situations like um elastic 
+search, which What, 6 years ago now, changed their license specifically because they felt 
+that Amazon was abusing their goodwill. And we were in the position where we had to 
+Continue supporting our customers. And on top of a technology that we no longer had access to. And 
+that resulted in the fork of open search. Which, you know, 6 years later is a successful and 
+vibrant open source project at the Linux Foundation. But it took us a lot of work and a huge amount 
+of money to get there. And this is a situation that we brought upon ourselves, by the way that 
+we interacted with this open source project. there have been other situations recently. Uh, 
+REDDS recently changed its license and we participated in the fork called VALKI. That was a very 
+different situation. We were not the offending party there, but, it was once again a result of 
+one of the other, one of our competitors participating in that project in a way that was simply 
+consuming and not participating. So, That is my little soapbox. I'm really hoping that this will 
+become more of a conversation. I'm not gonna stand up here and talk at you for two hours, which 
+I expect, I expect that you appreciate. But, that's really, that's really the message that 
+I wanted to preach from here and, you know, I'd welcome questions or discussion or, you 
+know, going home early if you prefer, but I really appreciate you. Giving me time to talk at you, 
+um. 
+
+Yeah, anybody got anything they'd like to discuss or ask about? 
+
+Q: Yeah, thank you very much. 
+Uh, one really easy question to get started with, when looking to contribute with like an open 
+source project, are you supposed to have like an Amazon specific Gitla GitHub account or whatever, 
+or can you just take your personal account, whatever, and how do you kind of Keep your 
+contributions tracked given that it's not like um our internal tooling like code. Amazon, etc. 
+
+A: So 
+our policy around GitHub is, and this has changed in the last 5 or 6 years. we don't 
+require that you use an Amazon-specific account or email address for your GitHub account. 
+regarding how you participate in open source projects, the answer as always is it depends. 
+there's a number of different buckets that open source contributions fall into. If your 
+contributions have nothing to do with your job, And don't compete with Amazon in any way, then 
+you're welcome to do that on your own time to your heart's content. There's also a category 
+of contributions called simple contributions. So if you look on the open source wiki for simple 
+contributions, it defines what that is and it's basically use your own discretion but not a major 
+feature. So if you're contributing a bug fix or documentation or a small change, then you can just 
+do that. if you are participating as part of your main job duties, then there is a, an 
+obligation to get legal review on what we're contributing and, so that's something that needs 
+to go through your business line lawyer, around your department. if participating 
+in open source is a major part of your group's job, then. It's virtually certain that work has 
+already been done, but if you're not sure, you can go to the open source, open source Slack 
+channel and ask there, and, we'll help you track that down. 
+
+Q: Well, there's been a specific 
+scenario where the contributor license agreement is already like on the approved list. Uh, does it 
+still require like this clearance with the business landlord to sign a CLA to sign a, yeah, 
+like if it's on the pre-approved list
+
+A: if it's on the pre-approved list, then there's, there's not 
+a need to do that, um. And you know, this is gonna, it's gonna vary a little bit from one 
+group to another, whether they're going to be sticklers for legal review of features, 
+feature contributions, and so, you know. Talking with your management about that is always 
+recommended, but when a group launches a new open source project, there is a 
+launch process that involves legal review and license sign off and all that sort of stuff, 
+and you know, we have things like recommendations of which license to use, but participating in 
+an existing upstream project is usually extremely lightweight. And you know, for those of you that 
+have been here longer, that's a bit of a culture change from where we were 6 or 8 years ago. 
+Amazon used to be very averse to participating in open source and so if you talk with somebody who 
+has been here for more than 5 or 6 years, they might give you a completely different answer than I 
+just did, and they're wrong, but only because that is a significant culture change within the last 
+5 years. 
+
+Q: Thanks Yeah, so my question is, what's the long term version. Internal tooling. So 
+in our internal tooling is mostly proprietary internal tooling. So for example, like code. 
+Amazon.com pipelines, right? We don't use open source software like other companies, do. And I 
+think one of the reasons is because we invented them when there was no tooling for such a scale, 
+right? but maintaining such structure also has costs, right? So, like I wonder whether we wanna 
+stick to this in the, for the long term or if there are like any plans to migrate some of 
+these use cases. Afraid I don't know that. Do you, do you know anything around that, Yeah, and 
+I'm, I'm not, hm, I'm trying to think who that would be a question for. Matt Bullock maybe 
+would be the person to talk to, but, Yeah, I'm I'm not sure what the answer is there. OK, 
+no worries. Uh, I thought maybe small question, if you happen to know, Caro CI is not open 
+source, I think. It is not Amazon Q, I think used to be, that's right, but then they shifted to 
+not being open source and like I wonder whether this was like a strategic decision or um if it just 
+happened to they didn't catch up. Um I believe that the case that team made was that It wasn't 
+being that no one was participating in it. Uh, one of my colleagues was involved in that 
+conversation, and I know that our position as the open source office was, yes, please keep it 
+open source, and they, There's a disagree and commit kind of situation there um and I'm 
+not sure how much of that is stuff I can talk about but yeah they did definitely make a 
+decision to move away from being open source and Yeah, I feel it's unfortunate, but it 
+wasn't my call. OK, thanks. Here you go. Is it? Yeah, I think so. I'm, I'm strongly I'm more 
+on the other side. That's most of my So and maintains CDK obstructions. OK. So what's the biggest 
+open source, Understa From your experience, what is good signals for open source help for community 
+health since currently we're in the process of defining certain metrics, how do we track whether 
+our community is healthy and contributing enough, whether engagement is increasing, decreasing? 
+What could be good signals for this? OK, so the question of community health is a whole 
+science. one of the groups that was at the conference I was at today is, the ChaoS Group, 
+Community Health. A stand for Community Health Assessment and Open Source and they, their 
+whole research group has been working on this for about 10 years, but the, I think that the 
+important question is what are you trying to accomplish, um. And you know if your goal is to 
+bring in contributions then measuring the number of contributions and how many of them are from 
+different whether they're from individuals or from different vendors that seems to be an important 
+metric that's one of the things that I track a lot is the ratio of AWS contributions to 
+those from our partners or from, you know, just volunteer contributions from customers, um. I, 
+I track those sorts of trends, you know, month to month and year to year to see that we're moving 
+in the right direction. another thing that you have to decide proactively is the governance of 
+your project. Do you want people from outside of your group to make decisions, to make major 
+decisions about the project? Do you want them to be maintainers? And then if the answer to that is 
+yes, Then one of the things that I track, so for example, on OpenSearch, one of the things that I 
+track is 2 years ago it was 100%, like 90% AWS contributors, and today it's more like 40% AWS 
+contributors and to me that is a huge bit of progress, um. You might view that as a loss of 
+control. I view it as a, as a greater voice from the community from our customers. So that's 
+another thing that I, that I definitely track um is the contributor ladder, the path to, the 
+path to leadership and how long it takes somebody from their first contribution until they 
+become a maintainer. so, and then, you know, the other things that are, that are worth 
+tracking are, number of contributions per month. the things not to track or GitHub stars, 
+they're meaningless. but you will find that a lot of teams cite the number of GitHub stars as 
+though it means something, and I suppose it could be a proxy for something, but it really doesn't 
+mean much more than I saw this in a news article, um. So those are, those are places to start. 
+my particular expertise is Apache Software Foundation projects. I've been working with ESF for 
+about 25 years and um all of their discussions are on mailing lists. And so another thing that I 
+track, and this is easy on mailing lists, it's harder on GitHub is the voices in conversations. Who 
+are the people that are making the decisions? Uh, because those are sometimes distinct from the 
+people actually writing the code. Uh, so I track who is it that's participating in conversations 
+to make the decisions, and some of that, you know, on GitHub, if you use the GitHub API you can 
+track GitHub discussions as well as reviews, and that gives you a similar thing, it's just more 
+work. And I have Yeah. Beginner contributor to making them as active contributor. those people 
+reviewing their PRs or providing valuable feedback is important or is there something else, I, 
+I think that there's, there's, there's several aspects. One is the quality of their 
+contributions, but another is the willingness to take feedback, the 
+willingness to take ownership, um. You see some people that will contribute patches but never get 
+involved in the in the discussion around those patches um it's either you accept it or you don't um 
+and then there are people that really advocate for their position. And when I make somebody a 
+maintainer on a project, I want to know that they care about the future of the project, that they 
+care about their roadmap. if somebody just comes and contributes a fix, a bug fix 
+that's obviously valuable, but they haven't yet established that they've taken ownership, that 
+they've taken personal ownership of the roadmap, and so that's, that's what I look for and 
+it's extremely subjective, right? There's, there's no. If you have a checklist of this many, 
+this many PRs and this many issues and so on. That's a good start. It's a good way to 
+identify candidates, but it's, it's to me it's about earning trust. It's about knowing that. If you 
+were to stop contributing and they were to take your chair, would you feel good about that? And 
+that's very subjective, but the other thing that I would say, from years of community 
+management is that if you set the bar too high, then you'll chase off potential contributors and so 
+it's a real balancing act. You don't want to. I feel like it's more dangerous to push people 
+off too long than to accept them too early because, you know, this is what we have revision control 
+for. If they make a mistake, you revert it. But if you, if you push them away too long and they say 
+this isn't worth my time, then you've lost a valuable candidate. So lots of lots of judgment call 
+in there, certainly. Yeah. This should be my last question. The last couple of months, more 
+than ever, people are using AI to build code, right, and this is the whole topic is how do we 
+battle AI slow because previously to contribute actually took a lot of effort to understand the 
+code base to actually want to invest time in it. Now what you can do is let the agent scan it, 
+draft a PR in a matter of minutes, and then just pass the ball to the maintainersite. You go and 
+review it. Is there any advice on this like any topics high level that this is getting 
+discussed? Yes. I mean this is, this is every conversation I've been, I've been traveling 
+to open source conferences in the past two weeks and every conversation has eventually come around 
+to this topic and nobody's really solved it yet um. If your if your code is on GitHub, there is 
+a file called agents.md that's very valuable, and if you don't have one, you must have one. It 
+should be the first thing that you do. It describes for AI agents your code standards and your 
+libraries you use and you know spaces or tabs, all this kind of stuff that really. Huh, that's 
+my screen saver. That's weird. it really ensures that coding agents respect your, 
+your boundaries, but even then that's, that's not enough, and, um. There was a talk at 
+Open Source summit Europe in Amsterdam a couple of months ago where one of the maintainers, the, 
+the maintainer of Carl, he basically said, I'm not taking PRs anymore, it's just too much hassle, 
+and that is, it's, it's kind of an existential risk. To projects, one of the projects that 
+I work with is strands, and they are developing AI agents to do the first layer of triage on 
+PRs, and that seems valuable. it's really important to keep the human in the loop. I'm, I'm 
+concerned, I've heard a lot of projects say well we're just going to start banning people that, 
+that submit bad PRs and I'm, I'm concerned that is going to create a situation where 
+college students get burned out on open source very quickly because they get rejected too fast um 
+where. Uh, you know, entry-level interns decide that they don't want to be involved in open source, 
+so I feel like we are really in the growing pains moment of this, and I keep hoping 
+that there will be good answers for this, but, I think that You know, the most critical 
+thing is that there's always a human in the, in the decision and we don't just automate things 
+away, because we're gonna lose a lot of opportunities, but that does mean that things are 
+pretty painful right now. So all of that to say no, I don't have a good answer, but there are a lot 
+of smart people that are having this conversation. I was at a conference in Bangkok last 
+week and. Almost every talk I attended had an aspect of this in it, so I'm encouraged that we're 
+moving towards answers, but I don't feel like we have them yet. The OK. Uh, so a number of 
+years ago I was, fortunate to be able to work with, Donald Stubs who maintains the, he got 
+a pretty good deal where he was, an employee of Amazon was able to spend half of his time, 
+paid time working on that. Yeah, and then, you know, after some time, the powers that 
+be kind of, Patients with that set up and ended up letting him go. I'm just wondering 
+if this is something that. You know, in the, in the last couple of years has changed for the 
+tolerance for that is increased or if that would be something that is even possible today. 
+there are, there are teams that have, people that are full-time or part-time upstream. 
+the managed workflows for Apache airflow team that I mentioned before is one of those. 
+They have a team that's entirely focused upstream. this is, It's very much up to the 
+personality of the particular management tree that you sit under, and. You know, right now 
+we're at a. I hope it's an ad that it will get better because we seem to, well, 
+when we did just let some folks go just recently um. I Spend every day trying to make the case that 
+we should have people that have a particular portion of their time protected for open source 
+contribution for all of the reasons that I've enumerated here, but it is the first thing that 
+tends to get cut in reinvent season and in budget season, and, You know, we've had a 
+number of cases recently where, Gotten the attention of some VPs when someone has left 
+that had an open source focus and it has had a real impact on those teams um so I'm optimistic 
+but yeah it's it's a it's a hard question. That there's one company wide answer to 
+that. It really does depend on, which team you're in. This is related, but so you didn't 
+really mention much about this, so. I mean, I have the feeling when I work with people and they can 
+contribute to open source or maybe even create an open source project, they simply just do 
+better work. I mean, they're more motivated, they Produce better solutions, right? They, go the 
+extra mile and, um. And is this something that you're discussing with leadership that we 
+simply just will probably get better outcomes if we let people, I mean, you know, they. It's 
+not just they just collect their paycheck and write some code, but they produce something 
+that everybody can see. I mean, it's a whole different thing. They can put it in SED. So is this 
+something you also discuss with leadership? Is that it is, and, you know, I have another, 
+another presentation that I do about the leadership principles and, when you, when you 
+correlate leadership principles to open source involvement. Some of them are really obvious. Earned 
+trust is really obvious, but the one to me that's the most obvious is what you just said, the 
+ownership aspect of it. When people participate in open source projects, they tend to feel a great 
+deal more ownership. They feel a personal pride of their work. They feel like they are an artisan, 
+and they feel like they're Empowered to be right a lot, empowered to really go and, you 
+know, there's just so many leadership principles that match up here, you know, you're, 
+you're, you're having the biased reaction to go work on these, on these difficult problems and 
+then the other side of it is you get the adulation of the entire community. The reason that 
+I'm still involved in open source 30 years on is that. Is that feeling that the work that I 
+do at open source is being used by hundreds of thousands of people and you know I have, I have 
+software in those robots on Mars and that's, that's very cool to me because that is something that 
+I did, um. And so yeah, I really think that open source participation is a huge 
+motivator and you know when we have employees that work on open source and then they get 
+assigned off to something else. They often will leave us and go find another employer that values 
+open source more than we do and this is a case that I make to management on a very regular basis 
+and, you know, as I was just saying I, some VPs hear this and some don't, but 
+I remain optimistic that more of them are hearing it than they were a few years 
+ago. Yeah. Hi. I just wanted to ask, now that we're removing, Kind of a situation where we 
+use AI so much. Yeah. basically, the tool that everyone uses day to day. Uh, which is the AI 
+model. It's all proprietary, so I was wondering if you or people you know from the open source 
+community, what's the idea of how we could potentially have, open source or open weight AI 
+models that are similarly maintained or of similar quality than software is right now. the 
+whole topic of open. What words do we use? Open weights models. we don't really call it 
+open source AI because that has connotations that are, that are like you say, not real, 
+but there are, there are a number of projects that are working on open, truly open source AI 
+stacks, um. There was a, there was a news article just this week, Some company was investing 
+several billion dollars in doing a top to bottom open source AI stack with open models um and 
+I saw the headline go by and I can't remember who it was. It might have been a video. I'm not, 
+I'm not sure. I need, I need to go look that up. but yeah, there's, there's definitely a lot 
+of interest in that space. Uh, you know, one of the challenges is that It takes a lot of money 
+it takes a lot of hardware and a lot of money and getting an open source foundation that has that 
+kind of resources is a challenge. And so you have to have a coalition of businesses and then those 
+businesses want to make a profit off of it as businesses do. and so, I think we are still a 
+couple of years away from um a fully top to bottom open source AI stack. Uh, but with the 
+speed that things move, it might be next Tuesday, I'm not sure. and the other aspect of AI 
+contribution that there's been a lot of discussion about these two events I've been at. Has been 
+the legality of code that is generated by generative AI agents and I went to a talk yesterday by 
+two lawyers that are convinced that they are gonna make a huge amount of money off of suing people 
+around this. it was, they were, they were only slightly joking, I think, and that's 
+something that we're gonna have to come to grips with as well. Uh. But, You know, as a, as an 
+open source maintainer, one of the concerns that I have, and this was alluded to a moment ago, is 
+how these PRs come in that are just given no thought. And one of the most critical aspects 
+of, 11 of the things that I've really shifted my thinking on around AI is doing it as 
+a tool that I still need to be involved with. I kind of think of AI codegeneration as a really 
+smart intern that I get to work with, but they get a lot of things wrong and so it's my job to 
+actually review it and keep the human in the loop, um. And what we're seeing in open source 
+projects far too much right now is people generating, not looking, and submitting, and so it's just 
+complete garbage, um. So Yeah, I don't know there's there's so many, there's still so many 
+questions around AI coding agents that I just don't have answers to but Clearly to me, 
+keeping the human in the loop is the critical part of that. Yeah. on the topic of, 
+earning trust, how would you suggest to make a case to a manager to allocate enough time to 
+build trust until you get to the point where you can make meaningful contributions, especially 
+given that a lot of the like conventionally low hanging fruit, like simple chores that maintainers 
+just don't get around to, are now getting picked up by a guy as well. and kind of the question 
+for me is how do I. Get to the point where I have like enough reputation within the community to 
+make contributions that aren't just immediately dismissed or they have like this level of trust 
+where you are able to touch more sensitive parts of the whole case. and how exactly would I 
+sell this to a manager given that I need to first invest potentially weeks of time that they will 
+not have any problem, no benefit, with the prospect of eventually maybe getting like to 
+contribute to the sensitive parts that the team will. I think that one of the important 
+things to do is to have data around that to look at the project and see if you can figure out what 
+the normal timeline is for somebody to earn trust in the project and depending on what the 
+project is that could be Difficult to track or easy, but one of the things that I've 
+been doing, so I work a lot with our teams that work with Apache Iceberg. And um. They've 
+been asking, who should we recruit to work on Iceberg, and so I've been looking at the Git 
+history. And going back 4 or 5 years, looking at people's git history from their first contribution 
+to when they become a maintainer and getting some averages around that and then looking at the 
+people that are contributing today and their contribution patterns and using that data to, 
+to build estimates of when somebody is likely to become a maintainer and we should hire them before 
+that. but when you're trying to make the case that you should be able to do this, and knowing 
+those numbers is extremely valuable. And, you know, being straightforward with your manager and 
+say, on Apache iceberg, it takes, it takes 10 to 18 months from first contribution to becoming 
+a committer if you are, if you're consistent at it. And so they can look at that and say, this is 
+a worthwhile investment or maybe they'll say it's not, but having that be 
+data-driven is the critical piece there, I think, and that is going to vary enormously from one 
+project to another and so it can be a hard case to make. the other aspect of that is that. We 
+have a track record at AWS of. Getting people through this earned trust business, they become a 
+maintainer and then we reassign them to something else either we promote them to management or we 
+have them go work on some entirely different thing and they leave and I have been collecting data 
+around that and using that to make the case to keep people, you know, the question that was 
+asked over here, giving people dedicated time to work upstream to retain that trust, because. 
+Uh, trust has a half-life. It doesn't, it doesn't last forever, and once you earn it, you have to, 
+you have to keep doing the work to maintain it, and so. You know, having some notion of 
+that data so that once you, once you make that hurdle that you can make the case to keep that 
+time needs to be data-driven. Any more questions? There is more food out there, so. don't eat lots 
+of food. Yeah, hi, so my team is also working on an open source project, and our leadership 
+has kind of, acknowledged that we should contribute more, upstream, but we are currently we 
+have a giant, downstream footprint. So we have, actually more than 1000 patches on top of 
+the project and I'm currently working on the project to upgrade to a newer version upstream and it 
+already took more than 2.5 years, so we're already at that point, so at least acknowledging 
+that, um, leadership has implemented some sort of process where whenever we Uh, develop a new 
+patch downstream. We have to show that we have sort of tried to upstream it. We link it and say, oh 
+yeah, you have posted this somewhere. But then once it's merged, once the issue has 
+been fixed downstream, sometimes upstream has comments. They say like, oh no, this is the wrong 
+approach. We should do this differently. But then if I go back to my manager and say like, hey, we 
+fixed this downstream, but upstream had feedback. Can I please go and work on that feedback? 
+Can I fix it? And then usually goes like, no, we don't. I need to go and do the next thing, so 
+my question here would be, have you ever seen a successful process being implemented somewhere 
+that, gets people the time to track their upstream efforts and also actually finish them 
+and make sure that their contributions actually get merged, eventually, yeah, and once again I 
+would. Like the managed workflows for Apache airflow team and I would be delighted to make 
+introductions between your management and their management to talk about their process, because 
+this business of it taking two years to be concurrent with upstream costs a lot more. Than having 
+people do the work as you go along, we always seem to have time to fix stuff and not 
+necessarily time to do it right in the first place and that is, that's a huge that technical 
+debt there costs so much more than just doing it right, um. Uh, another team that I've seen do this 
+really well is the core search team they're called the, you know, the 
+team around OpenSearch that work a lot with Apache Lucine and Apache Solar, and they, You 
+know, they're, they're definitely their management, of course, their manager is a project 
+management committee on leuccine and that helps um and you know, they dedicate the time 
+to making sure those patches land um on the other hand, I've, I've worked with a number of 
+teams that basically do what you say they make a PR there are comments on it, we don't 
+have time to deal with that, so they just carry the patch and. OK. That can be extremely costly 
+long term in the ways that you've seen um so I think that it's really helpful to 
+make intros between the various teams and tell these stories because, you know, when 
+you're. When you're in the trenches and you're trying to make the launch, it's hard to see 
+that weeks of arguing with people upstream is a worth it worthwhile investment, but the other 
+aspect of that is that discussion with the community results in better code, it results in 
+things that serve our customers better. And you know, it could be that process 
+will reveal deficiencies in what we contributed that will end up being better for our 
+customers so that's the other part of the case that I would always make there. All right, cool. 
+Yeah, another thing I would like to add there is also like, when you start contributing 
+upstream but then don't follow up, I feel like you actually lose trust. Yeah, absolutely, yeah, we 
+lose it, lose it from the basic level like, when I, when I go in and patch and post a 
+patch a second time, like another patch, you go like, oh well, the album't even replied from 
+feedback from the first one. Why should they? That's right, and it's. It's perceived as arrogance. 
+It's perceived as you should take my patch because I am Amazon, and, that kind of that 
+kind of arrogance. I mean, it's not arrogance, but it can be, maybe it is, I don't know, but it can 
+be perceived that way and. Another aspect of this is that it harms not just you and that project, 
+it harms our reputation broadly. and that article that I showed earlier, the strip binding 
+open source, that was targeted at one team. He was using evidence from one specific interaction and 
+saying, this is what the entire company does. And so, You know, we try really hard to tell the 
+stories of our teams that do it right because that benefits the other teams that are still 
+learning. But one negative interaction like that where you make a PR and whether because 
+your manager didn't give you time or because you're arrogant, it comes across the same way to that 
+community. So that's, that's a case that I try to make with management and if it's 
+louder coming from me than you, then please give me a call and I'll come have that conversation 
+with your manager, because that's, that's what I do. So you. Any other questions? I don't know what 
+meeting I'm stupid. this is probably related this is too dark. Let's say, but at least I 
+know we have like a couple of people dedicated to like the language platform teams or whatever that 
+directly work on JVM for example we do have obviously our own distribution which we vent and deploy 
+on AWS, but some of that stuff gets upstreamed eventually as well and we have like a couple people 
+I feel like more like principal positions upwards. That kind of find their niche and can make 
+like a full-time job out of it even within Amazon. I was wondering if you are aware of any career 
+paths that necessarily lead there, or is it just like a position where you're already the subject 
+matter expert or the maintainer and Amazon is just interested to essentially buy your expertise and 
+use it. I'm not aware of any specific career path within Amazon that is solely open source 
+maintainer. one of my colleagues in the open source program office, Henry Yandell, worked 
+to create a position like that and was not successful in doing so. And sadly, he's no longer with 
+the company. but this is something that my team has been working on and off for some 
+time. And we just don't really have any support for it at this time and so it really depends on the 
+individual team and whether there's a VP that is that values it enough to protect that 
+position. It's not a very satisfying answer, but that, you know, that's the situation 
+right now. I actually want to add on a little bit on that. We have talked about that kind of 
+business decision really depends on the business line, like the VP level, the business owner. At 
+the same time, I think the reason we are having this conversation, this talk is also to empower 
+everyone with the knowledge of open source, with the understanding of the value of open source so 
+that you can make an impact within your organization. So that you can influence your manager. Your 
+manager can influence their manager, ultimately can change the VP level perception. Just like 
+Rich mentioned that in the past 5 years, there is a culture shift within Amazon about open source 
+and hopefully with the effort here, we can furthermore push the culture to be more in favor of open 
+source. Yeah. Other questions? Arthur C. Clarke, the science fiction author, one of his quotes is, 
+the future is here, it's just not evenly distributed yet. But that's the case at AWS as well. 
+We're, we're seeing that culture shift, but it's definitely. In pockets. This is just a sort of a 
+small add-on, but if there are, if you are interested in working open source full time, there are 
+definitely teams at Amazon that do that, but you're not necessarily gonna be able to make 
+your own project. It'll just be certain projects that we want on my team is all open source, 
+but. You have to be working on our project, right. Hiring. There are open positions in the, in, 
+in the org as a whole, but 5 people, it's not bad. All right, well, I really appreciate 
+you all giving up your valuable evening out if you have another question over here, and I 
+don't wanna keep you off tonight, but I'll, happily say and chat. So is it that, 
+you become a contributor to the maintainer research project, but as soon as the other 
+maintenance is that you want to come out of them, you have to talk to me you have the call. Because 
+of, yeah, of the of previous culture and someone from Amazon come before you, sort of bored 
+for the um The name right. So oh you're from now you're, you're out. Has it ever happened or is 
+it something that you're talking about projects that are that are AWS open source projects that are 
+no, not really. So whatever open source project you become a maintainer and all of a sudden they 
+discover that you're from Amazon or you're openly say I work for Amazon and the other 
+maintainers are like, oh no, we don't want to deal with you anymore. And before you cut off 
+of the projects like that. Has it ever happened, or is it something that we are lucky in? He said, 
+I have not heard of that situation. I mean, it, I suppose it's possible, but no, I'm not. 
+information. That's awesome. Yeah. OK. regarding the you're talking about. AI generated code 
+reviews or reviews is there a way to engage with that or at least read on the current best 
+practices or how to read up on basically. The things they think work, yeah, do you 
+know any the things that strands is doing or that no, like in general, the community is 
+talking about how to handle, yeah, the incoming. Uh, yeah, rise of AS hub and everything, 
+I've seen a number of presentations that are on YouTube about projects that are, that are 
+handling. Uh, AI generated code a number of ways. one of the people that, I've seen a 
+really great presentation by is Yak Bucuk, which I would have to spell for you. He's Polish, but, 
+he's, he's, one of the lead maintainers on the Apacheone project and Here in Berlin as I 
+said. and Jare has given a lot of thought to various aspects of Pre-filtering 
+contributions, he's using a tool called pre-K. It's a like a pre-commit hook forg 
+that runs a lot of tests locally on your development machine before you even submit a PR. So 
+that's one way to require that PRs have gone through a pre-commit test suite, um. He's 
+built a very large agents. MD file that's in their GitHub repo that apparently most of the 
+mainline code agents respect um and so that's. Uh, that's one person that I would 
+recommend looking at his presentation. There were several presentations about this at the FOSS 
+Asia event that I was at, but I feel like everybody is still trying to figure this out. 
+there's, there's a lot of projects, maintainers that are complaining about both the volume of AI 
+generated patches and the poor quality. And, They all seem to be hoping that we'll get past 
+this eventually and it's it's it's it's kind of discouraging at the moment, but I think that 
+things are getting better. So Jak Puk is the person that I would most recommend looking at his 
+presentation. This one was because it relates to I think what you said is that so say you are a 
+team that right now decides to build on top of open source or maybe has done that already on a fork 
+and I mean I can see one point of managers is that it can take a very long time for so if you 
+even if you make valuable PRs I mean I've done things to hugging face and they're sitting 
+there for months. I mean that wasn't why I didn't really care but so I mean I know that once 
+you've got their trust, maybe they are faster looking at you or maybe you say OK, as a sustained 
+investment from us, you know, please don't just let us dangle around for months. do you 
+have any hints how to get over that, you know, barrier because as a manager I would kind of, 
+you know, if I let my team, you know, file 5 PRs and then they sit there for 2 months then. I, 
+I would have a hard time defending that, so I'm just wondering how you. And any tips. So when I've 
+worked with teams, I've had a number of teams that have come to me and said we've made PRs that 
+are getting ignored, um. Typically what has happened in those situations is that when I've started 
+digging, it's because we weren't engaging with the conversation. We had made a PR and then ignored 
+all feedback on it. And that's not always the case, but it's frequently the case and what I 
+recommend in those cases is more active engagement, participating in the, in the conversation. 
+there are definitely communities that simply ignore PRs from anybody that they don't recognize and 
+There's no great answer to that. because we have to move on, we have to serve our customers and 
+we end up, we end up maintaining private forks in many of those cases, but, You know, the, 
+the only thing that I've ever been able to recommend in these, in these situations that's 
+successful is to go get more engaged in the conversation, track down individual maintainers, and 
+bug them about it. so that's, that's the one half of it. And the other half is doing the 
+janitor work, doing the work in the community to make yourself valuable to the community. And 
+both of these are hard sells to management because these are things that are not your day job, um. 
+But the other, the other aspect of this is looking at the data that shows that once we 
+obtain maintain our status in a project, it increases our velocity in that project and 
+that's something we can show again and again in multiple open source projects is this point of 
+inflection where somebody Uh, was slogging along to earn trust, and when they hit that point 
+of inflection, then we have greatly increased velocity in that project and That's a 
+large part of the reason why I'm tracking metrics so aggressively across these projects is to show 
+exactly that. All right, well, thank you all so much for giving up your valuable evening 
+time. I am.
