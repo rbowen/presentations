@@ -74,14 +74,75 @@
         }
 
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+
+      /* Hide remark's built-in timer in all forms */
+      .remark-timer,
+      .remark-presenter-timer,
+      .remark-toolbar-timer,
+      [class*="timer"]:not(#pacing-timer) {
+        display: none !important;
+      }
+
+      /* Show pacing timer only in presenter mode */
+      #pacing-timer {
+        display: none;
+      }
+      .remark-presenter-mode #pacing-timer {
+        display: block !important;
+      }
+
     </style>
   </head>
   <body>
+    <div id="pacing-timer" style="position:fixed;top:10px;right:10px;font-size:18px;color:#ffffff;font-family:Inconsolata,monospace;z-index:9999;background:rgba(0,0,0,0.7);padding:6px 14px;border-radius:4px;"></div>
     <script src="js/remark-latest.min.js">
     </script>
     <script>
       var slideshow = remark.create({
             sourceUrl: 'slides.md'
+      });
+
+      // Pacing timer — 30 minutes total (keynote)
+      var TOTAL_SECONDS = 30 * 60;
+      var startTime = null;
+      var timerInterval = null;
+      var initialSlide = slideshow.getCurrentSlideIndex();
+      var started = false;
+
+      function pad(n) { return n < 10 ? '0' + n : n; }
+
+      function formatTime(seconds) {
+        var m = Math.floor(seconds / 60);
+        var s = seconds % 60;
+        return pad(m) + ':' + pad(s);
+      }
+
+      function updateTimer() {
+        if (!startTime) return;
+        var elapsed = Math.floor((Date.now() - startTime) / 1000);
+        var remaining = Math.max(0, TOTAL_SECONDS - elapsed);
+        var totalSlides = slideshow.getSlideCount();
+        var currentSlide = slideshow.getCurrentSlideIndex() + 1;
+        var slidesLeft = totalSlides - currentSlide;
+        var secsPerSlide = slidesLeft > 0 ? Math.floor(remaining / slidesLeft) : 0;
+
+        var timerEl = document.getElementById('pacing-timer');
+        if (timerEl) {
+          timerEl.innerHTML =
+            '\u23f1 Elapsed: ' + formatTime(elapsed) +
+            ' | Remaining: ' + formatTime(remaining) +
+            ' | ~' + formatTime(secsPerSlide) + '/slide (' + slidesLeft + ' left)';
+          timerEl.style.color = remaining < 300 ? '#ff4444' : '#ffffff';
+        }
+      }
+
+      slideshow.on('afterShowSlide', function(slide) {
+        if (!started && slideshow.getCurrentSlideIndex() !== initialSlide) {
+          started = true;
+          startTime = Date.now();
+          timerInterval = setInterval(updateTimer, 1000);
+        }
+        if (startTime) updateTimer();
       });
 
     </script>
